@@ -1,0 +1,96 @@
+{
+  "workbench.layoutControl.enabled": false,
+  "markdown-preview-github-styles.colorTheme": "light",
+  "workbench.sideBar.location": "right",
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.smartRelativeLine": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.sneak": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["s"],
+      "after": ["v", "c"]
+    },
+    {
+      "before": ["j", "l"],
+      "after": ["$"]
+    },
+    {
+      "before": ["f", "l"],
+      "after": ["0"]
+    }
+  ],
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 20,
+  "html.format.indentInnerHtml": true,
+  "python.defaultInterpreterPath": "/opt/anaconda3/bin/python",
+  // "code-runner.runInTerminal": true,
+  "editor.linkedEditing": true,
+  "git.decorations.enabled": true,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "css.format.braceStyle": "expand",
+  "less.format.braceStyle": "expand",
+  "scss.format.braceStyle": "expand",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "prettier.quoteProps": "preserve",
+  "javascript.suggest.completeFunctionCalls": true,
+  // "workbench.colorTheme": "Gruvbox Dark Hard",
+  "notebook.diff.overviewRuler": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 110,
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "editor.formatOnPaste": true,
+  "jupyter.askForKernelRestart": false,
+  "markdown-pdf.displayHeaderFooter": false,
+  "window.zoomLevel": 0.5,
+  "editor.formatOnSave": true,
+  "window.menuBarVisibility": "toggle",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+  "vscode-neovim.mouseSelectionStartVisualMode": true,
+  "vscode-neovim.neovimClean": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.minimap.enabled": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "workbench.editor.pinnedTabSizing": "compact",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.guides.bracketPairs": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.activityBar.visible": false
+}
