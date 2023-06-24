@@ -1,5 +1,4 @@
 // Place your key bindings in this file to override the defaultsauto[]
-
 [
   {
     "key": "ctrl+j",
@@ -52,16 +51,6 @@
     "when": "terminalFocus"
   },
   {
-    "key": "shift+j",
-    "command": "workbench.action.nextEditorInGroup",
-    "when": "editorFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "shift+k",
-    "command": "workbench.action.previousEditorInGroup",
-    "when": "editorFocus && neovim.mode == 'normal'"
-  },
-  {
     "key": "shift+h",
     "command": "workbench.action.previousEditorInGroup",
     "when": "editorFocus && neovim.mode == 'normal'"
@@ -103,7 +92,6 @@
     "when": "neovim.mode == insert && editorTextFocus",
     "args": "k"
   },
-
   {
     "command": "vscode-neovim.compositeEscape1",
     "key": "j",
@@ -241,5 +229,63 @@
     "key": "ctrl+o",
     "command": "-workbench.action.files.openFile",
     "when": "true"
+  },
+  {
+    "key": "shift+alt+;",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "shift+alt+s",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "-workbench.action.files.save"
+  },
+  {
+    "key": "alt+[",
+    "command": "tailwindCSS.showOutput"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "welcome.showNewFileEntries"
+  },
+  {
+    "key": "ctrl+alt+meta+n",
+    "command": "-welcome.showNewFileEntries"
+  },
+  {
+    "key": "shift+alt+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+a",
+    "command": "-explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "-editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
   }
 ]
