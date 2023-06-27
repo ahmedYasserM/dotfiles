@@ -2,11 +2,20 @@
 #
 # version = 0.79.0
 
+
+
+
+# tree symbols
+alias tsym = echo "├ ─ │ └"
+
+# deno
+alias dd = deno run --check
+
 # obsidian
 alias obs = cp -r ~/templates/.obsidian .; cp -r ~/templates/.obsidian.vimrc .
 
-# lvim
-alias vim = lvim
+# vim
+alias svim = sudo vim
 
 # aliases
 alias sk = sioyek
@@ -62,7 +71,7 @@ alias cptp =  cp /home/ahmed/Templates/cpp-temp
 
 alias ll =  ls -l 
 alias lla =  ls -la 
-alias l =  ls
+alias l =  exa
 alias grep =  grep --color = auto 
 alias cat =  bat 
 alias c =  clear 
@@ -629,5 +638,14 @@ let-env config = {
 
 
 let-env PATH = ($env.PATH | append "/home/ahmed/.surrealdb")
-let-env PATH = ($env.PATH | append "~/.config/emacs/bin")
+let-env PATH = ($env.PATH | append "/home/ahmed/.local/share/rtx/installs/node/20.2.0/bin")
+let-env PATH = ($env.PATH | append "/usr/local/go/bin")
+let-env PATH = ($env.PATH | append "/home/ahmed/downloads/tars/zig-linux-x86_64-0.10.1")
+let-env PATH = ($env.PATH | append "/usr/lib/jvm/jdk-20/bin")
+let-env JAVA_HOME = "/usr/lib/jvm/jdk-20"
+# let-env HELIX_RUNTIME = "/home/user-name/src/helix/runtime"
+
+
 source ~/.zoxide.nu
+
+

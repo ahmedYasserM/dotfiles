@@ -4622,3 +4622,5151 @@ git status
 git push
 cp -r ~/.config/nvim/ .
 cp -r ~/.config/nushell/
+cp -r ~/.config/nushell/ .
+cp -r ~/.config/lvim/ .
+git status
+git add .
+gitmoji -c
+git status
+git push
+mkdir vscode
+l
+mv *json vscode/
+l
+mv snippets/ vscode/
+l
+mkdir lla
+lla
+ll
+z lla/
+l
+..
+c
+l
+rf lla/
+c
+l
+lla
+z .obsidian/
+l
+..
+c
+z templates/
+c
+l
+z
+z -
+c
+l
+lla
+mkdir obsidian
+mv .obsidian/ obsidian/
+z obsidian/
+cp ~/templates/.obsidian.vimrc .
+..
+c
+l
+git status
+git add 
+git add .
+git status
+gitmoji -c
+git status
+git push
+c
+l
+z fcis
+z
+z tutorial/
+l
+z fcis
+c
+l
+rm *zip
+c
+l
+rm *zip*
+c
+l
+z `6-term/`
+c
+l
+z nlp/
+c
+l
+rm *zip*
+c
+l
+mkdir lecture{1..9}
+l
+rf lecture{1..9}/
+c
+l
+bash
+c
+l
+1 2 3 4 5 6 7 8 9 0 1
+1 2 3 4 5 6 7 8 9 0 1 
+l
+z down
+c
+l
+o
+z fcis
+z tut/fcis
+z tut
+z fcis/
+c
+l
+ z `6-term/`
+c
+l
+z nlp/
+c
+l
+o
+z down
+l
+sudo mv `Telegram Desktop/` /opt
+sudo mv  moderncsv1.3.36.1/ /opt
+z opt
+c
+l
+pwd
+z /opt
+c
+l
+suod apt install vlc
+sudo apt install vlc
+z tutorial/fcis/
+c
+l
+z `6-term/`
+c
+l
+z nlp/
+c
+l
+z lecture4/
+l
+obs
+lla
+cp ~/templates/.obsidian.vimrc .
+lc
+c
+l
+nvim
+c
+l
+z nltk_data/
+c
+l
+..
+c
+l
+z dev
+l
+z rust
+l
+z learn/
+c
+l
+code .
+cr
+c
+cr
+c
+cr
+c
+l
+z src
+c
+l
+touch test.json
+..
+c
+pwd
+l
+c
+l
+c
+cr
+c
+cr
+c
+z nvim
+c
+l
+vim init.vim
+z rust
+c
+pwd
+l
+z tut
+c
+l
+z rust
+c
+l
+rm README.md
+c
+curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash
+c
+l
+z rustlings/
+c
+l
+rustlings
+code .
+rustlings watch
+c
+rustlings watch
+c
+z nlp
+c
+z 
+c
+l
+z tutorial/
+c
+l
+z fcis
+c
+l
+z `6-term/`
+c
+l
+z nlp/
+c
+l
+z lecture4/
+c
+l
+o
+c
+l
+rf ./*
+c
+l
+touch  main.py
+rp
+source /opt/anaconda3/bin/activate c
+clear
+l
+pwd
+...
+l
+z
+c
+l
+c
+l
+z
+c
+l
+vim
+c
+l
+man du
+du
+man du
+tldr du
+sudo apt install tldr
+c
+tldr du
+cat .config/nvim/init.vim
+c
+cargo install ripgrep
+rg
+man rg
+c
+help hg
+help rp
+ripgrep
+rg
+help rg
+rg -h
+c
+cargo install ncspot
+cargo install rtx-cli
+rtx -h
+node --version
+python --version
+python3 --version
+rtx ls
+rtx
+rtx install node
+rtx ls
+which ndoe
+which node
+sudo apt purge nvm
+npm uninstall nvm
+which node
+nvm
+nvim
+nvm
+nvm --version
+bash
+c
+ls
+which node
+rtx ls
+which node
+rtx install node
+lla
+rtx ls
+rtx which node
+rtx ls
+rtx -j
+rtx -h
+rtx which node
+rtx which
+rtx which node
+rtx where node
+z nus
+ls
+cargo --locked install ncspot
+sudo apt purge emacs
+vim config.nu
+source ~/.config/nushell/config.nu
+c
+which node
+z nus
+rtx where node
+z .local/share/rtx/
+c
+l
+z installs/
+ls
+z node/
+c
+l
+z `20.2.0/`
+ls
+z bins
+ls
+rtx global node
+rtx global node@20.2.0
+which node
+z
+c
+l
+rtx where node
+node --version
+vim config.nu
+node --version
+which node
+z .config
+ls
+z nushe
+c
+l
+node --version
+z
+c
+vim kejkdc
+c
+rustlings watch
+c
+man find
+find -f /
+find / -f 
+find / -f *na
+find / audio/
+find /
+find .
+find //
+c
+l
+vim package-lock.json
+rm package-lock.json
+c
+l
+vim package.json
+rf package.json
+c
+l
+ipython
+c
+z src
+git clone https://github.com/rust-ml/book.git
+l
+z book/
+c
+mdbook build
+mdbook serve --open
+sudo apt install catsay
+z down
+l
+z tars
+c
+l
+c
+l
+ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
+bash
+ rm -rf /usr/local/go ; tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
+c
+l
+sudo rm -rf /usr/local/go ; tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
+l
+sudo tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
+z nushe
+c
+l
+vim config.nu
+source ~/.config/nushell/config.nu
+go version
+z
+c
+l
+z tutorial/
+c
+l
+z go
+c
+l
+go -h
+go new -h
+c
+l
+mkdir go-learn
+z go-learn/
+c
+go -h
+o
+code .
+go build main.go
+./main
+go run main.go
+c
+rm main
+go run main.go
+c
+go run
+go run main.go
+c
+l
+go run main.go
+c
+go run main.go nice to meet you ahmed yasser!!
+go build main.go
+mv main cat
+mv cat main
+alias cat = ./main
+c
+cat ahmed yasser
+alias  mcat = ./main
+mcat hello world!!
+c
+z lecture5
+z lect
+l
+..
+z lecture5/
+c
+l
+vim notes.md
+z tutu
+c
+z tut
+l
+z go
+c
+l
+z go-learn/
+c
+l
+ls
+./main
+./main ahmed yasser mohamed abdelkader
+./main ahmed yasser mohamed abdel Qader
+vim main.go
+z go
+c
+l
+z 
+c
+z go-
+c
+l
+ls
+go build main.go
+./main
+go run main.go
+vim main.go
+z go-
+l
+go run main.go
+l
+rm main
+c
+l
+go run main.go
+vim main.go
+z go-
+l
+go run main.go
+vim main.go
+z go-
+c
+l
+go run main.go
+vim main.go
+ls
+c
+ls
+c
+kc
+clear
+go run main.go
+c
+go run main.go
+go version
+z nelp
+z nlp
+o
+z fcis
+z
+l
+z tutorial/
+c
+l
+z fcis/
+c
+l
+ z `6-term/`
+c
+l
+ z nlp/
+c
+l
+o
+z go-
+l
+vim main.go
+z applications
+z
+c
+z app
+pwd
+l
+ll gnome*
+ll *code*
+sudo vim code 
+sudo 
+sudo vim code.desktop
+sudo lvim code.desktop
+which lvim
+sudo ln -s /usr/share/vim /home/ahmed/.local/bin/lvim
+ll /usr/share/vim
+sudo ln -s /usr/bin/vim /home/ahmed/.local/bin/lvim
+ln -s /home/ahmed/.local/bin/lvim /usr/bin/vim
+sudo ln -s /home/ahmed/.local/bin/lvim /usr/bin/vim
+sudo vim
+z nush
+l
+pwd
+vim config.nu
+source ~/.config/nushell/config.nu
+c
+z -
+c
+l
+ll *code*
+svim code.desktop
+ll *vim*
+vim vim.desktop
+code .
+c
+ll
+z
+c
+l
+z go
+l
+z bin
+ls
+lla
+..
+l
+z pkg
+l
+z mode
+z -
+c
+l
+z mod
+l
+z github.com/
+c
+l
+z google/
+l
+z go-cmp@v0.5.9/
+l
+vim README.md
+z cmp/
+c
+l
+vim compare.go
+vim report.go
+z testdata/
+c
+l
+vim diffs
+..
+c
+l
+..
+l
+.
+..
+l
+..
+l
+..
+l
+z golang.org/
+l
+z x/
+l
+..
+l
+..
+l
+..
+ll
+..
+l
+a pkg
+z pkg
+l
+z sumdb/
+l
+z sum.golang.org/
+l
+vim latest
+z
+c
+which go
+l
+where go
+c
+z go-
+c
+l
+..
+c
+l
+go mod init github.com/$username/$projectname
+go mod init github.com/ahmed-yasser1/srego
+ll
+go get github.com/surrealdb/surrealdb.go
+c
+l
+mkdir srego
+mv go.mod srego/
+mv go.sum
+mv go.sum srego/
+c
+z sr
+c
+z -
+z srego/
+c
+l
+vim main.go
+go run main.go
+sureal
+c
+l
+go run main.go
+..
+c
+l
+c
+ls
+vim main.js
+c
+l
+c
+l
+node main.js
+go run main.go
+ls
+rm main.js
+c
+l
+r
+r
+c
+z nlp
+z -
+c
+z fcis/
+l
+z nlp/
+c
+l
+unzip `Past Exams-20230530T083042Z-001.zip`
+C
+L
+C
+c
+l
+mkdir lectures
+mv lectures Lecsc
+c
+l
+mv lec* Lecsc/
+mv Lecsc/ lectures
+z lectures/
+c
+l
+..
+c
+l
+rm *zip
+c
+l
+mv `Past Exams/` exmas
+z exmas/
+c
+l
+o
+ls
+c
+l
+z go-
+c
+code .
+go run main.go
+c
+go run main.go
+c
+go run main.go
+cargo run
+c
+cargo run
+c
+cargo run
+rustc --version
+man rustup
+rustup -h
+rustup update
+c
+cargo run
+r
+z fcis/
+l
+o
+z down
+l
+mv wps-office_11.1.0.11698.XA_amd64.deb deb-packages/
+c
+l
+z 6
+l
+mv Sheets-20230531T101052Z-001.zip ..
+c
+l
+..
+l
+mv Sheets-20230531T101052Z-001.zip graphics/
+c
+l
+mv graphics/ `6-term/`
+c
+l
+z `6-term/`
+c
+l
+pwd
+mv *pdf /home/ahmed/tutorial/fcis/6-term/graphics/
+z graphics/
+c
+l
+mv *pdf lectures/
+unzip *zip
+c
+l
+rf Sheets-20230531T101052Z-001.zip
+c
+l
+mv Sheets/ sheets/
+c
+l
+z lectures/
+c
+l
+r
+l
+c
+l
+unzip *zip
+l
+c
+l
+rm *zip
+c
+l
+z donw
+c
+l
+z dep
+c
+z down
+l
+z deb
+z deb-packages/
+c
+l
+sudo dpkg --install ./wps-office_11.1.0.11698.XA_amd64.deb
+c
+l
+..
+c
+z templates/
+c
+l
+rf *doc
+rf *x
+c
+l
+rf *x*
+c
+l
+rf ./*
+c
+l
+npm install -D tailwindcss<\n>npx tailwindcss init
+c
+l
+npm install -D tailwindcss<\n>npx tailwindcss init
+node --version
+npm install -D tailwindcss
+sudo rm -rf /usr/local/lib/node_modules
+sudo rm -rf ~/.npm
+npm install -D tailwindcss
+c
+z templates/
+c
+l
+npm install -D tailwindcss
+sudo npm install -D tailwindcss
+sudo npm
+which ndoe
+which node
+z /home/ahmed/.local/share/rtx/installs/node/20 │ ... │<\n>│   │      │ .2.0/bin/node
+z
+z .local/share/rtx/installs/node/
+c
+l
+z `20.2.0/`
+c
+l
+z bin/
+ls
+which node
+pwd
+sudo ln -s /home/ahmed/.local/share/rtx/installs/node/20.2.0/bin /usr/bin/node
+ls /usr/bin/node
+which node
+z nu
+c
+l
+vim config.nu
+source ~/.config/nushell/config.nu
+which node
+/usr/bin/node
+ll /usr/bin/node
+sudo rm /usr/bin/node
+z nush
+c
+l
+vim config.nu
+source ~/.config/nushell/config.nu
+c
+z rtx
+cl
+z
+c
+z -
+c
+l
+z installs/node/20.2.0/
+c
+l
+z bin
+c
+l
+pwd
+sudo ln -s /home/ahmed/.local/share/rtx/installs/node/20.2.0/bin /usr/bin/node
+which node
+sudo which node
+sudo node
+ll /usr/bin/node
+z /usr/bin
+c
+l
+ll
+ ll node
+sudo ln -s /home/ahmed/.local/share/rtx/installs/node/20.2.0/bin/node /usr/bin/node
+rf /usr/bin/node
+sudo rf /usr/bin/node
+sudo rm -rf /usr/bin/node
+sudo ln -s /home/ahmed/.local/share/rtx/installs/node/20.2.0/bin/node /usr/bin/node
+which node
+c
+npm install -D tailwindcss
+sudo npm install -D tailwindcss
+sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* ~/.npm<\n>sudo rm -rf /usr/local/lib/node*<\n>sudo rm -rf /usr/local/bin/node*<\n>sudo rm -rf /usr/local/include/node*<\n><\n>sudo apt-get purge nodejs npm<\n>sudo apt autoremove
+vim
+nvim
+node --version
+which node
+sudo which node
+sudo npm install -D tailwindcss
+z .local/share/rtx/installs/node/
+l
+z `20.2.0/`
+c
+l
+z bin
+c
+l
+z nush
+./npm install -D tailwindcss
+c
+l
+vim config.nu
+node --version
+npm --version
+z templates/
+c
+l
+vim app.json
+vim community-plugins.json
+vim core-plugins-migration.json
+rf ./*
+c
+l
+..
+c
+l
+lla
+c
+l
+npx --version
+npx tailwindcss init
+c
+l
+vim tailwind.config.js
+mkdir demo
+cp tailwind.config.js demo/
+z demo/
+c
+l
+mkdir src
+touch src/input.css
+vim src/input.css
+l
+z templates/
+c
+l
+z demo/
+c
+l
+ls
+z dist/
+c
+l
+vim output.css
+c
+l
+..
+c
+l
+z src
+z -
+l
+touch src/index.html
+vim src/input.css
+o
+vim src/input.css
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+z temp
+c
+l
+z demo/c
+z demo
+c
+l
+code .
+l
+c
+npm install -D tailwindcss
+npx tailwindcss init
+z demo
+pwd
+..
+c
+l
+rf demo
+mdkir test
+mkdir test
+z test/
+c
+code .
+npm install -D tailwindcss<\n>npx tailwindcss init
+c
+l
+mkdir src
+mkdir dist
+touch src/index.html
+touch src/input.css
+c
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+z nlp
+z
+z nlp/
+..
+c
+l
+..
+c
+l
+z graphics/
+c
+l
+z sheets/
+c
+l
+o
+c
+z gra
+c
+l
+z sheets/
+c
+l
+c
+go run main.go
+c
+cargo run
+kjjc
+c
+cargo run
+c
+cargo run
+ls
+ls\
+c
+l
+rm *png
+l
+z nltk_data/
+l
+.
+l
+..
+c
+l
+o
+cargo run
+ls
+z tutorial/
+c
+l
+mkdir web
+z web/
+mkdir react
+z react/
+c
+l
+touch index.html
+touch index.css
+touch index.js
+code .
+o
+c
+npm init
+c
+npm install --save react
+npm install --save react-dom
+npm install --save-dev babel-core
+npm audit fix
+npm audit fix --force
+npm fund
+npm install --save-dev babel-loader babel-preset-react
+touch .babelrc
+sudo shutdown ow
+npm install --save-dev webpack webpack-dev-server html-webpack-plugin
+l
+mkdir src
+mv index* src/
+c
+l
+touch webpack.config.js
+..
+l
+rf react/
+c
+ls
+z web
+code .
+l
+la
+lla
+rm ./.obsidian.vimrc
+c
+lla
+c
+mkdir src
+touch src/index.html
+touch src/index.js
+touch src/index.css
+npm init
+c
+npm install --save tailwindcss
+l
+rf ./*
+c
+l
+npx create-react-app reactDemo
+npx create-react-app react-demo
+l
+z react-demo/
+ll
+..
+l
+rf src/
+z react-demo/
+c
+lla
+ z dev
+c
+l
+..
+c
+lz
+z tut
+c
+l
+z web
+c
+l
+z react-demo/
+c
+l
+z src/
+c
+l
+ls
+lla
+c
+vim index.js
+l
+z react-demo/
+c
+l
+mkdir src/css
+touch src/css/header.css
+touch src/css/footer.css
+z web
+c
+l
+npm create vite@4.1.0
+c
+l
+npm create vite@4.1.0
+c
+l
+z vite-project/
+c
+l
+npm install
+npm start
+..
+z vite-project/
+c
+npm start
+npm run dev
+c
+..
+c
+l
+rf ./*
+mkdir react-app
+z react-app/
+l
+touch index.html
+touch index.js
+touch index.css
+code .
+sudo shutdown ow
+l
+ll
+c
+ll
+c
+z down
+c
+l
+z zip
+z zips/
+c
+l
+unzip Linux.zip
+c
+l
+suo mv Cap* /usr/share/icons/
+sudo mv Cap* /usr/share/icons/
+l
+sudo mv Cap* /usr/share/icons/
+sudo cp -r Cap* /usr/share/icons/
+c
+l
+z templates/
+c
+l
+rf ./*
+c
+lla
+mkdir test
+z test/
+c
+l
+touch index.ts
+lc
+c
+l
+vim index.ts
+node .
+l
+vim index.ts
+c
+l
+pwd
+ls
+c
+l
+s
+l
+la
+c
+ls
+vim main.js
+ls
+c
+l
+lspinfo
+c
+curl -fsSL https://deno.land/x/install/install.sh | sh
+c
+l
+ls
+..
+c
+l
+mkdir deno
+code .
+z deno/
+c
+l
+touch index.ts
+cargo install deno --locked
+deno -h
+deno -h | bat
+c
+l
+run index.ts
+deno run index.ts
+deno compile index.ts
+deno run index.ts
+deno compile index.ts
+l
+./deno
+deno run index.ts
+deno run deno
+deno run index.ts
+l
+rm deno
+deno run index.ts
+deno run --check index.ts
+z nushe
+l
+vim config.nu
+source ~/.config/nushell/config.nu
+c
+dr
+z -
+c
+l
+dr index.ts
+c
+l
+dr index.ts
+source ~/.config/nushell/config.nu
+dr index.ts
+z nusc
+z nush
+c
+l
+dr index.ts
+l
+deno run 
+deno run --check index.ts
+dr index.ts
+vim config.nu
+z web
+c
+l
+z deno/
+c
+l
+dr index.ts
+source ~/.config/nushell/config.nu
+dr index.ts
+z nush
+c
+l
+vim config.nu
+source ~/.config/nushell/config.nu
+z deno
+l
+cat ~/.config/nushell/config.nu
+ded index.ts
+de
+z -
+vim config.nu
+z
+c
+source ~/.config/nushell/config.nu
+dd
+dd index.ts
+dr
+dd index.ts
+deno run --check index.ts
+dd index.ts
+l
+..
+c
+l
+z react-app/
+c
+..
+c
+l
+z deno
+dd index.ts
+z web
+c
+l
+mkdir node
+z node/
+..
+c
+l
+rf deno/
+z node/
+c
+l
+node install -g typescript
+npm install -g typescript
+c
+l
+touch index.ts
+l
+tsc --version
+tsc index.ts
+l
+node index.ts
+c
+node .
+vim index.ts
+c
+l
+tsc --version
+c
+z 
+c
+ls
+pwd
+..
+c
+l
+z rust/
+c
+l
+..
+c
+l
+mv web ~/dev/
+l
+z dev
+c
+l
+code .
+z rust
+cl
+c
+l
+code .
+l
+z learn/
+c
+l
+code .
+cargo run 
+z div
+c
+l
+z dev
+c
+l
+z rust/learn/c
+c
+z learn
+l
+c
+l
+z src/
+c
+l
+rust --version
+rustup --version
+ructc --version
+rustc --version
+cargo run
+ls
+z src
+l
+..
+c
+l
+z target/
+c
+l
+z debug/
+c
+l
+lla
+./learn
+..
+c
+l
+crate root is a --> source file
+z
+c
+z learn
+c
+l
+vim main.rs
+c
+z
+c
+z rust
+c
+l
+cargo new test
+cargo new demo
+c
+l
+z demo
+c
+l
+z src
+cl
+c
+l
+cat main.rs
+rustc main.rs
+l
+..
+c
+l
+z src/
+c
+l
+./main
+rm main
+c
+l
+..
+c
+l
+vim Cargo.toml
+c
+l
+c
+l
+z src/
+c
+l
+touch lib.rs
+mkdir bin
+ls
+touch bin/crate2.rs
+c
+l
+l bin/
+z bin/
+ls
+..c
+..
+c
+l
+rf bin lib.rs
+vim main.rs
+..
+c
+l
+vim Cargo.toml
+z src/
+c
+l
+vim main.rs
+..
+c
+l
+vim Cargo.toml
+vim src/main.rs
+c
+..
+c
+l
+z learn
+c
+l
+cargo run
+c
+ls
+z src
+c
+l
+touch garden.rs
+l
+rm garden.rs
+mkdir garden
+touch garden/garden.rs
+mv garden/garden.rs garden/mod.rs
+c
+ls
+z garden/
+c
+l
+touch garden.rs
+c
+l
+c
+l
+mv garden.rs vegetables.rs
+vim src/main.rs
+z 6
+l
+unzip Lectures-20230603T133513Z-001.zip
+c
+l
+rm *zip
+c
+l
+mkdir software
+mv Lectures/ software/
+z software/
+c
+l
+mv Lectures/
+mv Lectures/ lectures
+z lectures/
+c
+l
+o
+l
+z web
+c
+l
+z dev
+c
+l
+z web
+c
+l
+npm create vite@latest
+c
+ll
+z vite-project/
+c
+l
+code .
+npm install 
+c
+l
+npm start
+npm run .
+npm run start
+npm run
+npm run preview
+..
+c
+l
+npm create vite@latest
+z react-demo/
+code .
+z web
+npm init vue@latest
+l
+z vue-project/
+c
+l
+npm install
+l
+z dev
+c
+l
+..
+c
+l
+z web
+c
+l
+rf vue-project/ vite-project/ react-demo/
+c
+l
+c
+l
+vim
+l
+c
+l
+rm demo.md
+l
+c
+z web
+c
+l
+z react-app/
+c
+code .
+..
+c
+l
+rf react-app/
+c
+l
+npx create-react-app react-demo
+c
+l
+z react-demo/
+c
+l
+npm start
+l
+code .
+npm start
+l
+z public/
+l
+unzip project.zip
+c
+l
+rf *zip
+c
+l
+z coc7e4be18a0fe000d0e29e32/
+l
+mv react-logo.png ..
+c
+..
+c
+l
+rf coc7e4be18a0fe000d0e29e32/
+c
+l
+..
+c
+l
+touch note.md
+sudo shutdown ow
+z web
+c
+l
+z node/
+c
+l
+rm index.ts
+c
+l
+node .
+.node 
+c
+node .
+node . | bat
+c
+z node
+c
+l
+node .
+node .
+node 
+c
+node .
+c
+node .
+c
+node .
+c
+node .
+c
+node .
+c
+node .
+c
+node .
+c
+node .
+bash
+curl -fSsL https://repo.fig.io/scripts/install-headless.sh | bash
+ls
+fig login
+neofetch
+vim index.js
+z note
+pwd
+code .
+z down
+c
+l
+ls
+z web
+l
+z react-demo/
+c
+code .
+c
+npm start
+z react-demo/
+code .
+l
+..
+c
+l
+code .
+git log
+z down
+ls
+sudo shutdown ow
+l
+vim index.js
+node index.ts
+ls
+node index.ts
+ls
+c
+ls
+node index.ts
+deno run index.ts
+tsc index.ts
+ls
+node index.js
+node index.ts
+tsc index.ts
+deno run --check index.ts
+c
+vim index.ts
+c
+l
+vim index.ts
+deno compile index.ts
+vim index.ts
+deno compile index.ts
+ls
+./ahmed
+rm ahmed
+rm inde*
+c
+l
+vim
+vi
+bash
+c
+l
+vim .vimrc
+bash
+c
+l
+vim 
+lvim
+lvim main.r
+c
+lvim mmain.rs
+c
+l
+z rea
+code .
+npm start
+..
+c
+l
+mkdir test
+z test
+npm install --save-dev vite
+code .
+npm run vit
+npm run dev
+..
+c
+l
+rf test
+mkdir vanilla-vite
+z vanilla-vite/
+c
+l
+npm create vite@latest
+c
+l
+npm install
+npm start
+code .
+npm run dev
+c
+l
+..
+c
+l
+rf vanilla-vite/
+c
+l
+mkdir react-vite
+z react-vite/
+c
+l
+npm create vite@latest
+l
+npm install
+l
+code .
+l
+..
+c
+npm create vite@latest
+l
+z js-react-vite/
+c
+npm install
+l
+code .
+c
+l
+..
+c
+l
+z react-vite/
+c
+l
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm run de
+npm run dev
+npm install -D tailwindcss postcss autoprefixer
+c
+ll
+z node_modules/
+ll
+..
+c
+l
+file node_modules/
+file -h node_modules/
+dd node_modules/
+sudo apt install tilda
+ls
+clear
+ls
+lss
+clear
+ls
+z down
+c
+l
+z donw
+c
+l
+rm voi*
+c
+l
+z zip
+c
+l
+unzip project.zip
+c
+l
+mv coce046849cdbb0430854ed56/ ract-online
+l
+c
+l
+z ract-online/
+c
+l
+o
+c
+l
+z web
+c
+l
+rf react-demo/
+rm js-react-vite/
+rf js-react-vite/
+c
+l
+ls
+c
+l
+touch src/components/Header.tsx
+touch src/components/Footer.tsx
+touch src/components/MainContent.tsx
+node run dev
+node run 
+node run dev
+node run dev
+node start
+node run dev
+npm start dev
+suod shutdown now
+cat package.json
+c
+ls
+z templates/
+c
+l
+npm create vite@latest
+z vite-project/
+npm install
+npm run dev
+c
+l
+code .
+..
+c
+l
+z -
+c
+l
+cp src/components/ ../comp
+cp -r src/components/ ../comp
+..
+c
+l
+z comp/
+c
+l
+..
+c
+l
+rf react-vite/
+npm create vite@latest
+z react-journey/
+npm install
+ls
+code .
+ls
+c
+l
+touch src/App.tsx
+mv ../comp/ ./src/components
+npm run dev
+..
+c
+l
+rf vite-project/
+npm run dev
+c
+ls
+z down
+c
+l
+z zip
+c
+l
+o
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+sudo shutdown ow
+ls
+z web
+c
+l
+z react-journey/
+c
+l
+code .
+z
+ls
+z templ
+c
+l
+z test/
+c
+l
+..
+c
+l
+rf test/
+npm create vite@latest
+z vite-project/
+npm install
+c
+l
+z src
+ls
+rm App.css
+code 
+code .
+..
+code .
+touch src/App.tsx
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+ls
+npx tailwindcss -i ./src/main.css -o ./index.css --watch
+npm run dev
+npx tailwindcss -i ./src/index.css -o ./output.css --watch
+..
+z web
+c
+l
+z react-journey/
+ls
+cp -r src/components/ ~/templates/vite-project/src/
+cp -r src/assets/react-logo.png ~/templates/vite-project/src/assets/
+..
+c
+l
+z web
+l
+mkdir scrimba
+z scrimba/
+mkdir project1
+c
+l
+z project1/
+npm create vite@latest
+npm install
+npx tailwindcss -i ./src/input.css -o ./output.css --watch
+npm run dev
+code .
+l
+touch src/index.css
+l
+touch src/App.tsx
+mkdir src/components
+touch src/components/MainContent.tsx
+touch src/components/NavBar.tsx
+cp -r src/assets/react-logo.png  ../scrimba/project1/src/assets/
+deno run src/components/NavBar.tsx
+ls
+lls
+c
+ls
+pwd
+l
+z node
+ls
+vim index.js
+node .
+lvim index.js
+l
+sl
+mkdir notes
+touch notes/notes.md
+git -h
+git -c name="Ahmed Yasser"
+git config --global user.name "Ahmed Yasser"
+ git config --global user.email "ahmedyassermohammad@gmail.com"
+git log
+z
+c
+l
+z temp
+c
+l
+mdkir test
+mkdir test
+z test/
+c
+l
+git init
+ls
+lla
+touch main.rs
+ls
+git status
+git add .
+git status
+git commit -m "initial commit"
+git status
+git log
+code .
+git add .
+git commit -m "second commit"
+l
+..
+c
+l
+rf test/
+ls
+cat vite-project/
+ls
+c
+l
+cat dkjfkd
+vim
+ls
+c
+l
+touch sayHi.js
+ls
+vim index.js
+z node 
+code .
+node .
+npm run dev
+node .
+node index.js
+node .
+neofetch
+node .
+neofetch
+node .
+touch index.ts
+node index.ts
+rm index.js
+node .
+node index.ts
+npm install @types/node --save-dev
+touch commands.md
+node index.ts
+node .
+node index.ts
+node .
+node index.ts
+k..
+..
+c
+l
+mkdir node-learn
+z node-learn/
+npm init
+c
+l
+npm install @types/node --save-dev
+touch index.ts
+code .
+..
+c
+l
+z node
+code .
+node index.ts
+touch indes.js
+ls
+mkdir -p content/subfolder1
+man makdir
+man mkdir
+mkdir -p ./content/subfolder1
+man mkdir
+mkdir -P ./content/subfolder1
+mkdir content
+mkdir content/subfolder1
+touch content/file1.md
+touch content/subfolder1/subFile.md
+c
+l
+node .
+L
+c
+l
+mv indes.js index.js
+node .
+node indes.js
+c
+l
+rm index.js
+mv indes.js index.js
+ls
+node .
+node.
+node .
+sl
+ls
+..
+ls
+rf lost+found/
+sudo rf lost+found/
+sudo rm -f lost+found/
+sudo rm -rf lost+found/
+ls
+z ahmed/
+c
+l
+bash
+vim .bashrc
+bash
+c
+clear
+ls
+clear
+cear
+clear
+ls
+vim main.rs
+ls
+rustc main.rs
+sl
+ls
+./main
+ls
+rm main
+rm main.rs
+ls
+node .
+ls
+node .
+node. 
+node .
+suod shutdown now
+ls
+node .
+q
+node index.ts
+node .
+..
+rf node
+mkdir node
+z node
+npm init
+code .
+node .
+echo $PORT
+echo PORT
+node .
+z web
+c
+l
+z
+c
+l
+z tutu
+z tut
+l
+z web
+c
+l
+o
+node .
+deno run --allow-net index.ts
+dd index.ts
+deno run --check index.ts
+node .
+sudo apt install git libasound2 libcurl4 libgbm1 libgcrypt20 libgtk-3-0 libnotify4 libnss3 libglib2.0-bin xdg-utils libx11-xcb1 libxcb-dri3-0 libxss1 libxtst6 libxkbfile1
+z down
+ls
+z tars
+ls
+tar xf atom-amd64.tar.gz
+ls
+z atom-1.60.0-amd64/
+ls
+./atom
+neofetch
+npm --version
+# local dependency
+# global dependency
+npm run test
+echo 4
+echo $
+echo -
+echo $-
+bash
+npm run test
+echo $?
+echo ?
+ls
+node .
+npm install --save-dev nodemon
+npm start
+npm run dev
+z
+c
+l
+z tut
+z 6
+ls
+z conc
+l
+ls
+z lecs
+ls
+o
+ls
+..
+c
+ls
+z JS-Notes/
+ls
+rm Untitled.md
+touch javaScript.md
+..
+ls
+mv JS-Notes/ concepts-notes
+ls
+z concepts-notes/
+ls
+cp ~/templates/.obsidian.vimrc .
+cp -r ~/templates/.obsidian/ .
+ls
+lla
+vim .obsidian.vimrc
+z .obsidian/
+ls
+z 
+node .
+npm init
+npm install --save-dev nodemon
+npm run dev
+node .
+lla
+lla .deno/
+z .deno
+ls
+mkdir cache
+ls
+z cache/
+ls
+deno run --check index.ts
+..
+ls
+rf demo
+c
+l
+ls
+z templ
+ls
+mkdir test
+z test
+code .
+z
+z .deno
+ls
+z cache/
+ls
+o
+z templs
+ls
+z temp
+ls
+z test
+ls
+lla
+z web
+ls
+z deno
+ls
+lla
+..
+c
+l
+ls
+z templs
+ls
+z temp
+ls
+z vs
+z vscode-deno-template/
+c
+ls
+mkdir .vscode
+z .vscode/
+ls
+touch settings.json
+vim settings.json
+ls
+..
+c
+l
+..
+c
+l
+rf test
+z conc
+ls
+z code
+ls
+..
+c
+l
+rf ode
+ls
+rf code
+sl
+ls
+mkdir depoloy
+z depoloy/
+touch index.js
+code .
+ls
+z conc
+ls
+z concepts-notes/
+code .
+..
+ls
+z lecs
+ls
+o
+node .
+ls
+node .
+ls
+z lecture8/
+ls
+sioyek Lecture7.pdf
+alias sk
+node .
+ndoe .
+node .
+nodej 
+node .
+node 
+node .
+node 
+node .
+bash
+ls
+..
+c
+l
+mdkir denoTest
+mkdir denoTest
+z denoTest/
+c
+l
+touch index.js
+vim index.js
+deno run index.js
+lvim index.js
+node .
+lvim index.js
+node .
+ls
+vim index.js
+deno run index.js
+:q
+ls
+sl
+ls
+z concepts-notes/
+z conc
+ls
+z lecs
+ls
+z lecture11/
+ls
+node index.ts
+ls
+tsc index.ts
+npm install @types/node --save-dev
+node index.ts
+tsc index.ts
+node .
+tsc --init
+bash
+cd ..
+ls
+bash
+z tut
+ls
+z src
+ls
+rf CS-Notes/
+ls
+git clone git@github.com:ahmed-yasser1/CS-Notes.git
+ls
+sl
+ls
+z CS-Notes/
+ls
+cp -r ~/tutorial/fcis/6-term/concept/programming-languages
+cp -r ~/tutorial/fcis/6-term/concept/concepts-notes/ .
+ls
+mv concepts-notes/ programming-languages
+ls
+git status
+git add .
+gitmoji -c
+git commit -m "Adding JavaScript Notes"
+git status
+git log
+git push
+git status
+bash
+c
+git status
+rm .obsidian.vimrc
+git status
+git add .
+git commit -m "Fixing Code Blocks"
+git status
+git push
+git status
+git add.
+git add .
+git commit -m "Fix Indentiation"
+git push
+tsc --watch
+z concep
+ls
+z lecs
+ls
+git status
+s
+ls
+bash
+z down
+ls
+z tars
+ls
+tar xf zig-linux-x86_64-0.10.1.tar.xz
+ls
+z zig-linux-x86_64-0.10.1.tar.xz
+ls
+z zig-linux-x86_64-0.10.1/
+ls
+lla
+sudo ln -s ~/downloads/tars/zig-linux-x86_64-0.10.1/
+sudo ln -s ~/downloads/tars/zig-linux-x86_64-0.10.1/ /usr/bin/zig
+zig --version
+./zig --version
+./zig version
+zig version
+sudo zig version
+ll /usr/bin/zig
+rf /usr/bin/zig
+sudo rf /usr/bin/zig
+sudo rm -rf /usr/bin/zig
+ls
+sudo ln -s ~/downloads/tars/zig-linux-x86_64-0.10.1/zig /usr/bin/zig
+zig version
+which zig
+sudo rm -rf /usr/bin/zig
+pwd
+z nush
+ls
+vim config.nu
+source ~/.config/nushell/config.nu
+zig version
+which zig
+zig run main.zig
+ls
+z pattern
+z 6
+ls
+z pattern/
+ls
+mv `Lectures /` lectures
+mv `Beneficial Links.pdf` links.pdf
+ls
+unzip Sheets-20230609T024405Z-001.zip
+ls
+rf *zip
+mv Sheets/ sheets
+ls
+z lectures/
+ls
+bash
+z
+z .config
+z ranger/
+ls
+vim rc.conf
+vim rifle.conf
+vim rc.conf
+r
+z pattern
+z lectures/
+ls
+r
+ls
+mv *Lec1* lecture1.pdf
+mv *Lec2* lecture2.pdf
+mv *Lec3* lecture3.pdf
+l
+mv *Lec4* lecture4.pdf
+mv *Lec5* lecture5.pdf
+mv *Lec6* lecture6.pdf
+mv *Lec8* lecture7.pdf
+ls
+mv lecture7.pdf lecture8.pdf
+mv *Lec7* lecture7.pdf
+mv *Lec9* lecture9.pdf
+ls
+mv Lec1 `[ML_PR 2023] Lec1 Intro.pdf` lecture1.pdf
+bash
+ls
+mv `[ML_PR 2023] Lec1 Intro.pdf` lecture1.pdf
+o
+ls
+pwd
+o
+rustup --version
+rustup --help
+rustup show
+rustup check
+rustc --version
+rustup update
+vim
+vim main.rs
+ls
+ls
+vim
+ls
+rustc --version
+ls
+z rus
+ls
+z learn
+ls
+vim src/main.rs
+cargo run
+vim src/main.rs
+code .
+cargo run 
+cargo run
+vim src/main.rs
+ls
+z pattern
+ls
+z sheets/
+ls
+o
+ls
+ipython
+ls
+z logistic-regression/
+ls
+..
+ls
+z bias-variance/
+ls
+mv imgs/bias-variance.md .
+ls
+..
+c
+l
+..
+c
+l
+git status
+git add .
+git status
+git commit -m "Adding logistic-regressin and bias-varince docs"
+git status
+git log
+git push
+z consc
+z conc
+ls
+z lecs/
+ls
+bash
+z
+c
+l
+rf *pdf
+vim .ideavimrc
+vim .vimrc
+lvim .vimrc
+lvim .ideavimrc
+z down
+z zip
+ls
+unzip intellij-rust-0.4.195.5408-231.zip
+ls
+jvm --version
+z debs
+z de
+z deb
+z down
+l
+z deb-packages/
+ls
+sudo dpkg --install ./jdk-20_linux-x64_bin.deb
+javac --version
+bash
+java --version
+javac --version
+bash
+z deb-packages/
+ls
+z deb
+z donw
+z down
+z deb
+z -
+z deb-packages/
+ls
+sudo dpkg --install ./jdk-20_linux-x64_bin.deb
+sudo apt install libc6-x32
+apt --fix-broken install
+sudo apt --fix-broken install
+sudo apt install libc6-x32
+sudo dpkg --install ./jdk-20_linux-x64_bin.deb
+javac --version
+java --version
+javac -version
+javac -v
+update-alternatives --list java
+z deb-packages/
+z downloads/
+ls
+z deb-packages/
+ls
+sudo dpkg --install ./jdk-20_linux-x64_bin.deb
+javac --version
+bash
+bash
+z /usr/lib/jvm/
+ls
+z jdk-20/
+ls
+pwd
+z nush
+ls
+vim config.nu
+source ~/.config/nushell/config.nu
+javac --version
+source ~/.config/nushell/config.nu
+vim config.nu
+source ~/.config/nushell/config.nu
+vim config.nu
+source ~/.config/nushell/config.nu
+vim config.nu
+source ~/.config/nushell/config.nu
+vim config.nu
+source ~/.config/nushell/config.nu
+javac --version
+java --version
+echo $env.PATH
+echo $env.JAVA_HOME
+z jvm
+ls
+z jdk-20/
+ls
+z bin
+ls
+pwd
+z nus
+ls
+vim config.nu
+source ~/.config/nushell/config.nu
+javac --version
+jvm Main.java
+ls
+javac Main.java
+ls
+java Main.class
+ls
+rm Main.class
+javac Main.java
+java Main.class
+java Main
+ls
+z nush
+ls
+vim config.nu
+source ~/.config/nushell/config.nu
+vim config.nu
+source ~/.config/nushell/config.nu
+source ~/.config/nushell/config.nu
+clear
+z -
+ls
+rm Main.class
+rjava Main.java
+ls
+java Main
+z nus
+vim config.nu
+source ~/.config/nushell/config.nu
+ /usr/bin/env /usr/lib/jvm/jdk-20/bin/java --enable-preview -XX:+ShowCodeDetailsInExceptionMessages -cp /home/ahmed/.config/Code/User/workspaceStorage/8ef8445ea8e65415a5a80f043a04d771/redhat.java/jdt_ws/test_c266ac9a/bin Main 
+ cd /home/ahmed/dev/java/test ; /usr/bin/env /usr/lib/jvm/jdk-20/bin/java --enable-preview -XX:+ShowCodeDetailsInExceptionMessages -cp /home/ahmed/.config/Code/User/workspaceStorage/8ef8445ea8e65415a5a80f043a04d771/redhat.java/jdt_ws/test_c266ac9a/bin Main 
+z consc
+z conc
+ls
+z lecs/
+ls
+scala main.scala
+bash
+z
+ls
+z tutorial/
+ls
+z bash-course/
+ls
+o
+z conc
+ls
+z lecs
+ls
+z lecture3-4/
+ls
+bash
+z ..
+ls
+..
+ls
+node .
+ls
+rm code.png
+ls
+;:q
+cargo install trunk
+ls
+cargo add leptos
+ls
+z dynamic-programming/
+ls
+mv imgs/dp.md .
+ls
+z tut
+ls
+z go
+ls
+hx
+ls
+cargo install helix
+sioyek the-go-programming-language.pdf & disown
+ls
+bash
+z 
+z repos
+git clone https://github.com/helix-editor/helix
+cd helix
+cargo install --path helix-term --locked
+hx
+hx --grammar fetch
+ls
+rf IdeaProjects/
+z config
+z nush
+ls
+vim config.nu
+source ~/.config/nushell/config.nu
+vim config.nu
+source ~/.config/nushell/config.nu
+hx --grammar fetch
+hx --grammar build
+hx
+z .config/helix/
+ls
+vim config.toml
+hx
+z helix
+ls
+vim config.toml
+hx
+z helix
+ls
+vim config.toml
+hx
+z repos
+ls
+https://github.com/CptPotato/helix-themes.git
+git clone https://github.com/CptPotato/helix-themes.git
+z helix
+mkdir themes
+cp -r ~/repos/helix-themes/schemes/gruvbox .
+ls
+mv gruvbox themes/
+ls
+z themes/
+ls
+vim gruvbox
+hx
+..
+ls
+h
+z helix
+ls
+z runtime/
+ls
+z grammars/
+ls
+..
+c
+ls
+..
+c
+ls
+hx
+z rust
+ls
+z learn
+ls
+ls
+z
+ls
+hx --health
+sudo add-apt-repository ppa:maveonair/helix-editor
+sudo apt update
+z nushe
+ls
+vim config.nu
+vim config.toml
+sudo apt install helix
+hx
+hx main.go
+vim main.c
+z hx
+z helix
+ls
+vim config.toml
+hx
+which hx
+hx --health
+hx --health | less
+hx main.c
+z learn
+ls
+touch languages.toml
+vim languages.toml
+hx --health rust
+ls
+rm main.c
+ls
+hx
+hx main.go
+hx .
+hx
+vim
+nvim
+z .config
+ls
+z nvim
+ls
+clear
+ls
+vim init.vim
+lvim
+z learn
+ls
+z .config/lvim
+ls
+rm index.norg
+lvim config.lua
+z ~/.local/share/lvim
+ls
+rm neorg.mpack
+z mason/
+ls
+z bin
+z
+lw
+ls
+z .config/lvim
+ls
+lvim .
+lvim src/main.rs
+ls
+cargo run
+ls
+cargo run
+ls
+cargo run
+s
+ls
+c
+ls
+c
+ls
+vim src/main.rs
+ls
+lla
+rm .obsidian.vimrc
+ls
+c
+lvim src/main.rs
+code .
+z alacrit
+ls
+vim colors.yml
+z ala
+ls
+vim colors.yml
+z ala
+ls
+vim alacritty.yml
+vim colors.yml
+ls
+clear
+ls
+lvim
+ls
+lvim
+z lunarvim
+ls
+z  site
+ls
+z pack
+ls
+z lazy/
+ls
+z opt/
+ls
+z gruvbox/
+ls
+pwd
+z colors/
+ls
+lvim
+vim gruvbox.vim
+ls
+z learn
+ls
+cargo run
+lvim config.lua
+z after
+ls
+z ftplugin/
+ls
+..
+c
+ls
+pwd
+..
+ls
+z pack/
+ls
+z lazy/
+ls
+z opt/
+ls
+z friendly-snippets/
+ls
+z snippets/
+ls
+ll rust.json
+lvim rust.json
+tsc init
+touch indes.ts
+tsc init
+tsc -
+tsc -h
+tsc --init
+z machine
+ls
+vim note.md
+lvim notes.md
+ls
+code .
+z machine-
+ls
+z logistic-regression/
+ls
+o
+rm *pdf
+ls
+..
+ls
+..
+ls
+git status
+git add .
+ls
+z programming-languages/
+ls
+rm index.js
+..
+ls
+git status
+git add .
+git status
+z algorithms/
+ls
+rm index*
+ls
+..
+ls
+git status
+git add .
+git status
+rm programming-languages/.obsidian.vimrc
+git commit -m "rename algo-files and finish logistic-regression"
+git status
+git push
+git status
+git add .
+ls
+git status
+git commit -m "clean files"
+git status
+git push
+lvim
+lvim config.toml
+ls
+code config.toml
+ls
+z
+ls
+rm config.toml
+ls
+ls
+bash
+ls
+clear
+ls
+clear
+ls
+cear
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+vim main.c
+lvim main.c
+hx main.c
+ls
+lvim main.cpp
+vim main.cpp
+ls
+c
+ls
+cargo run
+vim
+ls
+lvim machine-learning-notes.md
+ls
+z pattern
+ls
+z lectures/
+ls
+r
+ls
+..
+ls
+unzip Lab9-1.zip
+ls
+rm *zip
+o
+ls
+hx
+ls
+vim main.cpp
+z learn
+ls
+cargo run
+lvim src/main.rs
+svm --> wider margin --> best line
+sv
+ls
+z templ
+ls
+mkdri final
+mdkir final
+ls
+mkdir final
+o
+ls
+rm machine-learning-notes.md
+ls
+z /etc
+ls
+su
+su -
+sudo passwd root
+su
+z learn
+ls
+code .
+cargo run
+.
+..
+ls
+cargo new backyard
+ls
+z backyard/
+code .
+z back
+ls
+code .
+ls
+z rust
+ls
+z backyard/
+ls
+code .
+cargo run
+ls
+..
+ls
+rf backyard/ demo/
+cargo new resturant --lib
+z resturant/
+ls
+ls src/
+code .
+z nushell
+ls
+vim config.nu
+source ~/.config/nushell/config.nu
+vim config.nu
+source ~/.config/nushell/config.nu
+tsym
+cargo run
+ls
+vim main.cpp
+ls
+rm main.cpp
+ls
+ls
+..
+c
+ls
+rf resturant/
+z learn
+ls
+code .
+cargo run
+ls
+vim
+ls
+vim
+tmux
+bash
+tmux
+z .config
+ls
+tmux --version
+tmux -v
+bash
+clear
+tmux --version
+tmux-v
+tmux -v
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ls
+rm tmu*
+z repos
+ls
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+z .config
+mkdir tmux
+z tmux
+touch tmux.conf
+lvim tmux.conf
+tmux
+exitcc
+tmux
+eix
+tmux
+xit
+tmux
+ls
+clear
+ls
+clear
+ls
+clear
+z fcis
+ls
+clear
+z learn
+ls
+vim src/main.rs
+z learn
+ls
+clear
+cargo run
+clear
+cargo install cargo-watch
+tmux
+z learn
+./target/debug/learn
+cargo watch 
+cargo watch run
+man cargo wath
+carg watch -h
+lvim tmux.conf
+cargo watch -x run
+cargo check
+cargo watch -x ru
+cargo watch -x check
+cargo watch -x run
+clear
+lvim src/main.rs
+ls
+clear
+node exit
+eixt
+tailwindexit
+cargo watch -x run
+cargo run
+rustc --explain E0382
+ascii -d
+cargo watch -x run
+ls
+z learn
+ls
+z learn
+cargo run
+lvim src/main.rs
+code .
+cargo run
+cargo watch -x run
+ls
+bash
+z 6
+ls
+..
+ls
+mv algo `6-term/`
+z `6-term/`
+ls
+z algo/
+ls
+z week11/
+ls
+unzip `_ALG_23_ L10 - DP I.zip`
+ls
+unzip `_ALG_23_ Lab9 - DP.zip`
+ls
+rm *zip
+ls
+o
+ll
+z lec10
+ls
+z cs
+z CS
+ls
+z algorithms/
+ls
+z dynamic-programming/
+ls
+vim dp.md
+lvim dp.md
+code .
+z dynamic-programming/
+z Cs
+z CS-
+ls
+z algorithms/
+ls
+z dynamic-programming/
+ls
+code --version
+z debs
+z deb
+ls
+rm code_1.78.2-1683731010_amd64.deb
+z deb-
+ls
+sudo dpkg --install ./code_1.79.1-1686587647_amd64.deb
+code --version
+z lvim
+ls
+vim config.lua
+z learn
+ls
+vim src/main.rs
+code .
+cargo watch -x run
+cargo run
+cargo watch -x run
+cargo run
+cargo watch -x run
+cargo run
+z repos
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1; nvim
+z .conf
+ls
+..
+c
+ls
+z .config/
+z nvim
+ls
+vim init.vim
+cp init.vim ../init.vim
+ls
+..
+ls
+ll init.vim
+rf nvim/
+z repos
+nvim
+z learn
+ls
+nvim src/main.rs
+z nvim
+ls
+cp ../init.vim .
+ls
+nvim
+rm init.vim
+nvim
+ls
+nvim init.lua
+z .config/nvim/
+ls
+nvim init.lua
+ls
+:q
+nvim
+z nvim
+ls
+z lua/
+ls
+z custom/
+ls
+nvim mappings.lua
+nvim chadrc.lua
+..
+ls
+z core/
+ls
+nvim mappings.lua
+..
+ls
+nvchad
+nvim
+nvim
+ls
+clear
+nvim
+nvim
+z nvim
+ls
+nvchad
+nvim
+z cus
+ls
+nvim init.lua
+..
+ls
+nvim
+ls
+z core
+ls
+nvim utils.lua
+z 
+z .local/share/nvim/
+ls
+z nvchad/
+ls
+z base46/
+ls
+nvim defaults
+..
+ls
+..
+ls
+z shada/
+ls
+..
+z swap/
+ls
+..
+ls
+..
+ls
+z -
+ls
+z ~/.config/nvim/
+ls
+nvim init.lua
+z lua/
+ls
+z learn
+ls
+nvim src/main.rs
+nvim
+nvim 
+nvim
+k:q
+z nvim
+nvim
+z lua/
+nvim
+z nvim
+ls
+z lua/
+nvim
+nvim
+z lvim
+ls
+nvim config.lua
+nvim
+lvim dp.md
+nvim dp.md
+z nvim
+z lua
+nvim
+nvim
+ls
+lvim config.lua
+nvim
+nvim 
+nvim
+ls
+nvim
+z nvim
+ls
+z lua/
+nvim
+z nvim
+ls
+z lua/
+ls
+z custom/
+ls
+z .local/state/nvim/swap/%home%ahmed%.config%nvim%lua%custom%init.lua.swp
+rm .local/state/nvim/swap/%home%ahmed%.config%nvim%lua%custom%init.lua.swp
+nvim
+z learn
+ls
+nvim 
+z nvim
+ls
+z lua/
+ls
+z custom/
+ls
+nvim plugins.lua
+nvim -v
+z 
+c
+ls
+z learn
+nvim 
+z nvim
+ls
+z lua/
+ls
+z custom/
+ls
+nvim chadrc.lua
+z learn
+ls
+nvim 
+nvim .
+nvim 
+..
+nvim .
+z nvim
+ls
+nvim init.lua
+z learn
+z -
+nvim .
+nvim
+z learn
+nvim ;
+nvim .
+nvim
+nvim .
+z -
+ls
+z learn
+ls
+rm .local/state/nvim/swap/%home%ahmed%.config%nvim%lua%custom%plugins.lua.swp
+nvim .
+lvim .
+z dyna
+ls
+z nvi
+ls
+rf ./*
+mv ../init.vim .
+cargo run
+lvim dp.md
+z learn
+ls
+lvim .
+z nvim
+ls
+cp init.vim ..
+mkdir vs-vim
+l
+..
+ls
+mkdir vs-vim
+mv init.vim vs-vim/
+z vs-vim/
+ls
+..
+c
+z nvim
+ls
+rf ./*
+ls
+..
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+rf nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+nvim
+..
+z nvim
+ls
+z lua/
+l
+ls
+..
+ls
+z lua/
+ls
+..
+ls
+..
+rf nvim
+rf ~/.local/share/nvim/
+sudo apt install python3.10-venv
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+l
+z nvim
+ls
+z lua/
+ls
+nvim .
+lvim .
+nvim .
+lvim .
+nvim .
+lvim .
+nvim .
+lvim custom/mappings.lua
+z nvim
+ls
+z lua/
+ls
+nvim 
+..
+rf ~/.local/share/nvim/
+..
+rf nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 ; nvim
+z nvim
+ls
+z lua/
+ls
+nvim .
+nvim
+z learn
+nvim
+nvim 
+nvim src/main.rs
+z learn
+ls
+nvim 
+ls
+clear
+rustup component add rust-analyzer
+z learn
+ls
+code .
+cargo run
+z learn
+z zips
+ls
+unzip Tokyonight-Dark-BL.zip
+ls
+sudo mv Tokyonight-Dark-BL/ /usr/share/themes/
+nvim --version
+lvim
+z lvim
+ls
+z learn
+ls
+lvim .
+nvim .gitconfig
+git config --global user.age=21
+nvim .gitconfig
+z Cs-
+ls
+lla
+z .git
+ls
+nvim config
+nvim index
+cargo run
+z dp
+z dynam
+ls
+mkdir problems
+z problems/
+cargo new climb-stairs
+z climb-stairs/
+lvim src/main.rs
+cargo rn
+cargo run
+z dy
+ls
+z dyn
+l
+z problems/
+ls
+cargo new paid-stair-case
+z paid-stair-case/
+ls
+nvim src/main.rs
+..
+c
+ls
+cargo run
+z pro
+ls
+z problems/
+ls
+cargo new unique-paths
+z n
+z -
+ls
+z unique-paths/
+ls
+nvim src/main.rs
+..
+cargo run
+ls
+rm code.png
+ll
+rm code1.png
+z prob
+ls
+cargo new max-matrix-profit
+z max-matrix-profit/
+l
+nvim src/main.rs
+..
+c
+ls
+z fcis-
+ls
+z 
+z 6
+ls
+z algo
+ls
+z week11/
+ls
+z lec10/
+ls
+z prob
+ls
+cargo new paint-fence
+z paint-fence/
+nvim src/main.rs
+ls
+..
+ls
+..
+c
+ls
+nvim dp.md
+z 6-term
+ls
+z algo
+ls
+z week11/
+ls
+z lec10/
+ls
+o
+cargo run
+usize
+cargo run
+cargo watch -x run
+cargo run
+z prob
+ls
+cargo new fibonacii
+z fibonacii/
+nvim src/main.rs
+x wee
+z wee
+ls
+z lec10/
+ls
+o
+z dp
+z dyn
+cargo run
+nvim .
+cargo run
+z prob
+ls
+cargo new probability-of-failure
+z probability-of-failure/o
+z probability-of-failure/
+lvim src/main.rs
+..
+ls
+sudo apt update
+sduo apt list --upgradable
+sudo apt list --upgradable
+sudo apt upgrade
+cargo run
+sudo apt update
+cargo run
+cargo run RUST_BACKTRACE=1
+cargo run -RUST_BACKTRACE=1 
+cargo run
+z prob
+ls
+mkdri longest-common-subsquence
+mkdir longest-common-subsquence
+z long
+z longest-common-subsquence/
+ls
+clear
+..
+ls
+rf longest-common-subsquence/
+cargo new longest-common-subsquence
+z longest-common-subsquence/
+lvim src/main.rs
+..
+ls
+z prob
+ls
+lla
+c
+l
+bash
+ll
+l
+zsh
+sudo apt install zsh
+clear
+zsh
+z
+ls
+vim .zshrc
+clear
+ls
+clear
+bash
+la
+clear
+l
+clear
+nvim .
+z learn
+nvim .
+clear
+cargo run
+clear
+z tmux
+ls
+lvim tmux.conf
+lvim src/main.rs
+tmux
+z tmux
+lvim tmux.conf
+z learn
+z learn
+ls
+cargo run
+z tmu
+lvim tmux.conf
+lvim src/main.rs
+tmux
+z learn
+ls
+clear
+lla
+z learn
+z tmux
+ls
+lvim tmux.conf
+lvim src/main.rs
+z learn
+clear
+lvim src/main.rs
+lvim
+nvim src/main.rs
+z tmux
+ls
+lvim tmux.conf
+z lvim
+ls
+lvim config.lua
+lvim src/main.rs
+tmux
+z learn
+ls
+z learn
+ls
+clear
+ls
+clear
+lvim src/main.rs
+z prob
+ls
+clear
+ls
+z longest-common-subsquence/
+clear
+z long
+ls
+clear
+cargo run
+clear
+cargo run
+lvim src/main.rs
+z tmux
+ls
+lvim tmux.conf
+z tmu
+ls
+lvim tmux.conf
+z tmux
+ls
+lvim tmux.conf
+z tmux
+ls
+lvim tmux.conf
+..
+lvim tmux/
+z tmus
+z tmux
+ls
+ps 
+ps aux
+ps -aux
+ps | grep tmux
+ps
+lvim tmux.conf
+ls
+mv tmux.conf tmux.conf.bak
+ls
+clear
+z tmux
+ls
+mv tmux.conf.bak tmux.conf
+lvim tmux.conf
+tmux
+z longe
+clear
+clear
+ls
+cargo run
+ls
+clear
+cargo run
+z fibo
+ls
+cargo run
+clear
+cargo run
+z fibo
+ls
+cargo run
+c
+cargo run
+clear
+lvim src/main.rs
+z -
+clear
+ls
+clear
+ls
+clear
+cat src/main.rs
+z tmux
+ls
+tmux
+lvim src/main.rs
+lvim tmux.conf
+z tmux
+ls
+lvim tm
+tmux
+z tmux
+lvim tmux.conf
+tmux
+tmux source-file ~/.config/tmux/tmux.conf
+lvim tmux.conf
+tmux source-file ~/.config/tmux/tmux.conf
+z learn
+z learn
+lvim tmux.conf
+z nvim
+ls
+z lua/
+ls
+z core
+ls
+lvim mappings.lua
+z lvim
+ls
+z 
+z lunarvim
+ls
+z lvim
+ls
+z utils/
+ls
+..
+ls
+..
+ls
+z site/
+ls
+z after/
+ls
+z ftplugin/
+ls
+..
+ls
+..
+ls
+z pack/
+ls
+z lazy/
+ls
+z opt/
+ls
+..
+ls
+..
+ls
+..
+l
+..
+ls
+z lvi
+ls
+z -
+ls
+z lvim/
+ls
+z utils/
+ls
+..
+ls
+z lua/
+ls
+z lvim/
+ls
+z lvim
+ls
+lvim config.lua
+lvim keymappings.lua
+z lvim
+ls
+lvim
+lvim config.lua
+lvim config.lua
+lvim src/main.rs
+z learn
+cargo run
+clear
+clear
+z learn
+ls
+z
+lvim .vimrc
+z .config/vs-vim/
+z lvim
+ls
+lvim config.lua
+lvim init.vim
+z learn
+ls
+lvim src/main.rs
+clea
+clear
+cargo run
+clear
+z learn
+cargo watch -x run
+clear
+cargo watch -x run
+z lvim
+ls
+clear
+ls
+z vs-
+ls
+nvim
+lvim init.vim
+lvim ini
+tmux
+cargo run
+z wee
+cargo run
+z prob
+ls
+..
+ls
+..
+ls
+mkdir greedy
+z greedy/
+cargo new activity_selection_infinity
+z activity_selection_infinity/
+lvim src/main.rs
+z -
+z learn
+lvim src/main.rs
+z learn
+lvim src/main.rs
+z dp
+z prob
+ls
+..
+ls
+..
+ls
+z greedy/
+ls
+lvim activity_selection_infinity/
+clear
+ z learn
+z algo
+ls
+z -
+z week
+..
+ls
+z week4/
+ls
+unzip `_ALG_23_ L04 - D_C I.zip`
+ls
+unzip `Lab 3.zip`
+ls
+rf *zip
+ls
+mv `[ALG'23] L04 - D&C I/` lec4
+o
+cargo run
+cargo rn
+cargo run
+code .
+cargo run
+lvim src/main.rs
+source /opt/anaconda3/bin/activate base /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=37179 
+ls
+ps
+sudo pkill 29991
+sudo kill -9 29991
+htop
+cargo run
+c
+cargo ru
+cargo run
+code .
+cargo run
+z gre
+ls
+..
+ls
+mkdir divide-and-condqure
+rf divide-and-condqure/
+mkdir divide-and-condqure
+z divide-and-condqure/
+cargo new quick-sort
+z quick-sort/
+lvim src/main.rs
+lvim src/main.rs
+ls
+z learn
+ls
+z learn
+clear
+cargo run
+cargo check
+cargo build
+ls
+man cargo 
+cargo -h
+cargo -h | less
+cargo run
+carg -q run
+cargo -q run
+lvim src/main.rs
+z divide-and-condqure/
+ls
+cargo run
+z div
+ls
+z quick-sort/
+ls
+cargo run
+cargo -q run
+clear
+carg -q run
+cargo -q run
+z nushe
+ls
+carg -h | less
+cargo -h | less
+lvim config.nu
+z -
+ls
+cargo --quiet run
+source ~/.config/nushell/config.nu
+cr
+z -
+lvim config.nu
+z -
+ls
+cr
+cargo --quiet run
+z -
+lvim config.nu
+z -
+source ~/.config/nushell/config.nu
+cr
+bash
+z -
+ls
+lvim config.nu
+source ~/.config/nushell/config.nu
+lvim config.nu
+source ~/.config/nushell/config.nu
+z -
+cr
+z -
+lvim config.nu
+z 0
+z -
+z quic
+sl
+ls
+source ~/.config/nushell/config.nu
+cr run
+z -
+lvim config.nu
+clear
+source ~/.config/nushell/config.nu
+z -
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls]
+clear
+ls
+cargo --quiet run
+cargo -q run
+clear
+cargo -q run
+cear
+clear
+ls
+z ..
+ls
+..
+ls
+z dynamic-programming/
+clear
+ls
+z problems/
+ls
+z longest-common-subsquence/
+ls
+cargo -q run
+cargo run
+cargo -q run
+clear
+cargo -q run
+cargo -h | less
+ls
+cargo r
+cargo -qr
+cargo -q r
+cargo r -q
+cargo q
+cargo r
+cargo r -q
+..
+ls
+z max-matrix-profit/
+l
+cargo r -q
+cargo r
+cargo r -q
+lvim src/main.rs
+cargo r
+cargo r -q
+..
+ls
+z unique-paths/
+ls
+cargo r -q
+..
+z learn
+ls
+lvim src/main.rs
+z learn
+sl
+cr r -q
+lvim src/main.rs
+tmux
+z learn
+ls
+cr r -q
+cr
+cr r -q
+cargo r -q
+z learn
+tmux -v
+tmux --version
+tmux -v
+lvim src/main.rs
+tmux new -s Rust Dev
+z learn
+lvim src/main.rs
+cargo r -q
+tmux new -s Rust-Dev
+tmux detach
+tmux ls
+tmux attack Rust-Dev
+tmux attach Rust-Dev
+lvim src/main.rs
+ls
+z learn
+ls
+tmux detach
+tmux attach -t Rust-Dev
+tmux ls
+lvim src/main.rs
+ls
+clear
+ls
+clear
+ls
+lce
+clear
+ls
+clear
+lcs
+clear
+ls
+clear
+ls
+clear
+tmux attach -t Rust-Dev
+tmux detach
+tmus ls
+tmux ls
+z tmux
+ls
+lvim tmux.conf
+hhllhhkkkllh
+tmux
+tmux ls
+clear
+tmux ls
+tmux detach
+tmux attach -t Rust-Dev
+z tmux
+tmux
+lvim tmux.conf
+tmux
+tmux ls
+z lvim
+ls
+lvim config.lua
+z -
+lvim src/main.rs
+z lvim
+ls
+lvim
+z learn
+ls
+lvim 
+z learn
+ls
+lvim src/main.rs
+lvim config.lua
+z -
+z nvim
+ls
+lvim  lua/
+z lua/
+ls
+z plugins/
+ls
+z configs/
+ls
+a lunarvim
+ls
+z luna
+ls
+z lvim/
+z -
+z lvim
+ls
+z lua/
+ls
+z lvim/
+ls
+z config/
+ls
+..
+ls
+z core/
+ls
+lvim nvimtree.lua
+z learn
+ls
+lvim src/main.rs
+z -
+ls
+lvim nvimtree.lua
+nvim nvimtree.lua
+z learn
+ls
+lvim src/main.rs
+lvim nvimtree.lua
+lvim nvimtree.lua
+z learn
+nvim src/main.rs
+cr r -q
+cargo r 0q
+clear
+cargo r -q
+z wee
+ls
+..
+ls
+z week7
+ls
+..
+ls
+week8
+ls
+z week8/
+ls
+unzip *zip
+ls
+o
+tmux detach
+tmux attach -t Rust-Dev
+z learn
+ls
+code .
+cargo r -q
+cargo r
+cargo r -q
+cargo clean
+cargo r -q
+ls
+clear
+ls
+clear
+ls
+clea
+clear
+ls
+clear
+ls
+clear
+ls
+cargo r -q
+tmux ls
+lvim src/main.rs
+cargo r -q
+carg r -q
+cargo r -q
+cargo r
+z vs-
+ls
+lvim init.vim
+lvim src/main.rsc
+c
+carg r -q
+cargo r -q
+lvim src/main.rs
+tmux attach -t Rust-Dev
+tmux ls
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=37515 
+ls
+clear
+bash
+exa
+clear
+ls
+bash
+l
+ls
+z nush
+ls
+lvim config.nu
+z -
+source ~/.config/nushell/config.nu
+l
+clear
+l
+clear
+l
+clear
+l
+ls
+l
+z probl
+ls
+z paint-fence/
+ls
+sl
+code .
+z learn
+ls
+cat rustfmt.toml
+z lvim
+ls
+lvim config.lua
+z learn
+ls
+clear
+l
+clear
+l
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+l
+ct rustfmt.toml
+cat rustfmt.toml
+clear
+ls
+clear
+ls
+clear
+gruvbox
+clear
+l
+lvim src/main.rs
+clear
+ls
+rm tmux-client-12546.log tmux-client-12578.log
+clear
+ls
+l
+z go
+ls
+..
+ls
+l
+ls
+clear
+l
+z dev
+l
+mkdir go
+z go
+ls
+l
+ll
+..
+ll
+l
+cleear
+clear
+ll
+bash
+ll
+ls
+conda
+clear
+ls
+clear
+l
+z go
+ls
+clea
+clear
+ll
+clear
+ls
+c
+z nush
+ls
+lvim config.nu
+z repos
+ls
+https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+z down
+ls
+mkdir .cache/
+ls
+z .cache/
+ls
+mkdir zsh
+z zsh
+ls
+pwd
+touch .histfile
+lvim zshrc
+z nu
+ls
+lvim config.nu
+ls
+lvim .zshrc
+cp .zshrc ~/.zshrc
+z
+ls
+zsh
+z nu
+ls
+lvim config.nu
+cp .zshrc ~/.zshrc
+z
+zsh
+which zsh
+sudo usermod -s /usr/bin/zsh ahmed
+ls
+which nu
+sudo usermod -s /home/ahmed/.cargo/bin/nu ahmed
+ls
+l
+ls
+l
+ll
+l
+tmux
+z learn
+ls
+z dev
+ls
+clear
+l
+z go
+ls
+go run main.go
+go build main.go
+ls
+./main
+rm main
+ls
+clear
+go mod init
+go mod inti .
+go mod init .
+go mod init foo/bar
+lvim main.go
+go run main.go
+ls
+clear
+ls
+clear
+ls
+z lvim
+ls
+lvim config.lua
+z go
+ls
+lvim main.go
+lvim src/main.rs
+tmux new -s turo
+ls
+rm go.mod
+clear
+ls
+go run main.go
+ls
+clear
+ls
+clear
+ls
+l
+lvim main.go
+tmux new -s GO-DEV
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=33757 
+cargo r -q
+z vs-
+ls
+lvim init.vim
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=46067 
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=40399 
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=34573 
+cargo r -q
+. /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=33729 
+ps
+sduo kill -9 38131
+sudo kill -9 38131
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=38975 
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=41067 
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=33377 
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=45727 
+cargo r -q
+cargo r -
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=33177 
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=35071 
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=37377 
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=43055 
+cargo r -q
+kjkj /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=37185 
+ps
+sduo kill -9 47753
+sudo kill -9 47753
+cargo r -q
+ /home/ahmed/.vscode/extensions/vadimcn.vscode-lldb-1.9.2/adapter/codelldb terminal-agent --connect=46211 
+cargo r -q
+lvi
+cargo r -q
+lvim
+z algo
+ls
+z 6-term
+ls
+z algo/
+ls
+z week11/
+ls
+z lec10/
+ls
+cargo r -q
+lvim 
+ls
+mv note.md asymptotic-notations.md
+ls
+touch rust-memory-layout.md
+z lvim
+ls
+lvim config.lua
+lvim rust-memory-layout.md
+htop
+psu
+ps
+cat /proc/63609/maps
+z /proc
+ls
+z 64
+ls
+cat maps
+..
+ls
+cat `8/maps`
+z prooc
+ls
+z proc
+ls
+clear
+l
+z `17650/`
+ls
+cat maps
+sudo cat maps
+sudo cat maps | less
+clear
+z learn
+ls
+cargo r -q
+cargo  r -q
+lvim src/main.rs
+eit
+tmux new -s RUST-DEV
+$dark_theme
+clear
+ls
+clear
+z go
+ls
+z
+z dev
+ls
+z go
+l
+clea
+:q!
+ezit
+tmux
+go mod init userinput
+cat main.go
+ls
+cat go.mod
+c
+go run main.go
+lvim main.go
+tmux new -s GO-DEV
+ls
+clear
+ls
+c
+ls
+l
+clear
+l
+ls
+lvim asymptotic-notations.md
+z go
+ls
+z dev
+ls
+z go/
+l
+z dev/go
+ls
+clear
+go run main.go
+code .
+go run main.go
+tmus detach
+tmux detach
+tmux new -s GO-DEV
+go run main.go
+z dev/go
+ls
+go help
+go help | les
+go help | less
+ls
+mv main.go curr-time.go
+ls
+go install curr-time.go
+ls
+curr-time
+curr-time.go
+curr-time
+go build curr-time.go
+ls
+./curr-time
+go build curr-time.go
+ls
+./curr-time
+mv curr-time.go
+mv curr-time.go main.go
+go env help 
+go env help  | less
+go env
+go env | less
+go init curr-time
+go mod init curr-time
+GOOS="windows" go build
+./curr-time.exe
+GOOS="darwin" go build
+./curr-time
+GOOS="linux" go build
+./curr-time
+htop
+go run main.go
+go run maingo
+go run main.go
+ls
+clear
+s
+l
+clear
+l
+clear
+l
+lvim asymptotic-notations.md
+ls
+ls
+go run main.go
+lvim main.go
+go run main.go
+ls
+clear
+ls
+c
+ls
+l
+clear
+z dev/go
+z dev/go
+ls
+go run main.go
+sudo apt update
+sudo apt list --upgradable
+sudo apt upgrade
+htop
+go run main.go
+code .
+lvim main.go
+tmux new -s GO-DEV
+go run main.go
+go run maingo
+ls
+cat go.mod
+go build main.go
+ls
+rm main
+go build
+ls
+go build
+ls
+rm ahme curr-time
+clear
+go run main.go
+go run main.g
+go run main.go
+ls
+clear
+ls
+l
+sl
+ clear
+ls
+clear
+ls
+l
+lvim asymptotic-notations.md
+lvim main.go
+:q!
+:q
+ls
+\ls
+ls
+s
+ls
+l
+ls
+l
+ll
+l
+ll
+la
+lla
+ll
+lla
+c
+go run main.go
+ls
+z tutorial/
+ls
+mkdir mongodb
+z mongodb/
+ls
+lvim README.md
+sudo apt-get install gnupg
+curl -fsSL https://pgp.mongodb.com/server-6.0.asc | \
+   sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg \
+bash
+z /etc/apt/sources.list.d/
+ls
+sudo lvim mongodb-org-6.0.list
+sudo nvim mongodb-org-6.0.list
+ls
+lsb-release -dc
+lsb_release -dc
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+bash
+z /var/lo
+z /var/log
+ls
+ls mongodb/
+z /var/lib
+ls
+ls mongodb
+ll mongodb/
+ll mongodb
+ll
+z /etc
+sudo nvim mongod.conf
+sudo systemctl start mongod
+sudo systemctl status mongod
+sudo systemctl enable mongod
+z /var/lib
+ks
+ls
+z mongodb/
+cear
+clear
+ls
+pwd
+clear
+ls
+sudo systemctl status mongod
+mongosh
+sl
+clear
+ls
+a /etc
+z etc
+ls
+lvim mongodb.conf
+mongod --version
+mongod help
+mongod help | less
+mongo --version
+mongo
+lvim mongod.conf
+mongosh
+z /dev
+z go
+clear
+pwd
+db
+z /var/lib/mongodb/
+ls
+z journal/
+sudo cd journal
+ll
+su -
+ls
+clear
+ls
+l
+clear
+l
+l -a
+clear
+l -a
+l -la
+z tut
+ls
+z mongodb/
+ls
+go run main.go
+ls
+clear
+ls
+clea
+clear
+ls
+clea
+r
+clear
+ls
+clear
+ls
+clear
+ls
+go run main.g
+go run main.go
+go run main.g
+go run main.go
+go run main.g
+go run main.go
+ls
+l
+lvim main.cpp
+lvim main.go
+l\
+l
+\l
+l
+ls
+clear
+ls
+lssss
+ls
+z repos
+ls
+z dotfiles/
+ls
+git pull
+ls
+clear
+ls
+git status
+git fetch
+ls
+git status
+git pull
+ls
+z vscode/
+ls
+lvim settings.json
+ls
+git status
+lvim keybindings.json
+git add .
+git commit -m "update vscode settings"
+ls
+git push
+cp -r ~/.config/tmux/
+cp -r ~/.config/vs-vim/ .
+ls
+git add .
+git commit -m "addings neovim config for vscode"
+..
+cp -r ~/.config/tmux/ .
+ls
+git add .
+git commit -m "adding tmux configs"
+git push
+rm tmux/.obsidian.vimrc
+..
+ls
+z dotfiles/
+ls
+clear
+ls
+go run main.go
+nvim
+go run main.go
+man sleep
+sleep 5
+man sleep
+t sleep
+lvim .zshrc
+source ~/.zshrc
+zsh
+sudo usermod -s /usr/bin/zsh ahmed
+ls
