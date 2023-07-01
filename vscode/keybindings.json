@@ -1,5 +1,20 @@
 // Place your key bindings in this file to override the defaultsauto[]
+
 [
+  {
+    "key": "alt+u",
+    "command": "terminalCommandKeys.run",
+    "args": {
+      "cmd": "tput -x clear"
+    }
+  },
+  {
+    "key": "alt+;",
+    "command": "terminalCommandKeys.run",
+    "args": {
+      "cmd": "cargo r -q"
+    }
+  },
   {
     "key": "ctrl+j",
     "command": "list.focusDown",
@@ -92,6 +107,7 @@
     "when": "neovim.mode == insert && editorTextFocus",
     "args": "k"
   },
+
   {
     "command": "vscode-neovim.compositeEscape1",
     "key": "j",
@@ -197,6 +213,7 @@
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
   },
+
   {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal",
@@ -287,5 +304,19 @@
     "key": "ctrl+right",
     "command": "-editor.action.inlineSuggest.acceptNextWord",
     "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
+    "command": "runCommands",
+    "key": "alt+/",
+    "args": {
+      "commands": ["workbench.action.positionPanelRight", "workbench.action.terminal.focus"]
+    }
+  },
+  {
+    "command": "runCommands",
+    "key": "alt+,",
+    "args": {
+      "commands": ["workbench.action.positionPanelBottom", "workbench.action.terminal.focus"]
+    }
   }
 ]
