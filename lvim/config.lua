@@ -1,11 +1,3 @@
--- Read the docs: https://www.lunarvim.org/docs/configuration
--- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
--- Forum: https://www.reddit.com/r/lunarvim/
--- Discord: https://discord.com/invite/Xb9B4Ny
---
---
---
-
 -- lvim.lsp.diagnostics.virtual_text = false
 
 
@@ -13,8 +5,15 @@
 lvim.colorscheme = "gruvbox"
 lvim.format_on_save = true
 
+lvim.keys.insert_mode["jk"] = "<Esc>"
+lvim.keys.insert_mode["kj"] = "<Esc>"
 lvim.keys.normal_mode["<S-l>"] = ":bnext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":bprevious<CR>"
+lvim.keys.normal_mode["dj"] = '"jdd'
+lvim.keys.normal_mode["dk"] = '"kdd'
+lvim.keys.normal_mode["'j"] = '"jp'
+lvim.keys.normal_mode["'k"] = '"kp'
+
 
 -- Mapping for Shift + L to move to next tab
 -- lvim.keys.normal_mode["<S-l>"] = ":tabnext<CR>"
@@ -61,3 +60,4 @@ lvim.plugins = {
   }
 
 }
+
