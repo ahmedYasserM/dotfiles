@@ -1,5 +1,5 @@
 #______________________________________________________#
-
+ 
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
@@ -13,13 +13,13 @@ VISUAL=lvim
 
 
 export PATH=/home/ahmed/.local/bin:/home/ahmed/.cargo/bin:$PATH
-export PATH=:/home/ahmed/.surrealdb$PATH
-export PATH=/home/ahmed/.local/share/rtx/installs/node/20.2.0/bin$PATH
-export PATH=/usr/local/go/bin$PATH
-export PATH=/home/ahmed/downloads/tars/zig-linux-x86_64-0.10.1$PATH
-export PATH=/usr/lib/jvm/jdk-20/bin$PATH
+export PATH=/usr/local/go/bin:$PATH
+# export PATH=:/home/ahmed/.surrealdb:$PATH
+#export PATH=/home/ahmed/.local/share/rtx/installs/node/20.2.0/bin:$PATH
+#export PATH=/home/ahmed/downloads/tars/zig-linux-x86_64-0.10.1:$PATH
+#export PATH=/usr/lib/jvm/jdk-20/bin:$PATH
 
-set JAVA_HOME="/usr/lib/jvm/jdk-20"
+# set JAVA_HOME="/usr/lib/jvm/jdk-20"
 
 
 #______________________________________________________
@@ -88,12 +88,13 @@ alias dn="dotnet new "
 alias ctp="cp /home/ahmed/Templates/c-temp "
 alias cptp="cp /home/ahmed/Templates/cpp-temp "
 
+alias l='ls -1'
 alias ls='ls --color=auto'
 alias ll="ls -l "
 alias lla="ls -la "
 alias grep="grep --color= auto "
 alias cat="bat "
-alias c="clear "
+alias c="tput -x clear"
 alias manim="python -m manimlib --uhd -w -c black --video_dir ~/code/manim 	"
 alias t="tldr "
 alias pl="pdflatex "
@@ -104,8 +105,52 @@ alias ip="ip -c "
 bindkey -v
 #______________________________________________________
 
-PROMPT='%F{blue}%1/%F{green}  '
-#❯
+
+PROMPT='🏡 🚀 '
+function update_prompt() {
+    
+    if [[ $PWD == "/home/ahmed" ]]; then
+    PROMPT=''
+    PROMPT+='🏡 🚀 '
+    elif [[ $PWD == "/home/ahmed/pictures" ]]; then
+    PROMPT=''
+    PROMPT+='📸 🚀 '
+    elif [[ $PWD == "/home/ahmed/tutorials" ]]; then
+    PROMPT=''
+    PROMPT+='📖 🚀 '
+    elif [[ $PWD == "/home/ahmed/templates" ]]; then
+    PROMPT=''
+    PROMPT+='📌 🚀 '
+    elif [[ $PWD == "/home/ahmed/videos" ]]; then
+    PROMPT=''
+    PROMPT+='🎥 🚀 '
+    elif [[ $PWD == "/home/ahmed/repos" ]]; then
+    PROMPT=''
+    PROMPT+='💡 🚀 '
+    elif [[ $PWD == "/home/ahmed/dev" ]]; then
+    PROMPT=''
+    PROMPT+='🤖 🚀 '
+    elif [[ $PWD == "/home/ahmed/downloads" ]]; then
+    PROMPT=''
+    PROMPT+='🧲 🚀 '
+    else
+    PROMPT=''
+    PROMPT+='%F{blue}%1/%F{green} 🚀 '
+    fi
+}
+chpwd_functions+=(update_prompt)
+
+# ❯
+#  -> 
+# ⚓
+# λ
+# 🧲
+# 🔬
+# 🤖
+# 💡
+# 📸
+# 🏡
+# 🚀
 #______________________________________________________
 
 autoload -U compinit
@@ -150,7 +195,7 @@ source ~/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # !! Contents within this block are managed by 'conda init' !!
 #
 
-# conda config --set auto_activate_base false
+/opt/anaconda3/bin/conda config --set auto_activate_base false
 
 __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -274,3 +319,7 @@ fi
 # To initialize zoxide, add this to your configuration (usually ~/.zshrc):
 #
 # eval "$(zoxide init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
