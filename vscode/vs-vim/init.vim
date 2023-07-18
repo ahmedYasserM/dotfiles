@@ -7,15 +7,6 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 
 
-" inoremap <C-h> 0
-" inoremap <C-l> $
-
-" inoremap ;; <Right>
-nmap <C-h> 0
-nmap <C-l> $
-
-
-
 nmap <silent> gd :call VSCodeCall('editor.action.peekDefinition')<CR>
 nmap <silent> gD :call VSCodeCall('editor.action.revealDefinition')<CR>
 nmap <silent> gr :call VSCodeCall('editor.action.referenceSearch.trigger')<CR>
@@ -34,5 +25,6 @@ map zk <Cmd>call VSCodeNotify('editor.gotoPreviousFold')<CR>
 
 
 vnoremap gs <Cmd>call VSCodeNotifyRangePos('codesnap.start', line("v"), line("."), col("v"), col("."),1)<CR>
+
 
 
