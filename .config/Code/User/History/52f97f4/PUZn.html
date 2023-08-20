@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../styles/login.css" />
+  </head>
+  <body>
+    <form action="./main.html" method="get">
+      <fieldset>
+        <legend>Log In</legend>
+        <label for="uname">User Name:</label>
+        <input type="text" name="userName" id="uname" placeholder="Enter your username here!" />
+
+        <br />
+
+        <label for="pass">Password:</label>
+        <input type="text" name="password" id="pass" />
+
+        <br />
+
+        <label for="">Select your location:</label>
+        <select>
+          <optgroup label="Africa">
+            <option>Egypt</option>
+            <option>Sudan</option>
+            <option>Namibia</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option>France</option>
+            <option>Russia</option>
+            <option>UK</option>
+          </optgroup>
+          
+          <optgroup disabled label="North America">
+              <option >Canda</option>
+              <option >Mexico</option>
+              <option >USA</option>
+          </optgroup>
+        </select>
+        <br>
+        <input type="checkbox" name="remember" id="ch1" value="remember me">
+        <label for="ch1">Remember <u>M</u>e</label>
+        <br>
+        <input type="submit" value="Login">
+      </fieldset>
+    </form>
+  </body>
+</html>

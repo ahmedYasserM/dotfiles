@@ -1,0 +1,9 @@
+h1 {
+  color: red;
+}
+
+/* descendant/contextual selector */
+
+h1 em {
+  color: blue;
+}

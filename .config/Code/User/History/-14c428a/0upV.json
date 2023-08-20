@@ -1,0 +1,13 @@
+[
+  {
+    "course name": "JS",
+    "price": 302,
+    "platform": "https://udacity.com",
+    "tags": ["web-dev", "interpreted"]
+  },
+  {
+    "course name": "C++",
+    "price": 83,
+    "platform": "https://youtube.com"
+  }
+]

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>react-day2</title>
+    <link href="../styles/form.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <form id="f1" action="./welcome.html">
+      <table id="tb1">
+        <tr>
+          <td><label for="firstName">First Name</label></td>
+          <td><input type="text" id="firstName" name="firstName" /></td>
+        </tr>
+
+        <tr>
+          <td>Last Name</td>
+          <td><input type="text" id="lastName" name="lastName" /></td>
+        </tr>
+
+        <tr>
+          <td>Password</td>
+          <td><input type="text" id="password" name="password" /></td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="text-center">Gender</td>
+          <td>
+            <input type="radio" id="rd1" name="gender" value="male" />
+            <label for="rd1">Male</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="rd2" name="gender" value="female" />
+            <label for="rd2">Female</label>
+          </td>
+        </tr>
+          <td >
+            <label for="">Birthday</label>
+            <select style="display:inline; width:150px">
+              <option selected disabled>[ Select a Month ]</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </td>
+        <td>
+          <input class="dy" type="text" name="day" placeholder="dd" />
+          <input class="dy" type="text" name="year" placeholder="yyyy" />
+        </td>
+        </tr>
+        <tr ><td class="text-center" colspan="2" style="font-size: large;"><b><u>Interests</u></b></td></tr>
+        <tr>
+        <td>
+            <input type="checkbox" id="sports" name="sports">
+            <label for="sports">Sports</label>
+         </td>
+
+        <td>
+            <input type="checkbox" id="music" name="music" >
+            <label for="music">Music</label>
+         </td>
+        </tr>
+        
+        
+        <tr>
+        <td>
+            <input type="checkbox" id="books" name="books">
+            <label for="books">Books</label>
+         </td>
+
+        <td>
+            <input type="checkbox" id="computer" name="Computer Stuff" >
+            <label for="computer">Computer Stuff</label>
+         </td>
+        </tr>
+        
+
+        <tr>
+        <td>
+            <input type="checkbox" id="fashion" name="Fashion">
+            <label for="fashion">Fashion</label>
+         </td>
+
+        <td>
+            <input type="checkbox" id="movies" name="Movies" >
+            <label for="movies">Movies</label>
+         </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" class="text-center"><input type="submit" name="submit" value="Submit"></td>
+        </tr>
+        
+
+      </table>
+    </form>
+  </body>
+</html>

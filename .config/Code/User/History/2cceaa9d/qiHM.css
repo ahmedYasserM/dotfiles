@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(244, 249, 249);
+}
+
+table#t1 {
+  width: 100%;
+  border: 2px solid rgb(232, 187, 232)
+}
+
+
+table#t1 td {
+  padding: 15px;
+  background-color: rgb(168, 159, 172);
+}

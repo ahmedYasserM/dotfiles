@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-transition="zoom"><h1>VIM</h1></section>
+
+        <section>
+          <section>
+            <h1>Vim Way To Deal With Repeation</h1>
+          </section>
+          <section>
+            <ul>
+              <li>Our work is repetitive by nature.</li>
+              <li>Vim is optimized for repetition.</li>
+              <li>We can always replay the last change with a single keystroke.</li>
+            </ul>
+            <aside class="notes">
+              It’s useless unless we learn to craft our actions so that they perform a useful unit of work
+              when replayed. Mastering this concept is the key to becoming effective with Vim.
+            </aside>
+          </section>
+
+          <section>
+            The
+            <h1>.</h1>
+            Command
+          </section>
+
+          <section>
+            <ul>
+              <li>The dot command lets us repeat the last change.</li>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <li>The dot command lets us repeat the last change.</li>
+
+              <li>But what is a Change?</li>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <li>The dot command lets us repeat the last change.</li>
+              <li>But what is a Change?</li>
+              <li>
+                A change could be an action:
+                <ol>
+                  <li>on individual characters.</li>
+
+                  <aside class="notes">
+                    > do the exercises in file: 1-repeation.md The x command deletes the character under the
+                    cursor. When we use the dot command in this context, “repeat last change” tells Vim to
+                    delete the character under the cursor
+                  </aside>
+                  <li>on entire lines.</li>
+
+                  <aside class="notes">
+                    > do the exercises in file: 2-repeation.md The dd command also performs a deletion, but
+                    this one acts on the current line as a whole. If we use the dot command after dd, then
+                    “repeat last change” instructs Vim to delete the current line
+                  </aside>
+
+                  <li>or even the whole file.</li>
+
+                  <aside class="notes">
+                    > do the exercises in file: 3-repeation.md Finally, the >G command increases the
+                    indentation from the current line until the end of the file. If we follow this command
+                    with the dot command, then “repeat last change” tells Vim to increase the indentation
+                    level from the current position to the end of the file. In this example, we’ll start with
+                    the cursor on the second line to highlight the difference
+                  </aside>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>VIM MODES</h1>
+          </section>
+
+          <section>
+            <ul>
+              <li>Vim provides a modal user interface.</li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>Vim provides a modal user interface.</li>
+              <li>
+                This means that the result of pressing any key on the keyboard may differ depending on which
+                mode is active at the time.
+              </li>
+            </ul>
+          </section>
+          
+
+
+          
+        </section>
+        
+
+          <section>
+            
+            <section>
+              <h1>NORMAL MODE</h1>
+            </section>
+            
+            <section>
+              
+              <ul>
+                <li>Normal mode is Vim’s natural resting state.</li>
+              </ul>
+            </section>
+
+            <section>
+              
+              <ul>
+                <li>Normal mode is Vim’s natural resting state.</li>
+                <li>Other text editors spend most of their time in something that resembles Insert mode.</li>
+              </ul>
+            </section>
+            
+            <section>
+              
+              <ul>
+                <li>Normal mode is Vim’s natural resting state.</li>
+                <li>Other text editors spend most of their time in something that resembles Insert mode.</li>
+                <li>But in vim, Normal mode is the default.</li>
+              </ul>
+
+            </section>
+
+            <section>
+              <h2>Counts and Motions</h2>
+              <ul>
+                <li>Many Normal mode commands can be executed with a count, which causes them to be run multiple times. </li>
+                <li>In some situations, it's better to repeat a command than take the time to count how many times you want to execute it. </li>
+                <li>Much of the power of Normal mode stems from the way that operator commands can be combined with motions.</li>
+              </ul>
+            </section>
+            
+            <section>
+              <h2>undo</h2>
+            </section>
+          </section>
+        
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

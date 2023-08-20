@@ -1,0 +1,22 @@
+body {
+  background-color: #cce3ee;
+}
+
+.header {
+  text-align: center;
+}
+
+#dif-font {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+#wlc-gif {
+  display: block;
+  margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#next {
+    margin-left: 96%
+}

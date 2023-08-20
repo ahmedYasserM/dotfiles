@@ -1,0 +1,19 @@
+/*
+    * promise maker
+    * promise receiver
+    * 
+    * 
+    * 
+    * 
+    * 
+    * 
+    * 
+    * 
+    * 
+    * 
+    * 
+    * 
+    * 
+
+
+*/

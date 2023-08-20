@@ -1,0 +1,291 @@
+// Place your key bindings in this file to override the defaultsauto[]
+
+[
+  {
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus && !editorTextFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus && !editorTextFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "ctrl+e",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "ctrl+t",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "ctrl+j",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "ctrl+k",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "ctrl+r",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+m",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp",
+    "when": "!inQuickOpen && neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "!inQuickOpen && neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+    // "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "k",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "k"
+  },
+
+  {
+    "command": "vscode-neovim.compositeEscape1",
+    "key": "j",
+    "when": "neovim.mode == insert && editorTextFocus",
+    "args": "j"
+  },
+  {
+    "key": "alt+n",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "alt+q",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+
+  {
+    "command": "runCommands",
+    "key": "alt+e",
+    "args": {
+      "commands": ["workbench.action.toggleAuxiliaryBar", "workbench.action.focusAuxiliaryBar"]
+    },
+    "when": "!focusAuxiliaryBar"
+  },
+
+  {
+    "command": "workbench.action.closeAuxiliaryBar",
+    "key": "alt+e",
+    "when": "filesExplorerFocus"
+  },
+
+  {
+    "key": "alt+f",
+    "command": "workbench.action.toggleMenuBar"
+  },
+  {
+    "key": "alt+.",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "alt+o",
+    "command": "workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
+  },
+  {
+    "key": "alt+i",
+    "command": "workbench.action.files.openFile",
+    "when": "true"
+  },
+  {
+    "key": "alt+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "alt+shift+;",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "alt+shift+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+shift+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "runCommands",
+    "key": "alt+/",
+    "args": {
+      "commands": ["workbench.action.positionPanelRight", "workbench.action.terminal.focus"]
+    }
+  },
+  {
+    "command": "runCommands",
+    "key": "alt+,",
+    "args": {
+      "commands": ["workbench.action.positionPanelBottom", "workbench.action.terminal.focus"]
+    }
+  },
+  {
+    "key": "alt+h",
+    "command": "workbench.action.previousEditor",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "workbench.action.nextEditor",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "alt+shift+h",
+    "command": "workbench.action.terminal.resizePaneLeft"
+  },
+  {
+    "key": "alt+shift+l",
+    "command": "workbench.action.terminal.resizePaneRight"
+  },
+  {
+    "key": "alt+shift+j",
+    "command": "workbench.action.terminal.resizePaneDown"
+  },
+  {
+    "key": "alt+shift+k",
+    "command": "workbench.action.terminal.resizePaneUp"
+  },
+  {
+    "key": "alt+ctrl+j",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
+    "key": "alt+ctrl+k",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+alt+capslock ctrl+alt+l",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+capslock ctrl+alt+h",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "alt+s",
+    "command": "-gitlens.showQuickRepoStatus",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "space o",
+    "command": "extension.toggleBool",
+    "when": "editorTextFocus && neovim.mode == normal"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus && noevim.mode == normal"
+  },
+  {
+    "key": "shift+l",
+    "command": "cursorLineEnd",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "shift+h",
+    "command": "cursorLineStart",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "alt+;",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+
+  {
+    "key": "tab",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.toggleDevTools",
+    "when": "neovim.mode == normal"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-workbench.action.toggleDevTools",
+    "when": "isDevelopment"
+  }
+  // {
+  //   "key": "alt+u",
+  //   "command": "terminalCommandKeys.run",
+  //   "args": {
+  //     "cmd": "tput -x clear"
+  //   }
+  // },
+  // {
+  //   "key": "alt+;",
+  //   "command": "terminalCommandKeys.run",
+  //   "args": {
+  //     "cmd": "cargo r -q"
+  //   }
+  // },
+]

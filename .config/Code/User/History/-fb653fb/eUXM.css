@@ -1,0 +1,9 @@
+body {
+  background-color: #cce3ee;
+}
+
+#enter-btn {
+    width: 200px;
+    height: 200px;
+  margin-top: 1000px;
+}

@@ -1,0 +1,22 @@
+div {
+  border: solid 3px rgb(172, 237, 176);
+  padding: 30px;
+}
+
+div.sub-content {
+  border: solid 3px rgb(218, 182, 242);
+  padding: 5px;
+  text-align: center;
+  line-height: 91pt;
+  letter-spacing: 10pt;
+  text-transform: ;
+  /* word-spacing: 10pt; */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20pt;
+
+}
+
+.sub-content > p {
+  color: rgb(213, 71, 92);
+  font-variant: normal;
+}

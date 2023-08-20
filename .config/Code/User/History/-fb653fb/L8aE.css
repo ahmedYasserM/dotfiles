@@ -1,0 +1,15 @@
+body {
+  background-color: #cce3ee;
+}
+
+#enter-btn {
+  display: block;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-header {
+  text-align: center;
+  font-size: 10dvb;
+}

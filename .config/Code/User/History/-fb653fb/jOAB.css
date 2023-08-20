@@ -1,0 +1,9 @@
+body {
+  background-color: #cce3ee;
+}
+
+#enter-btn {
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+}

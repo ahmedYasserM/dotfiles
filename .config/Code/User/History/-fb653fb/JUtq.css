@@ -1,0 +1,12 @@
+body {
+  background-color: #cce3ee;
+}
+
+#enter-btn {
+  display: block;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

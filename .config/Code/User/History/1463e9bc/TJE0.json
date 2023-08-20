@@ -1,0 +1,9 @@
+[
+  {
+    "key": "alt+;",
+    "command": "terminalCommandKeys.run",
+    "args": {
+      "cmd": "node ."
+    }
+  }
+]

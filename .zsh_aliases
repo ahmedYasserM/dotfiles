@@ -1,0 +1,109 @@
+
+# vim
+alias vim='lvim'
+
+
+# tmux
+alias tl='tmux ls'
+alias tns='tmux new-session -t'
+alias ta='tmux attach -t'
+alias td='tmux detach'
+
+
+# youtube-dl
+alias ydl='youtube-dl'
+
+# apt
+alias r='sudo apt remove' ## remove
+alias q='sudo apt search' ## query
+alias i='sudo apt install' ## install
+alias s='sudo apt update' ## sync
+alias u='sync;sudo apt upgrade' ## update
+
+# ls
+alias cl='command ls --color=auto' ## pure ls
+alias ls='exa --icons'
+alias la='ls -a'
+alias ll="ls -l"
+alias lla="ls -lah"
+
+# shutdown and reboot
+alias sd='sudo shutdown now' ## shutdown
+alias sr='sudo reboot' ## reboot
+
+# Exit
+alias xx="exit"
+ 
+# joshuto file manager
+alias jo='joshuto'
+
+# tree symbols
+alias tsym="echo ├ ─ │ └"
+
+# deno
+alias dd="deno run --check"
+
+# obsidian
+alias obs="cp -r ~/templates/.obsidian .; cp -r ~/templates/.obsidian.vimrc ."
+
+
+
+# surreal db
+alias sur="surreal"
+
+# bash
+alias o="bash open ."
+
+# rust and cargo
+alias cr="cargo run"
+alias cn="cargo new"
+
+# sioyek pdf
+alias opdf="sioyek & disown"
+
+# docker
+alias docker="sudo docker"
+# make
+alias m="make -s"
+
+# nodejs
+alias n="node ."
+
+# python
+alias rp="python3 main.py"
+
+alias tok="cat ~/data/token"
+
+# git
+
+alias gcl='gh repo clone'
+alias gpu="git push"
+alias gpl="git pull"
+alias gf="git fetch"
+alias gc="git commit"
+alias gm="git merge"
+alias ga="git add"
+
+# cd
+alias ..="z .."
+alias ...="..;.."
+alias ....="...;.."
+
+alias rf="rm -rf"
+
+alias dr="dotnet run"
+alias dn="dotnet new"
+
+#alias vim=  lvim 
+
+alias ctp="cp /home/ahmed/Templates/c-temp"
+alias cptp="cp /home/ahmed/Templates/cpp-temp"
+
+alias grep="grep --color=auto"
+alias cat="bat"
+alias c="tput -x clear"
+alias manim="python -m manimlib --uhd -w -c black --video_dir ~/code/manim 	"
+alias t="tldr"
+alias pl="pdflatex"
+alias ip="ip -c"
+ 

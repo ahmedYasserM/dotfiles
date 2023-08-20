@@ -1,0 +1,8 @@
+/* decoration, window, window.background, window.titlebar, window.G {
+    border-radius: 0px;
+    box-shadow: none;
+} */
+.titlebar,
+.titlebar .background {
+  border-radius: 0;
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "go",
+    "rootPath": "/home/ahmed/dev/codeHub/go",
+    "paths": [],
+    "tags": [],
+    "enabled": true
+  },
+  {
+    "name": "scripts",
+    "rootPath": "/home/ahmed/dev/codeHub/scripts",
+    "paths": [],
+    "tags": [],
+    "enabled": true
+  },
+  {
+    "name": "rust",
+    "rootPath": "/home/ahmed/dev/codeHub/rust/rust-learn",
+    "paths": [],
+    "tags": [],
+    "enabled": true
+  },
+  {
+    "name": "dev",
+    "rootPath": "/home/ahmed/dev",
+    "paths": [],
+    "tags": [],
+    "enabled": true
+  },
+  {
+    "name": "server",
+    "rootPath": "/home/ahmed/dev/codeHub/go/server",
+    "paths": [],
+    "tags": [],
+    "enabled": true
+  }
+]

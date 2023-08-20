@@ -1,0 +1,45 @@
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+func process(res http.ResponseWriter, req *http.Request) {
+	
+	req.ParseMultipartForm()
+
+	
+
+	var formData map[string][]string = req.Form 
+
+	fmt.Fprintln(res, formData)
+}
+
+func main() {
+	http.Handle("/process", http.HandlerFunc(process))
+
+	var server http.Server = http.Server{
+		Addr:    "localhost:4040",
+		Handler: nil,
+	}
+
+	fmt.Println("Listening on port 4040...")
+	server.ListenAndServe()
+}
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+ */

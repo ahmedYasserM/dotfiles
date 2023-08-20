@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(212, 244, 239);
+}
+
+#id1 {
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 5px;
+}

@@ -1,0 +1,8 @@
+struct Person {
+    
+}
+
+
+fn main() {
+  
+}

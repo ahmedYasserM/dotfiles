@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-transition="zoom"><h1>VIM</h1></section>
+
+        <section>
+          <section>
+            <h3>Vim Way To Deal With Repeation</h3>
+            <ul>
+              <li>Our work is repetitive by nature.</li>
+              <li>Vim is optimized for repetition.</li>
+              <li>We can always replay the last change with a single keystroke.</li>
+            </ul>
+            <aside class="notes">
+              It’s useless unless we learn to craft our actions so that they perform a useful unit of work
+              when replayed. Mastering this concept is the key to becoming effective with Vim.
+            </aside>
+          </section>
+
+          <section>
+            The
+            <h1>.</h1>
+            Command
+          </section>
+
+          <section>
+            <ul>
+              <li>The dot command lets us repeat the last change.</li>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <li>The dot command lets us repeat the last change.</li>
+
+              <li>But what is a Change?</li>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <li>The dot command lets us repeat the last change.</li>
+              <li>But what is a Change?</li>
+              <li>
+                A change could be an action on individual characters, entire lines, or even the whole file.
+              </li>
+            </ul>
+          </section>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

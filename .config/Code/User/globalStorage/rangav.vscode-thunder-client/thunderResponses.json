@@ -1,0 +1,114 @@
+[
+    {
+        "_id": "4393b0f9-7ceb-44b7-835e-ddb295413f45",
+        "colId": "history",
+        "created": "2023-08-02T02:33:16.809Z",
+        "modified": "2023-08-02T04:13:34.110Z",
+        "response": {
+            "responseText": "",
+            "filePath": "",
+            "type": "text",
+            "headers": [
+                {
+                    "name": "date",
+                    "value": "Wed, 02 Aug 2023 04:13:34 GMT"
+                },
+                {
+                    "name": "content-length",
+                    "value": "40"
+                },
+                {
+                    "name": "content-type",
+                    "value": "text/plain; charset=utf-8"
+                },
+                {
+                    "name": "connection",
+                    "value": "close"
+                }
+            ],
+            "cookies": [],
+            "testResults": [],
+            "url": "http://localhost:4040/header/",
+            "status": 200,
+            "statusText": "OK",
+            "contentType": "text/plain; charset=utf-8",
+            "contentLength": "40 Bytes",
+            "responseTimeText": "1 ms",
+            "responseTime": 1,
+            "responseSize": 40
+        },
+        "requestInfo": {
+            "reqUrl": "http://localhost:4040/header/",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/json; ahmed; ali;     karim"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "3821d1e0-b0d6-4d60-a647-a0c51811e7a0",
+        "colId": "history",
+        "created": "2023-08-02T02:34:33.277Z",
+        "modified": "2023-08-02T02:34:33.277Z",
+        "response": {
+            "responseText": "",
+            "filePath": "",
+            "type": "text",
+            "headers": [
+                {
+                    "name": "date",
+                    "value": "Wed, 02 Aug 2023 02:34:33 GMT"
+                },
+                {
+                    "name": "content-length",
+                    "value": "146"
+                },
+                {
+                    "name": "content-type",
+                    "value": "text/plain; charset=utf-8"
+                },
+                {
+                    "name": "connection",
+                    "value": "close"
+                }
+            ],
+            "cookies": [],
+            "testResults": [],
+            "url": "http://localhost:4040/header/",
+            "status": 200,
+            "statusText": "OK",
+            "contentType": "text/plain; charset=utf-8",
+            "contentLength": "146 Bytes",
+            "responseTimeText": "2 ms",
+            "responseTime": 2,
+            "responseSize": 146
+        },
+        "requestInfo": {
+            "reqUrl": "http://localhost:4040/header/",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ]
+        }
+    }
+]
