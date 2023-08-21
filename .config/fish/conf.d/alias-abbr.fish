@@ -3,13 +3,16 @@
 # vim
 # alias vim "lvim"
 
+
+# tldr
+alias t="tldr -t base16"
+
 #docker
 abbr -a d 'sudo docker'
 
 #sc-im
 alias scim="sc-im"
 
-alias tree="exa --tree"
 
 # tmux
 alias  tl 'tmux ls'
@@ -32,8 +35,11 @@ alias cl 'command ls --color auto' ## pure ls
 alias ls 'lsd'
 abbr -a l 'ls'
 abbr -a la 'ls -a'
-abbr -a ll "ls -l"
+abbr -a ll "ls -lh"
 abbr -a lla "ls -lah"
+
+alias tree="ls --tree"
+abbr -a re 'tree'
 
 # shutdown and reboot
 abbr -a sd 'sudo shutdown now' ## shutdown
