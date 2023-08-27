@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+file=$1
+
+dir=$2
+
+for f in $dir/*; do
+
+    if [ "$f" = "$file" ]; then
+        echo "File Exists"
+        echo "Contents of $file: "
+        cat $file
+        exit
+    fi
+
+done
+
+echo "File does not exist."

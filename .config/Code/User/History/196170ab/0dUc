@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+file=$1
+
+dir=$2
+
+echo "file: $file"
+echo "dir: $dir"
+
+for f in /home/ahmed/dev/codeHub/scripts; do
+    echo "f: $f"
+    if [ "$f" = "$file" ]; then
+        echo "File Exists"
+        echo "Contents of $file: "
+        cat $file
+        exit
+    fi
+done
+
+echo "File does not exist."

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+rand_nums=()
+
+echo "hello, world"
+
+while [ ${#rand_nums[@]} -lt 5 ]; do
+
+    rand_num=$RANDOM
+
+    read -p "Add $rand_num to the list? (y/n) " choice
+
+    if [ "$choice" = "y" ]; then
+        rand_nums+=($rand_num)
+    fi
+
+done
+
+echo "Random Numbers: ${rand_nums[@]}"

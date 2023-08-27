@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>react-day8-video</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <video width="400" height="400">
+        <source src="res/videos/frozen.mp4" type="video/mp4" />
+      </video>
+      <input type="button"  value="play" onclick="playVid()" />
+      <input type="button"  value="stop" onclick="stopVid()" />
+      <input type="button"  value="<<" onclick="speedDown()" />
+      <input type="button"  value="<" onclick="volDown()" />
+      <input type="button"  value=">" onclick="volUp()" />
+      <input type="button"  value=">>" onclick="speedUp()"/>
+      <input type="button"  value="mute" onclick="muteVid()" />
+    </div>
+    <script src="scripts/video.js"></script>
+  </body>
+</html>

@@ -17,7 +17,6 @@
             "file:///home/ahmed/dev/courses-api": "__default__profile__",
             "file:///home/ahmed/dev/go-web-programming/chit-chat": "__default__profile__",
             "file:///home/ahmed/dev/go-web-programming/first-webapp": "__default__profile__",
-            "file:///home/ahmed": "__default__profile__",
             "file:///home/ahmed/dev/rust-source": "__default__profile__",
             "file:///home/ahmed/tutorials/markdown": "__default__profile__",
             "file:///home/ahmed/dev/scripts": "__default__profile__",
@@ -34,7 +33,6 @@
             "file:///home/ahmed/tutorials/vim-session": "__default__profile__",
             "file:///home/ahmed/downloads/shs": "__default__profile__",
             "file:///home/ahmed/tutorials/notes": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/go": "__default__profile__",
             "file:///home/ahmed/.themes/taru.forest/gnome-shell": "__default__profile__",
             "file:///home/ahmed/.config/gtk-3.0": "__default__profile__",
             "file:///home/ahmed/.config/alacritty": "__default__profile__",
@@ -43,14 +41,35 @@
             "file:///home/ahmed/repos/iti-react-tasks/day1/Task/solution": "__default__profile__",
             "file:///home/ahmed/repos/iti-react-tasks/day1": "__default__profile__",
             "file:///home/ahmed/repos/iti-react-tasks/day2/Task/solution": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/rust/rust-learn": "__default__profile__",
             "file:///home/ahmed/dev/codeHub/go/server": "__default__profile__",
             "file:///home/ahmed/repos/iti-react-tasks": "__default__profile__",
             "file:///home/ahmed/tutorials/linux": "__default__profile__",
             "file:///home/ahmed/repos/personal/iti-react-tasks/day5/tasks/solution": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/scripts": "__default__profile__",
             "file:///home/ahmed/repos/personal/iti-react-tasks/day6/tasks/solution": "__default__profile__",
-            "file:///home/ahmed/repos/personal/iti-react-tasks": "__default__profile__"
+            "file:///home/ahmed/dev/codeHub/rust/rust-learn": "__default__profile__",
+            "file:///home/ahmed/repos/personal/iti-react-tasks": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks/day6/tasks/solution": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks/day7/tasks/solution": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks/day8/Tasks/solution": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks/day9/Tasks/solution": "__default__profile__",
+            "file:///home/ahmed/dev/codeHub/go": "__default__profile__",
+            "file:///home/ahmed/.config/fish/functions": "__default__profile__",
+            "file:///home/ahmed/notes/gp/git-commits": "__default__profile__",
+            "file:///home/ahmed/notes/gp-ideas/git-commits": "__default__profile__",
+            "file:///home/ahmed/notes/linux/boot-process": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks/day10/Tasks/solution": "__default__profile__",
+            "file:///home/ahmed/tutorials/cs": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks/day8/tasks/solution": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks/day8/tasks/question": "__default__profile__",
+            "file:///home/ahmed/repos/personal/react-tasks/learn": "__default__profile__",
+            "file:///home/ahmed/dev/codeHub/scripts": "__default__profile__",
+            "file:///home/ahmed/tutorials/vim-session/exercises": "__default__profile__",
+            "file:///home/ahmed/tutorials/courses/linux/osc/vim-session-files": "__default__profile__",
+            "file:///home/ahmed/tutorials/courses/linux/osc": "__default__profile__",
+            "file:///home/ahmed/repos/osc/The-Art-of-Linux-23": "__default__profile__",
+            "file:///home/ahmed/.config/Code/User": "__default__profile__",
+            "file:///home/ahmed": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -60,39 +79,40 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/ahmed/repos/personal/iti-react-tasks"
+                "folderUri": "file:///home/ahmed"
             }
         ],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/ahmed/repos/personal/iti-react-tasks",
-            "backupPath": "/home/ahmed/.config/Code/Backups/90ed01d4889b2d2c1326c8e66eab9936",
+            "folder": "file:///home/ahmed",
+            "backupPath": "/home/ahmed/.config/Code/Backups/aa8a0ba757893bf17ea1ef7ccc6a98e2",
             "uiState": {
                 "mode": 1,
                 "x": 0,
                 "y": 32,
-                "width": 960,
+                "width": 1920,
                 "height": 1048
             }
         },
         "openedWindows": []
     },
-    "theme": "vs-dark",
-    "themeBackground": "#1d2327",
+    "theme": "vs",
+    "themeBackground": "#eff1f5",
     "windowSplash": {
         "zoomLevel": 0.8,
-        "baseTheme": "vs-dark",
+        "baseTheme": "vs",
         "colorInfo": {
-            "foreground": "#9aa79d",
-            "background": "#1d2327",
-            "editorBackground": "#1d2327",
-            "titleBarBackground": "#2d353b",
-            "activityBarBackground": "#2d353b",
-            "sideBarBackground": "#1d2327",
-            "statusBarBackground": "#1d2327",
-            "statusBarNoFolderBackground": "#2d353b"
+            "foreground": "#4c4f69",
+            "background": "#eff1f5",
+            "editorBackground": "#eff1f5",
+            "titleBarBackground": "#dce0e8",
+            "activityBarBackground": "#dce0e8",
+            "sideBarBackground": "#e6e9ef",
+            "statusBarBackground": "#dce0e8",
+            "statusBarNoFolderBackground": "#dce0e8",
+            "windowBorder": "rgba(0, 0, 0, 0)"
         },
         "layoutInfo": {
             "sideBarSide": "right",
@@ -152,23 +172,67 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/repos/personal/iti-react-tasks",
-                                        "path": "/home/ahmed/repos/personal/iti-react-tasks",
+                                        "external": "file:///home/ahmed",
+                                        "path": "/home/ahmed",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/repos/personal/iti-react-tasks"
+                                    "label": "/home/ahmed"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/repos/personal/iti-react-tasks/day6/tasks/solution",
-                                        "path": "/home/ahmed/repos/personal/iti-react-tasks/day6/tasks/solution",
+                                        "external": "file:///home/ahmed/.config/Code/User",
+                                        "path": "/home/ahmed/.config/Code/User",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/repos/personal/iti-react-tasks/day6/tasks/solution"
+                                    "label": "~/.config/Code/User"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/repos/osc/The-Art-of-Linux-23",
+                                        "path": "/home/ahmed/repos/osc/The-Art-of-Linux-23",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/repos/osc/The-Art-of-Linux-23"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/tutorials/courses/linux/osc",
+                                        "path": "/home/ahmed/tutorials/courses/linux/osc",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/tutorials/courses/linux/osc"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/tutorials/courses/linux/osc/vim-session-files",
+                                        "path": "/home/ahmed/tutorials/courses/linux/osc/vim-session-files",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/tutorials/courses/linux/osc/vim-session-files"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/tutorials/vim-session/exercises",
+                                        "path": "/home/ahmed/tutorials/vim-session/exercises",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/tutorials/vim-session/exercises"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -185,78 +249,34 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/repos/personal/iti-react-tasks/day5/tasks/solution",
-                                        "path": "/home/ahmed/repos/personal/iti-react-tasks/day5/tasks/solution",
+                                        "external": "file:///home/ahmed/repos/personal/react-tasks/learn",
+                                        "path": "/home/ahmed/repos/personal/react-tasks/learn",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/repos/personal/iti-react-tasks/day5/tasks/solution"
+                                    "label": "~/repos/personal/react-tasks/learn"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/tutorials/linux",
-                                        "path": "/home/ahmed/tutorials/linux",
+                                        "external": "file:///home/ahmed/repos/personal/react-tasks/day8/tasks/question",
+                                        "path": "/home/ahmed/repos/personal/react-tasks/day8/tasks/question",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/tutorials/linux"
+                                    "label": "~/repos/personal/react-tasks/day8/tasks/question"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/dev/codeHub/go/server",
-                                        "path": "/home/ahmed/dev/codeHub/go/server",
+                                        "external": "file:///home/ahmed/repos/personal/react-tasks/day8/tasks/solution",
+                                        "path": "/home/ahmed/repos/personal/react-tasks/day8/tasks/solution",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dev/codeHub/go/server"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed/dev/codeHub/rust/rust-learn",
-                                        "path": "/home/ahmed/dev/codeHub/rust/rust-learn",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/codeHub/rust/rust-learn"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed/repos/iti-react-tasks/day2/Task/solution",
-                                        "path": "/home/ahmed/repos/iti-react-tasks/day2/Task/solution",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/repos/iti-react-tasks/day2/Task/solution"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed/repos/iti-react-tasks/day1",
-                                        "path": "/home/ahmed/repos/iti-react-tasks/day1",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/repos/iti-react-tasks/day1"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed/repos/iti-react-tasks/day1/Task/solution",
-                                        "path": "/home/ahmed/repos/iti-react-tasks/day1/Task/solution",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/repos/iti-react-tasks/day1/Task/solution"
+                                    "label": "~/repos/personal/react-tasks/day8/tasks/solution"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -265,111 +285,111 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/notes/linux/users-groups/shadow.md",
-                                        "path": "/home/ahmed/notes/linux/users-groups/shadow.md",
+                                        "external": "file:///home/ahmed/temp/line_joining.14-14.md",
+                                        "path": "/home/ahmed/temp/line_joining.14-14.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/notes/linux/users-groups/shadow.md"
+                                    "label": "~/temp/line_joining.14-14.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/notes/linux/users-groups/notes.md",
-                                        "path": "/home/ahmed/notes/linux/users-groups/notes.md",
+                                        "external": "file:///home/ahmed/tutorials/go/go-notes.md",
+                                        "path": "/home/ahmed/tutorials/go/go-notes.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/notes/linux/users-groups/notes.md"
+                                    "label": "~/tutorials/go/go-notes.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/notes/linux/shell-scripting/notes.md",
-                                        "path": "/home/ahmed/notes/linux/shell-scripting/notes.md",
+                                        "external": "file:///home/ahmed/tutorials/go/go-books/notes/go-notes.md",
+                                        "path": "/home/ahmed/tutorials/go/go-books/notes/go-notes.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/notes/linux/shell-scripting/notes.md"
+                                    "label": "~/tutorials/go/go-books/notes/go-notes.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/tutorials/linux/compressing.md",
-                                        "path": "/home/ahmed/tutorials/linux/compressing.md",
+                                        "external": "file:///home/ahmed/dev/codeHub/rust/rust-learn/src/main.rs",
+                                        "path": "/home/ahmed/dev/codeHub/rust/rust-learn/src/main.rs",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/tutorials/linux/compressing.md"
+                                    "label": "~/dev/codeHub/rust/rust-learn/src/main.rs"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/.config/fish/themes/Catppuccin%20Mocha.theme",
-                                        "path": "/home/ahmed/.config/fish/themes/Catppuccin Mocha.theme",
+                                        "external": "file:///home/ahmed/dev/codeHub/go/server/main.go",
+                                        "path": "/home/ahmed/dev/codeHub/go/server/main.go",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/fish/themes/Catppuccin Mocha.theme"
+                                    "label": "~/dev/codeHub/go/server/main.go"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/.config/fish/themes/Catppuccin",
-                                        "path": "/home/ahmed/.config/fish/themes/Catppuccin",
+                                        "external": "file:///home/ahmed/session.md",
+                                        "path": "/home/ahmed/session.md",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/fish/themes/Catppuccin"
+                                    "label": "~/session.md"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/.config/fish/themes/Mocha.theme",
-                                        "path": "/home/ahmed/.config/fish/themes/Mocha.theme",
+                                        "external": "file:///home/ahmed/repos/personal/react-tasks/day2/Task/solution/pages/main.html",
+                                        "path": "/home/ahmed/repos/personal/react-tasks/day2/Task/solution/pages/main.html",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/fish/themes/Mocha.theme"
+                                    "label": "~/repos/personal/react-tasks/day2/Task/solution/pages/main.html"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/.config/fish/conf.d/options.fish",
-                                        "path": "/home/ahmed/.config/fish/conf.d/options.fish",
+                                        "external": "file:///home/ahmed/repos/personal/react-tasks/day2/Task/solution/pages/entertainment.html",
+                                        "path": "/home/ahmed/repos/personal/react-tasks/day2/Task/solution/pages/entertainment.html",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/fish/conf.d/options.fish"
+                                    "label": "~/repos/personal/react-tasks/day2/Task/solution/pages/entertainment.html"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/.config/fish/themes/Mochaa.theme",
-                                        "path": "/home/ahmed/.config/fish/themes/Mochaa.theme",
+                                        "external": "file:///home/ahmed/repos/personal/react-tasks/day2/Task/solution/home.html",
+                                        "path": "/home/ahmed/repos/personal/react-tasks/day2/Task/solution/home.html",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/fish/themes/Mochaa.theme"
+                                    "label": "~/repos/personal/react-tasks/day2/Task/solution/home.html"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/.config/fish/functions/fish_mode_prompt.fish",
-                                        "path": "/home/ahmed/.config/fish/functions/fish_mode_prompt.fish",
+                                        "external": "file:///home/ahmed/tutorials/courses/linux/osc/vim_session.7z",
+                                        "path": "/home/ahmed/tutorials/courses/linux/osc/vim_session.7z",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/fish/functions/fish_mode_prompt.fish"
+                                    "label": "~/tutorials/courses/linux/osc/vim_session.7z"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -784,8 +804,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel",
-                                    "checked": true
+                                    "label": "&&Panel"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -899,13 +918,6 @@
                                 {
                                     "id": "workbench.action.splitEditorRight",
                                     "label": "Split &&Right"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1090,54 +1102,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1337,7 +1340,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1687,11 +1691,6 @@
                 "label": "Ctrl+K Ctrl+\\",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+\\"
-            },
-            "workbench.action.splitEditorInGroup": {
-                "label": "Ctrl+K Ctrl+Shift+\\",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
             },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Shift+Alt+0",

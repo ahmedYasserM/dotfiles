@@ -1,0 +1,7 @@
+function nextImg() {
+    
+}
+
+function prevImg() {
+    
+}

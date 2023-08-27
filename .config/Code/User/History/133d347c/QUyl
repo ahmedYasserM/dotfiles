@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+
+rand_nums=()
+
+while [ ${#rand_nums[@]} -lt 5 ]

@@ -1,0 +1,40 @@
+form {
+  width: 500px;
+  padding: 0px 10px 10px 10px;
+  border: 3px solid #aee7af;
+  text-align: center;
+}
+form input {
+  margin: 5px;
+}
+
+h3 {
+  margin-top: 5px;
+}
+
+input:required {
+  border-color: rgb(243, 9, 44);
+  border-radius: 5px;
+}
+
+input:valid {
+    border-color: rgb(179, 179, 233);
+    
+}
+
+#change {
+    all: unset;
+    border: 1px solid #dda8d5;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #d4e9f5;
+}
+
+#change:hover {
+    
+    background-color: #d1e2cd;
+    border-color: #eca6c9;
+    color: white;
+    transform: scale(1.2,1.2);
+    box-shadow: #bc84af 0px 0px 10px 0px;
+}

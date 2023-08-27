@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+links=$(find  -type l)
+
+for link in $links 
+do
+    echo "Found Link: $link"
+    

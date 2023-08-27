@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+links=$(find /etc -type l)

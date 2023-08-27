@@ -1,0 +1,10 @@
+body {
+  background-color: #cce3ee;
+}
+
+div#container {
+  margin-top: 20px;
+  width: 100%;
+  /* background-color: red; */
+  height: 500px;
+}

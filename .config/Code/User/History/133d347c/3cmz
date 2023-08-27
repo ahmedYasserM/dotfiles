@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+while IFS="" read -r file; do
+    echo "File Found: $file"
+done <~/notes/linux/shell-scripting/samples/data/top100.csv

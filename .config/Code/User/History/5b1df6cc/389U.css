@@ -1,0 +1,26 @@
+body {
+  background-color: #ffffff;
+}
+
+table#t1 {
+  width: 100%;
+  border: 2px solid rgb(187, 189, 232);
+  border-radius: 5px;
+  border-spacing: 10px;
+
+}
+
+
+table#t1 td {
+  width: 50%;
+  padding: 15px;
+  background-color: rgb(205, 239, 212);
+  text-align: left;
+  border-radius: 5px;
+}
+
+table#t1 thead td {
+  background-color: rgb(232, 187, 204);
+  font-weight: bold;
+  text-align: center;
+}

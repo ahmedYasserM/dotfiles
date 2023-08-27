@@ -3,6 +3,9 @@
 # vim
 # alias vim "lvim"
 
+#xclip
+abbr -a xl 'xclip -selection c'
+abbr -a al 'xclip -selection c -o'
 
 # tldr
 alias t="tldr -t base16"
@@ -57,6 +60,10 @@ alias o "bash open ."
 # rust and cargo
 abbr -a cr "cargo run"
 abbr -a cn "cargo new"
+
+abbr -a rm "trash"
+abbr -a rmr "trash-restore"
+abbr -a rml "trash-list"
 
 # git
 

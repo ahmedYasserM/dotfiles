@@ -1,0 +1,7 @@
+img {
+  width: 200px;
+  height: 200px;
+  animation-name: shading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}

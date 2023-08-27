@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+while read file; do
+    echo "File Found: $file"
+done <~/dev/codeHub/scripts/data/top100.csv

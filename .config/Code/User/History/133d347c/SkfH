@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+text="this is my first writing text about what is seeee\nand what you want"
+
+for word in $text; do
+
+    echo "Found Word: $word"
+
+done

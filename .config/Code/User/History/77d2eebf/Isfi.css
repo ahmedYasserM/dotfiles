@@ -1,0 +1,19 @@
+form {
+  width: 500px;
+  padding: 0px 10px 10px 10px;
+  border: 3px solid #aee7af;
+  text-align: left;
+}
+form input {
+  margin: 5px;
+}
+
+h3 {
+  margin-top: 5px;
+}
+
+input:invalid,
+input:required {
+  border-color: rgb(248, 141, 141);
+  border-radius: 5px;
+}

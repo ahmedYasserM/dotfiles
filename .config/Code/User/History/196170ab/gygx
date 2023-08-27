@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+links=$(find  -type l)
+
+for link in $links 
+do
+    
