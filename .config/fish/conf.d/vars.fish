@@ -5,7 +5,7 @@ set -gx PATH "/bin" "~/.go/bin" "/home/ahmed/.cargo/bin" "/home/ahmed/dev/codeHu
 
 set -gx GOPATH "/home/ahmed/.go"
 
-export TERM=alacritty
+#export TERM=alacritty
 set -gx HISTSIZE 10000
 set -gx SAVEHIST 10000
 set -gx EDITOR lvim
