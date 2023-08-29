@@ -1,0 +1,17 @@
+super + shift + s
+  pkill sxhkd && sxhkd &
+
+super + i 
+  telegram-desktop
+
+super + w
+  firefox
+
+super + p 
+  gpick -so | xclip -sel c
+
+super + f
+  st -e nnn
+
+super + {equal, minus, BackSpace}
+  ~/dev/codeHub/scripts/volume {up, down, toggle}
