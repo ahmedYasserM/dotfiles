@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+
+tput setaf 33
+
+read -p "Show man page of: " page
+
+man $page
+
