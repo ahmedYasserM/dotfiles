@@ -276,6 +276,14 @@
   {
     "key": "alt+j",
     "command": "chatgpt.askGPT"
+  },
+  {
+    "key": "alt+a",
+    "command": "editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "-editor.action.selectAll"
   }
   // {
   //   "key": "alt+u",

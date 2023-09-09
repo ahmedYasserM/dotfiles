@@ -66,7 +66,8 @@
     "latex": true,
     "html": true,
     "css": true,
-    "rmarkdown": true
+    "rmarkdown": true,
+    "shellscript": true
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
@@ -107,18 +108,13 @@
   "go.inlayHints.compositeLiteralTypes": true,
   "go.inlayHints.compositeLiteralFields": true,
   "extensions.autoUpdate": false,
-  "workbench.colorTheme": "Catppuccin Latte",
+  "workbench.colorTheme": "Everforest Dark",
   "breadcrumbs.enabled": false,
   "errorLens.messageEnabled": true,
   "window.titleBarStyle": "native",
   "window.customMenuBarAltFocus": false,
   "files.autoSave": "afterDelay",
-  "window.zoomLevel": 0.8,
-  "liveServer.settings.CustomBrowser": "chrome",
-  "workbench.activityBar.visible": false,
-  "codesnap.boxShadow": "#E89B85",
-  "codesnap.backgroundColor": "#E89B85",
-  "codesnap.showLineNumbers": false,
-  "codesnap.showWindowControls": false,
-  "codesnap.containerPadding": ""
+  "liveServer.settings.CustomBrowser": "firefox",
+  "window.zoomLevel": 0.7,
+  "workbench.activityBar.visible": false
 }
