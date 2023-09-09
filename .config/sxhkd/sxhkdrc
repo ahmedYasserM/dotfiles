@@ -4,14 +4,23 @@ super + shift + s
 super + i 
   telegram-desktop
 
+super + u
+  discord
+
 super + w
   firefox
 
 super + p 
-  gpick -so | xclip -sel c
+  ~/dev/codeHub/scripts/cpick
 
 super + f
   st -e nnn
+
+super + o
+  st -e vimMan
+
+super + semicolon
+  doas flameshot gui 
 
 super + {equal, minus, BackSpace}
   ~/dev/codeHub/scripts/volume {up, down, toggle}
