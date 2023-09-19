@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9cd0ed3f3a294ac4",
+        "id": "336195d3f4551084",
         "type": "tabs",
         "children": [
           {
-            "id": "97a7331bdd990f4f",
+            "id": "7ad40d5b0e84b1d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GO NOTES.md",
+                "file": "Structs.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GO NOTES.md",
+                "file": "Structs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GO NOTES.md",
+                "file": "Structs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GO NOTES.md"
+                "file": "Structs.md"
               }
             }
           }
@@ -147,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97a7331bdd990f4f",
+  "active": "4549c3e0d681f183",
   "lastOpenFiles": [
+    "Structs.md",
+    "GO NOTES.md",
     "Untitled",
     "GOLang.md"
   ]

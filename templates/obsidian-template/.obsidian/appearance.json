@@ -1,6 +1,7 @@
 {
   "accentColor": "",
   "theme": "moonstone",
-  "baseFontSize": 18,
-  "textFontFamily": "Latin Modern Roman"
+  "baseFontSize": 22,
+  "textFontFamily": "Latin Modern Roman",
+  "cssTheme": "Sandstorm"
 }
