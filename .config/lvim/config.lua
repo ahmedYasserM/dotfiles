@@ -58,6 +58,8 @@ lvim.plugins = {
   },
   {
     "kana/vim-textobj-user"
-  }
+  }, {
+  "lervag/vimtex"
+}
 
 }

@@ -1,7 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3400
-SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_cn:cargo\x20new
 SETUVAR _fish_abbr_cr:cargo\x20run
 SETUVAR _fish_abbr_ga:git\x20add
@@ -14,7 +13,6 @@ SETUVAR _fish_abbr_gpu:git\x20push
 SETUVAR _fish_abbr_la:ls\x20\x2da
 SETUVAR _fish_abbr_ll:ls\x20\x2dl
 SETUVAR _fish_abbr_lla:ls\x20\x2dlah
-SETUVAR _fish_abbr_q:sudo\x20apt\x20search
 SETUVAR _fish_abbr_rf:rm\x20\x2drf
 SETUVAR _fish_abbr_sd:sudo\x20shutdown\x20now
 SETUVAR _fish_abbr_sr:sudo\x20reboot
