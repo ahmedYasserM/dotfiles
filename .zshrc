@@ -1,129 +1,146 @@
-# environment variables 
+#  ╔═╗╔═╗╦ ╦╦═╗╔═╗  ╔═╗╔═╗╔╗╔╔═╗╦╔═╗	- z0mbi3
+#  ╔═╝╚═╗╠═╣╠╦╝║    ║  ║ ║║║║╠╣ ║║ ╦	- https://github.com/gh0stzk/dotfiles
+#  ╚═╝╚═╝╩ ╩╩╚═╚═╝  ╚═╝╚═╝╝╚╝╚  ╩╚═╝	- My zsh conf
 
-export PATH=/home/ahmed/.local/bin:/home/ahmed/.cargo/bin:$PATH
-export PATH=/usr/local/go/bin:~/.go/bin:$PATH
-export GOPATH=/home/ahmed/.go
-export TERM=alacritty
+#  ┬  ┬┌─┐┬─┐┌─┐
+#  └┐┌┘├─┤├┬┘└─┐
+#   └┘ ┴ ┴┴└─└─┘
+export VISUAL='lvim'
+export EDITOR='lvim'
+export TERMINAL='alacritty'
+export BROWSER='firefox'
+export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+export GOPATH='/home/ahmed/.go'
 
-# History in cache directory:
-export HISTSIZE=10000
-export SAVEHIST=10000
-export HISTFILE=~/.zsh_history
-export EDITOR=vim
-export VISUAL=vim
-
-# export PATH=:/home/ahmed/.surrealdb:$PATH
-#export PATH=/home/ahmed/.local/share/rtx/installs/node/20.2.0/bin:$PATH
-#export PATH=/home/ahmed/downloads/tars/zig-linux-x86_64-0.10.1:$PATH
-#export PATH=/usr/lib/jvm/jdk-20/bin:$PATH
-
-# set JAVA_HOME="/usr/lib/jvm/jdk-20"
-
-
-if [ -f ~/.zsh_aliases ]; then
-    source ~/.zsh_aliases
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
 fi
 
 
-_fix_cursor() {
-   echo -ne '\e[5 q'
-}
+#  ┬  ┌─┐┌─┐┌┬┐  ┌─┐┌┐┌┌─┐┬┌┐┌┌─┐
+#  │  │ │├─┤ ││  ├┤ ││││ ┬││││├┤ 
+#  ┴─┘└─┘┴ ┴─┴┘  └─┘┘└┘└─┘┴┘└┘└─┘
+autoload -Uz compinit
 
-precmd_functions+=(_fix_cursor)
+for dump in ~/.config/zsh/zcompdump(N.mh+24); do
+  compinit -d ~/.config/zsh/zcompdump
+done
 
+compinit -C -d ~/.config/zsh/zcompdump
 
-
-PROMPT='🏡 🚀 '
-function update_prompt() {
-    
-    if [[ $PWD == "/home/ahmed" ]]; then
-    PROMPT=''
-    PROMPT+='🏡 🚀 '
-    # elif [[ $PWD == "/home/ahmed/pictures" ]]; then
-    # PROMPT=''
-    # PROMPT+='📸 🚀 '
-    # elif [[ $PWD == "/home/ahmed/tutorials" ]]; then
-    # PROMPT=''
-    # PROMPT+='📖 🚀 '
-    # elif [[ $PWD == "/home/ahmed/templates" ]]; then
-    # PROMPT=''
-    # PROMPT+='📌 🚀 '
-    # elif [[ $PWD == "/home/ahmed/videos" ]]; then
-    # PROMPT=''
-    # PROMPT+='🎥 🚀 '
-    # elif [[ $PWD == "/home/ahmed/repos" ]]; then
-    # PROMPT=''
-    # PROMPT+='💡 🚀 '
-    # elif [[ $PWD == "/home/ahmed/dev" ]]; then
-    # PROMPT=''
-    # PROMPT+='🤖 🚀 '
-    # elif [[ $PWD == "/home/ahmed/downloads" ]]; then
-    # PROMPT=''
-    # PROMPT+='🧲 🚀 '
-    else
-    PROMPT=''
-    PROMPT+='%F{blue}%1/%F{green} 🚀 '
-    fi
-}
-chpwd_functions+=(update_prompt)
-cd .
-
-# ❯
-#  -> 
-# ⚓
-# λ
-# 🧲
-# 🔬
-# 🤖
-# 💡
-# 📸
-# 🏡
-# 🚀
-#______________________________________________________
-
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
+autoload -Uz add-zsh-hook
+autoload -Uz vcs_info
+precmd () { vcs_info }
 _comp_options+=(globdots)
 
-# map jk to enter normal mocd
-bindkey -M viins jk vi-cmd-mode
+zstyle ':completion:*' verbose true
+zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS} 'ma=48;5;197;1'
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*:warnings' format "%B%F{red}No matches for:%f %F{magenta}%d%b"
+zstyle ':completion:*:descriptions' format '%F{yellow}[-- %d --]%f'
+zstyle ':vcs_info:*' formats ' %B%s-[%F{magenta}%f %F{yellow}%b%f]-'
 
-#______________________________________________________
+#  ┬ ┬┌─┐┬┌┬┐┬┌┐┌┌─┐  ┌┬┐┌─┐┌┬┐┌─┐
+#  │││├─┤│ │ │││││ ┬   │││ │ │ └─┐
+#  └┴┘┴ ┴┴ ┴ ┴┘└┘└─┘  ─┴┘└─┘ ┴ └─┘
+expand-or-complete-with-dots() {
+  echo -n "\e[31m…\e[0m"
+  zle expand-or-complete
+  zle redisplay
+}
+zle -N expand-or-complete-with-dots
+bindkey "^I" expand-or-complete-with-dots
 
-# plugins
-source ~/repos/zsh-autosuggestions/zsh-autosuggestions.zsh
+#  ┬ ┬┬┌─┐┌┬┐┌─┐┬─┐┬ ┬
+#  ├─┤│└─┐ │ │ │├┬┘└┬┘
+#  ┴ ┴┴└─┘ ┴ └─┘┴└─ ┴ 
+HISTFILE=~/.config/zsh/zhistory
+HISTSIZE=5000
+SAVEHIST=5000
 
-bindkey 'a;' autosuggest-accept ## map al to accept suggestion
+#  ┌─┐┌─┐┬ ┬  ┌─┐┌─┐┌─┐┬    ┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
+#  ┌─┘└─┐├─┤  │  │ ││ ││    │ │├─┘ │ ││ ││││└─┐
+#  └─┘└─┘┴ ┴  └─┘└─┘└─┘┴─┘  └─┘┴   ┴ ┴└─┘┘└┘└─┘
+setopt AUTOCD              # change directory just by typing its name
+setopt PROMPT_SUBST        # enable command substitution in prompt
+setopt MENU_COMPLETE       # Automatically highlight first element of completion menu
+setopt LIST_PACKED		   # The completion menu takes less space.
+setopt AUTO_LIST           # Automatically list choices on ambiguous completion.
+setopt HIST_IGNORE_DUPS	   # Do not write events to history that are duplicates of previous events
+setopt HIST_FIND_NO_DUPS   # When searching history don't display results already cycled through twice
+setopt COMPLETE_IN_WORD    # Complete from both ends of a word.
 
-source ~/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#  ┌┬┐┬ ┬┌─┐  ┌─┐┬─┐┌─┐┌┬┐┌─┐┌┬┐
+#   │ ├─┤├┤   ├─┘├┬┘│ ││││├─┘ │ 
+#   ┴ ┴ ┴└─┘  ┴  ┴└─└─┘┴ ┴┴   ┴
+function dir_icon {
+  if [[ "$PWD" == "$HOME" ]]; then
+    echo "%B%F{black}%f%b"
+  else
+    echo "%B%F{cyan}%f%b"
+  fi
+}
 
-#______________________________________________________
+PS1='%B%F{blue}%f%b  %B%F{magenta}%n%f%b $(dir_icon)  %B%F{red}%c%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
+PS1='%B%F{blue}%f%b %B%F{red}%c%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
+
+#  ┌─┐┬  ┬ ┬┌─┐┬┌┐┌┌─┐
+#  ├─┘│  │ ││ ┬││││└─┐
+#  ┴  ┴─┘└─┘└─┘┴┘└┘└─┘
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+#  ┌─┐┬ ┬┌─┐┌┐┌┌─┐┌─┐  ┌┬┐┌─┐┬─┐┌┬┐┬┌┐┌┌─┐┬  ┌─┐  ┌┬┐┬┌┬┐┬  ┌─┐
+#  │  ├─┤├─┤││││ ┬├┤    │ ├┤ ├┬┘│││││││├─┤│  └─┐   │ │ │ │  ├┤ 
+#  └─┘┴ ┴┴ ┴┘└┘└─┘└─┘   ┴ └─┘┴└─┴ ┴┴┘└┘┴ ┴┴─┘└─┘   ┴ ┴ ┴ ┴─┘└─┘
+function xterm_title_precmd () {
+	print -Pn -- '\e]2;%n@%m %~\a'
+	[[ "$TERM" == 'screen'* ]] && print -Pn -- '\e_\005{g}%n\005{-}@\005{m}%m\005{-} \005{B}%~\005{-}\e\\'
+}
+
+function xterm_title_preexec () {
+	print -Pn -- '\e]2;%n@%m %~ %# ' && print -n -- "${(q)1}\a"
+	[[ "$TERM" == 'screen'* ]] && { print -Pn -- '\e_\005{g}%n\005{-}@\005{m}%m\005{-} \005{B}%~\005{-} %# ' && print -n -- "${(q)1}\e\\"; }
+}
+
+if [[ "$TERM" == (kitty*|alacritty*|termite*|gnome*|konsole*|kterm*|putty*|rxvt*|screen*|tmux*|xterm*) ]]; then
+	add-zsh-hook -Uz precmd xterm_title_precmd
+	add-zsh-hook -Uz preexec xterm_title_preexec
+fi
+
+#  ┌─┐┬  ┬┌─┐┌─┐
+#  ├─┤│  │├─┤└─┐
+#  ┴ ┴┴─┘┴┴ ┴└─┘
 
 
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-# #
+if [ -f ~/.zsh_aliases ] ; then
+	source ~/.zsh_aliases
+fi
 
-# /opt/anaconda3/bin/conda config --set auto_activate_base false
+alias mirrors="sudo reflector --verbose --latest 5 --country 'United States' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
 
-# __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/opt/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/opt/anaconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias mantenimiento="yay -Sc && sudo pacman -Scc"
+alias purga="sudo pacman -Rns $(pacman -Qtdq) ; sudo fstrim -av"
+alias update="paru -Syu --nocombinedupgrade"
 
+alias vm-on="sudo systemctl start libvirtd.service"
+alias vm-off="sudo systemctl stop libvirtd.service"
 
-# # <<< conda initialize <<<
+alias musica="ncmpcpp"
 
+alias ls='lsd  --group-directories-first'
+alias ll='lsd -la --group-directories-first'
 
+#  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
+#  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │ 
+#  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴ 
+# $HOME/.local/bin/colorscript -r
 # =============================================================================
 #
 # Utility functions for zoxide.
@@ -229,13 +246,16 @@ fi
 #
 # eval "$(zoxide init zsh)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-source /home/ahmed/.config/broot/launcher/bash/br
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 
+## keybindings
+
+# map jk to enter normal mode
+bindkey -M viins jk vi-cmd-mode
+
+# map alt + ; to accept suggestion
+bindkey '^[;' autosuggest-accept 
+
+## variables
+PATH=$PATH:~/.cargo/bin:~/dev/codeHub/scripts
+fish

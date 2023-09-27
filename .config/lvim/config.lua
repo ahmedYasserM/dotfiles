@@ -1,22 +1,107 @@
--- lvim.lsp.diagnostics.virtual_text = false
+-- Load custom keymaps and development settings
+require('keymaps')
+-- require('development')
 
 
--- toggle statusline
-function ToggleStatusLine()
-  vim.cmd("if &laststatus == 2 | set laststatus=0 | else | set laststatus=2 | endif")
-end
+-- Change theme settings
+--lvim.colorscheme = "lunar"
+--lvim.transparent_window = true
+--lvim.builtin.lualine.options.theme = "lunar"
 
--- Bind the function to a key combination
--- vim.api.nvim_set_keymap('n', '<A-i>', ':lua ToggleStatusLine()<CR>', { noremap = true, silent = true })
+-- Change status line
+lvim.builtin.lualine.style = "default" -- or "none"
 
-lvim.builtin.lualine.style = "lvim"
+-- General Vim options
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.relativenumber = true
 
-lvim.colorscheme = "everforest"
+-- General LunarVim settings
+lvim.log.level = "info"
+lvim.format_on_save = {
+    enabled = true,
+    pattern = "*.lua",
+    timeout = 1000,
+}
+
+-- to disable icons and use a minimalist setup, uncomment the following
+-- lvim.use_icons = false
+
+-- Plugin settings
+lvim.builtin.alpha.active = true
+lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.terminal.active = true
+lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.treesitter.auto_install = true
+
+-- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
+lvim.plugins = {
+    -- {
+    --   "folke/trouble.nvim",
+    --   cmd = "TroubleToggle",
+    -- }
+    "github/copilot.vim"
+}
+
+
+-- Automatically install missing parsers when entering buffer
+lvim.builtin.treesitter.auto_install = true
+
+-- lvim.builtin.treesitter.ignore_install = { "haskell" }
+
+-- -- always installed on startup, useful for parsers without a strict filetype
+-- lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "regex" }
+
+-- -- generic LSP settings <https://www.lunarvim.org/docs/languages#lsp-support>
+
+-- --- disable automatic installation of servers
+-- lvim.lsp.installer.setup.automatic_installation = false
+
+-- ---configure a server manually. IMPORTANT: Requires `:LvimCacheReset` to take effect
+-- ---see the full default list `:lua =lvim.lsp.automatic_configuration.skipped_servers`
+-- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
+-- local opts = {} -- check the lspconfig documentation for a list of all possible options
+-- require("lvim.lsp.manager").setup("pyright", opts)
+
+-- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. IMPORTANT: Requires `:LvimCacheReset` to take effect
+-- ---`:LvimInfo` lists which server(s) are skipped for the current filetype
+-- lvim.lsp.automatic_configuration.skipped_servers = vim.tbl_filter(function(server)
+--   return server ~= "emmet_ls"
+-- end, lvim.lsp.automatic_configuration.skipped_servers)
+
+-- -- you can set a custom on_attach function that will be used for all the language servers
+-- -- See <https://github.com/neovim/nvim-lspconfig#keybindings-and-completion>
+-- lvim.lsp.on_attach_callback = function(client, bufnr)
+--   local function buf_set_option(...)
+--     vim.api.nvim_buf_set_option(bufnr, ...)
+--   end
+--   --Enable completion triggered by <c-x><c-o>
+--   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
+-- end
+
+-- -- linters and formatters <https://www.lunarvim.org/docs/languages#lintingformatting>
+-- local formatters = require "lvim.lsp.null-ls.formatters"
+-- formatters.setup {
+--   { command = "stylua" },
+--   {
+--     command = "prettier",
+--     extra_args = { "--print-width", "100" },
+--     filetypes = { "typescript", "typescriptreact" },
+--   },
+-- }
+-- local linters = require "lvim.lsp.null-ls.linters"
+-- linters.setup {
+--   { command = "flake8", filetypes = { "python" } },
+--   {
+--     command = "shellcheck",
+--     args = { "--severity", "warning" },
+--   },
+-- }
+
+
+
 lvim.format_on_save = true
-
-lvim.transparent_window = true
-
-
 
 -- lvim.builtin.lualine.style = "default"
 lvim.keys.insert_mode["jk"] = "<Esc>"
@@ -31,35 +116,26 @@ lvim.keys.normal_mode["dk"] = '"kdd'
 lvim.keys.normal_mode["'j"] = '"jp'
 lvim.keys.normal_mode["'k"] = '"kp'
 
--- Mapping for Shift + L to move to next tab
--- lvim.keys.normal_mode["<S-l>"] = ":tabnext<CR>"
-
--- Mapping for Shift + H to move to previous tab
--- lvim.keys.normal_mode["<S-h>"] = ":tabprevious<CR>"
 
 lvim.plugins = {
-  {
-    "christoomey/vim-tmux-navigator"
-  },
-  {
-    "sainnhe/everforest"
-  },
-  {
-    "simrat39/rust-tools.nvim"
-  },
-  -- {
-  --   "iamcco/markdown-preview.nvim",
-  --   build = "cd app; npm install",
-  --   init = function() vim.g.mkdp_filetypes = { "markdown" } end,
-  --   ft = { "markdown" },
-  -- },
-  {
-    "github/copilot.vim"
-  },
-  {
-    "kana/vim-textobj-user"
-  }, {
-  "lervag/vimtex"
+    {
+        "christoomey/vim-tmux-navigator"
+    },
+    {
+        "sainnhe/everforest"
+    },
+    {
+        "simrat39/rust-tools.nvim"
+    },
+    -- {
+    --   "iamcco/markdown-preview.nvim",
+    --   build = "cd app; npm install",
+    --   init = function() vim.g.mkdp_filetypes = { "markdown" } end,
+    --   ft = { "markdown" },
+    -- },
+    {
+        "kana/vim-textobj-user"
+    }, {
+    "lervag/vimtex"
 }
-
 }
