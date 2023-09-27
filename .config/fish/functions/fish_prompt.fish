@@ -8,5 +8,5 @@
 
 
 function fish_prompt
-	echo -n (set_color -o "#A7C080")(basename $PWD) "🡢 "
+    echo -n (set_color -o "#7AA2F7") (set_color -o "#9D98F7") (basename $PWD) (set_color -o "#9ECE6A") " "
 end
