@@ -121,6 +121,5 @@
     "**/.git": false
   },
   "files.autoSave": "afterDelay",
-  "window.zoomLevel": 1,
-  "workbench.activityBar.location": "hidden"
+  "window.zoomLevel": 1
 }

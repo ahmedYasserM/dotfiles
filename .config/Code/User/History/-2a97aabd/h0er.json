@@ -108,7 +108,7 @@
   "go.inlayHints.compositeLiteralTypes": true,
   "go.inlayHints.compositeLiteralFields": true,
   "extensions.autoUpdate": false,
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "breadcrumbs.enabled": false,
   "errorLens.messageEnabled": true,
   "window.titleBarStyle": "native",
@@ -121,6 +121,5 @@
     "**/.git": false
   },
   "files.autoSave": "afterDelay",
-  "window.zoomLevel": 1,
-  "workbench.activityBar.location": "hidden"
+  "window.zoomLevel": 1
 }

@@ -306,7 +306,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "alt+k",
+    "key": "alt+j",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
   },

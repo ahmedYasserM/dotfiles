@@ -2,136 +2,31 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/ahmed/tutorials/http": "__default__profile__",
-            "file:///home/ahmed/dev/adder": "__default__profile__",
-            "file:///home/ahmed/dev/node-learn": "__default__profile__",
-            "file:///home/ahmed/dev/gp": "__default__profile__",
-            "file:///home/ahmed/tutorials/vim": "__default__profile__",
-            "file:///home/ahmed/repos/configs": "__default__profile__",
-            "file:///home/ahmed/.config/nvim": "__default__profile__",
-            "file:///home/ahmed/dev/rust-learn": "__default__profile__",
-            "file:///home/ahmed/repos/BeRoot/Editors/vim": "__default__profile__",
-            "file:///home/ahmed/repos/reveal.js": "__default__profile__",
-            "file:///home/ahmed/dev/go-learn/golang/lcowebserver": "__default__profile__",
-            "file:///home/ahmed/dev/go-learn": "__default__profile__",
-            "file:///home/ahmed/dev/courses-api": "__default__profile__",
-            "file:///home/ahmed/dev/go-web-programming/chit-chat": "__default__profile__",
-            "file:///home/ahmed/dev/go-web-programming/first-webapp": "__default__profile__",
-            "file:///home/ahmed/dev/rust-source": "__default__profile__",
-            "file:///home/ahmed/tutorials/markdown": "__default__profile__",
-            "file:///home/ahmed/dev/scripts": "__default__profile__",
-            "file:///usr/share/themes/Pop/gnome-shell": "__default__profile__",
-            "file:///usr/share/themes/Pop-dark/gnome-shell": "__default__profile__",
-            "file:///home/ahmed/.themes/taru": "__default__profile__",
-            "file:///home/ahmed/.themes/taru/gnome-shell": "__default__profile__",
-            "file:///home/ahmed/repos/vscode-neovim/src": "__default__profile__",
-            "file:///home/ahmed/dev/go-web-programming": "__default__profile__",
-            "file:///home/ahmed/dev/rust": "__default__profile__",
-            "file:///home/ahmed/dev/go": "__default__profile__",
-            "file:///home/ahmed/dev": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/go/httprouter": "__default__profile__",
-            "file:///home/ahmed/tutorials/vim-session": "__default__profile__",
-            "file:///home/ahmed/downloads/shs": "__default__profile__",
-            "file:///home/ahmed/tutorials/notes": "__default__profile__",
-            "file:///home/ahmed/.themes/taru.forest/gnome-shell": "__default__profile__",
-            "file:///home/ahmed/.config/gtk-3.0": "__default__profile__",
-            "file:///home/ahmed/.config/alacritty": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/rust/rust-learn/src": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/rust/demo": "__default__profile__",
-            "file:///home/ahmed/repos/iti-react-tasks/day1/Task/solution": "__default__profile__",
-            "file:///home/ahmed/repos/iti-react-tasks/day1": "__default__profile__",
-            "file:///home/ahmed/repos/iti-react-tasks/day2/Task/solution": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/go/server": "__default__profile__",
-            "file:///home/ahmed/repos/iti-react-tasks": "__default__profile__",
-            "file:///home/ahmed/tutorials/linux": "__default__profile__",
-            "file:///home/ahmed/repos/personal/iti-react-tasks/day5/tasks/solution": "__default__profile__",
-            "file:///home/ahmed/repos/personal/iti-react-tasks/day6/tasks/solution": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/rust/rust-learn": "__default__profile__",
-            "file:///home/ahmed/repos/personal/iti-react-tasks": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks/day6/tasks/solution": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks/day7/tasks/solution": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks/day8/Tasks/solution": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks/day9/Tasks/solution": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/go": "__default__profile__",
-            "file:///home/ahmed/.config/fish/functions": "__default__profile__",
-            "file:///home/ahmed/notes/gp/git-commits": "__default__profile__",
-            "file:///home/ahmed/notes/gp-ideas/git-commits": "__default__profile__",
-            "file:///home/ahmed/notes/linux/boot-process": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks/day10/Tasks/solution": "__default__profile__",
-            "file:///home/ahmed/tutorials/cs": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks/day8/tasks/solution": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks/day8/tasks/question": "__default__profile__",
-            "file:///home/ahmed/repos/personal/react-tasks/learn": "__default__profile__",
-            "file:///home/ahmed/dev/codeHub/scripts": "__default__profile__",
-            "file:///home/ahmed/tutorials/vim-session/exercises": "__default__profile__",
-            "file:///home/ahmed/tutorials/courses/linux/osc/vim-session-files": "__default__profile__",
-            "file:///home/ahmed/tutorials/courses/linux/osc": "__default__profile__",
-            "file:///home/ahmed/repos/osc/The-Art-of-Linux-23": "__default__profile__",
-            "file:///home/ahmed/.config/Code/User": "__default__profile__",
-            "file:///home/ahmed": "__default__profile__",
             "file:///home/ahmed/dev/go/go-demo": "__default__profile__",
-            "file:///home/ahmed/repos/Linux-24-Old-Members-Tasks": "__default__profile__",
-            "file:///home/ahmed/dev/git-learn": "__default__profile__",
-            "file:///home/ahmed/dev/git/git-learn": "__default__profile__",
-            "file:///home/ahmed/dev/git/demo1": "__default__profile__",
-            "file:///home/ahmed/repos/NoteChunk": "__default__profile__",
-            "file:///home/ahmed/repos/fcis/Neural_Network": "__default__profile__",
-            "file:///home/ahmed/dev/git": "__default__profile__"
+            "file:///home/ahmed/dev/go/demo1": "__default__profile__"
         },
         "emptyWindows": {
-            "1701433685051": "__default__profile__"
+            "1701439440641": "__default__profile__"
         }
     },
     "profileAssociationsMigration": true,
+    "telemetry.sqmId": "",
     "telemetry.machineId": "4036b90c230858b660cea844a26f0540260682c81319950b614cdf87bae0228c",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/ahmed/dev/go/go-demo"
+            },
+            {
+                "folderUri": "file:///home/ahmed/dev/go/demo1"
+            }
+        ],
         "emptyWindows": [
             {
-                "backupFolder": "1701433685051"
+                "backupFolder": "1701439440641"
             }
         ]
-    },
-    "windowsState": {
-        "lastActiveWindow": {
-            "backupPath": "/home/ahmed/.config/Code/Backups/1701433685051",
-            "uiState": {
-                "mode": 1,
-                "x": 11,
-                "y": 11,
-                "width": 943,
-                "height": 1021
-            }
-        },
-        "openedWindows": []
-    },
-    "theme": "vs-dark",
-    "themeBackground": "#1e1e2e",
-    "windowSplash": {
-        "zoomLevel": 1,
-        "baseTheme": "vs-dark",
-        "colorInfo": {
-            "foreground": "#cdd6f4",
-            "background": "#1e1e2e",
-            "editorBackground": "#1e1e2e",
-            "titleBarBackground": "#11111b",
-            "activityBarBackground": "#11111b",
-            "sideBarBackground": "#181825",
-            "statusBarBackground": "#11111b",
-            "statusBarNoFolderBackground": "#11111b",
-            "windowBorder": "rgba(0, 0, 0, 0)"
-        },
-        "layoutInfo": {
-            "sideBarSide": "right",
-            "editorPartMinWidth": 220,
-            "titleBarHeight": 0,
-            "activityBarWidth": 0,
-            "sideBarWidth": 0,
-            "statusBarHeight": 22,
-            "windowBorder": false
-        }
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -176,6 +71,28 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/dev/go/demo1",
+                                        "path": "/home/ahmed/dev/go/demo1",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dev/go/demo1"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/dev/go/go-demo",
+                                        "path": "/home/ahmed/dev/go/go-demo",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dev/go/go-demo"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -247,17 +164,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/dev/go/go-demo",
-                                        "path": "/home/ahmed/dev/go/go-demo",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/go/go-demo"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/ahmed",
                                         "path": "/home/ahmed",
                                         "scheme": "file"
@@ -275,17 +181,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config/Code/User"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed/repos/osc/The-Art-of-Linux-23",
-                                        "path": "/home/ahmed/repos/osc/The-Art-of-Linux-23",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/repos/osc/The-Art-of-Linux-23"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -540,6 +435,10 @@
                                     "label": "Configure User Snippets"
                                 },
                                 {
+                                    "id": "workbench.action.tasks.openUserTasks",
+                                    "label": "User Tasks"
+                                },
+                                {
                                     "id": "submenuitem.ThemesSubMenu",
                                     "label": "&&Theme",
                                     "submenu": {
@@ -579,6 +478,10 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -1019,6 +922,10 @@
                         "label": "E&&xtensions"
                     },
                     {
+                        "id": "workbench.view.extension.test",
+                        "label": "T&&esting"
+                    },
+                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -1028,6 +935,10 @@
                     {
                         "id": "workbench.action.output.toggleOutput",
                         "label": "&&Output"
+                    },
+                    {
+                        "id": "workbench.debug.action.toggleRepl",
+                        "label": "De&&bug Console"
                     },
                     {
                         "id": "workbench.action.terminal.toggleTerminal",
@@ -1047,8 +958,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1057,8 +967,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1255,6 +1164,112 @@
             "Run": {
                 "items": [
                     {
+                        "id": "workbench.action.debug.start",
+                        "label": "&&Start Debugging"
+                    },
+                    {
+                        "id": "workbench.action.debug.run",
+                        "label": "Run &&Without Debugging"
+                    },
+                    {
+                        "id": "workbench.action.debug.stop",
+                        "label": "&&Stop Debugging",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.restart",
+                        "label": "&&Restart Debugging",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.debug.configure",
+                        "label": "Open &&Configurations",
+                        "enabled": false
+                    },
+                    {
+                        "id": "debug.addConfiguration",
+                        "label": "A&&dd Configuration..."
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.debug.stepOver",
+                        "label": "Step &&Over",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.stepInto",
+                        "label": "Step &&Into",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.stepOut",
+                        "label": "Step O&&ut",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.continue",
+                        "label": "&&Continue",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.debug.action.toggleBreakpoint",
+                        "label": "Toggle &&Breakpoint"
+                    },
+                    {
+                        "id": "submenuitem.MenubarNewBreakpointMenu",
+                        "label": "&&New Breakpoint",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "editor.debug.action.conditionalBreakpoint",
+                                    "label": "&&Conditional Breakpoint..."
+                                },
+                                {
+                                    "id": "editor.debug.action.editBreakpoint",
+                                    "label": "&&Edit Breakpoint"
+                                },
+                                {
+                                    "id": "editor.debug.action.toggleInlineBreakpoint",
+                                    "label": "Inline Breakp&&oint"
+                                },
+                                {
+                                    "id": "workbench.debug.viewlet.action.addFunctionBreakpointAction",
+                                    "label": "&&Function Breakpoint..."
+                                },
+                                {
+                                    "id": "editor.debug.action.addLogPoint",
+                                    "label": "&&Logpoint..."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.enableAllBreakpoints",
+                        "label": "&&Enable All Breakpoints"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.disableAllBreakpoints",
+                        "label": "Disable A&&ll Breakpoints"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.removeAllBreakpoints",
+                        "label": "Remove &&All Breakpoints"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
                         "id": "debug.installAdditionalDebuggers",
                         "label": "&&Install Additional Debuggers..."
                     }
@@ -1268,11 +1283,18 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.runTask",
+                        "label": "&&Run Task..."
+                    },
+                    {
+                        "id": "workbench.action.tasks.build",
+                        "label": "Run &&Build Task..."
                     },
                     {
                         "id": "workbench.action.terminal.runActiveFile",
@@ -1281,6 +1303,35 @@
                     {
                         "id": "workbench.action.terminal.runSelectedText",
                         "label": "Run &&Selected Text"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.showTasks",
+                        "label": "Show Runnin&&g Tasks...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.tasks.restartTask",
+                        "label": "R&&estart Running Task...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.tasks.terminate",
+                        "label": "&&Terminate Task...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.configureTaskRunner",
+                        "label": "&&Configure Tasks..."
+                    },
+                    {
+                        "id": "workbench.action.tasks.configureDefaultBuildTask",
+                        "label": "Configure De&&fault Build Task..."
                     }
                 ]
             },
@@ -1325,10 +1376,6 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "workbench.action.openYouTubeUrl",
-                        "label": "&&Join Us on YouTube"
-                    },
-                    {
                         "id": "workbench.action.openRequestFeatureUrl",
                         "label": "&&Search Feature Requests"
                     },
@@ -1342,10 +1389,6 @@
                     {
                         "id": "workbench.action.openLicenseUrl",
                         "label": "View &&License"
-                    },
-                    {
-                        "id": "workbench.action.openPrivacyStatementUrl",
-                        "label": "Privac&&y Statement"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1426,6 +1469,11 @@
             "workbench.action.closeActiveEditor": {
                 "label": "Shift+Alt+;",
                 "userSettingsLabel": "shift+alt+;"
+            },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
@@ -1508,12 +1556,12 @@
                 "userSettingsLabel": "alt+down"
             },
             "editor.action.insertCursorAbove": {
-                "label": "Shift+Alt+Up",
-                "userSettingsLabel": "shift+alt+up"
+                "label": "Alt+K",
+                "userSettingsLabel": "alt+k"
             },
             "editor.action.insertCursorBelow": {
-                "label": "Shift+Alt+Down",
-                "userSettingsLabel": "shift+alt+down"
+                "label": "Alt+J",
+                "userSettingsLabel": "alt+j"
             },
             "editor.action.insertCursorAtEndOfEachLineSelected": {
                 "label": "Shift+Alt+I",
@@ -1617,6 +1665,10 @@
                 "label": "Ctrl+K Ctrl+H",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+h"
+            },
+            "workbench.debug.action.toggleRepl": {
+                "label": "Ctrl+Shift+Y",
+                "userSettingsLabel": "ctrl+shift+y"
             },
             "workbench.action.terminal.toggleTerminal": {
                 "label": "Alt+.",
@@ -1746,6 +1798,46 @@
                 "label": "Shift+Alt+F3",
                 "userSettingsLabel": "shift+alt+f3"
             },
+            "workbench.action.debug.start": {
+                "label": "F5",
+                "userSettingsLabel": "f5"
+            },
+            "workbench.action.debug.run": {
+                "label": "Ctrl+F5",
+                "userSettingsLabel": "ctrl+f5"
+            },
+            "workbench.action.debug.stop": {
+                "label": "Shift+F5",
+                "userSettingsLabel": "shift+f5"
+            },
+            "workbench.action.debug.restart": {
+                "label": "Ctrl+Shift+F5",
+                "userSettingsLabel": "ctrl+shift+f5"
+            },
+            "workbench.action.debug.stepOver": {
+                "label": "F10",
+                "userSettingsLabel": "f10"
+            },
+            "workbench.action.debug.stepInto": {
+                "label": "F11",
+                "userSettingsLabel": "f11"
+            },
+            "workbench.action.debug.stepOut": {
+                "label": "Shift+F11",
+                "userSettingsLabel": "shift+f11"
+            },
+            "workbench.action.debug.continue": {
+                "label": "F5",
+                "userSettingsLabel": "f5"
+            },
+            "editor.debug.action.toggleBreakpoint": {
+                "label": "F9",
+                "userSettingsLabel": "f9"
+            },
+            "editor.debug.action.toggleInlineBreakpoint": {
+                "label": "Shift+F9",
+                "userSettingsLabel": "shift+f9"
+            },
             "workbench.action.terminal.new": {
                 "label": "Ctrl+Shift+`",
                 "userSettingsLabel": "ctrl+shift+`"
@@ -1754,6 +1846,10 @@
                 "label": "Ctrl+Shift+5",
                 "userSettingsLabel": "ctrl+shift+5"
             },
+            "workbench.action.tasks.build": {
+                "label": "Ctrl+Shift+B",
+                "userSettingsLabel": "ctrl+shift+b"
+            },
             "workbench.action.keybindingsReference": {
                 "label": "Ctrl+K Ctrl+R",
                 "isNative": false,
@@ -1761,5 +1857,43 @@
             }
         }
     },
-    "telemetry.sqmId": ""
+    "theme": "vs-dark",
+    "themeBackground": "#1d2327",
+    "windowSplash": {
+        "zoomLevel": 1,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#9aa79d",
+            "background": "#1d2327",
+            "editorBackground": "#1d2327",
+            "titleBarBackground": "#2d353b",
+            "activityBarBackground": "#2d353b",
+            "sideBarBackground": "#1d2327",
+            "statusBarBackground": "#1d2327",
+            "statusBarNoFolderBackground": "#2d353b"
+        },
+        "layoutInfo": {
+            "sideBarSide": "right",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 0,
+            "activityBarWidth": 0,
+            "sideBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/ahmed/dev/go/demo1",
+            "backupPath": "/home/ahmed/.config/VSCodium/Backups/0fb283719c4642186e189c2a006e6a44",
+            "uiState": {
+                "mode": 1,
+                "x": 0,
+                "y": 32,
+                "width": 1920,
+                "height": 1048
+            }
+        },
+        "openedWindows": []
+    }
 }
