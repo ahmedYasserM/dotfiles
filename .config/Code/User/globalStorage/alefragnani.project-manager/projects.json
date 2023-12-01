@@ -40,5 +40,19 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "git",
+		"rootPath": "/home/ahmed/dev/git",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "NoteChunk",
+		"rootPath": "/home/ahmed/repos/NoteChunk",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]

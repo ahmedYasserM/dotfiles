@@ -108,3 +108,4 @@ alias zi=__zoxide_zi
 # ~/.config/fish/config.fish):
 #
 #   zoxide init fish | source
+#load_nvm > /dev/stderr

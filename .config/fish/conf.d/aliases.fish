@@ -1,5 +1,7 @@
 #!/usr/bin/env fish
 
+## systemd
+abbr -a ss "doas systemctl"
 
 # obsidian
 alias to 'cp -r ~/repos/personal/dotfiles/templates/obsidian-template/{.obsidian,.obsidian.vimrc} .'
@@ -22,8 +24,12 @@ alias vim 'lvim'
 alias ctime 'date +%T'
 
 #xclip
-abbr -a xl 'xclip -selection c' # copy
-abbr -a al 'xclip -selection c -o | tr "\n" " "'  # paste
+# abbr -a xl 'tee /dev/tty | xclip -selection c -r' # copy
+# abbr -a al 'xclip -selection c -o -r'  # paste
+
+# wl-clipboard
+abbr -a xl 'tee /dev/tty | wl-copy -n'
+abbr -a al 'wl-paste'
 
 #docker
 abbr --erase a
@@ -89,15 +95,20 @@ abbr -a rmr "trash-restore"
 abbr -a rml "trash-list"
 
 # git
-
 abbr -a gcl 'gh repo clone'
 abbr -a gpu "git push"
 abbr -a gpl "git pull"
 abbr -a gf "git fetch"
-abbr -a gc "git commit"
+abbr -a gc 'git commit -m'
 abbr -a gm "git merge"
 abbr -a ga "git add"
-abbr -a gs "git status"
+abbr -a gs "git status -s"
+abbr -a gl "git log --oneline"
+abbr -a gk "git checkout"
+
+alias git-graph "git-graph --style round"
+# git-graph
+abbr -a g "git-graph"
 
 # cd
 alias .. "z .."

@@ -1,0 +1,99 @@
+#### Question 1
+
+![question 1](./imgs/image-1.png)
+
+---
+
+#### Question 2
+
+![question 2](./imgs/image-2.png)
+
+---
+
+#### Question 3
+
+![question 3](./imgs/image-3.png)
+
+---
+
+#### Question 4
+
+![question 4](./imgs/image-4.png)
+
+---
+
+#### Question 5
+
+![question 5](./imgs/image-5.png)
+
+---
+
+#### Question 6
+
+![question 6](./imgs/image-6.png)
+
+---
+
+#### Question 7
+
+![question 7](./imgs/image-7.png)
+
+---
+
+#### Question 8
+
+![question 8](./imgs/image-8.png)
+
+---
+
+#### Question 9
+
+![question 9](./imgs/image-9.png)
+
+---
+
+#### Question 10
+
+![question 10](./imgs/image-10.png)
+
+---
+
+#### Question 11
+
+![question 11](./imgs/image-11.png)
+
+---
+
+#### Question 12
+
+![question 12](./imgs/image-12.png)
+
+---
+
+#### Question 13
+
+![question 13](./imgs/image-13.png)
+
+---
+
+#### Question 14
+
+![question 14](./imgs/image-14.png)
+
+---
+
+#### Question 15
+
+![question 15](./imgs/image-15.png)
+
+---
+
+#### Question 16
+
+![question 16](./imgs/image-16.png)
+
+---
+
+#### Question 17
+
+![question 17](./imgs/image-17.png)
