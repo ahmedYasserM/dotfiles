@@ -3,56 +3,71 @@
 		"name": "go",
 		"rootPath": "/home/ahmed/dev/codeHub/go",
 		"paths": [],
-		"tags": [],
-		"enabled": true
+		"group": "",
+		"enabled": true,
+		"tags": []
 	},
 	{
 		"name": "scripts",
 		"rootPath": "/home/ahmed/dev/codeHub/scripts",
 		"paths": [],
-		"tags": [],
-		"enabled": true
+		"group": "",
+		"enabled": true,
+		"tags": []
 	},
 	{
 		"name": "rust",
 		"rootPath": "/home/ahmed/dev/codeHub/rust/rust-learn",
 		"paths": [],
-		"tags": [],
-		"enabled": true
+		"group": "",
+		"enabled": true,
+		"tags": []
 	},
 	{
 		"name": "dev",
 		"rootPath": "/home/ahmed/dev",
 		"paths": [],
-		"tags": [],
-		"enabled": true
+		"group": "",
+		"enabled": true,
+		"tags": []
 	},
 	{
 		"name": "server",
 		"rootPath": "/home/ahmed/dev/codeHub/go/server",
 		"paths": [],
-		"tags": [],
-		"enabled": true
+		"group": "",
+		"enabled": true,
+		"tags": []
 	},
 	{
 		"name": "react-tasks",
 		"rootPath": "/home/ahmed/repos/personal/react-tasks",
 		"paths": [],
-		"tags": [],
-		"enabled": true
+		"group": "",
+		"enabled": true,
+		"tags": []
 	},
 	{
 		"name": "git",
 		"rootPath": "/home/ahmed/dev/git",
 		"paths": [],
-		"tags": [],
-		"enabled": true
+		"group": "",
+		"enabled": true,
+		"tags": []
 	},
 	{
 		"name": "NoteChunk",
 		"rootPath": "/home/ahmed/repos/NoteChunk",
 		"paths": [],
-		"tags": [],
+		"group": "",
+		"enabled": true,
+		"tags": []
+	},
+	{
+		"name": "docker-labs",
+		"rootPath": "/home/ahmed/repos/Linux-24-Old-Members-Tasks/Yasser",
+		"paths": [],
+		"group": "",
 		"enabled": true
 	}
 ]

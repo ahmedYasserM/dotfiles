@@ -24,12 +24,12 @@ alias vim 'lvim'
 alias ctime 'date +%T'
 
 #xclip
-# abbr -a xl 'tee /dev/tty | xclip -selection c -r' # copy
-# abbr -a al 'xclip -selection c -o -r'  # paste
+abbr -a xl 'tee /dev/tty | xclip -selection c -r' # copy
+abbr -a al 'xclip -selection c -o -r'  # paste
 
 # wl-clipboard
-abbr -a xl 'tee /dev/tty | wl-copy -n'
-abbr -a al 'wl-paste'
+# abbr -a xl 'tee /dev/tty | wl-copy -n'
+# abbr -a al 'wl-paste'
 
 #docker
 abbr --erase a
@@ -48,19 +48,20 @@ alias  td 'tmux detach'
 abbr -a ydl 'youtube-dl'
 
 # xbps
-alias s 'doas xbps-install -S'
-alias i 's;doas xbps-install'
-alias q 'doas xbps-query -Rs'
-alias u 's;doas xbps-install -u xbps; doas xbps-install -u'
-alias r 'doas xbps-remove -R'
+# alias s 'doas xbps-install -S'
+# alias i 's;doas xbps-install'
+# alias q 'doas xbps-query -Rs'
+# alias u 's;doas xbps-install -u xbps; doas xbps-install -u'
+# alias r 'doas xbps-remove -R'
 
 abbr --erase q
+
 # apt
-# alias  r="sudo apt remove"       ## remove
-# alias  q="apt search"       ## query
-# alias  i="sudo apt install"      ## install
-# alias  s="sudo apt update"       ## sync
-# alias  u="sync;sudo apt upgrade" ## update
+abbr -a  r "doas nala remove"       ## remove
+abbr -a  q "nala search"       ## query
+abbr -a  i "doas nala install"      ## install
+abbr -a  s "doas nala update"       ## sync
+abbr -a  u "doas nala upgrade" ## update
 
 # ls
 alias cl 'command ls --color auto' ## pure ls
@@ -105,6 +106,7 @@ abbr -a ga "git add"
 abbr -a gs "git status -s"
 abbr -a gl "git log --oneline"
 abbr -a gk "git checkout"
+abbr -a gb "git branch"
 
 alias git-graph "git-graph --style round"
 # git-graph

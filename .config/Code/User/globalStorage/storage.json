@@ -3,11 +3,14 @@
     "profileAssociations": {
         "workspaces": {
             "file:///home/ahmed/dev/go/go-demo": "__default__profile__",
-            "file:///home/ahmed/dev/go/demo1": "__default__profile__"
+            "file:///home/ahmed/repos/Linux-24-Old-Members-Tasks/Yasser": "__default__profile__",
+            "file:///home/ahmed/dev/go/demo1": "__default__profile__",
+            "file:///home/ahmed/dev/git": "__default__profile__",
+            "file:///home/ahmed/repos/NoteChunk": "__default__profile__",
+            "file:///home/ahmed/dev/git/demo4": "__default__profile__",
+            "file:///home/ahmed/dev/git/demo1": "__default__profile__"
         },
-        "emptyWindows": {
-            "1701439440641": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
@@ -16,17 +19,10 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/ahmed/dev/go/go-demo"
-            },
-            {
-                "folderUri": "file:///home/ahmed/dev/go/demo1"
+                "folderUri": "file:///home/ahmed/dev/git/demo1"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1701439440641"
-            }
-        ]
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -76,45 +72,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/dev/go/demo1",
-                                        "path": "/home/ahmed/dev/go/demo1",
+                                        "external": "file:///home/ahmed/dev/git/demo1",
+                                        "path": "/home/ahmed/dev/git/demo1",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dev/go/demo1"
+                                    "label": "~/dev/git/demo1"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/dev/go/go-demo",
-                                        "path": "/home/ahmed/dev/go/go-demo",
+                                        "external": "file:///home/ahmed/dev/git/demo4",
+                                        "path": "/home/ahmed/dev/git/demo4",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dev/go/go-demo"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed/dev/git",
-                                        "path": "/home/ahmed/dev/git",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/git"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed/repos/fcis/Neural_Network",
-                                        "path": "/home/ahmed/repos/fcis/Neural_Network",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/repos/fcis/Neural_Network"
+                                    "label": "~/dev/git/demo4"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -131,12 +105,56 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ahmed/dev/git/demo1",
-                                        "path": "/home/ahmed/dev/git/demo1",
+                                        "external": "file:///home/ahmed/dev/git",
+                                        "path": "/home/ahmed/dev/git",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dev/git/demo1"
+                                    "label": "~/dev/git"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/dev/go/demo1",
+                                        "path": "/home/ahmed/dev/go/demo1",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dev/go/demo1"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/repos/Linux-24-Old-Members-Tasks/Yasser",
+                                        "path": "/home/ahmed/repos/Linux-24-Old-Members-Tasks/Yasser",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/repos/Linux-24-Old-Members-Tasks/Yasser"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/dev/go/go-demo",
+                                        "path": "/home/ahmed/dev/go/go-demo",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dev/go/go-demo"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ahmed/repos/fcis/Neural_Network",
+                                        "path": "/home/ahmed/repos/fcis/Neural_Network",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/repos/fcis/Neural_Network"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -159,28 +177,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/repos/Linux-24-Old-Members-Tasks"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed",
-                                        "path": "/home/ahmed",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/home/ahmed"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ahmed/.config/Code/User",
-                                        "path": "/home/ahmed/.config/Code/User",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/Code/User"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -689,7 +685,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel"
+                                    "label": "&&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -850,13 +847,6 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.action.editorLayoutSingle",
                                     "label": "&&Single"
                                 },
@@ -950,7 +940,7 @@
                     {
                         "id": "editor.action.toggleWordWrap",
                         "label": "&&Word Wrap",
-                        "checked": true
+                        "enabled": false
                     }
                 ]
             },
@@ -958,7 +948,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -967,7 +958,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1632,11 +1624,6 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+w v"
             },
-            "workbench.action.splitEditorInGroup": {
-                "label": "Ctrl+K Ctrl+Shift+\\",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
-            },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Shift+Alt+0",
                 "userSettingsLabel": "shift+alt+0"
@@ -1860,7 +1847,7 @@
     "theme": "vs-dark",
     "themeBackground": "#1d2327",
     "windowSplash": {
-        "zoomLevel": 1,
+        "zoomLevel": 0.1,
         "baseTheme": "vs-dark",
         "colorInfo": {
             "foreground": "#9aa79d",
@@ -1884,8 +1871,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/ahmed/dev/go/demo1",
-            "backupPath": "/home/ahmed/.config/VSCodium/Backups/0fb283719c4642186e189c2a006e6a44",
+            "folder": "file:///home/ahmed/dev/git/demo1",
+            "backupPath": "/home/ahmed/.config/VSCodium/Backups/1593133835dc3a7f1e8cdb66f84c7476",
             "uiState": {
                 "mode": 1,
                 "x": 0,
