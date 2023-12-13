@@ -98,10 +98,6 @@
     "key": "alt+n",
     "command": "workbench.action.showCommands"
   },
-  {
-    "key": "alt+q",
-    "command": "workbench.action.toggleActivityBarVisibility"
-  },
 
   {
     "command": "runCommands",
@@ -324,6 +320,14 @@
     "key": "shift+alt+down",
     "command": "-editor.action.insertCursorBelow",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+u",
+    "command": "workbench.action.focusActivityBar"
+  },
+  {
+    "key": "shift+alt+u",
+    "command": "workbench.action.activityBarLocation.hide"
   }
   // {
   //   "key": "alt+u",
