@@ -1,0 +1,36 @@
+\documentclass[10pt]{article}
+\usepackage{enumitem} 
+\usepackage{amsmath}
+\usepackage[most]{tcolorbox} 
+\usepackage{xcolor}
+\usepackage[margin=3cm, a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{wrapfig}
+
+\definecolor{lawframe}{RGB}{167, 160, 82}
+\definecolor{noteframe}{HTML}{38719F}
+
+
+\newcommand{\law}[2]{
+  \begin{tcolorbox}[colback=yellow!10!white,colframe=lawframe,title=Rule - #1]
+      #2
+  \end{tcolorbox}
+}
+
+\newcommand{\note}[1]{
+  \begin{tcolorbox}[colback=yellow!10!white,colframe=noteframe,title=Note]
+      #1
+  \end{tcolorbox}
+}
+
+\title{}
+\author{Ahmed Yasser}
+\date{\today}
+
+\begin{document}
+\maketitle
+\newpage
+
+\end{document}
