@@ -1,6 +1,11 @@
 #!/usr/bin/env fish
 
-## systemd
+
+# matlab
+# alias matlab="matlab & disown"
+
+
+# systemd
 abbr -a ss "doas systemctl"
 
 # obsidian
@@ -11,13 +16,13 @@ alias history 'history'
 # alias history 'history | nl'
 
 # vscode
-alias code "code $1 & disown"
+# alias code "code $1 & disown"
 
 # nnn
 abbr -a  n 'nnn'
 
 # lvim
-alias vim 'lvim'
+alias vim 'nvim'
 
 
 # current time
@@ -45,7 +50,7 @@ alias  ta 'tmux attach -t'
 alias  td 'tmux detach'
 
 # youtube-dl
-abbr -a ydl 'youtube-dl'
+abbr -a dl 'youtube-dl ""'
 
 # xbps
 # alias s 'doas xbps-install -S'

@@ -109,3 +109,13 @@ alias zi=__zoxide_zi
 #
 #   zoxide init fish | source
 #load_nvm > /dev/stderr
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#if test -f /home/ahmed/downloads/apps/anaconda3/bin/conda
+#    eval /home/ahmed/downloads/apps/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+#end
+
+#conda config --set auto_activate_base false
+# <<< conda initialize <<<
+
