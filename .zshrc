@@ -1,146 +1,72 @@
-#  ╔═╗╔═╗╦ ╦╦═╗╔═╗  ╔═╗╔═╗╔╗╔╔═╗╦╔═╗	- z0mbi3
-#  ╔═╝╚═╗╠═╣╠╦╝║    ║  ║ ║║║║╠╣ ║║ ╦	- https://github.com/gh0stzk/dotfiles
-#  ╚═╝╚═╝╩ ╩╩╚═╚═╝  ╚═╝╚═╝╝╚╝╚  ╩╚═╝	- My zsh conf
+# Path to your oh-my-zsh installation.
+ZSH=/usr/share/oh-my-zsh/
 
-#  ┬  ┬┌─┐┬─┐┌─┐
-#  └┐┌┘├─┤├┬┘└─┐
-#   └┘ ┴ ┴┴└─└─┘
-export VISUAL='lvim'
-export EDITOR='lvim'
-export TERMINAL='alacritty'
-export BROWSER='firefox'
-export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
-export GOPATH='/home/ahmed/.go'
+# Path to powerlevel10k theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
-fi
-
-
-#  ┬  ┌─┐┌─┐┌┬┐  ┌─┐┌┐┌┌─┐┬┌┐┌┌─┐
-#  │  │ │├─┤ ││  ├┤ ││││ ┬││││├┤ 
-#  ┴─┘└─┘┴ ┴─┴┘  └─┘┘└┘└─┘┴┘└┘└─┘
-autoload -Uz compinit
-
-for dump in ~/.config/zsh/zcompdump(N.mh+24); do
-  compinit -d ~/.config/zsh/zcompdump
-done
-
-compinit -C -d ~/.config/zsh/zcompdump
-
-autoload -Uz add-zsh-hook
-autoload -Uz vcs_info
-precmd () { vcs_info }
-_comp_options+=(globdots)
-
-zstyle ':completion:*' verbose true
-zstyle ':completion:*:*:*:*:*' menu select
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS} 'ma=48;5;197;1'
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*:warnings' format "%B%F{red}No matches for:%f %F{magenta}%d%b"
-zstyle ':completion:*:descriptions' format '%F{yellow}[-- %d --]%f'
-zstyle ':vcs_info:*' formats ' %B%s-[%F{magenta}%f %F{yellow}%b%f]-'
-
-#  ┬ ┬┌─┐┬┌┬┐┬┌┐┌┌─┐  ┌┬┐┌─┐┌┬┐┌─┐
-#  │││├─┤│ │ │││││ ┬   │││ │ │ └─┐
-#  └┴┘┴ ┴┴ ┴ ┴┘└┘└─┘  ─┴┘└─┘ ┴ └─┘
-expand-or-complete-with-dots() {
-  echo -n "\e[31m…\e[0m"
-  zle expand-or-complete
-  zle redisplay
-}
-zle -N expand-or-complete-with-dots
-bindkey "^I" expand-or-complete-with-dots
-
-#  ┬ ┬┬┌─┐┌┬┐┌─┐┬─┐┬ ┬
-#  ├─┤│└─┐ │ │ │├┬┘└┬┘
-#  ┴ ┴┴└─┘ ┴ └─┘┴└─ ┴ 
-HISTFILE=~/.config/zsh/zhistory
-HISTSIZE=5000
-SAVEHIST=5000
-
-#  ┌─┐┌─┐┬ ┬  ┌─┐┌─┐┌─┐┬    ┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
-#  ┌─┘└─┐├─┤  │  │ ││ ││    │ │├─┘ │ ││ ││││└─┐
-#  └─┘└─┘┴ ┴  └─┘└─┘└─┘┴─┘  └─┘┴   ┴ ┴└─┘┘└┘└─┘
-setopt AUTOCD              # change directory just by typing its name
-setopt PROMPT_SUBST        # enable command substitution in prompt
-setopt MENU_COMPLETE       # Automatically highlight first element of completion menu
-setopt LIST_PACKED		   # The completion menu takes less space.
-setopt AUTO_LIST           # Automatically list choices on ambiguous completion.
-setopt HIST_IGNORE_DUPS	   # Do not write events to history that are duplicates of previous events
-setopt HIST_FIND_NO_DUPS   # When searching history don't display results already cycled through twice
-setopt COMPLETE_IN_WORD    # Complete from both ends of a word.
-
-#  ┌┬┐┬ ┬┌─┐  ┌─┐┬─┐┌─┐┌┬┐┌─┐┌┬┐
-#   │ ├─┤├┤   ├─┘├┬┘│ ││││├─┘ │ 
-#   ┴ ┴ ┴└─┘  ┴  ┴└─└─┘┴ ┴┴   ┴
-function dir_icon {
-  if [[ "$PWD" == "$HOME" ]]; then
-    echo "%B%F{black}%f%b"
-  else
-    echo "%B%F{cyan}%f%b"
-  fi
-}
-
-PS1='%B%F{blue}%f%b  %B%F{magenta}%n%f%b $(dir_icon)  %B%F{red}%c%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
-PS1='%B%F{blue}%f%b %B%F{red}%c%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
-
-#  ┌─┐┬  ┬ ┬┌─┐┬┌┐┌┌─┐
-#  ├─┘│  │ ││ ┬││││└─┐
-#  ┴  ┴─┘└─┘└─┘┴┘└┘└─┘
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-#  ┌─┐┬ ┬┌─┐┌┐┌┌─┐┌─┐  ┌┬┐┌─┐┬─┐┌┬┐┬┌┐┌┌─┐┬  ┌─┐  ┌┬┐┬┌┬┐┬  ┌─┐
-#  │  ├─┤├─┤││││ ┬├┤    │ ├┤ ├┬┘│││││││├─┤│  └─┐   │ │ │ │  ├┤ 
-#  └─┘┴ ┴┴ ┴┘└┘└─┘└─┘   ┴ └─┘┴└─┴ ┴┴┘└┘┴ ┴┴─┘└─┘   ┴ ┴ ┴ ┴─┘└─┘
-function xterm_title_precmd () {
-	print -Pn -- '\e]2;%n@%m %~\a'
-	[[ "$TERM" == 'screen'* ]] && print -Pn -- '\e_\005{g}%n\005{-}@\005{m}%m\005{-} \005{B}%~\005{-}\e\\'
-}
-
-function xterm_title_preexec () {
-	print -Pn -- '\e]2;%n@%m %~ %# ' && print -n -- "${(q)1}\a"
-	[[ "$TERM" == 'screen'* ]] && { print -Pn -- '\e_\005{g}%n\005{-}@\005{m}%m\005{-} \005{B}%~\005{-} %# ' && print -n -- "${(q)1}\e\\"; }
-}
-
-if [[ "$TERM" == (kitty*|alacritty*|termite*|gnome*|konsole*|kterm*|putty*|rxvt*|screen*|tmux*|xterm*) ]]; then
-	add-zsh-hook -Uz precmd xterm_title_precmd
-	add-zsh-hook -Uz preexec xterm_title_preexec
-fi
-
-#  ┌─┐┬  ┬┌─┐┌─┐
-#  ├─┤│  │├─┤└─┐
-#  ┴ ┴┴─┘┴┴ ┴└─┘
-
-
-if [ -f ~/.zsh_aliases ] ; then
+# Aliases
+if [[ -f /home/ahmed/.zsh_aliases ]]; then
 	source ~/.zsh_aliases
 fi
 
-alias mirrors="sudo reflector --verbose --latest 5 --country 'United States' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
+# List of plugins used
+plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
 
-alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias mantenimiento="yay -Sc && sudo pacman -Scc"
-alias purga="sudo pacman -Rns $(pacman -Qtdq) ; sudo fstrim -av"
-alias update="paru -Syu --nocombinedupgrade"
+# In case a command is not found, try to find the package that has it
+function command_not_found_handler {
+    local purple='\e[1;35m' bright='\e[0;1m' green='\e[1;32m' reset='\e[0m'
+    printf 'zsh: command not found: %s\n' "$1"
+    local entries=( ${(f)"$(/usr/bin/pacman -F --machinereadable -- "/usr/bin/$1")"} )
+    if (( ${#entries[@]} )) ; then
+        printf "${bright}$1${reset} may be found in the following packages:\n"
+        local pkg
+        for entry in "${entries[@]}" ; do
+            local fields=( ${(0)entry} )
+            if [[ "$pkg" != "${fields[2]}" ]] ; then
+                printf "${purple}%s/${bright}%s ${green}%s${reset}\n" "${fields[1]}" "${fields[2]}" "${fields[3]}"
+            fi
+            printf '    /%s\n' "${fields[4]}"
+            pkg="${fields[2]}"
+        done
+    fi
+    return 127
+}
 
-alias vm-on="sudo systemctl start libvirtd.service"
-alias vm-off="sudo systemctl stop libvirtd.service"
+# Detect the AUR wrapper
+if pacman -Qi yay &>/dev/null ; then
+   aurhelper="yay"
+elif pacman -Qi paru &>/dev/null ; then
+   aurhelper="paru"
+fi
 
-alias musica="ncmpcpp"
+function in {
+    local pkg="$1"
+    if pacman -Si "$pkg" &>/dev/null ; then
+        sudo pacman -S "$pkg"
+    else 
+        "$aurhelper" -S "$pkg"
+    fi
+}
 
-alias ls='lsd  --group-directories-first'
-alias ll='lsd -la --group-directories-first'
+# Helpful aliases
+alias  l='eza -lh  --icons=auto' # long list
+alias ls='eza   --icons=auto' # short list
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+alias ld='eza -lhD --icons=auto' # long list dirs
+alias un='$aurhelper -Rns' # uninstall package
+alias up='$aurhelper -Syu' # update system/package/aur
+alias pl='$aurhelper -Qs' # list installed package
+alias pa='$aurhelper -Ss' # list availabe package
+alias pc='$aurhelper -Sc' # remove unused cache
+alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
+alias vc='code --disable-gpu' # gui code editor
 
-#  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
-#  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │ 
-#  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴ 
-# $HOME/.local/bin/colorscript -r
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#Display Pokemon
+pokemon-colorscripts --no-title -r 1,3,6
 # =============================================================================
 #
 # Utility functions for zoxide.
@@ -247,8 +173,7 @@ fi
 # eval "$(zoxide init zsh)"
 
 
-
-## keybindings
+set -o vi
 
 # map jk to enter normal mode
 bindkey -M viins jk vi-cmd-mode
@@ -256,6 +181,17 @@ bindkey -M viins jk vi-cmd-mode
 # map alt + ; to accept suggestion
 bindkey '^[;' autosuggest-accept 
 
-## variables
-PATH=$PATH:~/.cargo/bin:~/dev/codeHub/scripts
-fish
+# GoPath
+export GOPATH="/home/ahmed/dev/go"
+
+# Cargo
+export PATH=$PATH:/home/ahmed/.cargo/bin
+
+# browser
+export BROWSER=/usr/bin/firefox
+
+# kubectl editor
+export KUBE_EDITOR=/usr/bin/nvim
+
+#EDITOR
+export EDITOR=/usr/bin/nvim

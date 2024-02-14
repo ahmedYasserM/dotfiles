@@ -1,6 +1,16 @@
 
+
+# jenkins-cli
+alias jcli="java -jar /opt/java-apps/jenkins-cli.jar -s http://localhost:8080/" 
+
+# wl-clipboard
+alias  xl="tee /dev/tty | wl-copy -n"
+alias  al="wl-paste"
+
+alias yless="jless --yaml"
+
 # vim
-alias vim='lvim'
+alias vim='nvim'
 
 
 # tmux
@@ -14,11 +24,11 @@ alias td='tmux detach'
 alias ydl='youtube-dl'
 
 # apt
-alias r='sudo apt remove' ## remove
-alias q='sudo apt search' ## query
-alias i='sudo apt install' ## install
-alias s='sudo apt update' ## sync
-alias u='sync;sudo apt upgrade' ## update
+# alias r='sudo apt remove' ## remove
+# alias q='sudo apt search' ## query
+# alias i='sudo apt install' ## install
+# alias s='sudo apt update' ## sync
+# alias u='sync;sudo apt upgrade' ## update
 
 # ls
 alias cl='command ls --color=auto' ## pure ls
@@ -47,10 +57,6 @@ alias dd="deno run --check"
 alias obs="cp -r ~/templates/.obsidian .; cp -r ~/templates/.obsidian.vimrc ."
 
 
-
-# surreal db
-alias sur="surreal"
-
 # bash
 alias o="bash open ."
 
@@ -62,13 +68,9 @@ alias cn="cargo new"
 alias opdf="sioyek & disown"
 
 # docker
-alias docker="sudo docker"
+alias docker="doas docker"
 # make
 alias m="make -s"
-
-# nodejs
-alias n="node ."
-
 # python
 alias rp="python3 main.py"
 
@@ -76,6 +78,7 @@ alias tok="cat ~/data/token"
 
 # git
 
+alias ggr="git-graph"
 alias gcl='gh repo clone'
 alias gpu="git push"
 alias gpl="git pull"
@@ -83,12 +86,14 @@ alias gf="git fetch"
 alias gc="git commit"
 alias gm="git merge"
 alias ga="git add"
+alias gs="git status -s"
 
 # cd
 alias ..="z .."
 alias ...="..;.."
 alias ....="...;.."
 
+alias rm="trash"
 alias rf="rm -rf"
 
 alias dr="dotnet run"
