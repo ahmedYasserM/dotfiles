@@ -1,5 +1,8 @@
 
 
+# vritualvox
+alias vbox="vboxmanage"
+
 # jenkins-cli
 alias jcli="java -jar /opt/java-apps/jenkins-cli.jar -s http://localhost:8080/" 
 
@@ -105,7 +108,7 @@ alias ctp="cp /home/ahmed/Templates/c-temp"
 alias cptp="cp /home/ahmed/Templates/cpp-temp"
 
 alias grep="grep --color=auto"
-alias cat="bat"
+alias cat="bat -p"
 alias c="tput -x clear"
 alias manim="python -m manimlib --uhd -w -c black --video_dir ~/code/manim 	"
 alias t="tldr"

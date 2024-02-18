@@ -195,3 +195,9 @@ export KUBE_EDITOR=/usr/bin/nvim
 
 #EDITOR
 export EDITOR=/usr/bin/nvim
+
+# PAGER
+# export PAGER="nvim"
+export MANPAGER="nvim +Man!"
+
+export PATH=$PATH:/home/ahmed/dev/scripts
