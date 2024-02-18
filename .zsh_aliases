@@ -1,4 +1,6 @@
 
+### nnn
+alias n="nnn"
 
 # vritualvox
 alias vbox="vboxmanage"

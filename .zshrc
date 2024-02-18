@@ -201,3 +201,6 @@ export EDITOR=/usr/bin/nvim
 export MANPAGER="nvim +Man!"
 
 export PATH=$PATH:/home/ahmed/dev/scripts
+
+### nnn plugins
+export NNN_PLUG="f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview;k:autojump"
