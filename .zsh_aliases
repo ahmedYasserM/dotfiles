@@ -1,4 +1,8 @@
 
+
+# dolphin
+alias do="setsid dolphin $1 &> /dev/null"
+
 ### nnn
 alias n="nnn"
 
@@ -8,9 +12,6 @@ alias vbox="vboxmanage"
 # jenkins-cli
 alias jcli="java -jar /opt/java-apps/jenkins-cli.jar -s http://localhost:8080/" 
 
-# wl-clipboard
-alias  xl="tee /dev/tty | wl-copy -n"
-alias  al="wl-paste"
 
 alias yless="jless --yaml"
 
@@ -41,10 +42,6 @@ alias ls='exa --icons'
 alias la='ls -a'
 alias ll="ls -l"
 alias lla="ls -lah"
-
-# shutdown and reboot
-alias sd='sudo shutdown now' ## shutdown
-alias sr='sudo reboot' ## reboot
 
 # Exit
 alias xx="exit"
@@ -83,15 +80,15 @@ alias tok="cat ~/data/token"
 
 # git
 
-alias ggr="git-graph"
-alias gcl='gh repo clone'
-alias gpu="git push"
-alias gpl="git pull"
-alias gf="git fetch"
-alias gc="git commit"
-alias gm="git merge"
-alias ga="git add"
-alias gs="git status -s"
+# alias ggr="git-graph"
+# alias gcl='gh repo clone'
+# alias gpu="git push"
+# alias gpl="git pull"
+# alias gf="git fetch"
+# alias gc="git commit"
+# alias gm="git merge"
+# alias ga="git add"
+# alias gs="git status -s"
 
 # cd
 alias ..="z .."
@@ -117,3 +114,37 @@ alias t="tldr"
 alias pl="pdflatex"
 alias ip="ip -c"
  
+##### ABBREVIATIONS #####
+
+
+# pacman
+# abbr p="doas pacman"
+# abbr i="doas pacman -S"
+# abbr r="doas pacman -Rsn"
+# abbr q="doas pacman -Ss"
+# abbr s="doas pacman -Sy"
+# abbr u="doas pacman -Syu"
+
+# systemd
+# abbr sl="doas systemctl"
+
+
+# wl-clipboard
+# abbr -g xl="tee /dev/tty | wl-copy -n"
+# abbr -g al="wl-paste"
+
+
+# git
+
+# abbr -g grc='gh repo clone'
+# abbr -g gu="git push"
+# abbr -g gp="git pull"
+# abbr -g gf="git fetch"
+# abbr -g gc="git commit"
+# abbr -g gm="git merge"
+# abbr -g ga="git add"
+# abbr -g gs="git status"
+# abbr -g gb="git branch"
+# abbr -g gk="git checkout"
+# abbr -g gr="git restore"
+# abbr -g gg="git-graph"

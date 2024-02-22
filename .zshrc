@@ -4,10 +4,6 @@ ZSH=/usr/share/oh-my-zsh/
 # Path to powerlevel10k theme
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
-# Aliases
-if [[ -f /home/ahmed/.zsh_aliases ]]; then
-	source ~/.zsh_aliases
-fi
 
 # List of plugins used
 plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting)
@@ -203,4 +199,21 @@ export MANPAGER="nvim +Man!"
 export PATH=$PATH:/home/ahmed/dev/scripts
 
 ### nnn plugins
-export NNN_PLUG="f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview;k:autojump"
+# export NNN_PLUG="f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview;k:autojump"
+
+# Terminal
+export TERMINAL=kitty
+
+# zshabbr
+source /home/ahmed/repos/zsh-abbr/zsh-abbr.zsh
+
+# Aliases
+if [[ -f /home/ahmed/.zsh_aliases ]]; then
+	source ~/.zsh_aliases
+fi
+
+
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=/home/ahmed/dev/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
