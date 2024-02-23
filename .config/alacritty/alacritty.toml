@@ -1,4 +1,4 @@
-import = ["/home/ahmed/.config/alacritty/colors.toml", "/home/ahmed/.config/alacritty/fonts.toml"]
+import = ["/home/ahmed/.config/alacritty/colors-everforest.toml", "/home/ahmed/.config/alacritty/fonts.toml"]
 live_config_reload = true
 
 [cursor]
