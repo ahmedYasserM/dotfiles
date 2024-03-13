@@ -303,11 +303,7 @@
   },
   {
     "key": "alt+u",
-    "command": "workbench.action.focusActivityBar"
-  },
-  {
-    "key": "shift+alt+u",
-    "command": "workbench.action.activityBarLocation.hide"
+    "command": "workbench.action.toggleSidebarVisibility"
   },
   {
     "key": "ctrl+capslock ctrl+enter",

@@ -39,7 +39,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "JetBrains Mono NerdFont",
   "terminal.integrated.gpuAcceleration": "canvas",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
@@ -49,8 +49,7 @@
   "jupyter.askForKernelRestart": false,
   "markdown-pdf.displayHeaderFooter": false,
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/vs-vim/init.vim",
-  // "vscode-neovim.neovimClean": true,
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/ahmed/.config/vs-vim/init.vim",
   "workbench.editor.highlightModifiedTabs": true,
   "editor.minimap.enabled": false,
   "editor.inlineSuggest.enabled": true,
@@ -107,8 +106,7 @@
   "go.inlayHints.constantValues": true,
   "go.inlayHints.compositeLiteralTypes": true,
   "go.inlayHints.compositeLiteralFields": true,
-  "extensions.autoUpdate": false,
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "breadcrumbs.enabled": false,
   "errorLens.messageEnabled": true,
   "window.titleBarStyle": "native",
@@ -122,5 +120,6 @@
   },
   "files.autoSave": "afterDelay",
   "window.zoomLevel": 0.1,
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "top",
+  "window.customTitleBarVisibility": "never"
 }
