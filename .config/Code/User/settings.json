@@ -39,7 +39,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.fontFamily": "JetBrains Mono NerdFont",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.gpuAcceleration": "canvas",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
