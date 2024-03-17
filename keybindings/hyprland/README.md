@@ -31,7 +31,6 @@
 | `mainMod` + `M`           | Toggle window between fullscreen and tiling mode       |
 | `mainMod` + `o`           | Toggle between horizontal and vertical layout          |
 | `mainMod` + `SHIFT` + `p` | Close active window                                    |
-| `mainMod` + `i`           | Open nnn                                               |
 | `mainMod` + `n`           | Open rofi                                              |
 | `mainMod` + `f`           | Open dolphin                                           |
 | `mainMod` + `l`           | Change focus to next window `horizontal direction`     |
@@ -43,3 +42,8 @@
 | `mainMod` + `SHIFT` + `j` | Recisze window to the bottom |
 | `mainMod` + `SHIFT` + `k` | Recisze window to the top |
 | `mainMod` + `super` | Toggle language layout |
+| `CONTROL` + `i` | Open terminal as scratchpad | 
+| `CONTROL` + `p` | Open pavucontrol as scratchpad |
+| `CONTROL` + `n` | Open nnn as scratchpad |
+| `CONTROL` + `b` | Open btop as scratchpad |
+
