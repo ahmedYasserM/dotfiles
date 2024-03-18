@@ -1,0 +1,32 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.term]
+animation = "fromTop"
+command = "kitty --class floating -e ~/.config/hypr/scripts/kitty-tmux.sh 1"
+size = "75% 60%"
+max_size = "1920px 100%"
+lazy = true
+
+[scratchpads.nnn]
+animation = "fromTop"
+command = "kitty --class floating -e nnn"
+size = "75% 60%"
+lazy = true
+max_size = "1920px 100%"
+
+[scratchpads.btop]
+animation = "fromTop"
+command = "kitty --class floating -e btop"
+size = "75% 60%"
+lazy = true
+max_size = "1920px 100%"
+
+
+[scratchpads.emoji]
+animation = "fromTop"
+command = "kitty --class floating -e fish -c ~/.config/hypr/scripts/emo-loop.sh"
+size = "55% 30%"
+lazy = true
+max_size = "1920px 100%"
+
