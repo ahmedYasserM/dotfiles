@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-option=$1
+isScratchpad=$1
 sessionName=""
 
-if [ $option -eq 1 ]; then
+if [ $isScratchpad -eq 1 ]; then
   sessionName="kitty"
 else
   sessionName="term"
