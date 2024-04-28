@@ -7,7 +7,6 @@ local buffer_searcher
 buffer_searcher = function()
   builtin.buffers {
     sort_mru = true,
-    ignore_current_buffer = true,
     show_all_buffers = false,
     attach_mappings = function(prompt_bufnr, map)
       local refresh_buffer_searcher = function()
