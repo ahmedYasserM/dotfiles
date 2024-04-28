@@ -33,6 +33,8 @@ require("lspconfig").tsserver.setup({})
 require("lspconfig").gopls.setup({})
 require("lspconfig").tailwindcss.setup({})
 
+
+
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
   callback = function(ev)
