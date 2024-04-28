@@ -34,16 +34,17 @@ require("lazy").setup({
     run = "cd app && npm install",
   },
   {
-    "nvim-telescope/telescope.nvim", tag = "0.1.4",
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.4",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
   -- rust
-   "simrat39/rust-tools.nvim",
-   "mfussenegger/nvim-dap",
-   "rcarriga/nvim-dap-ui",
-   "nvim-neotest/nvim-nio",
+  "simrat39/rust-tools.nvim",
+  "mfussenegger/nvim-dap",
+  "rcarriga/nvim-dap-ui",
+  "nvim-neotest/nvim-nio",
 
-  -- jsx 
+  -- jsx
   {
     "windwp/nvim-ts-autotag",
     ft = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
@@ -54,7 +55,10 @@ require("lazy").setup({
 
   "Raimondi/delimitMate",
 
-"elentok/format-on-save.nvim"
+  "elentok/format-on-save.nvim",
+
+  "JASONews/glow-hover.nvim"
+
 
 
 })

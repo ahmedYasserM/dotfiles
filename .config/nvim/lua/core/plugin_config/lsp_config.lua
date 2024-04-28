@@ -34,6 +34,13 @@ require("lspconfig").gopls.setup({})
 require("lspconfig").tailwindcss.setup({})
 
 
+-- add border to hovered windows
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+  vim.lsp.handlers.hover,
+  {
+    border = "rounded", -- "shadow" , "none", "rounded"
+  }
+)
 
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
