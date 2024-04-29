@@ -54,11 +54,9 @@ require("lazy").setup({
   },
 
   "Raimondi/delimitMate",
-
   "elentok/format-on-save.nvim",
-
-  "JASONews/glow-hover.nvim"
-
+  "ixru/nvim-markdown",
+  'ThePrimeagen/harpoon'
 
 
 })

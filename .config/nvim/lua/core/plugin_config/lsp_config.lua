@@ -65,7 +65,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set({ 'n', 'v' }, '<space>la', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
     vim.keymap.set('n', '<space>f', function()
-      vim.keymap.set('n', "<leader>v", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>")
       vim.lsp.buf.format { async = true }
     end, opts)
   end,

@@ -1,4 +1,9 @@
-require('telescope').setup({ file_ignore_patterns = { "node%_modules/.*" } })
+require('telescope').setup({
+  defaults = {
+    file_ignore_patterns = { '^node_modules/', },
+  }
+})
+
 local builtin = require('telescope.builtin')
 local action_state = require('telescope.actions.state')
 local actions = require('telescope.actions')

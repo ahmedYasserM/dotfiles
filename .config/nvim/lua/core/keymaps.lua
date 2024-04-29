@@ -31,3 +31,6 @@ vim.keymap.set("n", "k", "gk")
 -- Move to start/end of line
 vim.keymap.set({ "n", "x", "o" }, "H", "^")
 vim.keymap.set({ "n", "x", "o" }, "L", "g_")
+
+
+vim.keymap.set('n', "<leader>v", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>")
