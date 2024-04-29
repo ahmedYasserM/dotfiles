@@ -1,5 +1,12 @@
 #!/usr/bin/env fish
 
+
+## google font installer
+abbr -a gfid 'gfi download --dest ~/downloads/fonts'
+abbr -a gfii 'gfi install'
+abbr -a gfis 'gfi search'
+
+
 # systemd
 abbr -a sl "doas systemctl"
 
@@ -56,7 +63,7 @@ abbr -a gcl 'gh repo clone'
 abbr -a gpu "git push"
 abbr -a gpl "git pull"
 abbr -a gf "git fetch"
-abbr -a gc 'git commit -m'
+abbr -a gc 'gitmoji commit'
 abbr -a gm "git merge"
 abbr -a ga "git add"
 abbr -a gs "git status -s"

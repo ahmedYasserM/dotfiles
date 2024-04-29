@@ -3,6 +3,7 @@
 # vim
 # alias vim "lvim"
 
+
 # dolphin
 alias do='setsid dolphin $1 &> /dev/null'
 
@@ -77,11 +78,6 @@ alias ctime 'date +%T'
 #sc-im
 alias scim="sc-im"
 
-# tmux
-alias  tl 'tmux ls'
-alias  tns 'tmux new-session -t'
-alias  ta 'tmux attach -t'
-alias  td 'tmux detach'
 
 # xbps
 # alias s 'doas xbps-install -S'
