@@ -34,3 +34,9 @@ vim.keymap.set({ "n", "x", "o" }, "L", "g_")
 
 
 vim.keymap.set('n', "<leader>v", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>")
+
+
+-- vim.keymap.set('i', '<c-k>', '<up>')
+-- vim.keymap.set('i', '<c-j>', '<down>')
+-- vim.keymap.set('i', '<c-l>', '<right>')
+-- vim.keymap.set('i', '<c-h>', '<left>')

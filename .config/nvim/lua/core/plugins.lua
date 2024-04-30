@@ -57,7 +57,7 @@ require("lazy").setup({
   "elentok/format-on-save.nvim",
   "ixru/nvim-markdown",
   'ThePrimeagen/harpoon',
-  "terrortylor/nvim-comment"
+  "terrortylor/nvim-comment",
 
 
 })
