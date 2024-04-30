@@ -56,7 +56,8 @@ require("lazy").setup({
   "Raimondi/delimitMate",
   "elentok/format-on-save.nvim",
   "ixru/nvim-markdown",
-  'ThePrimeagen/harpoon'
+  'ThePrimeagen/harpoon',
+  "terrortylor/nvim-comment"
 
 
 })
