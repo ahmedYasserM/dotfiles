@@ -5,6 +5,6 @@ function fish_prompt
 
    else
         echo ""
-        echo -n (set_color -o "#82AAFF")(basename $PWD) "🚀 "
+        echo -n (set_color -o "#A7C080")(basename $PWD) "🚀 "
    end
 end
