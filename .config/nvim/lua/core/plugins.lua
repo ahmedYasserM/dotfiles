@@ -59,5 +59,4 @@ require("lazy").setup({
   'ThePrimeagen/harpoon',
   "terrortylor/nvim-comment",
 
-
 })
