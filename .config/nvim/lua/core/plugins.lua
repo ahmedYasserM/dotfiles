@@ -58,5 +58,18 @@ require("lazy").setup({
   "ixru/nvim-markdown",
   'ThePrimeagen/harpoon',
   "terrortylor/nvim-comment",
+  "neanias/everforest-nvim",
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- add any options here
+    },
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  }
+
 
 })
