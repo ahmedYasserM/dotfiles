@@ -1,6 +1,7 @@
 #!/usr/bin/env fish
 
 
+
 # docker
 abbr -a d "docker"
 
@@ -30,7 +31,7 @@ abbr -a xl 'tee /dev/tty | wl-copy -n'
 abbr -a al 'wl-paste'
 
 # youtube-dl
-abbr -a dl 'youtube-dl ""'
+abbr -a dl 'yt-dlp'
 
 
 # apt
