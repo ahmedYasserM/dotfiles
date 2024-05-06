@@ -72,9 +72,10 @@ require("lazy").setup({
     },
     dependencies = {
       "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
+      -- "rcarriga/nvim-notify",
     }
-  }
+  },
+  "hrsh7th/cmp-path"
 
 
 })
