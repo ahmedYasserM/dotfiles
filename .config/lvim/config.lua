@@ -24,6 +24,7 @@ local action_state = require('telescope.actions.state')
 local actions = require('telescope.actions')
 
 lvim.builtin.telescope.defaults.layout_strategy = "horizontal";
+lvim.builtin.telescope.defaults.file_ignore_patterns = { "node_modules/", "target/" }
 lvim.builtin.telescope.defaults.layout_config = {
   width = 0.8,
   height = 0.8,
