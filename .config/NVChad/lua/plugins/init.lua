@@ -31,6 +31,8 @@ return {
         "typescript-language-server",
         "rust-analyzer",
         "gopls",
+        "clangd",
+        "clang-format",
       },
     },
   },
