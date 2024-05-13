@@ -163,4 +163,8 @@ return {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+
+  {
+      "mfussenegger/nvim-jdtls"
+  }
 }
