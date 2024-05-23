@@ -3,6 +3,8 @@
 # vim
 # alias vim "lvim"
 
+# neovide
+alias vid "neovide & disown"
 
 # dolphin
 alias do='setsid dolphin $1 &> /dev/null'
