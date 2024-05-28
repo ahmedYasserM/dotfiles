@@ -2,6 +2,8 @@
 local M = {}
 
 M.ui = {
+  theme = "everforest",
+
   changed_themes = {
     everforest = {
       base_16 = {
@@ -9,10 +11,13 @@ M.ui = {
       },
     },
   },
-  theme = "everforest",
   transparency = false,
   tabufline = {
     enabled = false,
+  },
+
+  hl_override = {
+    LspInlayHint = { bg = "NONE" },
   },
 }
 
