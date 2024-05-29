@@ -115,6 +115,7 @@ cmp.setup {
 local builtin = require "telescope.builtin"
 local action_state = require "telescope.actions.state"
 local actions = require "telescope.actions"
+require("telescope").load_extension "projects"
 
 local buffer_searcher
 buffer_searcher = function()
@@ -151,6 +152,7 @@ map("n", "<C-i>", builtin.find_files, {})
 map("n", "<Tab>", builtin.find_files, {})
 map("n", "<C-o>", buffer_searcher, {})
 map("n", "<C-p>", builtin.live_grep, {})
+map("n", "<C-u>", require("telescope").extensions.projects.projects, {})
 
 -------------------------------------------------------------------------------- Telescope Configs End ----------------------------------------------------------------------------
 
