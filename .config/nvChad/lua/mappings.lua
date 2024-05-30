@@ -28,10 +28,10 @@ end)
 
 -------------------------------------------------------------------------------- Vim-Tmux-Navigator Start ------------------------------------------------------------------------
 
-map("n", "<C-h>", ":TmuxNavigateLeft<CR>")
-map("n", "<C-j>", ":TmuxNavigateDown<CR>")
-map("n", "<C-k>", ":TmuxNavigateUp<CR>")
-map("n", "<C-l>", ":TmuxNavigateRight<CR>")
+map("n", "<M-h>", ":TmuxNavigateLeft<CR>")
+map("n", "<M-j>", ":TmuxNavigateDown<CR>")
+map("n", "<M-k>", ":TmuxNavigateUp<CR>")
+map("n", "<M-l>", ":TmuxNavigateRight<CR>")
 
 -------------------------------------------------------------------------------- Vim-Tmux-Navigator End --------------------------------------------------------------------------
 
@@ -43,13 +43,13 @@ local ui = require "harpoon.ui"
 vim.keymap.set("n", "<leader>a", mark.add_file)
 vim.keymap.set("n", "<leader>o", ui.toggle_quick_menu)
 
-vim.keymap.set("n", "<M-j>", function()
+vim.keymap.set("n", "<C-j>", function()
   ui.nav_file(1)
 end)
-vim.keymap.set("n", "<M-k>", function()
+vim.keymap.set("n", "<C-k>", function()
   ui.nav_file(2)
 end)
-vim.keymap.set("n", "<M-i>", function()
+vim.keymap.set("n", "<C-i>", function()
   ui.nav_file(3)
 end)
 
@@ -70,7 +70,7 @@ cmp.setup {
     ["<C-Space>"] = cmp.mapping.complete(),
     ["<C-e>"] = cmp.mapping.abort(),
     ["<CR>"] = cmp.mapping.confirm { select = true },
-    ["<C-j>"] = cmp.mapping(function(fallback)
+    ["<M-j>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
       elseif luasnip.locally_jumpable(1) then
@@ -79,7 +79,7 @@ cmp.setup {
         fallback()
       end
     end, { "i", "s" }),
-    ["<C-k>"] = cmp.mapping(function(fallback)
+    ["<M-k>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
       elseif luasnip.locally_jumpable(-1) then
@@ -141,18 +141,18 @@ buffer_searcher = function()
         refresh_buffer_searcher()
       end
       map("n", "dd", delete_buf)
-      map("n", "<C-k>", delete_multiple_buf)
-      map("i", "<C-k>", delete_multiple_buf)
+      map("n", "<M-k>", delete_multiple_buf)
+      map("i", "<M-k>", delete_multiple_buf)
       return true
     end,
   }
 end
 
-map("n", "<C-i>", builtin.find_files, {})
+map("n", "<M-i>", builtin.find_files, {})
 map("n", "<Tab>", builtin.find_files, {})
-map("n", "<C-o>", buffer_searcher, {})
-map("n", "<C-p>", builtin.live_grep, {})
-map("n", "<C-u>", require("telescope").extensions.projects.projects, {})
+map("n", "<M-o>", buffer_searcher, {})
+map("n", "<M-u>", builtin.live_grep, {})
+map("n", "<M-p>", require("telescope").extensions.projects.projects, {})
 
 -------------------------------------------------------------------------------- Telescope Configs End ----------------------------------------------------------------------------
 
