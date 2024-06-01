@@ -33,7 +33,7 @@ max_size = "1920px 100%"
 
 [scratchpads.projects]
 animation = "fromTop"
-command = "kitty --class floating -e fish -c ~/.config/hypr/scripts/project-fzf.sh"
+command = "kitty --class floating -e fish -c /usr/local/bin/neovide-fzf.sh"
 size = "55% 30%"
 lazy = true
 max_size = "1920px 100%"
