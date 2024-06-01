@@ -43,13 +43,13 @@ local ui = require "harpoon.ui"
 vim.keymap.set("n", "<leader>a", mark.add_file)
 vim.keymap.set("n", "<leader>o", ui.toggle_quick_menu)
 
-vim.keymap.set("n", "<C-j>", function()
+vim.keymap.set("n", "<M-J>", function()
   ui.nav_file(1)
 end)
-vim.keymap.set("n", "<C-k>", function()
+vim.keymap.set("n", "<M-K>", function()
   ui.nav_file(2)
 end)
-vim.keymap.set("n", "<C-i>", function()
+vim.keymap.set("n", "<M-I>", function()
   ui.nav_file(3)
 end)
 
@@ -141,8 +141,8 @@ buffer_searcher = function()
         refresh_buffer_searcher()
       end
       map("n", "dd", delete_buf)
-      map("n", "<M-k>", delete_multiple_buf)
-      map("i", "<M-k>", delete_multiple_buf)
+      map("n", "<C-k>", delete_multiple_buf)
+      map("i", "<C-k>", delete_multiple_buf)
       return true
     end,
   }
