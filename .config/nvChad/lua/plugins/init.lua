@@ -215,4 +215,7 @@ return {
       vim.cmd [[silent! GoInstallDeps]]
     end,
   },
+  {
+    "rafamadriz/friendly-snippets",
+  },
 }
