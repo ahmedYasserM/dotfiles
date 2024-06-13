@@ -73,7 +73,7 @@ return {
   },
   {
     "windwp/nvim-ts-autotag",
-    ft = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+    ft = { "javascript", "javascriptreact", "typescript", "typescriptreact", "html" },
     config = function()
       require("nvim-ts-autotag").setup()
     end,
@@ -206,16 +206,43 @@ return {
     ft = { "markdown" },
   },
   {
-    "olexsmir/gopher.nvim",
-    ft = "go",
-    config = function(_, opts)
-      require("gopher").setup(opts)
-    end,
-    build = function()
-      vim.cmd [[silent! GoInstallDeps]]
-    end,
-  },
-  {
     "rafamadriz/friendly-snippets",
+  },
+  -- {
+  --   "ray-x/go.nvim",
+  --   dependencies = { -- optional packages
+  --     "ray-x/guihua.lua",
+  --     "neovim/nvim-lspconfig",
+  --     "nvim-treesitter/nvim-treesitter",
+  --   },
+  --   config = function()
+  --     -- require("go").setup()
+  --   end,
+  --   event = { "CmdlineEnter" },
+  --   ft = { "go", "gomod" },
+  --   build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
+  -- },
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      messages = {
+        enabled = false,
+      },
+      cmdline = {
+        enabled = true,
+      },
+      notify = {
+        enabled = false,
+      },
+    },
+    dependencies = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    },
   },
 }

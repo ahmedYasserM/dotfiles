@@ -28,10 +28,10 @@ end)
 
 -------------------------------------------------------------------------------- Vim-Tmux-Navigator Start ------------------------------------------------------------------------
 
-map("n", "<M-h>", ":TmuxNavigateLeft<CR>")
-map("n", "<M-j>", ":TmuxNavigateDown<CR>")
-map("n", "<M-k>", ":TmuxNavigateUp<CR>")
-map("n", "<M-l>", ":TmuxNavigateRight<CR>")
+map("n", "<M-h>", ":TmuxNavigateLeft<CR>", { silent = true })
+map("n", "<M-j>", ":TmuxNavigateDown<CR>", { silent = true })
+map("n", "<M-k>", ":TmuxNavigateUp<CR>", { silent = true })
+map("n", "<M-l>", ":TmuxNavigateRight<CR>", { silent = true })
 
 -------------------------------------------------------------------------------- Vim-Tmux-Navigator End --------------------------------------------------------------------------
 
@@ -164,7 +164,7 @@ map("i", "<A-;>", 'copilot#Accept("<CR>")', { expr = true, silent = true, replac
 
 -------------------------------------------------------------------------------- NvimTree Configs Start ----------------------------------------------------------------------------
 
-map("n", "<M-n>", ":NvimTreeToggle<CR>")
+map("n", "<M-n>", ":NvimTreeToggle<CR>", { silent = true })
 
 -------------------------------------------------------------------------------- NvimTree Configs End ------------------------------------------------------------------------------
 

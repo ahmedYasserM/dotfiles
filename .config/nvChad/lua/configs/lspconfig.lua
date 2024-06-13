@@ -64,6 +64,17 @@ lspconfig.clangd.setup {
 
 -------------------------------------------------------------------------------- SETUP GOLANG LSP START -----------------------------------------------------------------------
 
+-- require("go").setup()
+
+-- local format_sync_grp = vim.api.nvim_create_augroup("goimports", {})
+-- vim.api.nvim_create_autocmd("BufWritePre", {
+--   pattern = "*.go",
+--   callback = function()
+--     require("go.format").goimports()
+--   end,
+--   group = format_sync_grp,
+-- })
+
 lspconfig.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -89,15 +100,6 @@ lspconfig.gopls.setup {
     },
   },
 }
-
-vim.cmd [[autocmd BufWritePre *.go lua vim.lsp.buf.format({ async = true })]]
-
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*.go",
-  callback = function()
-    vim.lsp.buf.code_action { context = { only = { "source.organizeImports" } }, apply = true }
-  end,
-})
 
 -------------------------------------------------------------------------------- SETUP GOLANG LSP END ----------------------------------------------------------------------------
 
