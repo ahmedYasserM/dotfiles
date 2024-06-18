@@ -103,6 +103,11 @@ lspconfig.gopls.setup {
 
 -------------------------------------------------------------------------------- SETUP GOLANG LSP END ----------------------------------------------------------------------------
 
+lspconfig.emmet_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 return {
   on_attach = on_attach,
   capabilities = capabilities,

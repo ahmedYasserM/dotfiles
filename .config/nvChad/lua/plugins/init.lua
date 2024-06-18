@@ -137,7 +137,7 @@ return {
       user_default_options = {
         RGB = true,
         RRGGBB = true,
-        names = false,
+        names = true,
         RRGGBBAA = false,
         AARRGGBB = false,
         rgb_fn = true,
