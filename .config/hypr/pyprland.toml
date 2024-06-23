@@ -18,8 +18,8 @@ max_size = "1920px 100%"
 
 [scratchpads.nnn]
 animation = "fromTop"
-command = "kitty --class floating -e nnn"
-size = "75% 60%"
+command = "kitty --class kittyFloat -e nnn"
+# size = "75% 60%"
 lazy = true
 max_size = "1920px 100%"
 

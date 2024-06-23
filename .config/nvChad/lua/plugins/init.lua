@@ -208,20 +208,6 @@ return {
   {
     "rafamadriz/friendly-snippets",
   },
-  -- {
-  --   "ray-x/go.nvim",
-  --   dependencies = { -- optional packages
-  --     "ray-x/guihua.lua",
-  --     "neovim/nvim-lspconfig",
-  --     "nvim-treesitter/nvim-treesitter",
-  --   },
-  --   config = function()
-  --     -- require("go").setup()
-  --   end,
-  --   event = { "CmdlineEnter" },
-  --   ft = { "go", "gomod" },
-  --   build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
-  -- },
   {
     "folke/noice.nvim",
     event = "VeryLazy",
@@ -243,6 +229,17 @@ return {
       --   `nvim-notify` is only needed, if you want to use the notification view.
       --   If not available, we use `mini` as the fallback
       "rcarriga/nvim-notify",
+    },
+  },
+  {
+    "DreamMaoMao/yazi.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim",
+    },
+
+    keys = {
+      { "<leader>gy", "<cmd>Yazi<CR>", desc = "Toggle Yazi" },
     },
   },
 }
