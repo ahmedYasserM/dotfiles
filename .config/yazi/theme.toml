@@ -23,8 +23,8 @@ marker_copied   = { fg = "lightyellow", bg = "lightyellow" }
 marker_cut      = { fg = "lightred",    bg = "lightred" }
 
 # Tab
-tab_active   = { fg = "black", bg = "lightblue" }
-tab_inactive = { fg = "white", bg = "darkgray" }
+tab_active   = { fg = "black", bg = "#A7C080" }
+tab_inactive = { fg = "white", bg = "#1D2327" }
 tab_width    = 1
 
 # Border
@@ -45,7 +45,7 @@ separator_close = ""
 separator_style = { fg = "darkgray", bg = "darkgray" }
 
 # Mode
-mode_normal = { fg = "black", bg = "lightblue",    bold = false }
+mode_normal = { fg = "black", bg = "#A7C080",    bold = false }
 mode_select = { fg = "black", bg = "lightgreen",   bold = false }
 mode_unset  = { fg = "black", bg = "lightmagenta", bold = false }
 
