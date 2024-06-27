@@ -2,7 +2,8 @@
 local M = {}
 
 M.ui = {
-  theme = "everforest",
+  theme = "tokyonight",
+  transparency = true,
 
   changed_themes = {
     everforest = {
@@ -11,13 +12,13 @@ M.ui = {
       },
     },
   },
-  transparency = false,
   tabufline = {
     enabled = false,
   },
 
   hl_override = {
     LspInlayHint = { bg = "NONE" },
+    CursorLine = { bg = "one_bg" },
   },
 }
 
