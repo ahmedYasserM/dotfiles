@@ -312,27 +312,32 @@ c.statusbar.show = 'never'
 
 c.url.searchengines = {
     'DEFAULT':  'https://google.com/search?hl=en&q={}',
-    '!a':       'https://www.amazon.com/s?k={}',
-    '!d':       'https://duckduckgo.com/?ia=web&q={}',
-    '!dd':      'https://thefreedictionary.com/{}',
-    '!fb':      'https://www.facebook.com/s.php?q={}',
-    '!gh':      'https://github.com/search?o=desc&q={}&s=stars',
-    '!gist':    'https://gist.github.com/search?q={}',
-    '!gi':      'https://www.google.com/search?tbm=isch&q={}&tbs=imgo:1',
-    '!gn':      'https://news.google.com/search?q={}',
-    '!m':       'https://www.google.com/maps/search/{}',
-    '!p':       'https://pry.sh/{}',
-    '!r':       'https://www.reddit.com/search?q={}',
-    '!tw':      'https://twitter.com/search?q={}',
-    '!w':       'https://en.wikipedia.org/wiki/{}',
-    '!yt':      'https://www.youtube.com/results?search_query={}'
+    # '!a':       'https://www.amazon.com/s?k={}',
+    # '!d':       'https://duckduckgo.com/?ia=web&q={}',
+    # '!dd':      'https://thefreedictionary.com/{}',
+    # '!fb':      'https://www.facebook.com/s.php?q={}',
+    # '!gh':      'https://github.com/search?o=desc&q={}&s=stars',
+    # '!gist':    'https://gist.github.com/search?q={}',
+    # '!gi':      'https://www.google.com/search?tbm=isch&q={}&tbs=imgo:1',
+    # '!gn':      'https://news.google.com/search?q={}',
+    # '!m':       'https://www.google.com/maps/search/{}',
+    # '!p':       'https://pry.sh/{}',
+    # '!r':       'https://www.reddit.com/search?q={}',
+    # '!tw':      'https://twitter.com/search?q={}',
+    # '!w':       'https://en.wikipedia.org/wiki/{}',
+    # '!yt':      'https://www.youtube.com/results?search_query={}'
 }
 
 c.url.start_pages = ['https://www.google.com/']
+
+config.set("fileselect.handler", "external")
+config.set("fileselect.single_file.command", ['kitty', '--class', 'kittyFloat', '-e', 'yazi', '--chooser-file', '{}'])
+# config.set("fileselect.single_file.command", ['kitty', '--class', 'kittyFloat', '-e', '/home/ahmed/nf'])
+# config.set("fileselect.multiple_files.command", ['kitty', '--class', 'kittyFloat', '-e', 'nnn', '-p', '-'])
 
 config.bind('M', 'hint links spawn mpv {hint-url}')
 config.bind('xb', 'config-cycle statusbar.show always never')
 config.bind('xt', 'config-cycle tabs.show always never')
 config.bind('xx', 'config-cycle statusbar.show always never ;; config-cycle tabs.show always never')
-config.bind('K', 'tab-next', mode='normal')
-config.bind('J', 'tab-prev', mode='normal')
+config.bind('<Alt-shift-L>', 'tab-next', mode='normal')
+config.bind('<Alt-shift-H>', 'tab-prev', mode='normal')
