@@ -233,7 +233,7 @@ return {
       -- OPTIONAL:
       --   `nvim-notify` is only needed, if you want to use the notification view.
       --   If not available, we use `mini` as the fallback
-      "rcarriga/nvim-notify",
+      -- "rcarriga/nvim-notify",
     },
   },
   {
@@ -368,5 +368,13 @@ return {
       vim.keymap.set({ "n", "x", "o" }, "t", ts_repeat_move.builtin_t)
       vim.keymap.set({ "n", "x", "o" }, "T", ts_repeat_move.builtin_T)
     end,
+  },
+  {
+    "razak17/tailwind-fold.nvim",
+    opts = {
+      symbol = "󱏿󱏿󱏿", --
+    },
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    ft = { "html", "svelte", "astro", "vue", "typescriptreact", "php", "blade" },
   },
 }
