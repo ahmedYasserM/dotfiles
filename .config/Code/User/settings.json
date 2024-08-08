@@ -1,125 +1,117 @@
 {
-  "workbench.colorCustomizations": {
-    "[Everforest Dark]": {
-      "editor.background": "#1D2327",
-      "sideBar.background": "#1D2327",
-      "editorGroupHeader.tabsBackground": "#2f373c57",
-      "tab.inactiveBackground": "#2f373c57",
-      // "tab.activeBackground": "#1D2327",
-      "terminal.background": "#1D2327",
-      "panel.background": "#1D2327",
-      "statusBar.background": "#1D2327"
-    }
-  },
-  "editor.suggest.insertMode": "replace",
-  // "editor.stickyScroll.enabled": true,
-  "zenMode.hideLineNumbers": false,
-  "workbench.layoutControl.enabled": false,
-  "markdown-preview-github-styles.colorTheme": "light",
-  "workbench.sideBar.location": "right",
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 20,
-  "html.format.indentInnerHtml": true,
-  "python.defaultInterpreterPath": "/opt/anaconda3/bin/python",
-  "editor.linkedEditing": true,
-  "git.decorations.enabled": true,
-  "css.format.braceStyle": "expand",
-  "less.format.braceStyle": "expand",
-  "scss.format.braceStyle": "expand",
-  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
-  "javascript.suggest.completeFunctionCalls": true,
-  "notebook.diff.overviewRuler": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.printWidth": 110,
-  "scm.diffDecorationsGutterPattern": {
-    "added": true
-  },
-  "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontSize": 18,
-  "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.gpuAcceleration": "canvas",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
-  "editor.formatOnPaste": true,
+  "keyboard.dispatch": "keyCode",
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "file",
-  "jupyter.askForKernelRestart": false,
-  "markdown-pdf.displayHeaderFooter": false,
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.linux": "/home/ahmed/.config/vs-vim/init.vim",
-  "workbench.editor.highlightModifiedTabs": true,
-  "editor.minimap.enabled": false,
-  "editor.inlineSuggest.enabled": true,
-  "workbench.editor.pinnedTabSizing": "compact",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 0,
-  "editor.guides.bracketPairs": true,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false,
-    "latex": true,
-    "html": true,
-    "css": true,
-    "rmarkdown": true,
-    "shellscript": true
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "[javascript]": {
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  },
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "editor.cursorBlinking": "expand",
-  "reactSnippets.settings.prettierEnabled": true,
-  "editor.lineNumbers": "on",
-  "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
-  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "always",
-  "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
-  "git.openRepositoryInParentFolders": "never",
-  "editor.autoClosingBrackets": "always",
-  "window.menuBarVisibility": "toggle",
-  "markdown.marp.enableHtml": true,
-  "markdown.marp.exportType": "html",
-  "latex-workshop.latex.clean.command": "pdflatex",
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "editor.wordWrap": "on",
-  "color-highlight.markRuler": false,
-  "go.inlayHints.assignVariableTypes": true,
-  "go.inlayHints.functionTypeParameters": true,
-  "go.inlayHints.rangeVariableTypes": true,
-  "go.inlayHints.constantValues": true,
-  "go.inlayHints.compositeLiteralTypes": true,
-  "go.inlayHints.compositeLiteralFields": true,
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim-vscode/init.vim",
+
+  // colors
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "moxer-icons",
+
+  // ui
+  // "workbench.activityBar.location": "hidden"
+  "workbench.sideBar.location": "right",
   "breadcrumbs.enabled": false,
-  "errorLens.messageEnabled": true,
+  "editor.minimap.enabled": false,
+  "window.commandCenter": false,
+  "editor.scrollbar.vertical": "auto",
   "window.titleBarStyle": "native",
-  "window.customMenuBarAltFocus": false,
-  "liveServer.settings.CustomBrowser": "firefox",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+  "editor.scrollbar.horizontal": "auto",
+  "window.menuBarVisibility": "toggle",
+
+  // Change font
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+
+  // Font size
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+
+  // APC
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 28
   },
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 12,
+      "y": 10
+    }
+  },
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 28,
+    "fontSize": 12
+  },
+
+  // Cusom css
+  "apc.stylesheet": {
+    ".sidebar > .composite": "height: 12px !important",
+    ".title-label": "display: none !important",
+    ".title-actions": "display: none !important",
+    ".tabs-and-actions-container > .editor-actions": "display: none !important",
+    ".titlebar-center": "display: none !important",
+    ".titlebar-right": "display: none !important",
+    ".inline-tabs-placeholder": "display: none !important",
+    ".split-view-view .visible": "background-color: #110f17 !important"
+  },
+
+  // Toggle excluded files
   "files.exclude": {
-    "**/.git": false
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.husky": true,
+    "**/drizzle": true,
+    "**/dist": true,
+    "**/.todo.md": true,
+    "**/.vscode": true,
+    "**/.eslintrc.cjs": true,
+    "**/.editorconfig": true,
+    "**/.gitignore": true,
+    "**/.lintstagedrc.mjs": true,
+    "**/.markdownlint.json": true,
+    "**/.markdownlintignore": true,
+    "**/.prettierignore": true,
+    "**/bun.lockb": true,
+    "**/cspell.json": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/next-env.d.ts": true,
+    "**/postcss.config.cjs": true,
+    "**/prettier.config.js": true,
+    "**/README.md": true,
+    "**/next.config.js": true,
+    "**/tailwind.config.ts": true,
+    "**/drizzle.config.ts": true,
+    "**/migrate.ts": true,
+    "**/.env.example": true
   },
-  "files.autoSave": "afterDelay",
-  "window.zoomLevel": 0.1,
-  "workbench.activityBar.location": "top",
-  "window.customTitleBarVisibility": "never"
+
+  // Misc
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "breadcrumbs.filePath": "off",
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "window.zoomLevel": 0.75,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
