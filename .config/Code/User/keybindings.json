@@ -119,5 +119,17 @@
   {
     "key": "alt+shift+;",
     "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "alt+;",
+    "command": "editor.action.inlineSuggest.commit"
+  },
+  {
+    "key": "shift+alt+h",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "workbench.action.nextEditor"
   }
 ]
