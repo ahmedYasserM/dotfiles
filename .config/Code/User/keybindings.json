@@ -97,7 +97,7 @@
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus && !suggestWidgetVisible"
   },
   {
-    "key": "alt+n",
+    "key": "alt+o",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -105,11 +105,11 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+p",
+    "key": "ctrl+n",
     "command": "-workbench.action.quickOpen"
   },
   {
-    "key": "alt+p",
+    "key": "alt+n",
     "command": "workbench.action.showCommands"
   },
   {
