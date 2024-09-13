@@ -119,3 +119,11 @@ alias zi=__zoxide_zi
 #conda config --set auto_activate_base false
 # <<< conda initialize <<<
 
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+#starship init fish | source
+
+

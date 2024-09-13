@@ -1,14 +1,17 @@
 #!/usr/bin/env fish
 
-
+# ls
+abbr -a lab "exa -d --absolute"
 
 # docker
 abbr -a d "docker"
 
-# tmux 
-abbr -a tns 'tmux  new-session -c (pwd) -s'
-abbr -a ta 'tmux attach -t'
-abbr -a tl 'tmux list-sessions'
+# virtualbox
+abbr -a vb "VBoxManage"
+abbr -a vs "VBoxManage startvm"
+
+# mkdir
+abbr -a mkd 'mkdir -p'
 
 ## google font installer
 abbr -a gfid 'gfi download --dest ~/downloads/fonts'
@@ -31,7 +34,7 @@ abbr -a xl 'tee /dev/tty | wl-copy -n'
 abbr -a al 'wl-paste'
 
 # youtube-dl
-abbr -a dl 'yt-dlp'
+abbr -a dl 'youtube-dl ""'
 
 
 # apt

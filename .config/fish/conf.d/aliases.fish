@@ -1,10 +1,10 @@
 #!/usr/bin/env fish
 
-# vim
-# alias vim "lvim"
-
 # neovide
-alias vid "neovide & disown"
+alias nv="neovide --neovim-bin=(which lvim) . &disown" 
+
+# yazi file manager
+alias zl="yazi"
 
 # dolphin
 alias do='setsid dolphin $1 &> /dev/null'
@@ -13,10 +13,14 @@ alias do='setsid dolphin $1 &> /dev/null'
 alias vbox='vboxmanage'
 
 # ls
-alias  l='eza -lh  --icons=auto' # long list
-alias ls='eza   --icons=auto' # short list
-alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
-alias ld='eza -lhD --icons=auto' # long list dirs
+alias ls='exa --icons=auto' # short list
+alias  ll='exa -lg --icons=auto' # long list
+alias la='exa -a --icons=auto' # list all
+alias lla='exa -lhag --icons=auto --sort=name --group-directories-first' # long list all
+alias ld='exa -lhgD --icons=auto' # long list dirs
+alias lt="exa --icons=auto --tree -L 1"
+alias le="exa --icons=auto --tree -L 1"
+alias li='ls -lgi'
 
 
 # tree symbols
@@ -70,7 +74,7 @@ alias history 'history'
 
 
 # lvim
-alias vim 'nvim'
+alias vim 'lvim'
 
 
 # current time
