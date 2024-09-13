@@ -4,8 +4,43 @@ lvim.builtin.treesitter.auto_install = true
 -- lvim.transparent_window = true
 lvim.builtin.project.manual_mode = true
 lvim.builtin.nvimtree.side = "right"
-vim.opt.cursorline = false
 vim.opt.wrap = true
+vim.opt.cursorline = false
+lvim.colorscheme = "rose-pine"
+
+-------------------------------------------------------------------------------- Formatters Start ---------------------------------------------------------------------------------
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  { name = "black" },
+  {
+    name = "prettier",
+    ---@usage arguments to pass to the formatter
+    -- these cannot contain whitespace
+    -- options such as `--line-width 80` become either `{"--line-width", "80"}` or `{"--line-width=80"}`
+    args = { "--print-width", "100" },
+    ---@usage only start in these filetypes, by default it will attach to all filetypes it supports
+    filetypes = { "typescript", "typescriptreact" },
+  },
+}
+
+local linters = require "lvim.lsp.null-ls.linters"
+linters.setup {
+  { name = "flake8" },
+  {
+    name = "shellcheck",
+    args = { "--severity", "warning" },
+  },
+}
+
+local code_actions = require "lvim.lsp.null-ls.code_actions"
+code_actions.setup {
+  {
+    name = "proselint",
+  },
+}
+
+-------------------------------------------------------------------------------- Formatters End -----------------------------------------------------------------------------------
+
 
 -------------------------------------------------------------------------------- CMP Start ---------------------------------------------------------------------------------
 
@@ -261,8 +296,20 @@ lvim.plugins = {
     on_save_pattern = { '*.html', '*.jsx', '*.tsx' },
   },
   {
-    'Jorengarenar/vim-SQL-UPPER'
-  }
+    'ahmedYasserM/vim-SQL-UPPER',
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine"
+  },
+  -- {
+  --   'Exafunction/codeium.vim',
+  --   event = 'BufEnter',
+  --   config = function()
+  --     vim.keymap.set('i', '<M-;>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+  --   end
+
+  -- }
 }
 
 -------------------------------------------------------------------------------- Plugins End -----------------------------------------------------------------------------------
