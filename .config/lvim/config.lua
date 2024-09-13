@@ -296,7 +296,7 @@ lvim.plugins = {
     on_save_pattern = { '*.html', '*.jsx', '*.tsx' },
   },
   {
-    'ahmedYasserM/vim-SQL-UPPER',
+    'jsborjesson/vim-uppercase-sql'
   },
   {
     "rose-pine/neovim",
