@@ -21,6 +21,10 @@ formatters.setup {
     ---@usage only start in these filetypes, by default it will attach to all filetypes it supports
     filetypes = { "typescript", "typescriptreact" },
   },
+  {
+    name = "goimports",
+    filetypes = { "go" }
+  }
 }
 
 local linters = require "lvim.lsp.null-ls.linters"
