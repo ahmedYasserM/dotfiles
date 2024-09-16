@@ -1,5 +1,8 @@
 #!/usr/bin/env fish
 
+# watchexec
+abbr -a we "watchexec"
+
 # ls
 abbr -a lab "exa -d --absolute"
 

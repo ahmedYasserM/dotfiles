@@ -16,8 +16,8 @@ set -gx GH_BROWSER $BROWSER
 # Manpages
 set -x MANPAGER "nvim +Man!"
 
-# nnn (I now use yazi)
-# set -gx NNN_PLUG 'f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview;k:autojump' 
+# nnn
+set -gx NNN_PLUG 'f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview;k:autojump'
 
 # tide
 set --universal tide_left_prompt_items os pwd git newline character
@@ -27,3 +27,4 @@ set --universal tide_pwd_color_anchors FFFFFF
 set --universal git_icon ' '
 set --universal _tide_pwd_len 1
 set --universal fish_cursor_insert "line"
+# tide configure --auto --style=Rainbow --prompt_colors='16 colors' --show_time=No --rainbow_prompt_separators=Slanted --powerline_prompt_heads=Round --powerline_prompt_tails=Round --powerline_prompt_style='Two lines, character and frame' --prompt_connection=Disconnected --powerline_right_prompt_frame=No --prompt_spacing=Sparse --icons='Many icons' --transient=Yes
