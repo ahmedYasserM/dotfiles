@@ -6,7 +6,24 @@ lvim.builtin.project.manual_mode = true
 lvim.builtin.nvimtree.side = "right"
 vim.opt.wrap = true
 vim.opt.cursorline = false
-lvim.colorscheme = "rose-pine"
+lvim.colorscheme = "everforest"
+
+-------------------------------------------------------------------------------- Colorscheme Start ---------------------------------------------------------------------------------
+
+lvim.autocommands = {
+  {
+    { "ColorScheme" },
+    {
+      pattern = "*",
+      callback = function()
+        vim.api.nvim_set_hl(0, "Normal", { bg = "#1D2327", underline = false, bold = true })
+      end,
+    },
+  },
+}
+
+-------------------------------------------------------------------------------- Colorscheme End -----------------------------------------------------------------------------------
+
 
 -------------------------------------------------------------------------------- Formatters Start ---------------------------------------------------------------------------------
 local formatters = require "lvim.lsp.null-ls.formatters"
@@ -14,11 +31,7 @@ formatters.setup {
   { name = "black" },
   {
     name = "prettier",
-    ---@usage arguments to pass to the formatter
-    -- these cannot contain whitespace
-    -- options such as `--line-width 80` become either `{"--line-width", "80"}` or `{"--line-width=80"}`
     args = { "--print-width", "100" },
-    ---@usage only start in these filetypes, by default it will attach to all filetypes it supports
     filetypes = { "typescript", "typescriptreact" },
   },
   {
@@ -34,6 +47,7 @@ linters.setup {
     name = "shellcheck",
     args = { "--severity", "warning" },
   },
+  { command = "eslint", filetypes = { "typescript", "typescriptreact" } }
 }
 
 local code_actions = require "lvim.lsp.null-ls.code_actions"
@@ -45,6 +59,16 @@ code_actions.setup {
 
 -------------------------------------------------------------------------------- Formatters End -----------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------- LSP Start ---------------------------------------------------------------------------------
+
+require("lvim.lsp.manager").setup("emmet_ls")
+
+-------------------------------------------------------------------------------- LSP End -----------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------- Treesitter Start ---------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------- Treesitter End -----------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------- CMP Start ---------------------------------------------------------------------------------
 
@@ -306,6 +330,15 @@ lvim.plugins = {
     "rose-pine/neovim",
     name = "rose-pine"
   },
+  {
+    "neanias/everforest-nvim",
+    config = function()
+      require("everforest").setup({
+        italics = true,
+      })
+    end
+  }
+
   -- {
   --   'Exafunction/codeium.vim',
   --   event = 'BufEnter',
