@@ -8,7 +8,7 @@ tide_context_bg_color brblack
 tide_context_color_default yellow
 tide_context_color_root yellow
 tide_context_color_ssh yellow
-tide_crystal_bg_color white
+tide_crystal_bg_color brwhite
 tide_crystal_color black
 tide_direnv_bg_color bryellow
 tide_direnv_bg_color_denied brred
@@ -56,8 +56,8 @@ tide_prompt_color_separator_same_color brblack
 tide_pulumi_bg_color yellow
 tide_pulumi_color black
 tide_pwd_bg_color blue
-tide_pwd_color_anchors white
-tide_pwd_color_dirs white
+tide_pwd_color_anchors brwhite
+tide_pwd_color_dirs brwhite
 tide_pwd_color_truncated_dirs white
 tide_python_bg_color brblack
 tide_python_color cyan

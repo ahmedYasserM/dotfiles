@@ -1,5 +1,6 @@
 #!/usr/bin/env fish
 
+
 # watchexec
 abbr -a we "watchexec"
 
@@ -14,7 +15,7 @@ abbr -a vb "VBoxManage"
 abbr -a vs "VBoxManage startvm"
 
 # mkdir
-abbr -a mkd 'mkdir -p'
+abbr -a md 'mkdir -p'
 
 ## google font installer
 abbr -a gfid 'gfi download --dest ~/downloads/fonts'

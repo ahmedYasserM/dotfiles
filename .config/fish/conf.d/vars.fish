@@ -12,6 +12,7 @@ set -gx VISUAL nvim
 set -g fish_greeting
 set -gx GOPATH "/home/ahmed/dev/go"
 set -gx GH_BROWSER $BROWSER
+set -gx XDG_PICTURES_DIR "/home/ahmed/pictures"
 
 # Manpages
 set -x MANPAGER "nvim +Man!"

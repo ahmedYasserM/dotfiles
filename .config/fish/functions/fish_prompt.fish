@@ -139,9 +139,9 @@ PATH=\$(string escape \"\$PATH\") CMD_DURATION=\$CMD_DURATION fish_bind_mode=\$f
     string replace @PWD@ (_tide_pwd) $add_newline \$$prompt_var[1][1]'$color_normal '
 end
 
-# function fish_right_prompt
-#     string unescape \"\$$prompt_var[1][2]$color_normal\"
-# end"
+function fish_right_prompt
+    string unescape \"\$$prompt_var[1][2]$color_normal\"
+end"
     end
 end
 
