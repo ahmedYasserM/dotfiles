@@ -11,6 +11,14 @@ add Lock = Caps_Lock
 add Control = Control_L
 
 !
+! Swap Caps_Lock and Escape
+! 
+remove Lock = Caps_Lock
+add Lock = Escape
+keysym Caps_Lock = Escape
+keysym Escape = Caps_Lock
+
+!
 !Swap right control and right alt
 !
 remove Control = Control_R
