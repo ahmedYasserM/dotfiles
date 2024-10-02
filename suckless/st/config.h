@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font =
-    "JetBrains Mono Nerd Font :pixelsize=23:antialias=true:autohint=true";
+    "JetBrains Mono Nerd Font :pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 5;
 
 /*
@@ -97,26 +97,36 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "black", "red3", "#A4A47F", "yellow3", "blue2", "#E67E80", "cyan3",
-    "gray90",
+
+    [0] = "#1D2327",
+    [1] = "#E67E80", /* red     */
+    [2] = "#A7C080", /* green   */
+    [3] = "#DBBC7F", /* yellow  */
+    [4] = "#7FBBB3", /* blue    */
+    [5] = "#D699B6", /* magenta */
+    [6] = "#83C092", /* cyan    */
+    [4] = "#7FBBB3", /* blue    */
+    [7] = "#D3C6AA", /* white   */
 
     /* 8 bright colors */
-    "gray50", "red", "#B5BD68", "yellow", "#5c5cff", "#E67E80", "cyan", "white",
 
-    [255] = 0,
-
-    /* more colors can be added after 255 to use with DefaultXX */
-    "#cccccc", "#555555", "#D3C6AA", /* default foreground colour */
-    "#1D2327",                       /* default background colour */
+    [8] = "#868d80",  /* black   */
+    [9] = "#e68183",  /* red     */
+    [10] = "#a7c080", /* green   */
+    [11] = "#d9bb80", /* yellow  */
+    [12] = "#83b6af", /* blue    */
+    [13] = "#d39bb6", /* magenta */
+    [14] = "#87c095", /* cyan    */
+    [15] = "#d8caac", /* white   */
 };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 0;
+unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -170,6 +180,7 @@ static MouseShortcut mshortcuts[] = {
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
+
 #define TERMMOD (ControlMask | ShiftMask)
 
 static Shortcut shortcuts[] = {
@@ -182,7 +193,7 @@ static Shortcut shortcuts[] = {
     {MODKEY, XK_Next, zoom, {.f = -1}},
     {MODKEY, XK_Home, zoomreset, {.f = 0}},
     {MODKEY, XK_y, clipcopy, {.i = 0}},
-    {MODKEY, XK_p, clippaste, {.i = 0}},
+    {Mod4Mask, XK_p, clippaste, {.i = 0}},
     {ShiftMask, XK_Insert, selpaste, {.i = 0}},
     {TERMMOD, XK_Num_Lock, numlock, {.i = 0}},
     {MODKEY, XK_u, kscrollup, {.i = -1}},

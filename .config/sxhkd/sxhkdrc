@@ -1,26 +1,26 @@
 super + shift + s
   pkill sxhkd && sxhkd &
 
-super + i 
+super + shift + i 
   telegram-desktop
 
 super + u
   discord
 
 super + w
-  firefox
+  zen-browser
 
-super + p 
-  ~/dev/codeHub/scripts/cpick
+super + shift + o
+  cpick
 
-super + f
-  st -e nnn
+super + f 
+  st -e yazi
 
 super + o
-  st -e vimMan
+  kitty -1
 
-super + semicolon
-  doas flameshot gui 
+super + s
+  flameshot gui 
 
 super + {equal, minus, BackSpace}
-  ~/dev/codeHub/scripts/volume {up, down, toggle}
+  volume {up, down, toggle}
