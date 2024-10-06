@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ -z "$1" ]]; then
+    echo "Usage: open_pdf pdf_name"
+    return 1
+fi
+
+sioyek "$1" &>/dev/null & disown 
+
