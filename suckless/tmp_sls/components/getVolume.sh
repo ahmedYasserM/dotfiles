@@ -10,5 +10,4 @@ if [ "$isMuted" ]; then
     echo "📢 ❌"
 else
     echo "📢 $volumeLevel"
-    
 fi
