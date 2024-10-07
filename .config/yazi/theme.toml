@@ -42,7 +42,7 @@ syntect_theme = ""
 [status]
 separator_open  = ""
 separator_close = ""
-separator_style = { fg = "darkgray", bg = "darkgray" }
+separator_style = { fg = "darkgray", bg = "#232A2E" }
 
 # Mode
 mode_normal = { fg = "black", bg = "#A7C080",    bold = false }
