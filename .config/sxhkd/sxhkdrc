@@ -11,16 +11,19 @@ super + w
   zen-browser
 
 super + shift + o
-  cpick
+  cpick.sh
 
 super + f 
   st -e yazi
 
 super + o
-  kitty -1
+  st
 
 super + s
   flameshot gui 
 
 super + {equal, minus, BackSpace}
-  volume {up, down, toggle}
+  volume.sh {up, down, toggle}
+
+super + shift + BackSpace
+  exit.sh
