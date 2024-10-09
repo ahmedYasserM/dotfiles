@@ -1,4 +1,4 @@
-super + shift + s
+super + shift + r
   pkill sxhkd && sxhkd &
 
 super + shift + i 
@@ -10,17 +10,17 @@ super + u
 super + w
   zen-browser
 
-super + shift + o
+super + o
   cpick.sh
 
 super + f 
-  st -e yazi
+  kitty -1 --class fileManager -e yazi
 
-super + o
-  st
+Print 
+  flameshot gui --clipboard
 
-super + s
-  flameshot gui 
+shift + Print 
+  flameshot full --clipboard
 
 super + {equal, minus, BackSpace}
   volume.sh {up, down, toggle}
