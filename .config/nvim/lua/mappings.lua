@@ -17,11 +17,13 @@ map("n", "<leader>th", function()
 end)
 
 
--- Split Navigation
-map("n", "<M-h>", "<C-w>h")
-map("n", "<M-j>", "<C-w>j")
-map("n", "<M-k>", "<C-w>k")
-map("n", "<M-l>", "<C-w>l")
+vim.cmd "let g:tmux_navigator_no_mappings = 1"
+
+vim.cmd "nnoremap <silent> <M-h> :<C-U>TmuxNavigateLeft<cr>"
+vim.cmd "nnoremap <silent> <M-j> :<C-U>TmuxNavigateDown<cr>"
+vim.cmd "nnoremap <silent> <M-k> :<C-U>TmuxNavigateUp<cr>"
+vim.cmd "nnoremap <silent> <M-l> :<C-U>TmuxNavigateRight<cr>"
+
 
 -- Clear Highlights
 map("n", "<Esc>", ":nohl<CR>")

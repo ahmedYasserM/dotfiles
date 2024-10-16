@@ -14,17 +14,7 @@ local util = require "lspconfig/util"
 
 
 
-local servers = {}
-
--- lsps with default config
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    on_init = nvlsp.on_init,
-    capabilities = capabilities,
-  }
-end
-
+local servers = { "pylsp" }
 
 -------------------------------------------------------------------------------- SETUP C++ LSP START -------------------------------------------------------------------------
 
@@ -93,3 +83,26 @@ lspconfig.typst_lsp.setup {
 }
 
 -------------------------------------------------------------------------------- SETUP Typst LSP END -------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------- SETUP Bash LSP START -------------------------------------------------------------------------------
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'sh',
+  callback = function()
+    vim.lsp.start({
+      name = 'bash-language-server',
+      cmd = { 'bash-language-server', 'start' },
+    })
+  end,
+})
+-- lsps with default config
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    on_init = nvlsp.on_init,
+    capabilities = capabilities,
+  }
+end
+
+
+-------------------------------------------------------------------------------- SETUP Bash LSP END -------------------------------------------------------------------------------
