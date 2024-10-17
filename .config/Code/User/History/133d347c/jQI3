@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-
-
-rand_nums=(1 2 3 4)
-echo "length of rand_nums: ${#rand_nums[@]}"

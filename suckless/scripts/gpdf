@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-doc=$1
-out=$(echo $doc | cut -d '.' -f 1)
-groff -ms $doc -T dvi | dvipdfm > $out.pdf
-

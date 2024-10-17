@@ -1,3 +1,0 @@
-> [!IMPORTANT]
->
-> this is important text...

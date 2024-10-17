@@ -1,8 +1,0 @@
----
-title: My First Document
-author: Ahmed Yasser
-output: pdf_document
----
-
-
-

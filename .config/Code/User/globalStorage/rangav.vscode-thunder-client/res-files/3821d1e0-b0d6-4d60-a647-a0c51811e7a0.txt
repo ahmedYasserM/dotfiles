@@ -1,1 +1,0 @@
-map[Accept:[application/json] Accept-Encoding:[gzip, deflate, br] Connection:[close] User-Agent:[Thunder Client (https://www.thunderclient.com)]]

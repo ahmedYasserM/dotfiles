@@ -1,35 +1,12 @@
 [user]
-	email = ahmedYasser9@proton.me
+	email = ahmedYasser.2592@gmail.com
 	name = Ahmed Yasser
 
 [core]
-	editor = lvim
-    pager = delta
-
-[interactive]
-    diffFilter = delta --color-only 
-
-
-[delta]
-    navigate = true
-    line-numbers = true
-    ; side-by-side = true
-    true-color = always
-
-
-[merge]
-    conflictstyle = diff3
-
-
-[diff]
-    colorMoved = default
-
+	editor = nvim
 
 [init]
 	defaultBranch = main
 
 [clean]
 	requireForce = true
-
-[credential]
-	helper = store

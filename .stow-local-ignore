@@ -1,0 +1,14 @@
+\.git
+\.themes
+packages.md
+code-snippets/*
+zen-everbulsh/*
+etc/*
+.config/alacritty/*
+.config/bspwm/*
+.config/felix/*
+.config/nushell/*
+.config/ranger/*
+.config/vs-vim/*
+.config/warp/*
+.config/hypr/*

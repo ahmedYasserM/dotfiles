@@ -1,8 +1,0 @@
-struct Person {
-    
-}
-
-
-fn main() {
-  
-}

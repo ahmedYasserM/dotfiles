@@ -1,5 +1,8 @@
 #!/usr/bin/env fish
 
+# anaconda
+alias conda="source ~/.config/fish/config-conda.fish && conda"
+
 # neovide
 alias nv="neovide --neovim-bin=(which lvim) . &disown" 
 
@@ -13,13 +16,20 @@ alias do='setsid dolphin $1 &> /dev/null'
 alias vbox='vboxmanage'
 
 # ls
-alias ls='exa --icons=auto' # short list
-alias  ll='exa -lg --icons=auto' # long list
-alias la='exa -a --icons=auto' # list all
-alias lla='exa -lhag --icons=auto --sort=name --group-directories-first' # long list all
-alias ld='exa -lhgD --icons=auto' # long list dirs
-alias lt="exa --icons=auto --tree -L 1"
-alias le="exa --icons=auto --tree -L 1"
+
+alias ls="command ls --color=auto"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
+alias lli="ls -li"
+
+alias ls='eza --icons=auto' # short list
+alias  ll='eza -lg --icons=auto' # long list
+alias la='eza -a --icons=auto' # list all
+alias  lli='eza -li -g --icons'
+alias lla='eza -lhag --icons=auto --sort=name --group-directories-first' # long list all
+alias lt="eza --icons=auto --tree -L 1"
+alias le="eza --icons=auto --tree -L 1"
 alias li='ls -lgi'
 
 
@@ -74,7 +84,7 @@ alias history 'history'
 
 
 # lvim
-alias vim 'lvim'
+#alias vim 'nvim'
 
 
 # current time

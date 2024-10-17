@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-EDITOR=code
-echo "changed editor: $EDITOR"

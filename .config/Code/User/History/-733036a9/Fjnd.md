@@ -1,1 +1,0 @@
-the winner is team # 30

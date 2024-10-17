@@ -1,1 +1,0 @@
-Ctrl-O zz       Center window

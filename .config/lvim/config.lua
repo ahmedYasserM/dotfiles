@@ -62,6 +62,16 @@ code_actions.setup {
 -------------------------------------------------------------------------------- LSP Start ---------------------------------------------------------------------------------
 
 require("lvim.lsp.manager").setup("emmet_ls")
+local cmp_nvim_lsp = require "cmp_nvim_lsp"
+
+require("lspconfig").clangd.setup {
+  on_attach = on_attach,
+  capabilities = cmp_nvim_lsp.default_capabilities(),
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16",
+  },
+}
 
 -------------------------------------------------------------------------------- LSP End -----------------------------------------------------------------------------------
 
@@ -317,6 +327,15 @@ lvim.plugins = {
     lazy = false,
   },
   {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && npm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+  {
     'laytan/tailwind-sorter.nvim',
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-lua/plenary.nvim' },
     build = 'cd formatter && npm ci && npm run build',
@@ -337,6 +356,25 @@ lvim.plugins = {
         italics = true,
       })
     end
+  },
+  {
+    'nvim-orgmode/orgmode',
+    event = 'VeryLazy',
+    ft = { 'org' },
+    config = function()
+      -- Setup orgmode
+      require('orgmode').setup({
+        org_agenda_files = '~/orgfiles/**/*',
+        org_default_notes_file = '~/orgfiles/refile.org',
+      })
+
+      -- NOTE: If you are using nvim-treesitter with ~ensure_installed = "all"~ option
+      -- add ~org~ to ignore_install
+      -- require('nvim-treesitter.configs').setup({
+      --   ensure_installed = 'all',
+      --   ignore_install = { 'org' },
+      -- })
+    end,
   }
 
   -- {

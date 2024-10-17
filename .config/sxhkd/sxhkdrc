@@ -10,16 +10,16 @@ super + u
 super + w
   zen-browser
 
-super + o
+super + shift + n
   cpick.sh
 
 super + f 
-  kitty -1 --class fileManager -e yazi
+  kitty -1 -e yazi
 
-Print 
-  flameshot gui --clipboard
+super + s 
+  flameshot gui
 
-shift + Print 
+super + shift + s
   flameshot full --clipboard
 
 super + {equal, minus, BackSpace}

@@ -1,3 +1,0 @@
-function openWith() {
-    window.open("", )
-}
