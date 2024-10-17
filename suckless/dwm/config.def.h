@@ -21,11 +21,12 @@ static const int splitstatus = 1;    /* 1 for split status items */
 static const char *splitdelim = ";"; /* Character used for separating status */
 static const char dmenufont[] =
     "JetBrainsMonnsMono Nerd Font Mono:style:small:size=15";
-static const char col_gray1[] = "#1D2327";
+static const char col_gray1[] = "#141B1E";
 static const char col_gray2[] = "#444444";
 static const char col_gray3[] = "#D3C6AA";
 static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[] = "#8A9F70"; //"#91a374";
+static const char col_cyan[] = "#4B80A9";
+
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {col_gray3, col_gray1, col_gray2},
@@ -42,7 +43,6 @@ static const Rule rules[] = {
      */
     /* class      instance    title       tags mask     isfloating   monitor */
     {"Gimp", NULL, NULL, 0, 1, -1},
-    {"fileManager", NULL, NULL, 1 << 9, 0, 0},
     //{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
@@ -85,8 +85,9 @@ static const char *dmenucmd[] = {
 static const char *termcmd[] = {"kitty", "-1", NULL};
 
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = {"st", "-t",    scratchpadname,
-                                      "-g", "85x24", NULL};
+static const char *scratchpadcmd[] = {
+    "st",   "-t",          scratchpadname, "-g", "85x24", "-e",
+    "tmux", "new-session", "-s",           "st", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
@@ -120,7 +121,7 @@ static const Key keys[] = {
     {MODKEY | ShiftMask, XK_j, pushdown, {0}},
     {MODKEY | ShiftMask, XK_k, pushup, {0}},
     TAGKEYS(XK_1, 0) TAGKEYS(XK_2, 1) TAGKEYS(XK_3, 2) TAGKEYS(XK_4, 3)
-        TAGKEYS(XK_semicolon, 4) TAGKEYS(XK_6, 5) TAGKEYS(XK_7, 6)
+        TAGKEYS(XK_semicolon, 4) TAGKEYS(XK_o, 5) TAGKEYS(XK_7, 6)
             TAGKEYS(XK_8, 7) TAGKEYS(XK_9, 8)
                 TAGKEYS(XK_0, 9){MODKEY | ShiftMask, XK_q, quit, {0}},
 };
