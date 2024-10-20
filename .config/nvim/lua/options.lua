@@ -20,12 +20,12 @@ hi! link StatusLineNC Normal
 set statusline=%{repeat('─',winwidth('.'))}
 ]])
 
-
 vim.cmd([[
-autocmd BufEnter,BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%")) " Show the current opened file name in tmux status bar
-" restore the automatic renaming of the tmux window when vim exits
+autocmd BufEnter,BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window -t " . $TMUX_PANE . " '" . expand("%") . "'")
+" Restore automatic renaming of the tmux window when vim exits
 if exists('$TMUX')
-    autocmd BufEnter * call system("tmux rename-window '" . expand("%:t") . "'")
-    autocmd VimLeave * call system("tmux setw automatic-rename")
+    " Rename only the current Tmux pane's window
+    autocmd BufEnter * call system("tmux rename-window -t " . $TMUX_PANE . " '" . expand("%:t") . "'")
+    autocmd VimLeave * call system("tmux setw -t " . $TMUX_PANE . " automatic-rename")
 endif
 ]])

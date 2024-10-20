@@ -5,6 +5,7 @@ local options = {
     cpp = { "clang-format" },
     go = { "gofumpt", "goimports" },
     asm = { "asmfmt" },
+    rs = { "rustfmt" },
     -- typst = { "typstfmt" }
     -- css = { "prettier" },
     -- html = { "prettier" },
