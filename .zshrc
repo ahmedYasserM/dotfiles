@@ -140,6 +140,10 @@ fi
 
 # ============================================================================= Aliases ==============================================================================
 
+# tmux
+alias tns="tmux new-session -s"
+alias ta="tmux attach-session -t"
+
 # trash cli
 alias rm="trash"
 
@@ -251,6 +255,35 @@ _fix_cursor() {
 }
 #--------------------------------------------------- Change cursor shape based on vi mode
 
+
+# prompt
+function custom_prompt() {
+  local cwd_color="%{$fg[cyan]%}"  # Color for the current directory
+  local blue_color="%{$fg[blue]%}" # Color for the symbol
+  local reset_color="%{$reset_color%}" # Reset the color
+
+  # Get the current working directory
+  local current_dir="${PWD}"
+
+  # Check if the current directory is the home directory
+  if [[ "$current_dir" == "$HOME" ]]; then
+    echo -n "🏡"
+  else
+    echo -n "${blue_color}◎ ${cwd_color}$(basename "$current_dir")"
+  fi
+
+  # Add the rocket emoji and reset color
+  echo -n " 🚀 ${reset_color}"
+}
+
+function update_prompt() {
+  PROMPT="$(custom_prompt)"
+}
+
+PROMPT="$(custom_prompt)"
+chpwd_functions+=(update_prompt)
+
+
 # ============================================================================= Functions =============================================================================
 
 # ============================================================================= Variables =============================================================================
@@ -338,20 +371,11 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 
 # plugins
-zinit ice depth=1; zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light hlissner/zsh-autopair
-
-
-# Plug Configs
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-
 
 # Load Completions
 autoload -U compinit && compinit
