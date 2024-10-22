@@ -18,7 +18,6 @@ end)
 
 
 vim.cmd "let g:tmux_navigator_no_mappings = 1"
-
 vim.cmd "nnoremap <silent> <M-h> :<C-U>TmuxNavigateLeft<cr>"
 vim.cmd "nnoremap <silent> <M-j> :<C-U>TmuxNavigateDown<cr>"
 vim.cmd "nnoremap <silent> <M-k> :<C-U>TmuxNavigateUp<cr>"

@@ -14,10 +14,10 @@ use = ""
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#87afff" }
+cwd = { fg = "#6F8EAE" }
 
 # Hovered
-hovered = { fg = "#262626", bg = "#87afff" }
+hovered = { fg = "#262626", bg = "#6F8EAE" }
 preview_hovered = { underline = false }
 
 # Find
@@ -31,7 +31,7 @@ marker_cut = { fg = "#ff8787", bg = "#ff8787" }
 marker_marked = { fg = "lightcyan", bg = "lightcyan" }
 
 # Tab
-tab_active = { fg = "#262626", bg = "#87afff" }
+tab_active = { fg = "#262626", bg = "#6F8EAE" }
 tab_inactive = { fg = "white", bg = "#4e4e4e" }
 tab_width = 1
 
@@ -71,7 +71,7 @@ progress_error = { fg = "red", bg = "black" }
 permissions_t = { fg = "#afd75f" }
 permissions_r = { fg = "#d7af5f" }
 permissions_w = { fg = "#ff8787" }
-permissions_x = { fg = "#87d7ff" }
+permissions_x = { fg = "#6F8EAE" }
 permissions_s = { fg = "#4e4e4e" }
 
 # : }}}
@@ -143,7 +143,7 @@ separator_style = { fg = "darkgray", bold = true }
 
 [help]
 on = { fg = "#af87ff" }
-run = { fg = "#87d7ff" }
+run = { fg = "#6F8EAE" }
 desc = { fg = "#afafd7" }
 hovered = { bg = "#4e4e4e", bold = true }
 footer = { fg = "#262626", bg = "white" }
@@ -194,7 +194,7 @@ rules = [
 
   # Fallback
   # { name = "*", fg = "white" },
-  { name = "*/", fg = "#87afff" },
+  { name = "*/", fg = "#6F8EAE" },
 ]
 
 

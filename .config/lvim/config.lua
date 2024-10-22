@@ -1,7 +1,7 @@
 lvim.builtin.bufferline.active = false
 lvim.format_on_save = true
 lvim.builtin.treesitter.auto_install = true
--- lvim.transparent_window = true
+lvim.transparent_window = true
 lvim.builtin.project.manual_mode = true
 lvim.builtin.nvimtree.side = "right"
 vim.opt.wrap = true
@@ -375,8 +375,58 @@ lvim.plugins = {
       --   ignore_install = { 'org' },
       -- })
     end,
-  }
+  },
+  {
+    -- pretty markdown
+    'MeanderingProgrammer/render-markdown.nvim',
+    lazy = false,
+    enabled = true,
+    opts = {
+      heading = {
+        width = 'block',
+        min_width = 50,
+        border = true,
+        enabled = true,
+        sign = true,
+        position = 'overlay',
+        backgrounds = {
+          'RenderMarkdownH1Bg',
+          'RenderMarkdownH2Bg',
+          'RenderMarkdownH3Bg',
+          'RenderMarkdownH4Bg',
+          'RenderMarkdownH5Bg',
+          'RenderMarkdownH6Bg',
+        },
+        foregrounds = {
+          'RenderMarkdownH1',
+          'RenderMarkdownH2',
+          'RenderMarkdownH3',
+          'RenderMarkdownH4',
+          'RenderMarkdownH5',
+          'RenderMarkdownH6',
+        },
+      },
+      render_modes = { 'n', 'v', 'i', 'c' },
+      checkbox = {
 
+        unchecked = { icon = '󰄱 ' },
+        checked = { icon = ' ' },
+        custom = { todo = { raw = '[>]', rendered = '󰥔 ' } },
+      },
+      code = {
+        position = 'right',
+        width = 'block',
+        left_pad = 2,
+        right_pad = 4,
+      },
+      link = {
+        enabled = true,
+        hyperlink = '󰌹 ',
+        email = '󰀓 ',
+      }
+    },
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' },
+  },
   -- {
   --   'Exafunction/codeium.vim',
   --   event = 'BufEnter',

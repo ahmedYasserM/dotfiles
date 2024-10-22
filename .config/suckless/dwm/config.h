@@ -25,7 +25,7 @@ static const char col_gray1[] = "#141B1E";
 static const char col_gray2[] = "#444444";
 static const char col_gray3[] = "#D3C6AA";
 static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[] = "#4B80A9";
+static const char col_cyan[] = "#6F8FAF";
 
 static const char *colors[][3] = {
     /*               fg         bg         border   */
@@ -85,9 +85,8 @@ static const char *dmenucmd[] = {
 static const char *termcmd[] = {"kitty", "-1", NULL};
 
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = {
-    "st",   "-t",          scratchpadname, "-g", "85x24", "-e",
-    "tmux", "new-session", "-s",           "st", NULL};
+static const char *scratchpadcmd[] = {"st", "-t",    scratchpadname,
+                                      "-g", "85x24", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
