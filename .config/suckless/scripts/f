@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-find -type f | fzf | xargs -r $EDITOR
+fd . -H -E '*.jpg' -E '*.png' -E '*.pdf' -E '*.mkv' -E .git -E .npm | sk | xargs -r $EDITOR
+
+
