@@ -1,0 +1,9 @@
+{
+  "debug print": {
+    "prefix": "dp",
+    "body": [
+      "std.debug.print(\"${1}\\n\", .{${2}});"
+    ],
+    "description": "Debug Print"
+  }
+}
