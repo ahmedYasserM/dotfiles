@@ -2,6 +2,20 @@
 
 This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/software/stow/) to manage them.
 
+## Show Case
+
+### DWM and st
+![DWM](./assets/dwm.jpg)
+
+### Kitty and Tmux
+![Kitty](./assets/tmux-kitty.jpg)
+
+### Neovim
+![Neovim](./assets/neovim.jpg)
+
+### File Manager (Yazi)
+![Yazi](./assets/yazi.jpg)
+
 ## Config List
 
 ### Not Ignored by stow
@@ -24,6 +38,7 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 - ranger
 - starship
 - zsh
+- NuShell
 - lsd
 - felix
 - hyprland
