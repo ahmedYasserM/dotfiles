@@ -1,9 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 # ============================================================================= Zoxide Configs =======================================================================
 
@@ -147,16 +141,16 @@ alias ta="tmux attach-session -t"
 # trash cli
 alias rm="trash"
 
-# git
+# git 
 alias gs="git status -s"
 
 # neovide
 alias nv="neovide --neovim-bin=(which lvim) . &disown" 
 
-# yazi file manager
-alias zl="yazi"
+# yazi file manager 
+alias zl="yazi" 
 
-# exit
+# exit 
 alias xx="exit"
 
 # virtualbox
@@ -181,6 +175,7 @@ alias ip="ip -c"
 
 alias c="clear -x"
 
+# git graph 
 alias gg="git-graph --style round"
 
 alias cat="bat -p"
@@ -196,11 +191,10 @@ alias ....="...;.."
 
 alias grep="grep --color=auto"
 
-#xbps
-alias s='doas xbps-install -S'
-alias i='s;doas xbps-install'
+#xbps 
+alias i='doas xbps-install -S'
 alias q='doas xbps-query -Rs'
-alias u='s;doas xbps-install -u xbps; doas xbps-install -u'
+alias u='doas xbps-install -Su xbps; doas xbps-install -u'
 alias r='doas xbps-remove -R'
 
 # apt
@@ -257,32 +251,32 @@ _fix_cursor() {
 
 
 # prompt
-function custom_prompt() {
-  local cwd_color="%{$fg[cyan]%}"  # Color for the current directory
-  local blue_color="%{$fg[blue]%}" # Color for the symbol
-  local reset_color="%{$reset_color%}" # Reset the color
 
-  # Get the current working directory
+function custom_prompt() {
+  local cwd_color="%F{cyan}"     # Color for the current directory
+  local blue_color="%F{blue}"    # Color for the symbol
+  local reset_color="%f"         # Reset the color
+
   local current_dir="${PWD}"
 
-  # Check if the current directory is the home directory
   if [[ "$current_dir" == "$HOME" ]]; then
     echo -n "🏡"
   else
     echo -n "${blue_color}◎ ${cwd_color}$(basename "$current_dir")"
   fi
 
-  # Add the rocket emoji and reset color
   echo -n " 🚀 ${reset_color}"
 }
 
+# Update prompt dynamically when directory changes
 function update_prompt() {
-  PROMPT="$(custom_prompt)"
+  PROMPT="$(custom_prompt)"  
 }
 
 PROMPT="$(custom_prompt)"
-chpwd_functions+=(update_prompt)
 
+autoload -U add-zsh-hook
+add-zsh-hook chpwd update_prompt
 
 # ============================================================================= Functions =============================================================================
 
@@ -352,6 +346,7 @@ zstyle ':completion:*' matcher-list '' \
  
 # fzf
 eval "$(fzf --zsh)"
+export FZF_DEFAULT_OPTS='--bind alt-j:down,alt-k:up'
 
 # ============================================================================= Options and bindings =================================================================
 
@@ -375,10 +370,8 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
-zinit light hlissner/zsh-autopair
 
 # Load Completions
 autoload -U compinit && compinit
 
 # ============================================================================= Plugins ==============================================================================
-
