@@ -6,6 +6,7 @@ local options = {
     go = { "gofumpt", "goimports" },
     asm = { "asmfmt" },
     rs = { "rustfmt" },
+    bash = { "shfmt" },
     -- typst = { "typstfmt" }
     -- css = { "prettier" },
     -- html = { "prettier" },

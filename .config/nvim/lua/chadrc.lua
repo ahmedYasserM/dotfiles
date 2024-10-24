@@ -12,9 +12,9 @@ M.ui = {
 }
 
 M.base46 = {
-  theme = "gruvchad",
+  theme = "everblush",
   hl_override = {
-    Normal = { bg = "#141B1E" },
+    Normal = { bg = "#10171A" },
     LspInlayHint = { bg = "NONE" },
     CursorLine = { bg = "one_bg" },
     Comment = { italic = true },

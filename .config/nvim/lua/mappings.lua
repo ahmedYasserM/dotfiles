@@ -5,13 +5,9 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
--- map("i", "jk", "<ESC>")
--- map("i", "kj", "<ESC>")
-map("n", "L", "$")
-map("n", "H", "0")
+map("n", "L", "g_")
+map("n", "H", "_")
 map("n", "<leader>v", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>")
--- map("n", "<A-k>", ":bnext<CR>")
--- map("n", "<A-j>", ":bprevious<CR>")
 map("n", "<leader>th", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end)
@@ -26,6 +22,15 @@ vim.cmd "nnoremap <silent> <M-l> :<C-U>TmuxNavigateRight<cr>"
 
 -- Clear Highlights
 map("n", "<Esc>", ":nohl<CR>")
+
+--- Toggle inlay hints
+local function toggle_inlay_hint()
+  local is_enabled = vim.lsp.inlay_hint.is_enabled()
+  vim.lsp.inlay_hint.enable(not is_enabled)
+end
+map("n", "<A-.>", function()
+  toggle_inlay_hint()
+end)
 
 -------------------------------------------------------------------------------- Global Keymaps End ------------------------------------------------------------------
 

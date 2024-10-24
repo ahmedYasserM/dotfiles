@@ -16,7 +16,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "vim", "lua", "vimdoc", "json", "toml", "yaml", "cpp", "python", "go", "bash", "dockerfile", "c"
+        "vim", "lua", "vimdoc", "json", "toml", "yaml", "cpp", "python", "go", "bash", "dockerfile", "c", "asm", "zig"
       },
     },
   },
@@ -49,12 +49,13 @@ return {
       buftypes = {},
     },
   },
-{
+  {
     'MeanderingProgrammer/render-markdown.nvim',
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, 
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
     ---@module 'render-markdown'
     opts = {},
-},
+    lazy = false,
+  },
 
   {
     "ahmedkhalf/project.nvim",
@@ -155,5 +156,24 @@ return {
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
   },
+  {
+    "NvChad/nvterm",
+    enabled = false
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    enabled = false,
+  },
+
+  {
+    "shellRaining/hlchunk.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require("hlchunk").setup({})
+    end
+  },
+
+
 
 }
