@@ -92,12 +92,13 @@ cmp.setup {
 
 -------------------------------------------------------------------------------- Telescope Configs Start -------------------------------------------------------------
 
+local telescope = require("telescope")
 local builtin = require "telescope.builtin"
 local action_state = require "telescope.actions.state"
 local actions = require "telescope.actions"
 require("telescope").load_extension "projects"
 
-require("telescope").setup {
+telescope.setup {
   defaults = {
     file_ignore_patterns = {
       "node_modules",

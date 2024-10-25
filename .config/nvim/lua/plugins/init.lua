@@ -174,6 +174,20 @@ return {
     end
   },
 
-
+  {
+    "folke/trouble.nvim",
+    opts = {},
+    cmd = "Trouble",
+    keys = {
+      {
+        "<A-,>",
+        function()
+          vim.cmd("Trouble diagnostics toggle")
+          vim.cmd("wincmd p")
+        end,
+        desc = "Diagnostics (Trouble)",
+      },
+    },
+  }
 
 }

@@ -29,3 +29,9 @@ if exists('$TMUX')
     autocmd VimLeave * call system("tmux setw -t " . $TMUX_PANE . " automatic-rename")
 endif
 ]])
+
+
+-- Disable Diagnostic Virtual Text
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+  virtual_text = false,
+})
