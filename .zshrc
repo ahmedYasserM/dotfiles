@@ -134,9 +134,34 @@ fi
 
 # ============================================================================= Aliases ==============================================================================
 
+# zoxide
+alias cd="z"
+
+# docker
+alias d="docker"
+
+# yt-dlp
+alias dl="yt-dlp"
+
+# skim
+alias sk="sk --bind 'alt-j:down,alt-k:up'"
+
+# make
+alias ms="make -s"
+
+# tealdeer
+alias t="tealdeer"
+
+#xclip
+alias xl="tee /dev/tty | xclip -selection c -r" # copy
+alias al="xclip -selection c -o -r"  # paste
+
 # tmux
 alias tns="tmux new-session -s"
 alias ta="tmux attach-session -t"
+alias tk="tmux kill-session -t"
+alias tl="tmux list-sessions"
+alias tr="tmux rename-session"
 
 # trash cli
 alias rm="trash"
@@ -253,8 +278,9 @@ _fix_cursor() {
 # prompt
 
 function custom_prompt() {
-  local cwd_color="%F{cyan}"     # Color for the current directory
+  local cwd_color="%F{green}"     # Color for the current directory
   local blue_color="%F{blue}"    # Color for the symbol
+  local red_color="%F{red}"       # Color for the symbol
   local reset_color="%f"         # Reset the color
 
   local current_dir="${PWD}"
@@ -262,10 +288,13 @@ function custom_prompt() {
   if [[ "$current_dir" == "$HOME" ]]; then
     echo -n "🏡"
   else
-    echo -n "${blue_color}◎ ${cwd_color}$(basename "$current_dir")"
+    # echo -n "${blue_color}◎ ${cwd_color}$(basename "$current_dir")"
+    echo -n "${cwd_color}$(basename "$current_dir")"
   fi
 
-  echo -n " 🚀 ${reset_color}"
+  echo -n " 🐧 ${reset_color}"
+  # echo -n " 🚀 ${reset_color}"
+
 }
 
 # Update prompt dynamically when directory changes
@@ -293,6 +322,7 @@ export MANPAGER="nvim +Man!"
 
 # Terminal
 export TERM=xterm-kitty
+# export TERM=xterm-256color
 
 # GO
 export GOPATH=/home/ahmed/dev/go
@@ -312,6 +342,8 @@ add_to_path "/home/ahmed/.local/bin"
 add_to_path "/home/ahmed/.cargo/bin"
 add_to_path "/home/ahmed/.nix-profile/bin"
 add_to_path "/usr/local/go/bin"
+add_to_path "/home/ahmed/dev/go/bin"
+
 
 # ============================================================================= Variables ============================================================================
 
@@ -370,8 +402,13 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light hlissner/zsh-autopair
 
 # Load Completions
 autoload -U compinit && compinit
 
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+
 # ============================================================================= Plugins ==============================================================================
+. "/home/ahmed/.deno/env"
