@@ -134,6 +134,12 @@ fi
 
 # ============================================================================= Aliases ==============================================================================
 
+# ssh
+alias ssh="TERM=xterm-256color ssh"
+
+# Qemu
+alias mq="make -f /home/ahmed/qemu/Makefile qemu"
+
 # zoxide
 alias cd="z"
 
@@ -278,7 +284,7 @@ _fix_cursor() {
 # prompt
 
 function custom_prompt() {
-  local cwd_color="%F{green}"     # Color for the current directory
+  local cwd_color="%F{#62B8AC}"     # Color for the current directory
   local blue_color="%F{blue}"    # Color for the symbol
   local red_color="%F{red}"       # Color for the symbol
   local reset_color="%f"         # Reset the color
@@ -306,6 +312,20 @@ PROMPT="$(custom_prompt)"
 
 autoload -U add-zsh-hook
 add-zsh-hook chpwd update_prompt
+
+# Install Fonts (not my function)
+function insfont ()
+{
+  if [[ -z $1 ]]; then
+   echo provide path to zipped font file 
+   return 1
+  fi
+  
+  font_zip=$(realpath "$1")
+
+  unzip "$font_zip" "*.ttf" "*.otf" -d ~/.local/share/fonts/
+  fc-cache -vf
+}
 
 # ============================================================================= Functions =============================================================================
 
