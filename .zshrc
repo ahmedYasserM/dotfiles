@@ -1,4 +1,3 @@
-
 # ============================================================================= Zoxide Configs =======================================================================
 
 # shellcheck shell=bash
@@ -134,6 +133,18 @@ fi
 
 # ============================================================================= Aliases ==============================================================================
 
+# cargo
+alias ch="cargo --quiet check"
+alias cb="cargo --quiet build"
+alias cr="cargo --quiet run"
+alias ct="cargo --quiet test"
+
+# systemd
+alias sd="doas systemctl"
+
+# python3
+alias p="ipython"
+
 # ssh
 alias ssh="TERM=xterm-256color ssh"
 
@@ -175,8 +186,11 @@ alias rm="trash"
 # git 
 alias gs="git status -s"
 
+# vim
+alias vim='nvim'
+
 # neovide
-alias nv="neovide --neovim-bin=(which lvim) . &disown" 
+alias nv="neovide . & disown &>/dev/null"
 
 # yazi file manager 
 alias zl="yazi" 
@@ -223,10 +237,10 @@ alias ....="...;.."
 alias grep="grep --color=auto"
 
 #xbps 
-alias i='doas xbps-install -S'
-alias q='doas xbps-query -Rs'
-alias u='doas xbps-install -Su xbps; doas xbps-install -u'
-alias r='doas xbps-remove -R'
+# alias i='doas xbps-install -S'
+# alias q='doas xbps-query -Rs'
+# alias u='doas xbps-install -Su xbps; doas xbps-install -u'
+# alias r='doas xbps-remove -R'
 
 # apt
 # alias r="sudo apt remove"       ## remove
@@ -236,6 +250,12 @@ alias r='doas xbps-remove -R'
 # alias u="sync;sudo apt upgrade" ## update
 
 
+# pacman
+alias r="doas pacman -R"       ## remove
+alias q="pacman -Ss"       ## query 
+alias i="doas pacman -S"      ## install
+alias s="doas pacman -Sy"       ## sync 
+alias u="doas pacman -Syu" ## update 
 # ============================================================================= Aliases ===============================================================================
 
 # ============================================================================= Functions =============================================================================
@@ -283,35 +303,48 @@ _fix_cursor() {
 
 # prompt
 
-function custom_prompt() {
-  local cwd_color="%F{#62B8AC}"     # Color for the current directory
-  local blue_color="%F{blue}"    # Color for the symbol
-  local red_color="%F{red}"       # Color for the symbol
-  local reset_color="%f"         # Reset the color
-
-  local current_dir="${PWD}"
-
-  if [[ "$current_dir" == "$HOME" ]]; then
-    echo -n "🏡"
+setopt PROMPT_SUBST        # enable command substitution in prompt
+function dir_icon {
+  if [[ "$PWD" == "$HOME" ]]; then
+    echo "%B%F{cyan}%f%b"
   else
-    # echo -n "${blue_color}◎ ${cwd_color}$(basename "$current_dir")"
-    echo -n "${cwd_color}$(basename "$current_dir")"
+    echo "%B%F{cyan}%f%b"
   fi
-
-  echo -n " 🐧 ${reset_color}"
-  # echo -n " 🚀 ${reset_color}"
-
 }
 
-# Update prompt dynamically when directory changes
-function update_prompt() {
-  PROMPT="$(custom_prompt)"  
-}
+#PS1='%B%F{blue}%f%b  %B%F{magenta}%n%f%b $(dir_icon)  %B%F{red}%~%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
 
-PROMPT="$(custom_prompt)"
+PS1='%B%F{blue}%f%b  $(dir_icon)  %B%F{magenta}$(basename `pwd`)%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
 
-autoload -U add-zsh-hook
-add-zsh-hook chpwd update_prompt
+#   function custom_prompt() {
+#     local cwd_color="%F{#62B8AC}"     # Color for the current directory
+#     local blue_color="%F{blue}"    # Color for the symbol
+#     local red_color="%F{red}"       # Color for the symbol
+#     local reset_color="%f"         # Reset the color
+
+#     local current_dir="${PWD}"
+
+#     if [[ "$current_dir" == "$HOME" ]]; then
+#       echo -n "🏡"
+#     else
+#       # echo -n "${blue_color}◎ ${cwd_color}$(basename "$current_dir")"
+#       echo -n "${cwd_color}$(basename "$current_dir")"
+#     fi
+
+#     echo -n " 🐧 ${reset_color}"
+#     # echo -n " 🚀 ${reset_color}"
+
+#   }
+
+#   # Update prompt dynamically when directory changes
+#   function update_prompt() {
+#     PROMPT="$(custom_prompt)"  
+#   }
+
+#   PROMPT="$(custom_prompt)"
+
+#   autoload -U add-zsh-hook
+#   add-zsh-hook chpwd update_prompt
 
 # Install Fonts (not my function)
 function insfont ()
@@ -345,7 +378,7 @@ export TERM=xterm-kitty
 # export TERM=xterm-256color
 
 # GO
-export GOPATH=/home/ahmed/dev/go
+export GOPATH=/home/ahmed/.go
 export GOBIN=$GOPATH/bin
 
 # XDG
@@ -363,6 +396,8 @@ add_to_path "/home/ahmed/.cargo/bin"
 add_to_path "/home/ahmed/.nix-profile/bin"
 add_to_path "/usr/local/go/bin"
 add_to_path "/home/ahmed/dev/go/bin"
+add_to_path "/home/ahmed/.platformio/penv/bin"
+
 
 
 # ============================================================================= Variables ============================================================================
@@ -427,8 +462,11 @@ zinit light hlissner/zsh-autopair
 # Load Completions
 autoload -U compinit && compinit
 
-export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
-zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+# export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
+# zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 
-# ============================================================================= Plugins ==============================================================================
-. "/home/ahmed/.deno/env"
+
+#  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
+#  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
+#  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴
+$HOME/.local/bin/colorscript -r
