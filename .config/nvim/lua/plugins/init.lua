@@ -13,6 +13,13 @@ return {
   },
 
   {
+    "jose-elias-alvarez/null-ls.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -91,30 +98,38 @@ return {
     "rafamadriz/friendly-snippets",
   },
 
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = {
-      lsp = {
-        signature = {
-          enabled = false,
-        }
-      },
-      messages = {
-        enabled = false,
-      },
-      cmdline = {
-        enabled = true,
-      },
-      notify = {
-        enabled = false,
-      },
-
-    },
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-    },
-  },
+  -- {
+  --   "folke/noice.nvim",
+  --   event = "VeryLazy",
+  --   opts = {
+  --     lsp = {
+  --       signature = {
+  --         enabled = false,
+  --       },
+  --
+  --       progress = {
+  --         enabled = false,
+  --       },
+  --
+  --       message = {
+  --         enabled = false,
+  --       }
+  --     },
+  --     messages = {
+  --       enabled = false,
+  --     },
+  --     cmdline = {
+  --       enabled = true,
+  --     },
+  --     notify = {
+  --       enabled = false,
+  --     }
+  --   },
+  --
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --   },
+  -- },
 
   {
     'kaarmu/typst.vim',
@@ -188,6 +203,44 @@ return {
         desc = "Diagnostics (Trouble)",
       },
     },
-  }
+  },
+
+  {
+    "anurag3301/nvim-platformio.lua",
+    cmd = {
+      "Pioinit",
+      "Piorun",
+      "Piocmd",
+      "Piolib",
+      "Piomon",
+      "Piodebug",
+      "Piodb",
+    },
+    dependencies = {
+      { "akinsho/nvim-toggleterm.lua" },
+      { "nvim-telescope/telescope.nvim" },
+      { "nvim-lua/plenary.nvim" },
+    },
+  },
+
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^5',
+    lazy = false,
+    ["rust-analyzer"] = {
+      cargo = {
+        allFeatures = true,
+      }
+    }
+  },
+
+  {
+    "LunarVim/breadcrumbs.nvim",
+    dependencies = {
+      "SmiteshP/nvim-navic",
+    },
+
+  },
+
 
 }

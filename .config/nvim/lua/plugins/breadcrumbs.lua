@@ -1,0 +1,3 @@
+return {
+  require("breadcrumbs").setup()
+}

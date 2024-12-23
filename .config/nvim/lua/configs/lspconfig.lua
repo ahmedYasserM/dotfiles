@@ -12,7 +12,7 @@ local util = require "lspconfig/util"
 
 
 
-local servers = { "pylsp", "zls" }
+local servers = { "zls", "pylsp" }
 
 -------------------------------------------------------------------------------- SETUP C++ LSP START -----------------------------------------------------------------
 
@@ -71,12 +71,6 @@ lspconfig["asm_lsp"].setup {
 -------------------------------------------------------------------------------- SETUP Assembly LSP END --------------------------------------------------------------
 -------------------------------------------------------------------------------- SETUP Typst LSP START ---------------------------------------------------------------
 
-lspconfig.typst_lsp.setup {
-  settings = {
-    exportPdf = "onType" -- Choose onType, onSave or never.
-    -- serverPath = "" -- Normally, there is no need to uncomment it.
-  }
-}
 
 -------------------------------------------------------------------------------- SETUP Typst LSP END -----------------------------------------------------------------
 
@@ -104,11 +98,11 @@ end
 -------------------------------------------------------------------------------- SETUP Bash LSP END ------------------------------------------------------------------
 -------------------------------------------------------------------------------- SETUP Rust LSP START ----------------------------------------------------------------
 
-lspconfig.rust_analyzer.setup({
-  on_attach = function(client, bufnr)
-    vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
-  end
-})
+-- lspconfig.rust_analyzer.setup({
+--   on_attach = function(client, bufnr)
+--     vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+--   end
+-- })
 
 -- lspconfig.rust_analyzer.setup {
 --   settings = {
@@ -121,3 +115,29 @@ lspconfig.rust_analyzer.setup({
 -- }
 
 -------------------------------------------------------------------------------- SETUP Rust LSP END ------------------------------------------------------------------
+
+-------------------------------------------------------------------------------- SETUP Python LSP START ----------------------------------------------------------------
+
+-- Pyright setup
+lspconfig.pyright.setup {}
+
+-- Null-ls setup for Black, Ruff, MyPy
+local null_ls = require("null-ls")
+null_ls.setup({
+  sources = {
+    null_ls.builtins.formatting.black, -- Black
+    null_ls.builtins.diagnostics.ruff, -- Ruff
+    --null_ls.builtins.diagnostics.mypy, -- MyPy
+  },
+})
+
+-- local dap = require('dap')
+-- Set key mappings for debugging
+-- vim.api.nvim_set_keymap('n', '<F5>', ':lua require"dap".continue()<CR>', { noremap = true, silent = true })  -- Start/Continue
+-- vim.api.nvim_set_keymap('n', '<F10>', ':lua require"dap".step_over()<CR>', { noremap = true, silent = true }) -- Step Over
+-- vim.api.nvim_set_keymap('n', '<F11>', ':lua require"dap".step_into()<CR>', { noremap = true, silent = true }) -- Step Into
+-- vim.api.nvim_set_keymap('n', '<F12>', ':lua require"dap".step_out()<CR>', { noremap = true, silent = true }) -- Step Out
+-- vim.api.nvim_set_keymap('n', '<leader>b', ':lua require"dap".toggle_breakpoint()<CR>', { noremap = true, silent = true }) -- Toggle Breakpoint
+
+
+-------------------------------------------------------------------------------- SETUP Python LSP END ------------------------------------------------------------------

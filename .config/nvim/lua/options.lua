@@ -4,9 +4,9 @@ require "nvchad.options"
 
 local o = vim.o
 o.clipboard = "unnamedplus"
--- o.cursorlineopt ='both' -- to enable cursorline!
+-- o.cursorlineopt = 'both' -- to enable cursorline!
 
-vim.o.relativenumber = true
+vim.o.relativenumber = false
 
 -- Enable inlay hints
 vim.lsp.inlay_hint.enable(true)
@@ -20,15 +20,15 @@ hi! link StatusLineNC Normal
 set statusline=%{repeat('─',winwidth('.'))}
 ]])
 
-vim.cmd([[
-autocmd BufEnter,BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window -t " . $TMUX_PANE . " '" . expand("%") . "'")
-" Restore automatic renaming of the tmux window when vim exits
-if exists('$TMUX')
-    " Rename only the current Tmux pane's window
-    autocmd BufEnter * call system("tmux rename-window -t " . $TMUX_PANE . " '" . expand("%:t") . "'")
-    autocmd VimLeave * call system("tmux setw -t " . $TMUX_PANE . " automatic-rename")
-endif
-]])
+-- vim.cmd([[
+-- autocmd BufEnter,BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window -t " . $TMUX_PANE . " '" . expand("%") . "'")
+-- " Restore automatic renaming of the tmux window when vim exits
+-- if exists('$TMUX')
+--     " Rename only the current Tmux pane's window
+--     autocmd BufEnter * call system("tmux rename-window -t " . $TMUX_PANE . " '" . expand("%:t") . "'")
+--     autocmd VimLeave * call system("tmux setw -t " . $TMUX_PANE . " automatic-rename")
+-- endif
+-- ]])
 
 
 -- Disable Diagnostic Virtual Text
