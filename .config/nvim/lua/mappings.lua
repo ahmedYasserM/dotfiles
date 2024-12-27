@@ -11,6 +11,7 @@ map("n", "<leader>v", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>")
 map("n", "<leader>th", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end)
+map("n", "zl", "za")
 
 
 vim.cmd "let g:tmux_navigator_no_mappings = 1"

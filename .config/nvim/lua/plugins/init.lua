@@ -178,7 +178,7 @@ return {
   {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
-    enabled = false,
+    enabled = true,
   },
 
   {
@@ -241,6 +241,7 @@ return {
     },
 
   },
+
 
 
 }
