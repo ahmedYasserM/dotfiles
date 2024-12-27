@@ -4,14 +4,14 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 
 ## Show Case
 
-### DWM and st
-![DWM](./assets/dwm.jpg)
+### Hyprland
+![hyprland](./assets/hyprland.png)
 
 ### Kitty and Tmux
-![Kitty](./assets/tmux-kitty.jpg)
+![Kitty](./assets/tmux-kitty.png)
 
 ### Neovim
-![Neovim](./assets/neovim.jpg)
+![Neovim](./assets/neovim.png)
 
 ### File Manager (Yazi)
 ![Yazi](./assets/yazi.jpg)
@@ -32,6 +32,7 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 - dmenu
 - slstatus
 - sioyek
+- hyprland
 
 ### Ignored by stow
 - alacritty
@@ -41,7 +42,6 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 - NuShell
 - lsd
 - felix
-- hyprland
 - bspwm
 - warp
 - qutebrowser
