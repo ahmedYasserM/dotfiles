@@ -1,5 +1,3 @@
-# ============================================================================= Zoxide Configs =======================================================================
-
 # shellcheck shell=bash
 
 # =============================================================================
@@ -133,6 +131,9 @@ fi
 
 # ============================================================================= Aliases ==============================================================================
 
+# reload zsh config
+alias szh="source ~/.zshrc"
+
 # cargo
 alias ch="cargo --quiet check"
 alias cb="cargo --quiet build"
@@ -221,7 +222,7 @@ alias ip="ip -c"
 alias c="clear -x"
 
 # git graph 
-alias gg="git-graph --style round"
+alias g="git-graph --style round"
 
 alias cat="bat -p"
 
@@ -314,7 +315,8 @@ function dir_icon {
 
 #PS1='%B%F{blue}%f%b  %B%F{magenta}%n%f%b $(dir_icon)  %B%F{red}%~%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
 
-PS1='%B%F{blue}%f%b  $(dir_icon)  %B%F{magenta}$(basename `pwd`)%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
+# PS1='%B%F{blue}%f%b  $(dir_icon)  %B%F{magenta}$(basename `pwd`)%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
+PS1='%B%F{blue}%f%b  $(dir_icon) %B%F{magenta}$(if [[ $PWD == $HOME ]]; then echo ""; else echo " $(basename $PWD)"; fi)%f%b${vcs_info_msg_0_} %(?.%B%F{green}.%F{red})%f%b '
 
 #   function custom_prompt() {
 #     local cwd_color="%F{#62B8AC}"     # Color for the current directory
@@ -383,7 +385,7 @@ export GOBIN=$GOPATH/bin
 
 # XDG
 export XDG_PICTURES_DIR="/home/ahmed/pictures"
-export XDG_RUNTIME_DIR="/home/ahmed/.run"
+# export XDG_RUNTIME_DIR="/home/ahmed/.run"
 
 # History
 export HISTFILE="/home/ahmed/.cache/zsh/history"
@@ -469,4 +471,7 @@ autoload -U compinit && compinit
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
 #  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴
-$HOME/.local/bin/colorscript -r
+#$HOME/.local/bin/colorscript -r
+
+# Amazon Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/.local/share/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/.local/share/amazon-q/shell/zshrc.post.zsh"
