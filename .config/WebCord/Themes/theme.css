@@ -1,0 +1,39 @@
+:root {
+    --accent-color: #7aa2f7;           /* Blue */
+    --border-color: #414868;           /* Border color */
+    --background-1: #1a1b26;           /* Background */
+    --background-2: #16171f;           /* Darker background */
+    --background-tertiary: #13141b66;  /* Even darker with transparency */
+    --background-mentioned: #1d1e2b !important;
+    --background-mentioned-hover: #1f2032 !important;
+    --background-modifier-hover: #222436 !important;
+    --background-modifier-active: #292b3d !important;
+    --text-normal: #c0caf5 !important;     /* Foreground */
+    --text-positive: #9ece6a !important;   /* Green */
+    --text-muted: #565f8966 !important;    /* Comment/muted with transparency */
+    --text-link: #7dcfff !important;       /* Cyan */
+    --channel-default: #c0caf599 !important;
+    --button-background: #16171f !important;
+    --button-background-hover: #1d1e2b !important;
+    --button-background-active: #1f2032 !important;
+    --button-accent: #7aa2f7 !important;
+    --button-accent-hover: #89b4ff !important;
+    --button-accent-active: #6c91e7 !important;
+    --button-destructive: #f7768e !important;
+    --button-destructive-hover: #ff899d !important;
+    --button-destructive-active: #e76584 !important;
+    --settings-icon-color: #7aa2f7 !important;
+    --tab-selected: #7aa2f7 !important;
+    --switch: #7aa2f7 !important;
+    /* Keep the rest of the variables as they are */
+}
+
+.theme-dark {
+	--background-primary: var(--background-1);
+	--background-primary-alt: var(--background-1);
+	--background-secondary: var(--background-tertiary);
+	--background-secondary-alt: var(--background-tertiary);
+	--background-floating: var(--background-2);
+	--background-mentioned: var(--accent-color);
+	--background-mentioned-hover: var(--scrollbar-auto-thumb);	
+}
