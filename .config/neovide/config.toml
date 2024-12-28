@@ -1,0 +1,8 @@
+[font]
+size = 11
+hinting = "full"
+edging = "antialias"
+
+[[font.normal]]
+family = "JetBrainsMono Nerd Font"
+style = "W400"
