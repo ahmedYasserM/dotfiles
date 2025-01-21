@@ -25,7 +25,7 @@ alias dl="yt-dlp"
 alias sk="sk --bind 'alt-j:down,alt-k:up'"
 
 # tealdeer
-alias t="tealdeer"
+alias t="tldr"
 
 #xclip
 alias xl="tee /dev/tty | xclip -selection c -r" # copy

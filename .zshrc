@@ -131,10 +131,18 @@ fi
 
 # ============================================================================= Aliases ==============================================================================
 
+# a alias
+alias a="./a"
+
+# python
+alias mg="uv run manage.py"
+alias ur="uv run"
+
 # reload zsh config
 alias szh="source ~/.zshrc"
 
 # cargo
+alias ci="cargo --quiet"
 alias ch="cargo --quiet check"
 alias cb="cargo --quiet build"
 alias cr="cargo --quiet run"
@@ -156,7 +164,7 @@ alias mq="make -f /home/ahmed/qemu/Makefile qemu"
 alias cd="z"
 
 # docker
-alias d="docker"
+alias d="doas docker"
 
 # yt-dlp
 alias dl="yt-dlp"
@@ -168,7 +176,7 @@ alias sk="sk --bind 'alt-j:down,alt-k:up'"
 alias ms="make -s"
 
 # tealdeer
-alias t="tealdeer"
+alias t="tldr"
 
 #xclip
 alias xl="tee /dev/tty | xclip -selection c -r" # copy
@@ -475,3 +483,7 @@ autoload -U compinit && compinit
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/.local/share/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/.local/share/amazon-q/shell/zshrc.post.zsh"
+
+# Display Pokemon
+pokemon-colorscripts --no-title -r 1,3,6
+
