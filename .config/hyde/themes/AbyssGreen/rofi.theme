@@ -1,6 +1,6 @@
 $HOME/.config/rofi/theme.rasi
 * {
-    main-bg:            #2f3330;    /* Background color (Everforest bg) */
+    main-bg:             #1a2023;   /* Background color (Everforest bg) */
     main-fg:            #d8dee9;    /* Main text color (Everforest fg) */
     main-br:            #3b4252;    /* Main border color (Everforest br) */
     main-ex:            #e5c07b;    /* Accent color (Everforest ex) */
