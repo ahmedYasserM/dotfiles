@@ -1,6 +1,5 @@
 require "nvchad.mappings"
 
-
 -------------------------------------------------------------------------------- Global Keymaps Start ----------------------------------------------------------------
 
 local map = vim.keymap.set
@@ -11,15 +10,12 @@ map("n", "<leader>v", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>")
 map("n", "<leader>th", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end)
-map("n", "zl", "za")
-
 
 vim.cmd "let g:tmux_navigator_no_mappings = 1"
 vim.cmd "nnoremap <silent> <M-h> :<C-U>TmuxNavigateLeft<cr>"
 vim.cmd "nnoremap <silent> <M-j> :<C-U>TmuxNavigateDown<cr>"
 vim.cmd "nnoremap <silent> <M-k> :<C-U>TmuxNavigateUp<cr>"
 vim.cmd "nnoremap <silent> <M-l> :<C-U>TmuxNavigateRight<cr>"
-
 
 -- Clear Highlights
 map("n", "<Esc>", ":nohl<CR>")
@@ -34,7 +30,6 @@ map("n", "<A-.>", function()
 end)
 
 -------------------------------------------------------------------------------- Global Keymaps End ------------------------------------------------------------------
-
 
 -------------------------------------------------------------------------------- CMP Keymaps Start -------------------------------------------------------------------
 
@@ -93,7 +88,7 @@ cmp.setup {
 
 -------------------------------------------------------------------------------- Telescope Configs Start -------------------------------------------------------------
 
-local telescope = require("telescope")
+local telescope = require "telescope"
 local builtin = require "telescope.builtin"
 local action_state = require "telescope.actions.state"
 local actions = require "telescope.actions"
@@ -156,11 +151,34 @@ map("i", "<A-;>", 'copilot#Accept("<CR>")', { expr = true, silent = true, replac
 
 -------------------------------------------------------------------------------- NvimTree Configs Start --------------------------------------------------------------
 
-map("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
+-- map("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
+map("n", "<leader>e", ":lua MiniFiles.open()<CR>", { silent = true })
 
 -------------------------------------------------------------------------------- NvimTree Configs End ----------------------------------------------------------------
 
-map("n", "<M-y>", ":CodeSnap<CR>", { silent = true })
+-------------------------------------------------------------------------------- Go Configs Start --------------------------------------------------------------------
+
+-- Define a variable to keep track of the current state
+local is_tag_add = true
+
+-- Function to toggle between GoTagAdd and GoTagRm
+local function toggle_go_tag()
+  if is_tag_add then
+    vim.cmd('GoTagAdd')
+  else
+    vim.cmd('GoTagRm')
+  end
+  -- Toggle the state
+  is_tag_add = not is_tag_add
+end
+
+-- Map a key to the toggle function (e.g., <leader>gt)
+vim.keymap.set('n', '<leader>gt', toggle_go_tag, { noremap = true, silent = true, desc = "Toggle GoTagAdd/GoTagRm" })
+map("n", "<leader>st", ":GoTestAdd<CR>", { silent = true })
+map("n", "<leader>l", ":GoIfErr<CR>", { silent = true })
+
+-------------------------------------------------------------------------------- Go Configs End -------------------------------------------------------------------
+
 
 -------------------------------------------------------------------------------- Rust Configs Start ------------------------------------------------------------------
 

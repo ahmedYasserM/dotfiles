@@ -11,9 +11,6 @@ vim.o.relativenumber = false
 -- Enable inlay hints
 vim.lsp.inlay_hint.enable(true)
 
-vim.o.foldmethod = "indent"
-vim.o.foldlevel = 99
-
 
 -- Hide neovim statusline
 vim.cmd([[
@@ -21,7 +18,6 @@ set laststatus=0
 hi! link StatusLine Normal
 hi! link StatusLineNC Normal
 set statusline=%{repeat('─',winwidth('.'))}
-"colorscheme tokyonight-night
 ]])
 
 -- vim.cmd([[

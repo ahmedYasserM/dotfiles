@@ -3,7 +3,7 @@ local options = {
     lua = { "stylua" },
     markdown = { "prettier" },
     cpp = { "clang-format" },
-    go = { "gofumpt", "goimports" },
+    go = { "golines", "gofumpt", "goimports" },
     asm = { "asmfmt" },
     rs = { "rustfmt" },
     bash = { "shfmt" },
@@ -12,9 +12,19 @@ local options = {
     -- html = { "prettier" },
   },
 
+
   format_on_save = {
     timeout_ms = 500,
     lsp_fallback = true,
+  },
+}
+
+require("conform").formatters.golines = {
+  prepend_args = {
+    "--base-formatter=gofumpt",
+    "--no-reformat-tags",
+    "--shorten-comments",
+    "--chain-split-dots",
   },
 }
 

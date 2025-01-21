@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -13,7 +13,11 @@ return {
   },
 
   {
-    "jose-elias-alvarez/null-ls.nvim",
+    "nvimtools/none-ls.nvim",
+    ft = { "python", "go" },
+    opts = function()
+      require "configs.null-ls"
+    end,
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
@@ -23,7 +27,21 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "vim", "lua", "vimdoc", "json", "toml", "yaml", "cpp", "python", "go", "bash", "dockerfile", "c", "asm", "zig"
+        "vim",
+        "lua",
+        "vimdoc",
+        "json",
+        "toml",
+        "yaml",
+        "cpp",
+        "python",
+        "go",
+        "bash",
+        "dockerfile",
+        "c",
+        "asm",
+        "zig",
+        "rust"
       },
     },
   },
@@ -57,8 +75,8 @@ return {
     },
   },
   {
-    'MeanderingProgrammer/render-markdown.nvim',
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+    "MeanderingProgrammer/render-markdown.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
     ---@module 'render-markdown'
     opts = {},
     lazy = false,
@@ -98,62 +116,45 @@ return {
     "rafamadriz/friendly-snippets",
   },
 
-  -- {
-  --   "folke/noice.nvim",
-  --   event = "VeryLazy",
-  --   opts = {
-  --     lsp = {
-  --       signature = {
-  --         enabled = false,
-  --       },
-  --
-  --       progress = {
-  --         enabled = false,
-  --       },
-  --
-  --       message = {
-  --         enabled = false,
-  --       }
-  --     },
-  --     messages = {
-  --       enabled = false,
-  --     },
-  --     cmdline = {
-  --       enabled = true,
-  --     },
-  --     notify = {
-  --       enabled = false,
-  --     }
-  --   },
-  --
-  --   dependencies = {
-  --     "MunifTanjim/nui.nvim",
-  --   },
-  -- },
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      lsp = {
+        signature = {
+          enabled = false,
+        },
+
+        progress = {
+          enabled = false,
+        },
+
+        message = {
+          enabled = false,
+        },
+      },
+      messages = {
+        enabled = false,
+      },
+      cmdline = {
+        enabled = true,
+      },
+      notify = {
+        enabled = false,
+      },
+    },
+
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
+  },
 
   {
-    'kaarmu/typst.vim',
-    ft = 'typst',
+    "kaarmu/typst.vim",
+    ft = "typst",
     lazy = false,
   },
 
-  {
-    "mikavilpas/yazi.nvim",
-    event = "VeryLazy",
-    keys = {
-      {
-        "<leader>l",
-        "<cmd>Yazi cwd<cr>",
-        desc = "Open the file manager in nvim's working directory",
-      },
-    },
-    opts = {
-      open_for_directories = false,
-      keymaps = {
-        show_help = '<f1>',
-      },
-    },
-  },
   {
     "christoomey/vim-tmux-navigator",
     cmd = {
@@ -162,6 +163,7 @@ return {
       "TmuxNavigateUp",
       "TmuxNavigateRight",
       "TmuxNavigatePrevious",
+      "TmuxNavigatorProcessList",
     },
     keys = {
       { "<c-h>",  "<cmd><C-U>TmuxNavigateLeft<cr>" },
@@ -171,22 +173,10 @@ return {
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
   },
-  {
-    "NvChad/nvterm",
-    enabled = false
-  },
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    enabled = true,
-  },
 
   {
-    "shellRaining/hlchunk.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      require("hlchunk").setup({})
-    end
+    "NvChad/nvterm",
+    enabled = false,
   },
 
   {
@@ -197,8 +187,8 @@ return {
       {
         "<A-,>",
         function()
-          vim.cmd("Trouble diagnostics toggle")
-          vim.cmd("wincmd p")
+          vim.cmd "Trouble diagnostics toggle"
+          vim.cmd "wincmd p"
         end,
         desc = "Diagnostics (Trouble)",
       },
@@ -224,14 +214,14 @@ return {
   },
 
   {
-    'mrcjkb/rustaceanvim',
-    version = '^5',
+    "mrcjkb/rustaceanvim",
+    version = "^5",
     lazy = false,
     ["rust-analyzer"] = {
       cargo = {
         allFeatures = true,
-      }
-    }
+      },
+    },
   },
 
   {
@@ -239,9 +229,67 @@ return {
     dependencies = {
       "SmiteshP/nvim-navic",
     },
-
   },
 
+  {
+    "windwp/nvim-ts-autotag",
+    ft = { "javascript", "javascriptreact", "typescript", "typescriptreact", "html" },
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
 
+  {
+    'echasnovski/mini.ai',
+    version = '*',
+    lazy = false,
+    config = function()
+      require('mini.ai').setup()
+    end,
+  },
+
+  {
+    'echasnovski/mini.surround',
+    version = '*',
+    lazy = false,
+    config = function()
+      require('mini.surround').setup()
+    end,
+  },
+
+  {
+    'echasnovski/mini.files',
+    version = '*',
+    lazy = false,
+    config = function()
+      require('mini.files').setup()
+    end,
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
+    opts = {
+    }
+  },
+
+  {
+    "olexsmir/gopher.nvim",
+    ft = "go",
+    -- branch = "develop", -- if you want develop branch
+    -- keep in mind, it might break everything
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "mfussenegger/nvim-dap", -- (optional) only if you use `gopher.dap`
+    },
+    -- (optional) will update plugin's deps on every update
+    build = function()
+      vim.cmd.GoInstallDeps()
+    end,
+    ---@type gopher.Config
+    opts = {},
+  }
 
 }

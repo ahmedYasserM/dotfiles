@@ -10,9 +10,7 @@ local nvlsp = require "nvchad.configs.lspconfig"
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 local util = require "lspconfig/util"
 
-
-
-local servers = { "zls", "pylsp" }
+local servers = { "zls", "html", "cssls" }
 
 -------------------------------------------------------------------------------- SETUP C++ LSP START -----------------------------------------------------------------
 
@@ -71,18 +69,17 @@ lspconfig["asm_lsp"].setup {
 -------------------------------------------------------------------------------- SETUP Assembly LSP END --------------------------------------------------------------
 -------------------------------------------------------------------------------- SETUP Typst LSP START ---------------------------------------------------------------
 
-
 -------------------------------------------------------------------------------- SETUP Typst LSP END -----------------------------------------------------------------
 
 -------------------------------------------------------------------------------- SETUP Bash LSP START ----------------------------------------------------------------
 
-vim.api.nvim_create_autocmd('FileType', {
-  pattern = 'sh',
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "sh",
   callback = function()
-    vim.lsp.start({
-      name = 'bash-language-server',
-      cmd = { 'bash-language-server', 'start' },
-    })
+    vim.lsp.start {
+      name = "bash-language-server",
+      cmd = { "bash-language-server", "start" },
+    }
   end,
 })
 -- lsps with default config
@@ -93,7 +90,6 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-
 
 -------------------------------------------------------------------------------- SETUP Bash LSP END ------------------------------------------------------------------
 -------------------------------------------------------------------------------- SETUP Rust LSP START ----------------------------------------------------------------
@@ -119,17 +115,11 @@ end
 -------------------------------------------------------------------------------- SETUP Python LSP START ----------------------------------------------------------------
 
 -- Pyright setup
-lspconfig.pyright.setup {}
-
--- Null-ls setup for Black, Ruff, MyPy
-local null_ls = require("null-ls")
-null_ls.setup({
-  sources = {
-    null_ls.builtins.formatting.black, -- Black
-    null_ls.builtins.diagnostics.ruff, -- Ruff
-    --null_ls.builtins.diagnostics.mypy, -- MyPy
-  },
-})
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "python" },
+}
 
 -- local dap = require('dap')
 -- Set key mappings for debugging
@@ -138,6 +128,5 @@ null_ls.setup({
 -- vim.api.nvim_set_keymap('n', '<F11>', ':lua require"dap".step_into()<CR>', { noremap = true, silent = true }) -- Step Into
 -- vim.api.nvim_set_keymap('n', '<F12>', ':lua require"dap".step_out()<CR>', { noremap = true, silent = true }) -- Step Out
 -- vim.api.nvim_set_keymap('n', '<leader>b', ':lua require"dap".toggle_breakpoint()<CR>', { noremap = true, silent = true }) -- Toggle Breakpoint
-
 
 -------------------------------------------------------------------------------- SETUP Python LSP END ------------------------------------------------------------------

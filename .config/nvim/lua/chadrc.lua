@@ -9,14 +9,12 @@ M.ui = {
   tabufline = {
     enabled = false,
   },
-  bg = "dark"
 }
 
 M.base46 = {
-  theme = "tokyonight",
-  -- transparency = true,
+  theme = "everforest",
   hl_override = {
-    -- Normal = { bg = "#0D0F18" },
+    -- Normal = { bg = "#10171A" },
     LspInlayHint = { bg = "NONE" },
     CursorLine = { bg = "one_bg" },
     Comment = { italic = true },
@@ -24,6 +22,5 @@ M.base46 = {
   },
 
 }
-
 
 return M
