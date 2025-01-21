@@ -1,27 +1,50 @@
 #!/usr/bin/env fish
 
-# anaconda
-alias conda="source ~/.config/fish/config-conda.fish && conda"
+# go
+alias  g="go run ."
+
+# a alias
+alias a="./a"
+
+# reload zsh config
+alias szh="source ~/.zshrc"
+
+# ssh
+alias ssh="TERM=xterm-256color ssh"
+
+# Qemu
+alias mq="make -f /home/ahmed/qemu/Makefile qemu"
+
+# zoxide
+alias cd="z"
+
+# yt-dlp
+alias dl="yt-dlp"
+
+# skim
+alias sk="sk --bind 'alt-j:down,alt-k:up'"
+
+# tealdeer
+alias t="tealdeer"
+
+#xclip
+alias xl="tee /dev/tty | xclip -selection c -r" # copy
+alias al="xclip -selection c -o -r"  # paste
+
+# trash cli
+alias rm="trash"
+
+# vim
+alias vim='nvim'
 
 # neovide
-alias nv="neovide --neovim-bin=(which lvim) . &disown" 
+alias nv="neovide . & disown &>/dev/null"
 
-# yazi file manager
-alias zl="yazi"
-
-# dolphin
-alias do='setsid dolphin $1 &> /dev/null'
+# exit 
+alias xx="exit"
 
 # virtualbox
 alias vbox='vboxmanage'
-
-# ls
-
-alias ls="command ls --color=auto"
-alias ll="ls -l"
-alias la="ls -a"
-alias lla="ls -la"
-alias lli="ls -li"
 
 alias ls='eza --icons=auto' # short list
 alias  ll='eza -lg --icons=auto' # long list
@@ -32,75 +55,30 @@ alias lt="eza --icons=auto --tree -L 1"
 alias le="eza --icons=auto --tree -L 1"
 alias li='ls -lgi'
 
+alias o="bash open ."
 
-# tree symbols
-alias tsym "echo ├ ─ │ └"
+alias grep="grep --color=auto"
 
-# bash
-alias o "bash open ."
+alias cat="bat -p"
 
+alias ip="ip -c"
 
-alias grep "grep --color=auto"
+# git graph 
+alias gg="git-graph --style round"
 
-alias cat "bat"
+alias cat="bat -p"
 
-alias ip "ip -c"
+alias ip="ip -c"
 
-alias c "clear -x"
+alias c="clear -x"
 
+alias grep="grep --color=auto"
 
-# matlab
-# alias matlab="matlab & disown"
-
-alias git-graph "git-graph --style round"
-
-alias cat "bat -p"
-
-alias ip "ip -c"
-
-alias c "clear -x"
-
-# cd
-alias .. "z .."
-alias ... "..;.."
-alias .... "...;.."
-
-
-alias grep "grep --color=auto"
-
-
-# obsidian
-alias to 'cp -r ~/repos/personal/dotfiles/templates/obsidian-template/{.obsidian,.obsidian.vimrc} .'
-
-# tree symbols
-alias tsym "echo ├ ─ │ └"
-
-# bash
-alias o "bash open ."
-
-# history
-alias history 'history'
-# alias history 'history | nl'
-
-
-# lvim
-#alias vim 'nvim'
-
-
-# current time
-alias ctime 'date +%T'
-
-
-#sc-im
-alias scim="sc-im"
-
-
-# xbps
-# alias s 'doas xbps-install -S'
-# alias i 's;doas xbps-install'
-# alias q 'doas xbps-query -Rs'
-# alias u 's;doas xbps-install -u xbps; doas xbps-install -u'
-# alias r 'doas xbps-remove -R'
+#xbps 
+# alias i='doas xbps-install -S'
+# alias q='doas xbps-query -Rs'
+# alias u='doas xbps-install -Su xbps; doas xbps-install -u'
+# alias r='doas xbps-remove -R'
 
 # apt
 # alias r="sudo apt remove"       ## remove

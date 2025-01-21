@@ -99,3 +99,7 @@ alias zi=__zoxide_zi
 #
 #   zoxide init fish | source
 
+
+
+# fzf plugin
+fzf_configure_bindings --directory=\cf --processes=\ca
