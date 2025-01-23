@@ -12,7 +12,7 @@ M.ui = {
 }
 
 M.base46 = {
-  theme = "everforest",
+  theme = "rosepine",
   hl_override = {
     -- Normal = { bg = "#10171A" },
     LspInlayHint = { bg = "NONE" },

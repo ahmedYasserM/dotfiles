@@ -120,28 +120,28 @@ return {
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {
-      lsp = {
-        signature = {
-          enabled = false,
-        },
-
-        progress = {
-          enabled = false,
-        },
-
-        message = {
-          enabled = false,
-        },
-      },
-      messages = {
-        enabled = false,
-      },
-      cmdline = {
-        enabled = true,
-      },
-      notify = {
-        enabled = false,
-      },
+      -- lsp = {
+      --   signature = {
+      --     enabled = true,
+      --   },
+      --
+      --   progress = {
+      --     enabled = false,
+      --   },
+      --
+      --   message = {
+      --     enabled = false,
+      --   },
+      -- },
+      -- messages = {
+      --   enabled = false,
+      -- },
+      -- cmdline = {
+      --   enabled = true,
+      -- },
+      -- notify = {
+      --   enabled = false,
+      -- },
     },
 
     dependencies = {
@@ -258,15 +258,6 @@ return {
   },
 
   {
-    'echasnovski/mini.files',
-    version = '*',
-    lazy = false,
-    config = function()
-      require('mini.files').setup()
-    end,
-  },
-
-  {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     lazy = false,
@@ -290,6 +281,11 @@ return {
     end,
     ---@type gopher.Config
     opts = {},
-  }
+  },
+  {
+    "Fildo7525/pretty_hover",
+    event = "LspAttach",
+    opts = {}
+  },
 
 }

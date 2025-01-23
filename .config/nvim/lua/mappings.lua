@@ -151,8 +151,8 @@ map("i", "<A-;>", 'copilot#Accept("<CR>")', { expr = true, silent = true, replac
 
 -------------------------------------------------------------------------------- NvimTree Configs Start --------------------------------------------------------------
 
--- map("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
-map("n", "<leader>e", ":lua MiniFiles.open()<CR>", { silent = true })
+map("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
+-- map("n", "<leader>e", ":lua MiniFiles.open()<CR>", { silent = true })
 
 -------------------------------------------------------------------------------- NvimTree Configs End ----------------------------------------------------------------
 
@@ -177,7 +177,11 @@ vim.keymap.set('n', '<leader>gt', toggle_go_tag, { noremap = true, silent = true
 map("n", "<leader>st", ":GoTestAdd<CR>", { silent = true })
 map("n", "<leader>l", ":GoIfErr<CR>", { silent = true })
 
+
+map("n", "K", "<cmd>lua require(\"pretty_hover\").hover()<CR>", { silent = true })
+
 -------------------------------------------------------------------------------- Go Configs End -------------------------------------------------------------------
+
 
 
 -------------------------------------------------------------------------------- Rust Configs Start ------------------------------------------------------------------
