@@ -120,28 +120,28 @@ return {
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {
-      -- lsp = {
-      --   signature = {
-      --     enabled = true,
-      --   },
-      --
-      --   progress = {
-      --     enabled = false,
-      --   },
-      --
-      --   message = {
-      --     enabled = false,
-      --   },
-      -- },
-      -- messages = {
-      --   enabled = false,
-      -- },
-      -- cmdline = {
-      --   enabled = true,
-      -- },
-      -- notify = {
-      --   enabled = false,
-      -- },
+      lsp = {
+        signature = {
+          enabled = false,
+        },
+
+        progress = {
+          enabled = false,
+        },
+
+        message = {
+          enabled = false,
+        },
+      },
+      messages = {
+        enabled = false,
+      },
+      cmdline = {
+        enabled = true,
+      },
+      notify = {
+        enabled = false,
+      },
     },
 
     dependencies = {
@@ -287,5 +287,11 @@ return {
     event = "LspAttach",
     opts = {}
   },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "VeryLazy",
+    opts = {},
+    config = function(_, opts) require 'lsp_signature'.setup(opts) end
+  }
 
 }
