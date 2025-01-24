@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Read input from standard input
+awk '
+BEGIN {
+    total_tests = 0
+    passed_tests = 0
+    failed_tests = 0
+    print "\033[33m🔍\033[0m"  # Root of the tree with a magnifying glass icon
+}
+
+/^=== RUN/ {
+    total_tests++
+    test = $3
+    if (total_tests > 1) print "\033[33m│\033[0m"  # Add vertical line between tests
+    print "\033[33m├──\033[0m \033[36mRUNNING:\033[0m " test
+    current_test = test
+    next
+}
+
+/^--- PASS/ {
+    passed_tests++
+    print "\033[33m│   └──\033[0m \033[32m✅ PASS:\033[0m " current_test
+    next
+}
+
+/\.go:[0-9]+:/ {
+    # Remove extra spaces and align the error message properly
+    sub(/^[ \t]+/, "", $0)  # Remove leading spaces
+    print "\033[33m│   └──\033[0m \033[31m❌ FAIL:\033[0m " $0
+    failed_tests++
+    next
+}
+
+END {
+    print "\033[33m└──────────────────────────────\033[0m"
+    summary="\033[35m📊 Summary:\033[0m " passed_tests " passed, " failed_tests " failed"
+    if (failed_tests > 0) {
+        print summary " | \033[31m💥 FAIL\033[0m"
+        exit 1
+    } else {
+        print summary " | \033[32m🎉 PASS\033[0m"
+    }
+}'
