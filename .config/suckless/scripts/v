@@ -15,20 +15,35 @@ BEGIN {
     if (total_tests > 1) print "\033[33m│\033[0m"  # Add vertical line between tests
     print "\033[33m├──\033[0m \033[36mRUNNING:\033[0m " test
     current_test = test
+    error_message = ""  # Reset error message for the current test
     next
 }
 
-/^--- PASS/ {
+/^--- PASS:/ {
     passed_tests++
-    print "\033[33m│   └──\033[0m \033[32m✅ PASS:\033[0m " current_test
+    duration = $NF  # Extract the duration (last field, e.g., "(0.00s)")
+    gsub(/[()]/, "", duration)  # Remove parentheses from duration
+    print "\033[33m│   └──\033[0m \033[32m✅ PASS:\033[0m " current_test " \033[34m(⏱️ " duration ")\033[0m"
     next
 }
 
 /\.go:[0-9]+:/ {
-    # Remove extra spaces and align the error message properly
+    # Store the error message for later printing
     sub(/^[ \t]+/, "", $0)  # Remove leading spaces
-    print "\033[33m│   └──\033[0m \033[31m❌ FAIL:\033[0m " $0
+    error_message = "\033[33m│       └──\033[0m \033[31m🐛 ERROR:\033[0m " $0
+    next
+}
+
+/^--- FAIL:/ {
     failed_tests++
+    duration = $NF  # Extract the duration (last field, e.g., "(0.00s)")
+    gsub(/[()]/, "", duration)  # Remove parentheses from duration
+    print "\033[33m│   └──\033[0m \033[31m❌ FAIL:\033[0m " current_test " \033[34m(⏱️ " duration ")\033[0m"
+    # Print the stored error message after FAIL
+    if (error_message != "") {
+        print error_message
+        error_message = ""  # Reset error message after printing
+    }
     next
 }
 

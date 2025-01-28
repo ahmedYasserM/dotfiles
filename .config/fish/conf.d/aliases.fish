@@ -2,6 +2,7 @@
 
 # go
 alias  g="go run ."
+alias gov="go test -v | v"
 
 # a alias
 alias a="./a"
