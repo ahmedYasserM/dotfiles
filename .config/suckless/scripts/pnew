@@ -123,6 +123,12 @@ int main() {
     return 0;
 }
 EOF
+
+    # Create a .clangd file for C++ projects
+    cat <<EOF > "$PROJECT_NAME"/.clangd
+CompileFlags:
+  Add: [-std=c++23]
+EOF
 fi
 
 # Create a basic .gitignore file
