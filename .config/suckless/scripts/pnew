@@ -1,0 +1,150 @@
+#!/bin/bash
+
+# Check if a project name is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <project_name> [c|cpp]"
+    exit 1
+fi
+
+# Project name
+PROJECT_NAME=$1
+
+# Default to C++ if no language is specified
+LANGUAGE=${2:-cpp}
+
+# Validate language input
+if [[ "$LANGUAGE" != "c" && "$LANGUAGE" != "cpp" ]]; then
+    echo "Error: Language must be 'c' or 'cpp'."
+    exit 1
+fi
+
+# Create directories
+mkdir -p "$PROJECT_NAME"/src
+mkdir -p "$PROJECT_NAME"/build
+
+# Create a basic Makefile
+if [[ "$LANGUAGE" == "c" ]]; then
+    # C Makefile
+    cat <<EOF > "$PROJECT_NAME"/Makefile
+# Compiler and flags
+CC = gcc
+CFLAGS = -std=c11 -g
+LDFLAGS = 
+
+# Target executable name
+TARGET = build/main
+
+# Source files (all .c files in the src directory)
+SRCS = \$(wildcard src/*.c)
+
+# Object files (placed in the build directory)
+OBJS = \$(patsubst src/%.c, build/%.o, \$(SRCS))
+
+# Ensure the build directory exists
+BUILD_DIR = build
+
+# Default target
+all: \$(BUILD_DIR) \$(TARGET)
+	./\$(TARGET)
+
+# Create the build directory if it doesn't exist
+\$(BUILD_DIR):
+	mkdir -p \$(BUILD_DIR)
+
+# Linking
+\$(TARGET): \$(OBJS)
+	\$(CC) \$(CFLAGS) -o \$@ \$^ \$(LDFLAGS)
+
+# Compilation (compiles all .c files into .o files in the build directory)
+build/%.o: src/%.c
+	\$(CC) \$(CFLAGS) -c \$< -o \$@
+
+# Clean up
+clean:
+	rm -rf \$(BUILD_DIR)
+EOF
+
+    # Create a basic main.c file
+    cat <<EOF > "$PROJECT_NAME"/src/main.c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\\n");
+    return 0;
+}
+EOF
+else
+    # C++ Makefile
+    cat <<EOF > "$PROJECT_NAME"/Makefile
+# Compiler and flags
+CC = g++
+CFLAGS = -std=c++23 -g
+LDFLAGS = 
+
+# Target executable name
+TARGET = build/main
+
+# Source files (all .cpp files in the src directory)
+SRCS = \$(wildcard src/*.cpp)
+
+# Object files (placed in the build directory)
+OBJS = \$(patsubst src/%.cpp, build/%.o, \$(SRCS))
+
+# Ensure the build directory exists
+BUILD_DIR = build
+
+# Default target
+all: \$(BUILD_DIR) \$(TARGET)
+	./\$(TARGET)
+
+# Create the build directory if it doesn't exist
+\$(BUILD_DIR):
+	mkdir -p \$(BUILD_DIR)
+
+# Linking
+\$(TARGET): \$(OBJS)
+	\$(CC) \$(CFLAGS) -o \$@ \$^ \$(LDFLAGS)
+
+# Compilation (compiles all .cpp files into .o files in the build directory)
+build/%.o: src/%.cpp
+	\$(CC) \$(CFLAGS) -c \$< -o \$@
+
+# Clean up
+clean:
+	rm -rf \$(BUILD_DIR)
+EOF
+
+    # Create a basic main.cpp file
+    cat <<EOF > "$PROJECT_NAME"/src/main.cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+EOF
+fi
+
+# Create a basic .gitignore file
+cat <<EOF > "$PROJECT_NAME"/.gitignore
+# Ignore build directory
+/build/
+
+# Ignore executable
+/main
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore compiled object files
+*.o
+*.out
+EOF
+
+# Initialize a Git repository (optional)
+cd "$PROJECT_NAME"
+git init
+cd ..
+
+echo "Project '$PROJECT_NAME' initialized successfully for $LANGUAGE!"
