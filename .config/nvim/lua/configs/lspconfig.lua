@@ -10,7 +10,7 @@ local nvlsp = require "nvchad.configs.lspconfig"
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 local util = require "lspconfig/util"
 
-local servers = { "zls", "html", "cssls" }
+local servers = { "zls", "html", "cssls", "protols" }
 
 -------------------------------------------------------------------------------- SETUP C++ LSP START -----------------------------------------------------------------
 
@@ -37,7 +37,7 @@ lspconfig.gopls.setup {
   settings = {
     gopls = {
       completeUnimported = true,
-      usePlaceholders = true,
+      usePlaceholders = false,
       analyses = {
         unusedparams = true,
       },
@@ -68,7 +68,13 @@ lspconfig["asm_lsp"].setup {
 
 -------------------------------------------------------------------------------- SETUP Assembly LSP END --------------------------------------------------------------
 -------------------------------------------------------------------------------- SETUP Typst LSP START ---------------------------------------------------------------
-
+require("lspconfig")["tinymist"].setup {
+  settings = {
+    formatterMode = "typstyle",
+    exportPdf = "onType",
+    semanticTokens = "disable"
+  }
+}
 -------------------------------------------------------------------------------- SETUP Typst LSP END -----------------------------------------------------------------
 
 -------------------------------------------------------------------------------- SETUP Bash LSP START ----------------------------------------------------------------
