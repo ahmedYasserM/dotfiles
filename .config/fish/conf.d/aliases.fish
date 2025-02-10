@@ -10,9 +10,6 @@ alias a="./a"
 # reload zsh config
 alias szh="source ~/.zshrc"
 
-# ssh
-alias ssh="TERM=xterm-256color ssh"
-
 # Qemu
 alias mq="make -f /home/ahmed/qemu/Makefile qemu"
 

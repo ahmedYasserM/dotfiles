@@ -33,6 +33,7 @@ set -gx FZF_DEFAULT_OPTS "--height 60% --layout=reverse --bind 'alt-k:up,alt-j:d
 # PATH
 fish_add_path /home/ahmed/.local/bin
 fish_add_path /home/ahmed/.cargo/bin
+fish_add_path /home/ahmed/.local/share/bin
 fish_add_path $GOBIN
 fish_add_path /usr/local/sbin
 fish_add_path /usr/local/bin

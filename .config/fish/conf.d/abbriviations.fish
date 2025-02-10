@@ -1,3 +1,9 @@
+#!/usr/bin/env fish
+
+# ssh
+abbr -a ssh "env TERM=xterm-256color ssh"
+
+
 # go 
 abbr -a cli "cobra-cli"
 
