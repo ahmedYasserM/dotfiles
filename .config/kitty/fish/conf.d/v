@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Read input from standard input
+awk '
+/^=== RUN/ {test=$3; print "\033[36m🚀 RUNNING:\033[0m " test}
+/^--- PASS/ {passed++; print "\033[32m✅ PASS:\033[0m " test}
+/^--- FAIL/ {failed++; print "\033[31m❌ FAIL:\033[0m " test}
+/^PASS/ {final_status="\033[32m🎉 PASS\033[0m"}
+/^FAIL/ {final_status="\033[31m💥 FAIL\033[0m"}
+/^ok/ {final_status="\033[32m🎉 PASS\033[0m"}
+/^not ok/ {final_status="\033[31m💥 FAIL\033[0m"}
+{print} # Print all other lines (including error messages)
+END {
+  print "\033[33m──────────────────────────────\033[0m";
+  summary="\033[35m📊 Summary:\033[0m " passed " passed, " failed " failed";
+  if (final_status != "") {
+    print summary " | " final_status;
+  } else {
+    print summary;
+  }
+  if (failed > 0) { exit 1 }
+}'

@@ -1,0 +1,47 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.term]
+animation = "fromTop"
+command = "kitty --class floating -e ~/.config/hypr/scripts/kitty-tmux.sh 1"
+size = "75% 60%"
+# position = "12% 20%" # center of the screen
+max_size = "1920px 100%"
+lazy = true
+
+[scratchpads.telegram]
+animation = "fromTop"
+command = "telegram-desktop"
+size = "75% 60%"
+max_size = "1920px 100%"
+# lazy = true
+
+[scratchpads.nnn]
+animation = "fromTop"
+command = "kitty --class kittyFloat -e nnn"
+# size = "75% 60%"
+lazy = true
+max_size = "1920px 100%"
+
+[scratchpads.btop]
+animation = "fromTop"
+command = "kitty --class floating -e btop"
+size = "75% 60%"
+lazy = true
+max_size = "1920px 100%"
+
+
+[scratchpads.projects]
+animation = "fromTop"
+command = "kitty --class floating -e fish -c /usr/local/bin/neovide-fzf.sh"
+size = "55% 30%"
+lazy = true
+max_size = "1920px 100%"
+
+
+[scratchpads.kp]
+animation = "fromTop"
+command = "kitty --class floating -e fish -c ~/.config/hypr/scripts/kp.sh"
+size = "55% 30%"
+lazy = true
+max_size = "1920px 100%"

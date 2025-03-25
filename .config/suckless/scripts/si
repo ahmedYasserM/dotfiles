@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+pdfName=$1
+
+sioyek --new-window $pdfName &>/dev/null & disown 
