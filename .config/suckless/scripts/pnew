@@ -28,7 +28,7 @@ if [[ "$LANGUAGE" == "c" ]]; then
     cat <<EOF > "$PROJECT_NAME"/Makefile
 # Compiler and flags
 CC = gcc
-CFLAGS = -std=c11 -g
+CFLAGS = -std=c11 -g -Isrc
 LDFLAGS = 
 
 # Target executable name
@@ -67,18 +67,58 @@ EOF
     # Create a basic main.c file
     cat <<EOF > "$PROJECT_NAME"/src/main.c
 #include <stdio.h>
+#include "types.h"
 
 int main() {
     printf("Hello, World!\\n");
+    
+    // Example usage of the types
+    i32 number = 42;
+    f64 pi = 3.1415926535;
+    bool flag = true;
+    
+    printf("Integer: %d, Float: %f, Boolean: %d\\n", number, pi, flag);
+    
     return 0;
 }
 EOF
+
+    # Create the types.h file
+    cat <<EOF > "$PROJECT_NAME"/src/types.h
+#ifndef TYPES_H
+#define TYPES_H
+
+#include <stdint.h>
+
+// Integer types
+typedef int8_t i8;   // i8
+typedef int16_t i16; // i16
+typedef int32_t i32; // i32
+typedef int64_t i64; // i64
+
+typedef uint8_t u8;   // u8
+typedef uint16_t u16; // u16
+typedef uint32_t u32; // u32
+typedef uint64_t u64; // u64
+
+// Floating point types
+typedef float f32;  // f32
+typedef double f64; // f64
+
+// Boolean type
+typedef uint8_t bool;
+#define true 1
+#define false 0
+
+#endif // TYPES_H
+EOF
+
 else
     # C++ Makefile
     cat <<EOF > "$PROJECT_NAME"/Makefile
 # Compiler and flags
 CC = g++
-CFLAGS = -std=c++23 -g
+CFLAGS = -std=c++23 -g -Isrc
 LDFLAGS = 
 
 # Target executable name
@@ -117,11 +157,44 @@ EOF
     # Create a basic main.cpp file
     cat <<EOF > "$PROJECT_NAME"/src/main.cpp
 #include <iostream>
+#include "types.hpp"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
+    
+    // Example usage of the types
+    i32 number = 42;
+    f64 pi = 3.1415926535;
+    
+    std::cout << "Integer: " << number << ", Float: " << pi << std::endl;
+    
     return 0;
 }
+EOF
+
+    # Create the types.hpp file
+    cat <<EOF > "$PROJECT_NAME"/src/types.hpp
+#ifndef TYPES_H
+#define TYPES_H
+
+#include <stdint.h>
+
+// Integer types
+typedef int8_t i8;   // i8
+typedef int16_t i16; // i16
+typedef int32_t i32; // i32
+typedef int64_t i64; // i64
+
+typedef uint8_t u8;   // u8
+typedef uint16_t u16; // u16
+typedef uint32_t u32; // u32
+typedef uint64_t u64; // u64
+
+// Floating point types
+typedef float f32;  // f32
+typedef double f64; // f64
+
+#endif // TYPES_H
 EOF
 
     # Create a .clangd file for C++ projects
