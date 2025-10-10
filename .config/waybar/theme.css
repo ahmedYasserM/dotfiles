@@ -1,0 +1,20 @@
+@define-color bar-bg rgba(13, 15, 24, 1);
+
+@define-color main-bg #1E202A;
+@define-color main-fg #e2cdf4;
+
+@define-color wb-act-bg #a6adc8;
+@define-color wb-act-fg #313244;
+
+@define-color wb-hvr-bg #1f2232;
+@define-color wb-hvr-fg #cdd6f4;
+
+@define-color peach #fab387;
+@define-color red #f38ba8;
+@define-color green #a6e3ae;
+@define-color pink #f5c2e7;
+@define-color blue #89b4fa;
+@define-color cyan #94E2D5;
+@define-color lavender #b4befe;
+@define-color yellow #f9e2af;
+@define-color sapphire #74c7ec;

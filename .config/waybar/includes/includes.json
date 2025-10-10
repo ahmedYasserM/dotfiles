@@ -1,0 +1,31 @@
+{
+    "include": [
+        "/home/ahmed/.config/waybar/modules/spotify.jsonc",
+        "/home/ahmed/.config/waybar/modules/power.jsonc",
+        "/home/ahmed/.config/waybar/modules/workspaces.jsonc",
+        "/home/ahmed/.config/waybar/modules/idle_inhibitor.jsonc",
+        "/home/ahmed/.config/waybar/modules/memory.jsonc",
+        "/home/ahmed/.config/waybar/modules/theme.jsonc",
+        "/home/ahmed/.config/waybar/modules/pulseaudio.jsonc",
+        "/home/ahmed/.config/waybar/modules/tray.jsonc",
+        "/home/ahmed/.config/waybar/modules/gpuinfo.jsonc",
+        "/home/ahmed/.config/waybar/modules/mpris.jsonc",
+        "/home/ahmed/.config/waybar/modules/wallchange.jsonc",
+        "/home/ahmed/.config/waybar/modules/network.jsonc",
+        "/home/ahmed/.config/waybar/modules/keybindhint.jsonc",
+        "/home/ahmed/.config/waybar/modules/window.jsonc",
+        "/home/ahmed/.config/waybar/modules/cpu.jsonc",
+        "/home/ahmed/.config/waybar/modules/taskbar.jsonc",
+        "/home/ahmed/.config/waybar/modules/updates.jsonc",
+        "/home/ahmed/.config/waybar/modules/language.jsonc",
+        "/home/ahmed/.config/waybar/modules/cpuinfo.jsonc",
+        "/home/ahmed/.config/waybar/modules/clock.jsonc",
+        "/home/ahmed/.config/waybar/modules/cliphist.jsonc",
+        "/home/ahmed/.config/waybar/modules/footer.jsonc",
+        "/home/ahmed/.config/waybar/modules/header.jsonc",
+        "/home/ahmed/.config/waybar/modules/wbar.jsonc",
+        "/home/ahmed/.config/waybar/modules/backlight.jsonc",
+        "/home/ahmed/.config/waybar/modules/bluetooth.jsonc",
+        "/home/ahmed/.config/waybar/modules/battery.jsonc"
+    ]
+}
