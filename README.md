@@ -4,37 +4,35 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 
 ## Show Case
 
-### Hyprland
-![hyprland](./assets/hyprland.png)
+![show1](./assets/show1.png)
 
-### Kitty and Tmux
-![Kitty](./assets/tmux-kitty.png)
+![show2](./assets/show2.png)
 
-### Neovim
-![Neovim](./assets/neovim.png)
+![show3](./assets/show3.png)
 
-### File Manager (Yazi)
-![Yazi](./assets/yazi.jpg)
+![show4](./assets/show4.png)
 
 ## Config List
 
 ### Not Ignored by stow
+
 - kitty
 - nvim
 - lvim
 - fish
 - tmux
-- yazi 
+- yazi
 - neofetch
 - sxhkd
 - dwm
-- st 
+- st
 - dmenu
 - slstatus
 - sioyek
 - hyprland
 
 ### Ignored by stow
+
 - alacritty
 - ranger
 - starship
@@ -60,4 +58,3 @@ stow .
 ```
 
 > There some configs that I ignore in `.stow-local-ignore` file, you can check if you need to install them or not.
-
