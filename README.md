@@ -22,6 +22,8 @@
 - sioyek
 - hyprland
 - waybar
+- mako
+- fuzzel
 - qutebrowser
 
 ### Configs that I don't use now
