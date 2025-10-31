@@ -12,6 +12,8 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 
 ![show4](./assets/show4.png)
 
+![show5](./assets/show5.png)
+
 ## Config List
 
 ### Not Ignored by stow
