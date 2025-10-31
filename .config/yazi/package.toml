@@ -1,12 +1,24 @@
-[plugin]
-deps = [
-  { use = "yazi-rs/plugins:full-border", rev = "b659791" },
-  { use = "yazi-rs/plugins:lsar", rev = "b659791" },
-  { use = "yazi-rs/plugins:chmod", rev = "b659791" },
-  { use = "yazi-rs/plugins:max-preview", rev = "49137fe" },
-  { use = "yazi-rs/plugins:hide-preview", rev = "49137fe" },
-  { use = "Reledia/miller", rev = "40e0265" },
-]
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "8f1d971"
+hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 
-[flavor]
-deps = [{ use = "mingo99/tokyonight", rev = "f26ca68" }, { use = "bennyyip/gruvbox-dark", rev = "c204853" }]
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "8f1d971"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "8f1d971"
+hash = "63b6c222bf2103b3023389dde5e2ecfe"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "8f1d971"
+hash = "4fccaaf10c36dc2466e2438a386ff017"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "f6b425a"
+hash = "14b111562c00eb1917fe3ca3ae9bb771"

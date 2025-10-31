@@ -1,5 +1,19 @@
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = [ "l" ]
-run  = "plugin --sync smart-enter"
+run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
+
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"
+
+[[mgr.prepend_keymap]]
+on = "z"
+run = "plugin zoxide"
+desc = "Change Directory/Reveal File with fzf"
+
+[[mgr.prepend_keymap]]
+on = "Z"
+run = "plugin fzf"
+desc = "Change Directory with zoxide"
 
