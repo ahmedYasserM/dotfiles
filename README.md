@@ -1,7 +1,5 @@
 # Dotfiles
 
-This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/software/stow/) to manage them.
-
 ## Show Case
 
 ![show1](./assets/show1.png)
@@ -14,27 +12,28 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 
 ![show5](./assets/show5.png)
 
-## Config List
+### Configs that I use now
 
-### Not Ignored by stow
-
-- kitty
+- ghostty
 - nvim
-- lvim
 - fish
 - tmux
 - yazi
-- neofetch
+- sioyek
+- hyprland
+- waybar
+- qutebrowser
+
+### Configs that I don't use now
+
 - sxhkd
 - dwm
 - st
 - dmenu
 - slstatus
-- sioyek
-- hyprland
-
-### Ignored by stow
-
+- neofetch
+- kitty
+- lvim
 - alacritty
 - ranger
 - starship
@@ -44,19 +43,3 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 - felix
 - bspwm
 - warp
-- qutebrowser
-
-## Installation
-
-```bash
-git clone https://github.com/ahmedYasserM/.dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-```
-
-To install all the dotfiles, run:
-
-```bash
-stow .
-```
-
-> There some configs that I ignore in `.stow-local-ignore` file, you can check if you need to install them or not.
