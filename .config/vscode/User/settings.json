@@ -1,0 +1,108 @@
+{
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+  "editor.autoClosingBrackets": "always",
+  "workbench.colorCustomizations": {
+    "editor.background": "#0D0F18",
+    "editorGroupHeader.tabsBackground": "#0D0F18",
+    "tab.activeBackground": "#0D0F18",
+    "tab.inactiveBackground": "#0D0F18",
+    "statusBar.background": "#0D0F18",
+    "scrollbarSlider.background": "#0D0F18"
+  },
+  "keyboard.dispatch": "keyCode",
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim-vscode/init.vim",
+  // colors
+  "workbench.colorTheme": "Everforest Dark",
+  // ui
+  // "workbench.activityBar.location": "hidden"
+  "workbench.sideBar.location": "right",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "window.commandCenter": false,
+  "editor.scrollbar.vertical": "auto",
+  "window.titleBarStyle": "native",
+  "editor.scrollbar.horizontal": "auto",
+  "window.menuBarVisibility": "toggle",
+  // Change font
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  // Font size
+  "editor.fontSize": 17,
+  "terminal.integrated.fontSize": 17,
+  // Toggle excluded files
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.husky": true,
+    "**/drizzle": true,
+    "**/dist": true,
+    "**/.todo.md": true,
+    "**/.vscode": true,
+    "**/.eslintrc.cjs": true,
+    "**/.editorconfig": true,
+    "**/.gitignore": true,
+    "**/.lintstagedrc.mjs": true,
+    "**/.markdownlint.json": true,
+    "**/.markdownlintignore": true,
+    "**/.prettierignore": true,
+    "**/bun.lockb": true,
+    "**/cspell.json": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/next-env.d.ts": true,
+    "**/postcss.config.cjs": true,
+    "**/prettier.config.js": true,
+    "**/README.md": true,
+    "**/next.config.js": true,
+    "**/tailwind.config.ts": true,
+    "**/drizzle.config.ts": true,
+    "**/migrate.ts": true,
+    "**/.env.example": true,
+    "**/target": true,
+    "**/.venv": true,
+    "**/.python-version": true,
+    "**/uv.lock": true,
+  },
+  // Misc
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "breadcrumbs.filePath": "off",
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "window.zoomLevel": 0.75,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.location": "bottom",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "workbench.layoutControl.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "window.customTitleBarVisibility": "never",
+  "python.defaultInterpreterPath": "/bin/python",
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "manim-sideview.defaultManimPath": "",
+  "zig.zls.enabled": "on"
+}
