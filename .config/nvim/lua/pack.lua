@@ -1,4 +1,5 @@
 vim.pack.add({
+  "https://github.com/echasnovski/mini.pairs",
   "https://github.com/christoomey/vim-tmux-navigator",
   "https://github.com/meanderingprogrammer/render-markdown.nvim",
   "https://github.com/nvim-mini/mini.icons",
@@ -106,6 +107,7 @@ require("conform").setup({
     rust = { "rustfmt" },
     zig = { "zigfmt" },
     lua = { "stylua" },
+    nu = { "nufmt" }
   },
 })
 
@@ -169,3 +171,6 @@ for key, command in pairs(nav) do
     desc = "Navigate " .. key,
   })
 end
+
+-- MiniPairs
+require("mini.pairs").setup()

@@ -43,3 +43,13 @@ for server, config in pairs(servers) do
 end
 
 vim.lsp.enable(vim.tbl_keys(servers))
+
+
+-- Nushell
+vim.filetype.add({
+  extension = {
+    nu = "nu",
+  },
+})
+
+vim.lsp.enable("nushell")
