@@ -1,74 +1,164 @@
-# exit
-alias xx = exit
+# ~/.config/nushell/aliases.nu
 
-# vim
-alias vim = nvim
 
-# docker
-alias d = docker 
+# ─────────────────────────────────────────────
+# Go
+# ─────────────────────────────────────────────
 
-# git
-alias gpu =  git push 
-alias gpl =  git pull 
-alias gf  =  git fetch 
-alias gc  =  git commit 
-alias gm  =  git merge 
-alias ga  =  git add 
-alias gs = git status -s
-alias gl = git log --oneline
+alias g = go run .
+alias gov = go test -v | v
 
-# git-graph
-alias g = git-graph --style round
+# ─────────────────────────────────────────────
+# QEMU
+# ─────────────────────────────────────────────
 
-# rm
-alias rm = trash
+alias mq = make -f /home/ahmed/qemu/Makefile qemu
 
-# grep
-alias grep =  grep --color = auto 
- 
-# tldr
+
+
+# ─────────────────────────────────────────────
+# yt-dlp
+# ─────────────────────────────────────────────
+
+alias dl = yt-dlp
+
+
+# ─────────────────────────────────────────────
+# Skim
+# ─────────────────────────────────────────────
+
+alias sk = sk --bind 'alt-j:down,alt-k:up'
+
+
+# ─────────────────────────────────────────────
+# Tealdeer
+# ─────────────────────────────────────────────
+
 alias t = tldr
 
-# clear
-alias c = clear
 
-# ip
-alias ip = ip -c
+# ─────────────────────────────────────────────
+# Xclip
+# ─────────────────────────────────────────────
 
-# cat
-alias cat = bat -p
+# alias xl = tee /dev/tty | xclip -selection c -r
+# alias al = xclip -selection c -o -r
 
-# ls 
-alias ll = ls -l
-alias la = ls -a
+# ─────────────────────────────────────────────
+# Wayland Clipboard (Hyprland)
+# ─────────────────────────────────────────────
 
-# exa
-alias e = exa --icons
-alias ea = exa --icons -a
-alias el = exa --icons -l
-alias ela = exa --icons -la
-alias lt = exa --icons --tree -L 1
-
-# yazi
-alias zl = yazi
-
-# dolphin
-alias do = dolphin 
-
-# open
-alias o = open
-
-# Pacman
-alias u = doas pacman -Syyu
-alias i = doas pacman -S
-alias r = doas pacman -Rns
-
-# systemctl
-alias s = doas systemctl
-
-# wl-clipboard
-alias xl = | wl-copy -n
+alias xl = wl-copy
 alias al = wl-paste
 
-# polars
-alias p = polars
+# ─────────────────────────────────────────────
+# Trash CLI
+# ─────────────────────────────────────────────
+
+alias rm = trash
+
+
+# ─────────────────────────────────────────────
+# Vim / Neovim
+# ─────────────────────────────────────────────
+
+alias vim = nvim
+
+
+# ─────────────────────────────────────────────
+# Neovide
+# ─────────────────────────────────────────────
+
+alias nv = neovide . & disown &>/dev/null
+
+
+# ─────────────────────────────────────────────
+# Exit
+# ─────────────────────────────────────────────
+
+alias xx = exit
+
+
+# ─────────────────────────────────────────────
+# VirtualBox
+# ─────────────────────────────────────────────
+
+alias vbox = vboxmanage
+
+
+# ─────────────────────────────────────────────
+# Eza
+# ─────────────────────────────────────────────
+
+alias cl = ls # core ls
+alias ls = eza --icons=auto
+alias ll = eza -lg --icons=auto
+alias la = eza -a --icons=auto
+alias lli = eza -li -g --icons
+alias lla = eza -lhag --icons=auto --sort=name --group-directories-first
+alias lt = eza --icons=auto --tree -L 1
+alias le = eza --icons=auto --tree -L 1
+alias li = ls -lgi
+
+
+# ─────────────────────────────────────────────
+# Open
+# ─────────────────────────────────────────────
+
+alias o = bash open .
+
+
+# ─────────────────────────────────────────────
+# Grep
+# ─────────────────────────────────────────────
+
+alias grep = grep --color=auto
+
+
+# ─────────────────────────────────────────────
+# Cat
+# ─────────────────────────────────────────────
+
+alias cat = bat -p
+
+
+# ─────────────────────────────────────────────
+# IP
+# ─────────────────────────────────────────────
+
+alias ip = ip -c
+
+
+# ─────────────────────────────────────────────
+# Git Graph
+# ─────────────────────────────────────────────
+
+alias gg = git-graph --style round
+
+
+# ─────────────────────────────────────────────
+# Clear
+# ─────────────────────────────────────────────
+
+alias c = clear
+
+
+# ─────────────────────────────────────────────
+# XBPS
+# ─────────────────────────────────────────────
+
+# alias i = doas xbps-install -S
+# alias q = doas xbps-query -Rs
+# alias u = doas xbps-install -Su xbps; doas xbps-install -u
+# alias r = doas xbps-remove -R
+
+
+# ─────────────────────────────────────────────
+# APT
+# ─────────────────────────────────────────────
+
+# alias r = sudo apt remove
+# alias q = apt search
+# alias i = sudo apt install
+# alias s = sudo apt update
+# alias u = sync; sudo apt upgrade

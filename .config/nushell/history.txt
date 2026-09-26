@@ -1,1786 +1,288 @@
-ls
-clear
-ls
-z dotf
-zoxide init nu
-zoxide init nushell
 clear
 ls
 clear
-cd .config
-ls
-c
+ll
+clear
+ls - 
 clear
 ls -l 
-ls
-clear
-ls
-ls | less
-ls | bat -p 
-ls | explore 
-ls | explore -i
-ls
+for item in [1, 2, 3] print $item
 c
-clear
-ls
-c
-clear
-ls
-exa 
-clear
-exa 
-ls
-c
-clear
-exa
-c
-cd nushell/
-ls
-vim config.nu
-zoxide init nushell | save -f ~/.zoxide.nu
-l
-ls
-zoxide init nushell | save -f ~/.config/nushell/.zoxide.nu
-ls
-la
-ls -a
-vim config.nu
-exit
-ls
-z .cnfig
-z .config
-ls
-z
-z dotf
-gs
-clear
-ls
-z
-c
-z .config/nushell/
-ls
-exa --icons
-clear
-let name = "ahmed yasser"
-echo $name
-let nums = [1, 2, 3, 4]
-echo $nums
-for num in $nums
-for num num in nums {}
-for num in nums {<\n>}
-for num in nums {<\n>echo $num <\n>}
-echo $nums
-for num in nums {<\n>echo num <\n>}
-for num in $nums {<\n>echo num <\n>}
-for num in $nums {<\n>echo $num <\n>}
-for $num in $nums {<\n>echo $num <\n>}
-for num in $nums {<\n>print $num <\n>}
-for num in nums {<\n>print $num <\n>}
-for num in $nums {<\n>print $num <\n>}
-ls
-l
-rm ion/
-rm -r ion
-ls
-z .config/nushell/
-ls
-vim aliases.nu
-kitty
-kitty &
-kitty disown
-xx
-exit
-ls
-open vars.md
-c
-clear
-exit
-jobs
-kitty
-exit
-dolphin . 
-xx
-exit
-nvim aliases.nu
-xx
-exit
-z .c
 cd .config/nushell/
 ls
+clear
+l
+ls -l 
 vim config.nu
-exit
-z .config/nushell/
-ls
-cd .config/nushell/
-ls
-vim config.nu
-exit
-clear
-clear -x
-exit
-clear --help
-exit
-cd .config/nushell/
-vim aliases.nu
-exit
-ls
-z .config/nushell/
-ls
-l
-exa 
-l
-vim aliases.nu
-exit
-z .config/nushell/
-ls
-l
-clear
-l
-z
-l
-z -
-clear
-ls
-sl
-ls
 clear
 ls
 clear
 l
 ls
-c
-l
-c
-l
-c
-lt
-l
-lt
-lt -l 
-t 
-tl 
-lt
-ls
-tl
-c
-lt
-c
-ls
-lt
-c
-lt
-c
-lt
-c
-lt
-c
-alias lt
-whatis lt
-exit
-vim aliases.nu
-lt
-c
-ls
-c
-ls
-c
-z .config/nushell/
-ls
-vim config.nu
-ls
-source ~/.config/nushell/config.nu
-ls
-cd
-ls
-z .config/nushell/
-lt
-ls
-clear
-ls
-vim env.nu
-source ~/.config/nushell/config.nu
-ls
-clear
-z
-z .config/nushell/
-vim config.nu
-xx
-exit
-z
-ls
-z downloads/
-ls
-chmod u+x systemd.pueued.service
-ls
-chmod +x systemd.pueued.service
-ls
-doas mv ./systemd.pueued.service /etc/systemd/user/
-which pueued
-z /etc/systemd/user
-ls
-which pueued
-doas nvim ./systemd.pueued.service
-doas ln -s /home/ahmed/.cargo/bin/pueued /usr/bin/pueued
-which pueued
-ll /usr/bin/pueued
-clear
-ls
-doas systemctl --user start pueue
-systemctl --user start pueue
-systemctl --user start pueued
-z 
-z .config/hypr/
-ls
-vim hyprland.conf
-hyprctl --help
-hyprctl reload
-which pueued
-systemctl --user start pueued
-ll /
-ll /usr/bin/pueued
-cat /usr/bin/pueued
-systemctl --user start pueued
-z /etc/systemd/user
-ls
-vim systemd.pueued.service
-systemctl --user start pueued
-doas systemctl --user start pueued
-systemctl --user start pueued
-ls
-systemctl reload systemd.pueued.service
-pwd
-ll
-chmod -x systemd.pueued.service
-systemctl --user start pueued
-systemctl reload systemd.pueued.service
-ll
-ll /usr/bin/pueued
-ll (which pueue)
-which pueue
-ll /home/ahmed/.cargo/bin/pueue
-ll /home/ahmed/downloads/
-doas mv home/ahmed/downloads/systemd.pueued.service /etc/systemd/user/
-doas mv /home/ahmed/downloads/systemd.pueued.service /etc/systemd/user/
-ls
-clear
-ll
-c
-lt
-vim systemd.pueued.service
-systemctl --user start pueued
-ls
-doas mv systemd.pueued.service pueued.service
-systemctl --user start pueued
-systemctl --user enable pueued
-systemctl --user status pueued
-clear
-echo $env.NU_LIB_DIRS
-mkdir ~/.config/nushell/scripts
-touch ~/.config/nushell/scripts/task.nu
-$nu.config-path
-echo $nu.config-path
-cd $nu.config-path
-z .config
-pwd
-z nushell/
-ls
-pwd
-vim config.nu
-exit
-task spawn 
-task spawn
-exit
-exit
-task spawn 
-ls
-z .config
-z nushell/
-pwd
-vim conf
-$env.NU_LIB_DIRS
-ls
-ls /home/ahmed/.config/nushell/scripts 
-mkdir -p /home/ahmed/.local/share/nushell/completions
-mkdir  /home/ahmed/.local/share/nushell/completions
-man mkdir
-mkdir --help
-ls /home/ahmed/.local/share/nushell/completions
-cp scripts/task.nu /home/ahmed/.local/share/nushell/completions
-exit
-task log
-task spawn
-task log
-c
-task add 
-task log
-z scripts/
-ls
-vim task.nu
-task spawn kitty
-task spawn {kitty}
-task log
-task status
-task log
-c
-vim config.nu
-exit
-alias do task spawn {dolphin . }
-task spawn {dolphin . }
-ls
-clear
-task status
-task log
-clear
-task log
-task status
-clea
-ls
-c
-mkdir ~/.cache/starship<\n>starship init nu | save -f ~/.cache/starship/init.nu
-exit
-z .config/nushell/
-vim config.nu
-xit
-exit
-ls
-clear
-ls
-z .config/
-ls
-clear
-ls
-clear
-ls
-z .config
-ls
-clear
-z repos
-ls
-z dotfiles/
-ls
-exit
-z .config
-ls
-clear
-ls
-clear
-z repos
-z dotf
-ls
-clear
-ls
-exit
-clear
-exit
-pwd
-clear
-exit
-ls
-clear
-ls
-exit
-clear
-pwd
-ls
-clear
-exit
-ls
-clear
-lsct
-clear
-ls
-clear
-ls
-clear
-exit
-lslsls
-clea
-rl
-c
-ls
-clear
-ls
-clear
-ls
-z
-z .config
-z nushell/
-ls
-z env.nu
-z scripts/
-ls
-clear
-ls
-z
-c
-ls
-clear
-ls
-c
-ls
-clear
-ls
-c
-ls
-c
-ls
-c
-ls
-c
-ls
-c
-exit
-clear
-lajdkfjak
-exit
-l
-clear
-ls
-clear
-ls
-clear
-exit
-jdkfajd
-ls
-clear
-ls
-clear
-ls
-c
-exit
-ls
-clear
-kajdkfaf
-clear
-ls
-..
-z .config
-z dev
-ls
-z scripts/
-ls
-git init
-git add . 
-git commit -m "jakfja"
-git branch -m main
-..
-z -
-clear
-ls
-cp -r ~/.config/starship.toml ~/repos/dotfiles/.config/
-z dot
-gs
-git status
-clear
-gs
-clear
-g
-alias g
-g
-clear
-ls
-git status
-git status --oneline
-ls
-git status
-git add .
-gs
-git status
-git commit -m "Add starship config"
-git push 
-clear
-ls
-clear
-ls
-cat demoo
-cat demo
-ls
-rm demo
-ls
-clear
-ls
-c
-clear
-ls
-clear
-c
-vim starship.toml
-z .cnfig
-z .config
-z nushell/
-ls
-vim env.nu
-z .config
-z nushell/
-ls
-vim env.nu
-j
-vim
-vim env.nu
-exit
-clear
-ls
-exit
-clear
-ls
-clear
-jkajdfk
-clear
-ls
-exit
-ls scripts/
-> keybindings list --modifiers
-keybindings list --modifiers
-ls
-clear
-vim keybindings.yml
-rm keybindings.yml
-ls
-exit
-vim env.nu
-exit
-ls
-c
-exit
-ls
-c
-show_banner: false,
-$nu.keybinding-path
-echo $nu.keybinding-path
-vim
-exit
-ls
-exit
-nu
-clear
-exit
-ls
-c
-ls
-clear
-ls
-z
-c
-ls
-c
-ls
-rm vars.md
-ls
-cd
-c
-ls
-z
-z nushell/
-ls
-z
-c
-ls
-clea
-ls downloads/
-z
-clear
-vim config.nu
-c
-t
-c
-lt
-lt | sort-by size
-lt
-lt | sort-by size | reverse 
-lt | sort-by size 
-lt
-lt | where size type == "dir"
-lt | where type == "dir"
-lt -a
-lt -a | where type = file
-lt -a | where type == file
-lt -a | where size < 50b
-ps
-ps | explore -i 
-ps | where mem < 50 mb
-ps | where mem < 50mb
-ps | where mem < 50mb | explore -i
-help explore
-help
-help explore
-ps | where mem < 50mb | explore -ip
-help commands
-help commands | explore
-lt
-lt -a
-qc
-c
-help commands | where name == each
-help commands | where name == each | first
-help first
-help commands | where name == each 
-help commands | where name == each | get usage
-help commands | where name == each | first | get usage
-help commands 
-help commands | get name
-help commands | get name | get 462
-help commands | get name | explore -ip
-help commands | get name > demo
-help commands | explore -ip
-help path
-help path expand
-echo ".config/nushell" | path expand
-help path
-ls
-.config
-ls
-`Android Open Source Project/`
-ls
-..
-Code/
-..
-ls
-code-flags.conf
-help open
-ls
-open code-flags.conf
-cat code-flags.conf
-open discord/
-open zoomus.conf
-open --row zoomus.conf
-open --raw zoomus.conf
-ls | length
-ls | wc -l 
-ll
-c
-ls
-ls | wc -l 
-help length
-ls -l
-ls -l | wc -l 
-ls | length
-vim 
-help length
-help commands | explore -ip
-help commands | get name
-help commands | get name | save demo
-vim demo
-rm demo
-z work
-ls
-z osc/
-c
-ls
-c
-ls
-cat attendance.csv
-open attendance.csv
-open attendance.csv | get ID 
-open attendance.csv | get ID | length
-open attendance.csv | get ID | wc -l 
-open attendance.csv | get ID | save nu_ids
-cut -d ',' -f3 attendance.csv
-cut -d ',' -f3 attendance.csv > cut_ids
-ls
-cut -d ',' -f3 attendance.csv | save cut_ids
-vim cut_ids
-rm cut_ids
-vim nu_ids
-rm nu_ids
-c
-ls
-c
-help date
-date now
-date time
-date to-table
-date to-table 
-date now
-date 
-date now | date to-table 
-date now | date to-record  
-date now 
-date now | date to-timezone   
-date now | date to-timezone cairo
-date now | date to-table | get year
-ls
-c
-ls
-c
-'Yasser 21' | parse 'Name Age'
-'Yasser 21' | parse '{Name} {Age}'
-exit
-let nums = [1, 2, 3, 4, 5]
-echo $nums
-for num in $nums {}
-for num in $nums { <\n>echo "Num #$num"<\n>}
-for num in $nums { <\n>echo $num<\n>}
-for num in $nums { <\n>print "Num #$num"<\n>}
-for num in $nums { <\n>print 'Num #$num'<\n>}
-help print
-Octavia | Butler | Writer<\n>Bob | Ross | Painter<\n>Antonio | Vivaldi | Composer | save text
-echo Octavia | Butler | Writer<\n>Bob | Ross | Painter<\n>Antonio | Vivaldi | Composer | save text
-echo """Octavia | Butler | Writer<\n>Bob | Ross | Painter<\n>Antonio | Vivaldi | Composer""" | save text
-open text
-vim text
-open
-open text
-open text | wc -l 
-open text | length
-open text | lines 
-help lines
-$"ahmed ali" | lines
-$"ahmed\nali" | lines
-"ahmed\nali" | lines
-"Octavia | Butler | Writer<\n>Bob | Ross | Painter<\n>Antonio | Vivaldi | Composer |" | save text
-"Octavia | Butler | Writer<\n>Bob | Ross | Painter<\n>Antonio | Vivaldi | Composer |" | save -f text
-open text
-o text
-o text 
-ls
-c
-help split
-"ahmed ali karim" | split column
-help split columns
-help split column
-"ahmed ali karim" | split column ' '
-"ahmed ali karim" | split row
-"ahmed ali karim" | split row ' '
-"ahmed ali karim" | split words 
-ls
-open text
-open text | lines 
-open text | lines | split column '|'
-vim text
-open text | lines | split column '|'
-open text | lines 
-help str
-help str trim
-open text | split column '|'
-open text | lines | split column '|'
-open text | lines | split column '|' | str trim
-open text | lines | split column '|' | str trim | save text
-open text | lines | split column '|' | str trim | save -f text
-vim text
-open text | lines | split column '|' | str trim | save -f text
-open text
-open text | lines | split column '|' | str trim | save -f out
-vim text\
-open text | lines | split column '|' | str trim | save -f out
-vim out
-cat text
-vim text\
-rm text\
-vim text
-open text | lines | split column '|' | str trim | save -f out
-open text
-open text | lines | split column '|' | str trim | save -f out
-open text
-open text | line
-open text | lines
-open text | lines | split column '|'
-open text | lines | split column '|' | str trim 
-open text | lines | split column '|' | str trim | save -f out
-open text | lines | split column '|' | str trim 
-open text | lines | split column '|' 'First Name' 'Last Name' Job | str trim 
-exit
-c
-ls
-c
-lt
-rm out text
-lt
-c
-ls
-c
-help http
-http get www.jsonplaceplaceholder.typicode/todos/1
-http get https://jsonplaceplaceholder.typicode/todos/1
-http get https://jsonplaceplaceholder.typicode.com/todos/1
-curl        https://jsonplaceplaceholder.typicode.com/todos/1
-curl  pttps://jsonplaceholder.typicode.com/todos/1
-http get https://jsonplaceholder.typicode.com/todos/1
-http get https://jsonplaceholder.typicode.com/todos/
-http get https://jsonplaceholder.typicode.com/todos/ | explore -ip
-curl  https://jsonplaceholder.typicode.com/todos/1
-curl  https://jsonplaceholder.typicode.com/todos/1 | jq
-http get https://jsonplaceholder.typicode.com/todos/1
-z work/osc
-ls
-rm attendance.csv
-rm attendance2.csv
-ls
-rm duplicates.csv
-rm missing_ids.csv
-ls
-mv info2.csv info.csv
-lt
-open info.csv
-open info.csv | select Name ID
-open info.csv | select Name id
-open info.csv | select Name ID
-open info.csv | select Name ID | save newTable.csv
-tw newTable.csv
-whcih nu
-which nu
-(which nu)
-chsch (which nu) 
-chsh (which nu) 
-chsh (which nu | get path) 
-which nu | get path
-which nu | get path.0
-chsch ()
-chsh (which nu | get path.0)
-z /etc/passwd
-doas nvim /etc/passwd
-clear
-reboot
-ls
-lt
-c
-lt
-ls
-clear
-lt
-c
-ls
-ll
-clear
-lt -l
-tl
-tl -L 2
-z work osc
-ls
-lt
-tl
-lt
-ls
-zl
-mkdir tmp2
-zl
-c
-ls
 clear
-ls
-echo $status
-cp `~/downloads/OSC'24 Summer Training(NewEdition).xlsx` .
-ls
-rm `OSC'24 Summer Training(NewEdition).xlsx`
-c
-rm `OSC'24 Summer Training(NewEdition).xlsx`
-ls
-rm `OSC'24 Summer Training(NewEdition).xlsx`
-ls
-tl
-zl
-c
-ls
-open main.csv
-open sec1.csv
-open main.csv | explore -ip
-open sec1.csv | select ID
-open sec1.csv | select ID "S 1" "S 2" "S 3"
-open sec1.csv | select ID "S 1" "S 2" "S 3" | save sec2.csv
-open sec2.csv
-open sec1.csv | explore -ip
-ls
-vim merge.py
-python merge.py
 ls
-tw merged_output.csv
-vim main.csv
-open main.csv
-open main.csv | select Name ID Discord "Repo Link" Email "Year (Next Year)"
-open main.csv | select Name ID Discord "Repo Link" Email "Year (Next Year)" | explore -ip
-open main.csv | select Name ID Discord "Repo Link" Email "Year (Next Year)" | save main2.csv
-open main2.csv
-c
-open main.csv | explore -ip
-vim merge.py
-python merge.py
-ls
-tw merged_output.csv
-open merged_output.csv | explore -ip
-ls
-uniq merged_output.csv
-open merged_output.csv | uniq
-vim merged_output.csv
-vim duplicate.py
-python duplicate.py
-ls
 clear
-vim merged_output.csv
-open main.csv | select ID
-open main.csv | select ID | save mainIds.md
-vim mainIds.md
-open main.csv | select ID | get ID 
-open main.csv | select ID | get ID | save mainIds.md
-open main.csv | select ID | get ID | save -f mainIds.md
-vim merged_output.csv
-open merged_output.csv | uniq
-open merged_output.csv | explore -ip
-help uniq
-open merged_output.csv | uniq -d
-open merged_output.csv | uniq 
-open merged_output.csv | uniq  | length
-vim mainIds.md
-ls
-c
-ls
-zl
-ls
-vim duplicates.csv
-zl
-c
-tw sec2.csv
-c
-ls
-c
 ls
-c
-ls
-rm demo.xlsx
-ls
-open demo.csv
-open demo.csv | select ID "S 1" "S 2" "S 3" | save demo.csv
-open demo.csv | select ID "S 1" "S 2" "S 3" | save -f demo.csv
-open demo.csv | select ID "S 1" "S 2" "S 3" | save -f demo2.csv
-ls
-tw demo2.csv
-ic
-c
-ls
-rm demo.csv
-ls
-rm main.csv
-c
-ls
-mv merged_output.csv main.csv
-ls
-c
-open demo.csv | first
-ls
-mv demo2.csv demo.csv
-open demo.csv | first
-open demo.csv | head
-open demo.csv | first 2
-open demo.csv | first 1
-open main.csv | first 1
-lt
-vim sec2.csv
-history
-rm sec2.csv
-ls
-open demo.csv | select "S 3"
-open demo.csv | select "S 3." | get "S 3"
-open demo.csv | select "S 3" | get "S 3"
-open demo.csv | select "S 3" | get "S 3" | save amenaIds.md
-vim amenaIds.md
-open demo.csv | select "S 3" | get "S 3" 
-open demo.csv | select "S 3" | get "S 3"  
-open demo.csv | select "S 3" | get "S 3" | save -f amenaIds.md
-vim amenaIds.md
-open demo.csv | select ID "S 3" | get "S 3" | save -f amenaIds.md
-open demo.csv | select ID "S 3" 
-open demo.csv | select ID "S 3" | save --row -f amenaIds.md
-open demo.csv | select ID "S 3" | get where "S 3" == 1
-open demo.csv | select ID "S 3" | where "S 3" == 1
-lt
-vim main.csv
-code . 
-vim main.csv
-open demo.csv | explore -ip
-vim main.csv
-open main.csv | explore -ip
-open main.csv | select Name ID "S 1" "S 2" "S 3" | explore -ip
-c
-open main.csv | select Name ID "S 1" "S 2" "S 3" | explore -ip
-vim demo.csv
-vim main.csv
-tw main.csv
-vim main.csv
-tw main.csv
-vim main.csv
-tw main.csv
-vim main.csv
-tw main.csv
-ls
-vim main.csv
-u
-ls
-ll
-lt
-lt | get name.0
-lt | get name
-lt | get name.5
-lt | get modified.5
-doas pacman -Syyu
-lt | get size.5
-lt -l 
-xl 
-tl 
-ls
-c
-ls
-c
-lt
-c
-ls
 clear
-c
-z calc
-pwd
-help pwd
-z go 
-z go demo
-..
 ls
-z guiz
-ls
-z backend/
-ls
-lt
-lt -l 
-help save
-help save | explore
-explore
-ls
-ll | explore -ip
-lt 
-lt -l | explore -ip
-z work osc
-ls
-open demo.csv | explore -ip
-exit
-exit
-explore
-open demo.csv | explore -ip
-c
-ls
-open art-of-linux-attendance.xlsx
-open art-of-linux-attendance.xlsx | explore -ip
-explore
-open art-of-linux-attendance.xlsx | explore -ip
-open art-of-linux-attendance.xlsx
-c
-c
-ls
-z work osc
-ls
-open art-of-linux-attendance.xlsx
-ls
 clear
-ls
-z kitty
-vim kitty.conf
-ls
+ls --help
+man ls
 clear
-ls
-z kity
-z kitty
-vim kitty.conf
-ls
+ls --help
 clear
 ls
+ls where name == config.nu
+ls | where name == config.nu
+ls | where name == configu
 clear
-ls
+ls -h
 clear
-lt
-lt -l 
-help save
-"hello, osc" | save hello
-open hello
-z down
-z cv/
-ls
-z devops/
 l
 ls
-lt
-..
+clear
+vim config.nu
+exit
 ls
-z web/
-ls
-z
-ls
-zl
-ls
-tl
-c
-vim demo
-vim demo.csv
-open demo.csv
-open demo.csv | str trim
-open demo.csv | str trim | uniq
-open demo.csv | str trim | uniq -d
-vim demo.csv
-fish
+ls config.nu
+vim config.nu
+exit
+vim config.nu
+clear
+exit
+ijdfajfd
 clear
 ls
-bash
-clear
-lt
-c
-z nushe
-ls
-vim aliases.nu
-o demo.csv
-o demo.csv | str trim | uniq
-o demo.csv | str trim | uniq -d
-help uniq
-o demo.csv | str trim | uniq -c
-ls
-clear
-ls
-rm hello
-ls
-rm demo.csv
-pacman -S skim
-doas pacman -S skim
-sk 
-ls | sk
-sk
-la
-lt -l | sk
-ls -l | sk
-ls -a | sk
-help sk
-sk --help
-ls -a | sk --preview-window
-ls -a | sk --preview-window right:50%
-z nuseh
-z nush
-ls
-xx
-exit
-conifg
-config
-exit
-config
-config env
-config nu
-tutor
-tutor begin
-exit
-tutor list
-tutor echo
-tutor block
-port
-prot
-port
-help port
-help url
-url parse https://jsonplaceholder.typicode.com/todos/1
-"https://jsonplaceholder.typicode.com/todos/1" | url parse 
-ulimit
-whoami
-whoami -h
-c
-z dotf
-ls
-z .config/nushell/
-ls
-xx
-exit
-ls
-ls aliases.nu
-z history.txt
-c
-z
-ls
-z downloads/
-ls
-cat `OSC'24 Summer Training(NewEdition).xlsx`
-o `OSC'24 Summer Training(NewEdition).xlsx`
-c
-ls
 vim config.nu
-c
-ls
-vim 
-c
-ls
-z docs/
-ls
-z
-z .config/
-ls
-z
-c
-ls
-c
-ls
-z dot
-z .config/nushell/
-ls
-vim
-ps
-nu version
-nu --version
-nu_plugin_polars 
-nu_plugin_polars  | explore 
-nu_plugin_polars  | less
-nu_plugin_polars  | save info
-vim info
-rm info
-polars append
-cargo install polars
-cargo install nu_plugin_polars 
-plugin add ~/.cargo/bin/nu_plugin_polars
-c
-lc
-z nush
-ls
-cd..
-sau 
-vim config.nu
-cd ..
-cd
-cd..
-bu
-z nush
-vim config.nu
-z dotf
-z .config/nushell/
-ls
-vim config.nu
-vim 
-ls
-keybindings list --modifiers
-o xx
-exa --icons --tree -L 1 
-ls 
-lt
-ls
-c
-ls
-c
-o
-open 
-ls
-lt
-open 
-exa --icons tl
-tl
-lt
-oo ooooxxxx
-z nush
-ls
-z .config/fish
-ls
-z confd
-z conf.d
-ls
-vim aliases.nu
-vim abbrivations.fish
-z nush
-pwd
-z .config
-cd .config/nus
-cd .config/nushell/
-ls
-exit
-"hello" | xl 
-wl-paste 
-"ciiii" | wl-copy -n 
-al
-"kdjfkaj" | al 
-vim aliases.nu
-exit
-z nush
-vim config.nu
-e 
-vim aliases.nu
-c
-__zoxide_z .config
-ls
-clear
-ls
-which z
-which __zoxide_z
-which ls
-which firefox
-__zoxide_z nushell/l
-__zoxide_z `Android Open Source Project/`
-__zoxide_z 
-__zoxide_z nush
-ls
-which firefox
-ls 
-ls
-clear
-ls
-e
-c
-e
-c
-ea
-c
-el
-c
-e
-c
-e
-c
-ls
-c
-ls
-c
-e
-c
-e
-c
-e
-c
-open ls
-c
-ls
-c
-ls
-which xx
 nvim config.nu
-pwd
-which
-p 
-cxx
-doas pacman 
-which xx
-which 
-which ls
-nvim aliases.nu
+exit
+clear
+vim config.nu
+exit
+vim config.n
 c
-z work
-z osc
-ls
-mkdir workspace
-mv data.zip workspace/
-ls
-c
-z workspace/
-c
-ls
-c
-e
-c
-ls
-c
-e
-c
-ls
-c
-e
-c
-e
-ls
-unzip data.zip
-ls
-mv Data7602DescendingYearOrder.csv data.csv
-mv data.zip ..
-ls
-c
-ls
-tw data.csv
-open data.csv
-btop
-htop
-open data.csv | explore
-c
-help polars open 
-let df0 = polars open data.csv
-help polars store-ls
-polars store-ls | select key type columns estimated_size
-$df0 | first
-$df0 | polars first
-$df0 | polars first 1
-tw data.csv
-$df0
-$df0 | polars first 2
-$df0 | polars first 3
-$df0 | polars first 
-$df0 | polars first -h
-$df0 | polars into-df |  polars first -h
-$df0 | polars into-df |  polars first 
-ls
-c
-ls
-let df_0 = polars open data.csv
-polars store-ls | select key type columns estimated_size
-$df_0 | polars first
-$df_0 | polars schema
-$df_0 | polars first 2
-$df_0 | polars first 22
-$df_0 | polars first 22 | str trim
-ls
-..
-ls
-let data = polars open demo.csv
-polars store-ls | select key type columns estimated_size
-$data | polars first
-$data 
-open data.csv | polars into-df | polars first
-open demo.csv | polars into-df | polars first
-c
-ls
-z workspace/
-z work osc
-z workspace/
-ls
-c
-help polars open
-ls
-c
-let data = open data.csv | polars into-df 
-polars store-ls | select key type columns estimated_size
-$data | polars first 
-$data | polars first 2
-$data | polars first 10
-$data | polars unique 
-$data | polars schema
-$data | polars first 2
-$data | polars first 20
-use std bench
-bench -n 10 --pretty {}
-bench -n 10 --pretty {<\n>open data.csv | group-by year --to-table | update items {<\n>|i| $i.items.geo_count | math sum}}
-polars store-ls | select key type columns estimated_size
-z workspace/
-z work osc
-z workspace/
-ls
-polars open data.csv | polars group-by year | polars agg (polars col geo_count | polars sum) | polars collect | save load.nu
-polars open data.csv | polars group-by year | polars agg (polars col geo_count | polars sum) | polars collect | save load.nu -f
-(polars open data.csv | polars group-by year | polars agg (polars col geo_count | polars sum) | polars collect | save load.nu -f)
-polars open data.csv | polars group-by year | polars agg (polars col geo_count | polars sum) | polars collect | save -f load.nu 
-'polars open data.csv | polars group-by year | polars agg (polars col geo_count | polars sum) | polars collect' | save -f load.nu 
-open load.nu
-vim load.nu
-bench -n 
-use std bench
-bench -n 10 --pretty {}
-bench -n 10 --pretty {<\n>nu load.nu | complete | null <\n>}
-ls
-plugin stop polars
-("int_1,int_2,float_1,float_2,first,second,third,word<\n>1,11,0.1,1.0,a,b,c,first<\n>2,12,0.2,1.0,a,b,c,second<\n>3,13,0.3,2.0,a,b,c,third<\n>4,14,0.4,3.0,b,a,c,second<\n>0,15,0.5,4.0,b,a,a,third<\n>6,16,0.6,5.0,b,a,a,second<\n>7,17,0.7,6.0,b,c,a,third<\n>8,18,0.8,7.0,c,c,b,eight<\n>9,19,0.9,8.0,c,c,b,ninth<\n>0,10,0.0,9.0,c,c,b,ninth"<\n>| save --raw --force data.csv)
-c
-ls
-random float 
-c
-ls
+clear
+le
 clear
 ls
-random float 
-ls
-rm load.nu
-ls
-c
-ls
-c
-e
-c
-ls
-let data = polars open data.csv
-$data
-$data | polars first 20
-$data | polars first
-polars store-ls 
-polars store-ls | select key type columns rows estimated_size
-ls
-c
-let data = open data.csv | polars into-df 
-$data
-polars store-ls | select key type columns rows estimated_size
-$data | polars schema
-$data | polars schema | save -f --row schema
-$data | polars schema | save -f --raw schema
-c
-help scope
-scope commands
-$data | polars sum
-$data | polars select int_1 int_2 float_1 float_2 | polars sum
-let res = $data | polars select int_1 int_2 float_1 float_2 | polars sum
-$res
-polars store-ls | select key type columns rows estimated_size
-$res
-ls
-$data | polars select int_1 int_2 float_1 float_2 | polars max
-$data | polars select int_1 int_2 float_1 float_2 | polars min
-$data | polars select int_1 int_2 float_1 float_2 | polars mean 
-$data | polars select int_1 int_2 float_1 float_2 | polars median 
-$data | polars median 
-"int_1,int_2,float_1,float_2,first<\n>9,14,0.4,3.0,a<\n>8,13,0.3,2.0,a<\n>7,12,0.2,1.0,a<\n>6,11,0.1,0.0,b"<\n>| save --raw --force data2.csv
-let data2 = open data2.csv | polars into-df  
-$data
-$data2
-$data | polars join $data2 int_1 int_1
-$data
-$data2
-c
-polars join help
-polars join --help
-$data | polars join $data2 int_1 int_1
-$data | polars join --left_on $data2 int_1 int_1
-$data | polars join --left $data2 int_1 int_1
-ls
-c
-let data = open data.csv | polars into-df 
-c
-z work osc 
-z workspace/
-c
-let data = open data.csv | polars into-df 
-let data2 = open data2.csv | polars into-df  
-$data | polars join --left $data2 int_1 int_1
-let data2 = open data2.csv | polars into-df  
-let data = open data.csv | polars into-df 
-let data2 = open data2.csv | polars into-df  
-$data
-$data2
-$data | polars join --left $data2 int_1 int_1
 vim config.nu
-z pick
-z pic
-ls
-zl
-z work
-z osc/workspace/
-c
-let data = open data.csv | polars into-df 
-let data2 = open data2.csv | polars into-df  
-$data
-$data2
-$data | polars join --left $data2 int_1 int_1
-poweroff
-ls
-rm go
-ls
-c
-ls
-e
-c
-ls
-z nextjs demo
-ls
-c
-ls
-c
-bun run dev
-bun 
-which bun
-fish
-z .config/nus
-ls
-z dotf
-z .config
-z nushell/
-ls
-vim env.nu
-fish
-vim env.nu
-z .config/nsus
-z .config/nush
-ls
-z dotf
-z .config/nush
-ls
-z dotf
-z .config/nushell/
-ls
-vim env.nu
-$env.PATH
-let-env PATH = ($env.PATH | append "/home/ahmed/.bun/bin")
-vim config.nu
-z .config/nushell/
-ls
-fish
+exit
 clear
-z .config
-cd .config
+ls 
+exit
 ls
-cd .config
-pwd
-vim env.nu
-echo "" > env.nu
-pwd
-echo "" | save -f env.nu
-z .config/nushell
+clear
+le
+clear
 ls
-vim env.nu
+clear
+l
+clear
 ls
-bun
-vim config.nu
-z nextjs demo
+clear
+le
+clear
+l
+clear
 ls
-bun run dev
-poweroff
-ls
-z nextjs demo
-ls
-ls | where type == file
-ls | where type == dir
-ls | where type == dir | length
-ls | where type == file | length 
-doas pacman -Syyu 
-ls
-z notech
-ls
+nvim ~/.config/nushell/aliases.nu
 c
-ls
-c
-ls
-c
-ls
-z nextjs
-z nextjou
-c
-ls
-c
-ls
-c
-ls
-c
-z notec
-ls
-z nextjs
-ls
-vim README.md
-ls
-rm README.md
-c
-ls
-touch 22-topic.md
-ls
-touch 23-topic.md
-poweroff
-ls
-z .config/hyde/
-ls
-z themes/
-ls
-z `Tokyo Night/`
-ls
-z wallpapers/
-ls
-c
-ls
-c
-zl
-ls
-z downloads/
-ls
-z appimages/
-ls
-ll
-e
-./zen-specific.AppImage
-ls
-./zen-specific.AppImage
-el
-el 
-ell
-el 
-z .config/nushel
-ls
-lt
-ls
-ll
-el
-ea
-ela
-ea
-ela
+clear
+le
 vim aliases.nu
+nvim aliases.nu
+exit
+clear
+f
+exit
+clear
+l
+ls
+vim config.nu
+nvim config.nu
+exit
+vim config.nu
+exit
+ls
+clar
+nvim aliases.nu
+exit
+c
+l
+ls
+c
+clear
+le
+z
+cd
+z -
+z nu
+cd .config/nushell/
+vim config.nu
+exit
+z nu
+clear
+z nu
+cd
+exit
+clear
 z
 c
+le
+z nu
 ls
-el
-ea
-ela
-el
-ll
-la
-alias ls
-alias la
-which la
+vim ~/.config/nushell/abbreviations.nu
+vim config.nu
+exit
+aljdf
 ls
-z downloads/
+exit
 ls
-la
-c
-ll
-ll | where name == (glob "*zend*")
-ll | where name == (glob "*zen*")
-ll | where name == (glob *zen*)
-ll | where name == zend
-ll | where name.contains == zend
-help str
-help str contains
-ll | where name | str contains "zen"
-ll | str contains "zen" | where name  
-ll | str contains "zen" 
-ll | get name
-help str contains
-ll | get name | where str contains 'zen-'
-ll | get name |  str contains 'zen-'
-ll | get name  
-ll
-ll | get 10
-chmod u+x zen-specific.AppImage
-ll | get 10
-./zen-specific.AppImage
-ls
-tar -xf zen.linux-specific.tar.bz2
-ls
-z zen
-ls
-ll
-./zen
-ls
-./zen
-zl
-ls
-z /usr/share/applications/
-ls
-ls zen
-ls
-z 
-z .local/share/applications/
-ls
-pwd
-pwd | xl 
-vim appimagekit_0ddc45d518e156b9c68e1f8994a224d6-Zen_Browser.desktop
-zl
-z art of 
-git pull 
+nvim abbreviations.nu
+exit
 ls
 c
+le 
+l
+clear
 ls
-g
-which g
-z .config/nushell
-ls
-git-graph
-z .config/fish
-lsz conf.d
-z conf.d
-vim alias-abbr.fish
-z dotf
-g
-git-graph --style round 
+clear
+le
 c
-git-graph --style round 
+ls
+clear
+f
+exit
 ls
 c
 vim aliases.nu
-cp -r ~/.config/nushell/ ~/repos/dotfiles/
-z dotf
+exit
 ls
-mv nushell/ .config/
-mv -f nushell/ .config/
-rm .config/nushell/
-mv nushell/ .config/
-g
-z dotf
-gs
-g
-c
-g
-c
-gs
-z nush
+^ls
+command ls
+^/usr/bin/ls
 ls
-z conf.d
 vim aliases.nu
+exit
+l
+vim aliases.nu
+exit
+l
+clear
+l
+l -l 
+clear
+l 
+c
+l
+clear
+ls
+c
+le
+c
+l
+clear
+l 
+clear
+cl 
+cls
+cl
+exit
+le
+exit
+vim extra.nu
+exit
+echo "" > extra
+exit
+cler
+c
+"thiws"
+clear
+le 
+vim config.nu
+exit
+c
+ls
+vim extra.nu
+exit
+vim 
+vim extra.nu
+exit
+clear
+exit
+le
+vim extra.nu
+vim config.nu
+vim extra.nu
+vim config.nu
+clear
+vim tmp.csv
+open tmp.csv
+vim tmp.csv
+open tmp.csv
+open tmp.csv | expore
+open tmp.csv | explore
+clear
+ls
+open tmp.csv | explore regex
+explore regex
+explore config 
+clear
+def sayHi[] {}
+def sayHi[] {<\n>print "hi"<\n>}
+c
+exit
+def sayHi[]{<\n>     print "hi"<\n>}
+def sayHi [] {<\n>print "hi"<\n>}
+sayHi 
+def sayHi [name] {<\n>print $"Hi, {$name}"<\n>}
+sayHi yasser
+def sayHi [name] {<\n>print $"Hi, {name}"<\n>}
+sayHi yasser
+def sayHi [name] {<\n>print $"Hi, $name"<\n>}
+sayHi yasser
+def sayHi [name] {<\n>print $"Hi, name"<\n>}
+sayHi yasser
+def sayHi [name] {<\n>print $"Hi, ($name)"<\n>}
+sayHi yasser
+c
+def sayHi [name] {<\n>print $"Hi, (name)"<\n>}
+sayHi yasser
+clear
+le
+clear
+def mul [a: int, b: int] {<\n>$a * $b<\n>}
+mul 2 8
+chsh -h
+doas chsh -s (which nu) ahmed
+(which nu)
+(which nu).path
+(which nu).path | into string
+(which nu).path.0
+doas chsh -s (which nu).0.path ahmed
+clear
+ls
+which ls
+which l
+which cl
+which cargo
+which explore 
+le
+vim extra.nu
+$env.config.keybindings 
+$env.config.keybindings | where keycode == char_u20
+vim abbreviations.nu
+exi
+exit
+vim 
+exit
+ls
+clear
+le
+clear
+exit
+vim extra.nu
+exit
+ts
+clear
+ls
