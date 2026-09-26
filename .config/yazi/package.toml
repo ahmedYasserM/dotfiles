@@ -11,7 +11,7 @@ hash = "3996fc74044bc44144b323686f887e1"
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
 rev = "8f1d971"
-hash = "63b6c222bf2103b3023389dde5e2ecfe"
+hash = "3cce60031b27cbce80b50f68ca319c0a"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
@@ -21,4 +21,4 @@ hash = "4fccaaf10c36dc2466e2438a386ff017"
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "f6b425a"
-hash = "14b111562c00eb1917fe3ca3ae9bb771"
+hash = "76b921b2d734331854d4a55b59a21388"
