@@ -1,4 +1,5 @@
 vim.pack.add({
+  "https://github.com/christoomey/vim-tmux-navigator",
   "https://github.com/meanderingprogrammer/render-markdown.nvim",
   "https://github.com/nvim-mini/mini.icons",
   "https://github.com/stevearc/conform.nvim",
@@ -152,3 +153,19 @@ require("render-markdown").setup({
     enabled = true,
   },
 })
+
+-- VimTmux Navigator
+vim.g.tmux_navigator_no_mappings = 1
+local nav = {
+  h = "TmuxNavigateLeft",
+  j = "TmuxNavigateDown",
+  k = "TmuxNavigateUp",
+  l = "TmuxNavigateRight",
+}
+
+for key, command in pairs(nav) do
+  vim.keymap.set("n", "<A-" .. key .. ">", "<cmd>" .. command .. "<cr>", {
+    silent = true,
+    desc = "Navigate " .. key,
+  })
+end
