@@ -30,14 +30,19 @@ vim.diagnostic.config({
 
 
 
+-- FileName at the top right
 _G.winbar = function()
-  local filename = vim.fn.expand("%:t")
+  local winid = vim.g.statusline_winid
+  local bufnr = vim.api.nvim_win_get_buf(winid)
+
+  local filename = vim.api.nvim_buf_get_name(bufnr)
+  filename = vim.fn.fnamemodify(filename, ":t")
 
   if filename == "" then
     filename = "[No Name]"
   end
 
-  local modified = vim.bo.modified
+  local modified = vim.bo[bufnr].modified
       and " %#WinBarModified#●"
       or ""
 

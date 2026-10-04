@@ -53,3 +53,47 @@ vim.filetype.add({
 })
 
 vim.lsp.enable("nushell")
+
+
+-- Xonsh
+vim.filetype.add({
+  extension = {
+    xsh = "xonsh",
+    xonshrc = "xonsh",
+  },
+  filename = {
+    [".xonshrc"] = "xonsh",
+    ["xonshrc"] = "xonsh",
+  },
+})
+
+
+vim.api.nvim_create_autocmd('User', {
+  pattern = 'TSUpdate',
+  callback = function()
+    require('nvim-treesitter.parsers').xonsh = {
+      install_info = {
+        url = 'https://github.com/FoamScience/tree-sitter-xonsh',
+        queries = 'queries/',
+      },
+    }
+  end,
+})
+
+-- 3. Enable tree-sitter highlighting for xonsh
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'xonsh',
+  callback = function(args)
+    if not require('nvim-treesitter.parsers').xonsh then
+      vim.treesitter.start(args.buf, 'xonsh')
+    end
+  end,
+})
+
+vim.lsp.config('xonsh_lsp', {
+  cmd = { 'xonsh-lsp' }, -- Uses 'xonsh-lsp' binary from your PATH
+  filetypes = { 'xonsh' },
+  root_markers = { '.xonshrc', 'xonshrc', '.git' },
+})
+
+vim.lsp.enable('xonsh_lsp')

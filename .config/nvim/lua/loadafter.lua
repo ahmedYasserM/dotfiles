@@ -82,13 +82,6 @@ vim.api.nvim_set_hl(0, "FloatBorder", {
   fg = "#3B4054",
 })
 
-vim.keymap.set("n", "K", function()
-  vim.lsp.buf.hover({
-    max_width = 80,
-    max_height = 15,
-  })
-end, { desc = "LSP Hover" })
-
 -- Render Markdown
 vim.api.nvim_set_hl(0, "RenderMarkdownCode", {
   bg = "#111522",
@@ -110,3 +103,13 @@ vim.api.nvim_set_hl(0, "RenderMarkdownH2Bg", {
 vim.api.nvim_set_hl(0, "RenderMarkdownH3Bg", {
   bg = bg,
 })
+
+-- Telescope
+vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = bg })
+vim.api.nvim_set_hl(0, "TelescopePromptNormal", { bg = bg })
+vim.api.nvim_set_hl(0, "TelescopeResultsNormal", { bg = bg })
+vim.api.nvim_set_hl(0, "TelescopePreviewNormal", { bg = bg })
+vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = bg })
+vim.api.nvim_set_hl(0, "TelescopePromptBorder", { bg = bg })
+vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { bg = bg })
+vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { bg = bg })
