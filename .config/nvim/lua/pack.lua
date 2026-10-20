@@ -1,4 +1,6 @@
 vim.pack.add({
+  "https://github.com/folke/snacks.nvim",
+  "https://github.com/HakonHarnes/img-clip.nvim",
   "https://github.com/echasnovski/mini.pairs",
   "https://github.com/christoomey/vim-tmux-navigator",
   "https://github.com/meanderingprogrammer/render-markdown.nvim",
@@ -12,7 +14,7 @@ vim.pack.add({
   "https://github.com/projekt0n/github-nvim-theme",
   "https://github.com/folke/tokyonight.nvim",
   "https://github.com/rafamadriz/friendly-snippets",
-  { src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" },
+  "https://github.com/nvim-treesitter/nvim-treesitter",
   "https://github.com/neovim/nvim-lspconfig",
   "https://github.com/mason-org/mason.nvim",
   "https://github.com/tpope/vim-fugitive",
@@ -174,3 +176,43 @@ end
 
 -- MiniPairs
 require("mini.pairs").setup()
+
+
+-- Snacks
+local snacks = require("snacks")
+snacks.setup({
+  image = {
+    enabled = true, -- Enables the inline terminal image rendering
+    doc = {
+      enabled = true,
+      inline = true,   -- Renders the image directly inside the file buffer
+      max_width = 60,  -- Max width in terminal columns (Default is usually 80)
+      max_height = 20, -- Max height in terminal rows (Default is usually 40)
+    },
+  },
+})
+
+-- img-clip
+local img_clip = require("img-clip")
+img_clip.setup({
+  default = {
+    dir_path = "assets/img", -- Directory where your images will save locally
+    extension = "png",
+    embed_image_as_markdown = true,
+    prompt_for_file_name = true, -- Prompts you to name the image file upon paste
+  },
+})
+
+
+-- RenderMarkdown
+require('render-markdown').setup({
+  code = {
+    inline = true,
+    inline_left = "", -- Smooth Nerd Font left curve
+    inline_right = "", -- Smooth Nerd Font right curve
+    inline_pad = 0,
+    highlight_inline = "TokyonightCustomInlineCode",
+    highlight_inline_left = "TokyonightCustomInlineCodeEdge",
+    highlight_inline_right = "TokyonightCustomInlineCodeEdge",
+  }
+})

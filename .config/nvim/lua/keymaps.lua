@@ -74,3 +74,34 @@ vim.keymap.set("n", "K", function()
     vim.lsp.buf.hover()
   end
 end, { desc = "Diagnostic / Hover" })
+
+
+-- img-clip
+-- vim.keymap.set("n", "<leader>p", "<cmd>PasteImage<cr>", {
+--   desc = "Paste image from system clipboard"
+-- })
+
+-- img-clip
+
+local function smart_paste(default_fallback_key)
+  local img_clip = require("img-clip")
+
+  -- paste_image() returns true if an image was handled, false otherwise
+  local success = img_clip.paste_image()
+
+  -- If it wasn't an image, execute standard Vim paste (using ngetreg/feedkeys)
+  if not success then
+    vim.api.nvim_feedkeys(
+      vim.api.nvim_replace_termcodes(default_fallback_key, true, true, true),
+      "n",
+      false
+    )
+  end
+end
+
+vim.keymap.set("n", "p", function() smart_paste("p") end, {
+  desc = "Paste text or image from clipboard"
+})
+vim.keymap.set("n", "P", function() smart_paste("P") end, {
+  desc = "Paste text or image before cursor"
+})
