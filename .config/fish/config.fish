@@ -11,7 +11,11 @@ end
 # A copy of fish's internal cd function. This makes it possible to use
 # `alias cd=z` without causing an infinite loop.
 if ! builtin functions --query __zoxide_cd_internal
-    string replace --regex -- '^function cd\s' 'function __zoxide_cd_internal ' <$__fish_data_dir/functions/cd.fish | source
+    if status list-files functions/cd.fish &>/dev/null
+        status get-file functions/cd.fish | string replace --regex -- '^function cd\s' 'function __zoxide_cd_internal ' | source
+    else
+        string replace --regex -- '^function cd\s' 'function __zoxide_cd_internal ' <$__fish_data_dir/functions/cd.fish | source
+    end
 end
 
 # cd + custom logic based on the value of _ZO_ECHO.
@@ -68,9 +72,9 @@ function __zoxide_z_complete
     else if test (builtin count $tokens) -eq (builtin count $curr_tokens)
         # If the last argument is empty, use interactive selection.
         set -l query $tokens[2..-1]
-        set -l result (command zoxide query --exclude (__zoxide_pwd) --interactive -- $query)
-        and __zoxide_cd $result
-        and builtin commandline --function cancel-commandline repaint
+        set -l result (command zoxide query --exclude (__zoxide_pwd) --interactive -- $query 2>/dev/null)
+        and builtin commandline --replace -- "z "(string escape -- $result)
+        and builtin commandline --function repaint execute
     end
 end
 complete --command __zoxide_z --no-files --arguments '(__zoxide_z_complete)'
@@ -87,19 +91,20 @@ end
 #
 
 abbr --erase z &>/dev/null
+complete --erase --command z
 alias z=__zoxide_z
 
 abbr --erase zi &>/dev/null
+complete --erase --command zi
 alias zi=__zoxide_zi
 
 # =============================================================================
-#
-# To initialize zoxide, add this to your configuration (usually
-# ~/.config/fish/config.fish):
-#
-#   zoxide init fish | source
 
 
-
-# fzf plugin
-fzf_configure_bindings --directory=\cf --processes=\ca
+# Fix autopair for Vi-Mode
+function fish_user_key_bindings
+    # This forces autopair to inject its keys into Vi's insert mode map
+    if functions -q _autopair_fish_key_bindings
+        _autopair_fish_key_bindings
+    end
+end

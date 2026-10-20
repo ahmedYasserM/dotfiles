@@ -43,3 +43,4 @@ fish_add_path /sbin
 fish_add_path /bin
 fish_add_path /snap/bin
 fish_add_path /home/ahmed/.platformio/penv/bin
+fish_add_path /home/ahmed/repos/scripts
