@@ -10,7 +10,7 @@
 @import "theme.css";
 
 window#waybar {
-  background: @bar-bg;
+  background-color: alpha(@bar-bg, 0.999); 
   border-radius: 0px;
 }
 
