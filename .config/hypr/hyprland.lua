@@ -11,13 +11,20 @@ hl.monitor({
 })
 
 
+hl.monitor({
+  output   = "HDMI-A-3",
+  mode     = "2560x1440@144",
+  position = "auto",
+  scale    = "1",
+})
+
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
 
 -- Set programs that you use
 local terminal    = "ghostty"
-local fileManager = terminal .. " -e yazi"
+local fileManager = terminal .. " -e spf"
 local menu        = "fuzzel"
 local browser     = "zen-browser"
 local screenshot  = "/home/ahmed/repos/scripts/cmd-screenshot >/dev/null 2>&1"
@@ -39,6 +46,7 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("uwsm app -- swaybg -i ~/pictures/wallpapers/current -m fill")
   hl.exec_cmd("wl-paste --type text --watch cliphist store")
   hl.exec_cmd("wl-paste --type image --watch cliphist store")
+  hl.exec_cmd("kanshi")
   -- hl.exec_cmd("systemctl --user hyprpolkitagent")
 end)
 
@@ -214,7 +222,7 @@ hl.config({
     kb_layout    = "us,ara",
     kb_variant   = "",
     kb_model     = "",
-    kb_options   = "grp:win_space_toggle,ctrl:nocaps,ctrl:swap_ralt_rctrl",
+    kb_options   = "grp:win_space_toggle,ctrl:swap_ralt_rctrl",
     kb_rules     = "",
 
     follow_mouse = 1,
@@ -237,7 +245,7 @@ hl.gesture({
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 hl.device({
   name        = "epic-mouse-v1",
-  sensitivity = -0.5,
+  sensitivity = 1.0,
 })
 
 
