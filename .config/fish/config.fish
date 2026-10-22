@@ -108,3 +108,5 @@ function fish_user_key_bindings
         _autopair_fish_key_bindings
     end
 end
+
+

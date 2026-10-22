@@ -29,6 +29,10 @@ set -gx XDG_PICTURE_DIR "/home/ahmed/pictures"
 
 # fzf plugin
 set -gx FZF_DEFAULT_OPTS "--height 60% --layout=reverse --bind 'alt-k:up,alt-j:down'"
+set -gx FZF_DEFAULT_OPTS \
+  '--color=bg:#0D0F18,bg+:#1A1D2A,fg:#C0CAF5,fg+:#C0CAF5,border:#414868,prompt:#7AA2F7,pointer:#BB9AF7,hl:#7AA2F7,hl+:#7AA2F7'
+set -gx FZF_DEFAULT_OPTS \
+  '--color=bg:#0D0F18,bg+:#1A1D2A,fg:#C0CAF5,fg+:#C0CAF5,border:#414868,prompt:#7AA2F7,pointer:#BB9AF7,hl:#7AA2F7,hl+:#7AA2F7'
 
 # PATH
 fish_add_path /home/ahmed/.local/bin
