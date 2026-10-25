@@ -1,8 +1,13 @@
 #!/usr/bin/env fish
 
+# magit
+abbr -a mg "manim --renderer=opengl -l -qm --progress_bar none ~/dev/magit/git_status_scene.py LiveGitScene"
+
 # ssh
 abbr -a ssh "env TERM=xterm-256color ssh"
 
+# less
+abbr -a lr "less -R"
 
 # go 
 abbr -a cli "cobra-cli"
@@ -11,7 +16,6 @@ abbr -a cli "cobra-cli"
 abbr -a we "watchexec -rc -q --"
 
 # uv
-abbr -a mg "uv run manage.py"
 abbr -a ur "uv run"
 
 # cargo
@@ -42,10 +46,14 @@ abbr -a tl "tmux list-sessions"
 abbr -a tr "tmux rename-session"
 
 # git
+abbr -a gl "git log --all --graph --decorate --oneline"
 abbr -a gs "git status -s"
 abbr -a ga "git add"
 abbr -a gc "git commit -m"
 abbr -a gp "git push"
+abbr -a gb "git branch"
+abbr -a gw "git switch"
+abbr -a gg "git-graph --model none --style round --color always"
 
 # yazi
 abbr -a zl "yazi"

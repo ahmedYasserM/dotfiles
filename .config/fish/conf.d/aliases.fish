@@ -61,9 +61,6 @@ alias cat="bat -p"
 
 alias ip="ip -c"
 
-# git graph 
-alias gg="git-graph --style round"
-
 alias cat="bat -p"
 
 alias ip="ip -c"
