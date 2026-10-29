@@ -105,7 +105,7 @@ cmp.setup({
 -- Conform
 require("conform").setup({
   formatters_by_ft = {
-    python = { "ruff_format" },
+    python = { "black" },
     rust = { "rustfmt" },
     zig = { "zigfmt" },
     lua = { "stylua" },
