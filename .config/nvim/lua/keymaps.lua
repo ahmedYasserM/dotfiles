@@ -59,21 +59,19 @@ vim.keymap.set({ "n", "v" }, "<leader>lf", function()
 end, { desc = "Format" })
 
 -- LSP Hover and Error Diagnostic
-vim.keymap.set("n", "K", function()
-  local diagnostics = vim.diagnostic.get(0, {
-    lnum = vim.fn.line(".") - 1,
-  })
+vim.keymap.set("n", "K", vim.lsp.buf.hover, {
+  desc = "LSP Hover",
+})
 
-  if #diagnostics > 0 then
-    vim.diagnostic.open_float({
-      scope = "cursor",
-      border = "rounded",
-      focus = false,
-    })
-  else
-    vim.lsp.buf.hover()
-  end
-end, { desc = "Diagnostic / Hover" })
+vim.keymap.set("n", "<leader>d", function()
+  vim.diagnostic.open_float({
+    scope = "cursor",
+    border = "rounded",
+    focus = false,
+  })
+end, {
+  desc = "Show Diagnostics",
+})
 
 
 -- img-clip
